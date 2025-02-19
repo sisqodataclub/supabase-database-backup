@@ -139,6 +139,14 @@ COPY "auth"."sso_domains" ("id", "sso_provider_id", "domain", "created_at", "upd
 
 
 --
+-- Data for Name: try; Type: TABLE DATA; Schema: bronze; Owner: postgres
+--
+
+COPY "bronze"."try" ("id", "created_at", "aaliyah", "francis") FROM stdin;
+\.
+
+
+--
 -- Data for Name: key; Type: TABLE DATA; Schema: pgsodium; Owner: supabase_admin
 --
 
@@ -193,6 +201,13 @@ COPY "vault"."secrets" ("id", "name", "description", "secret", "key_id", "nonce"
 --
 
 SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
+
+
+--
+-- Name: try_id_seq; Type: SEQUENCE SET; Schema: bronze; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"bronze"."try_id_seq"', 1, false);
 
 
 --
