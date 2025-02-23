@@ -155,6 +155,14 @@ COPY "pgsodium"."key" ("id", "status", "created", "expires", "key_type", "key_id
 
 
 --
+-- Data for Name: rightmove_data2345; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."rightmove_data2345" ("id", "Property Address", "Agent Address", "Agent Name", "Available Date", "Property Type", "Bedrooms", "Bathrooms", "Post Date", "Price", "Latitude", "Longitude", "URL") FROM stdin;
+\.
+
+
+--
 -- Data for Name: buckets; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
@@ -215,6 +223,13 @@ SELECT pg_catalog.setval('"bronze"."try_id_seq"', 1, false);
 --
 
 SELECT pg_catalog.setval('"pgsodium"."key_key_id_seq"', 1, false);
+
+
+--
+-- Name: rightmove_data2345_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"public"."rightmove_data2345_id_seq"', 1, false);
 
 
 --
