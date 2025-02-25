@@ -24,7 +24,7 @@ CREATE SCHEMA IF NOT EXISTS "gold";
 ALTER SCHEMA "gold" OWNER TO "postgres";
 
 
-CREATE EXTENSION IF NOT EXISTS "pgsodium" WITH SCHEMA "pgsodium";
+CREATE EXTENSION IF NOT EXISTS "pgsodium";
 
 
 
@@ -87,8 +87,8 @@ CREATE TABLE IF NOT EXISTS "bronze"."rightmove_data_brz" (
     "Agent Name" "text",
     "Available Date" "text",
     "Property Type" "text",
-    "Bedrooms" integer,
-    "Bathrooms" integer,
+    "Bedrooms" numeric,
+    "Bathrooms" numeric,
     "Post Date" "text",
     "Price" "text",
     "Latitude" double precision,
