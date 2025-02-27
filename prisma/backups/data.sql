@@ -23,6 +23,7 @@ SET row_security = off;
 --
 
 COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "ip_address") FROM stdin;
+00000000-0000-0000-0000-000000000000	48ebba6a-fb04-47a6-8ea6-ea7c72809a78	{"action":"user_signedup","actor_id":"00000000-0000-0000-0000-000000000000","actor_username":"service_role","actor_via_sso":false,"log_type":"team","traits":{"user_email":"francis@dataclubcenter.com","user_id":"fa3b9e65-2c7e-4d88-afd2-5fe58aa7b928","user_phone":""}}	2025-02-27 09:59:42.543512+00	
 \.
 
 
@@ -39,6 +40,7 @@ COPY "auth"."flow_state" ("id", "user_id", "auth_code", "code_challenge_method",
 --
 
 COPY "auth"."users" ("instance_id", "id", "aud", "role", "email", "encrypted_password", "email_confirmed_at", "invited_at", "confirmation_token", "confirmation_sent_at", "recovery_token", "recovery_sent_at", "email_change_token_new", "email_change", "email_change_sent_at", "last_sign_in_at", "raw_app_meta_data", "raw_user_meta_data", "is_super_admin", "created_at", "updated_at", "phone", "phone_confirmed_at", "phone_change", "phone_change_token", "phone_change_sent_at", "email_change_token_current", "email_change_confirm_status", "banned_until", "reauthentication_token", "reauthentication_sent_at", "is_sso_user", "deleted_at", "is_anonymous") FROM stdin;
+00000000-0000-0000-0000-000000000000	fa3b9e65-2c7e-4d88-afd2-5fe58aa7b928	authenticated	authenticated	francis@dataclubcenter.com	$2a$10$Jof40VHRv5OZUZsfG9pM5uCNegG/mTOF1QTBqpIwpzEnax8rADsQ6	2025-02-27 09:59:42.551128+00	\N		\N		\N			\N	\N	{"provider": "email", "providers": ["email"]}	{"email_verified": true}	\N	2025-02-27 09:59:42.515912+00	2025-02-27 09:59:42.556309+00	\N	\N			\N		0	\N		\N	f	\N	f
 \.
 
 
@@ -47,6 +49,7 @@ COPY "auth"."users" ("instance_id", "id", "aud", "role", "email", "encrypted_pas
 --
 
 COPY "auth"."identities" ("provider_id", "user_id", "identity_data", "provider", "last_sign_in_at", "created_at", "updated_at", "id") FROM stdin;
+fa3b9e65-2c7e-4d88-afd2-5fe58aa7b928	fa3b9e65-2c7e-4d88-afd2-5fe58aa7b928	{"sub": "fa3b9e65-2c7e-4d88-afd2-5fe58aa7b928", "email": "francis@dataclubcenter.com", "email_verified": false, "phone_verified": false}	email	2025-02-27 09:59:42.535433+00	2025-02-27 09:59:42.53666+00	2025-02-27 09:59:42.53666+00	4316f56a-9f1f-44ff-b711-06e9571e9db4
 \.
 
 
@@ -1059,6 +1062,14 @@ COPY "pgsodium"."key" ("id", "status", "created", "expires", "key_type", "key_id
 
 
 --
+-- Data for Name: query_logs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."query_logs" ("id", "query", "executed_at") FROM stdin;
+\.
+
+
+--
 -- Data for Name: buckets; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
@@ -1119,6 +1130,13 @@ SELECT pg_catalog.setval('"bronze"."rightmove_data_brz_id_seq"', 904, true);
 --
 
 SELECT pg_catalog.setval('"pgsodium"."key_key_id_seq"', 1, false);
+
+
+--
+-- Name: query_logs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"public"."query_logs_id_seq"', 1, false);
 
 
 --

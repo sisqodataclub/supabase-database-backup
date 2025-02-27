@@ -75,6 +75,19 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA "extensions";
 
 
 
+
+CREATE OR REPLACE FUNCTION "public"."log_queries"() RETURNS "event_trigger"
+    LANGUAGE "plpgsql"
+    AS $$
+BEGIN
+    INSERT INTO query_logs (query, executed_at)
+    VALUES (current_query(), NOW());
+END;
+$$;
+
+
+ALTER FUNCTION "public"."log_queries"() OWNER TO "postgres";
+
 SET default_tablespace = '';
 
 SET default_table_access_method = "heap";
@@ -116,12 +129,47 @@ ALTER SEQUENCE "bronze"."rightmove_data_brz_id_seq" OWNED BY "bronze"."rightmove
 
 
 
+CREATE TABLE IF NOT EXISTS "public"."query_logs" (
+    "id" integer NOT NULL,
+    "query" "text" NOT NULL,
+    "executed_at" timestamp without time zone DEFAULT "now"()
+);
+
+
+ALTER TABLE "public"."query_logs" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "public"."query_logs_id_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "public"."query_logs_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "public"."query_logs_id_seq" OWNED BY "public"."query_logs"."id";
+
+
+
 ALTER TABLE ONLY "bronze"."rightmove_data_brz" ALTER COLUMN "id" SET DEFAULT "nextval"('"bronze"."rightmove_data_brz_id_seq"'::"regclass");
+
+
+
+ALTER TABLE ONLY "public"."query_logs" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."query_logs_id_seq"'::"regclass");
 
 
 
 ALTER TABLE ONLY "bronze"."rightmove_data_brz"
     ADD CONSTRAINT "rightmove_data_brz_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."query_logs"
+    ADD CONSTRAINT "query_logs_pkey" PRIMARY KEY ("id");
 
 
 
@@ -317,6 +365,12 @@ GRANT USAGE ON SCHEMA "public" TO "service_role";
 
 
 
+GRANT ALL ON FUNCTION "public"."log_queries"() TO "anon";
+GRANT ALL ON FUNCTION "public"."log_queries"() TO "authenticated";
+GRANT ALL ON FUNCTION "public"."log_queries"() TO "service_role";
+
+
+
 GRANT ALL ON TABLE "bronze"."rightmove_data_brz" TO "anon";
 GRANT ALL ON TABLE "bronze"."rightmove_data_brz" TO "authenticated";
 GRANT ALL ON TABLE "bronze"."rightmove_data_brz" TO "service_role";
@@ -341,6 +395,18 @@ GRANT ALL ON SEQUENCE "bronze"."rightmove_data_brz_id_seq" TO "service_role";
 
 
 
+
+
+
+GRANT ALL ON TABLE "public"."query_logs" TO "anon";
+GRANT ALL ON TABLE "public"."query_logs" TO "authenticated";
+GRANT ALL ON TABLE "public"."query_logs" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "service_role";
 
 
 
