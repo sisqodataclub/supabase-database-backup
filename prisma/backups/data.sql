@@ -1070,6 +1070,38 @@ COPY "public"."query_logs" ("id", "query", "executed_at") FROM stdin;
 
 
 --
+-- Data for Name: agents_df_sil; Type: TABLE DATA; Schema: silver; Owner: postgres
+--
+
+COPY "silver"."agents_df_sil" ("id", "agent_name", "agent_address") FROM stdin;
+\.
+
+
+--
+-- Data for Name: locations_df_sil; Type: TABLE DATA; Schema: silver; Owner: postgres
+--
+
+COPY "silver"."locations_df_sil" ("id", "full_address", "latitude", "longitude", "property_address") FROM stdin;
+\.
+
+
+--
+-- Data for Name: properties_df_sil; Type: TABLE DATA; Schema: silver; Owner: postgres
+--
+
+COPY "silver"."properties_df_sil" ("id", "property_type", "bedrooms", "bathrooms", "locations_df_sil_id", "agents_df_sil_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: listings_df_sil; Type: TABLE DATA; Schema: silver; Owner: postgres
+--
+
+COPY "silver"."listings_df_sil" ("id", "parsed_post_date", "parsed_available_date", "monthly_price", "listing_id", "url", "properties_df_sil_id") FROM stdin;
+\.
+
+
+--
 -- Data for Name: buckets; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
@@ -1137,6 +1169,34 @@ SELECT pg_catalog.setval('"pgsodium"."key_key_id_seq"', 1, false);
 --
 
 SELECT pg_catalog.setval('"public"."query_logs_id_seq"', 1, false);
+
+
+--
+-- Name: agents_df_sil_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"silver"."agents_df_sil_id_seq"', 1, false);
+
+
+--
+-- Name: listings_df_sil_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"silver"."listings_df_sil_id_seq"', 1, false);
+
+
+--
+-- Name: locations_df_sil_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"silver"."locations_df_sil_id_seq"', 1, false);
+
+
+--
+-- Name: properties_df_sil_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"silver"."properties_df_sil_id_seq"', 1, false);
 
 
 --
