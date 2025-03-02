@@ -1074,6 +1074,12 @@ COPY "public"."query_logs" ("id", "query", "executed_at") FROM stdin;
 --
 
 COPY "silver"."agents_df_sil" ("id", "agent_name", "agent_address") FROM stdin;
+13	John Doe	123 Main St, London
+14	Jane Smith	456 High St, Manchester
+15	Alice Brown	789 Park Ave, Birmingham
+16	Bob Johnson	101 Elm St, Leeds
+17	Charlie White	202 Maple Rd, Bristol
+18	Alice Brown	766 Park
 \.
 
 
@@ -1082,6 +1088,11 @@ COPY "silver"."agents_df_sil" ("id", "agent_name", "agent_address") FROM stdin;
 --
 
 COPY "silver"."locations_df_sil" ("id", "full_address", "latitude", "longitude", "property_address") FROM stdin;
+1	123 Main St, London	51.315742	0.301732	Apartment 12, Main St
+2	456 High St, Manchester	51.943809	-0.795369	Flat 5B, High St
+3	789 Park Ave, Birmingham	52.519341	-1.410278	Suite 301, Park Ave
+4	101 Elm St, Leeds	51.447869	-1.096223	House 22, Elm St
+5	202 Maple Rd, Bristol	52.357503	-1.41931	Cottage 9, Maple Rd
 \.
 
 
@@ -1175,7 +1186,7 @@ SELECT pg_catalog.setval('"public"."query_logs_id_seq"', 1, false);
 -- Name: agents_df_sil_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"silver"."agents_df_sil_id_seq"', 1, false);
+SELECT pg_catalog.setval('"silver"."agents_df_sil_id_seq"', 18, true);
 
 
 --
@@ -1189,7 +1200,7 @@ SELECT pg_catalog.setval('"silver"."listings_df_sil_id_seq"', 1, false);
 -- Name: locations_df_sil_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"silver"."locations_df_sil_id_seq"', 1, false);
+SELECT pg_catalog.setval('"silver"."locations_df_sil_id_seq"', 5, true);
 
 
 --

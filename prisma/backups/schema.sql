@@ -355,6 +355,12 @@ GRANT USAGE ON SCHEMA "public" TO "service_role";
 
 
 
+GRANT USAGE ON SCHEMA "silver" TO "anon";
+GRANT USAGE ON SCHEMA "silver" TO "authenticated";
+GRANT USAGE ON SCHEMA "silver" TO "service_role";
+
+
+
 
 
 
@@ -571,6 +577,54 @@ GRANT ALL ON TABLE "public"."query_logs" TO "service_role";
 GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."agents_df_sil" TO "anon";
+GRANT ALL ON TABLE "silver"."agents_df_sil" TO "authenticated";
+GRANT ALL ON TABLE "silver"."agents_df_sil" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."listings_df_sil" TO "anon";
+GRANT ALL ON TABLE "silver"."listings_df_sil" TO "authenticated";
+GRANT ALL ON TABLE "silver"."listings_df_sil" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."locations_df_sil" TO "anon";
+GRANT ALL ON TABLE "silver"."locations_df_sil" TO "authenticated";
+GRANT ALL ON TABLE "silver"."locations_df_sil" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."properties_df_sil" TO "anon";
+GRANT ALL ON TABLE "silver"."properties_df_sil" TO "authenticated";
+GRANT ALL ON TABLE "silver"."properties_df_sil" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."properties_df_sil_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."properties_df_sil_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."properties_df_sil_id_seq" TO "service_role";
 
 
 

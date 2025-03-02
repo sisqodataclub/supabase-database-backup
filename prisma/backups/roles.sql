@@ -9,6 +9,6 @@ ALTER ROLE "anon" SET "statement_timeout" TO '3s';
 ALTER ROLE "authenticated" SET "statement_timeout" TO '8s';
 
 ALTER ROLE "authenticator" SET "statement_timeout" TO '8s';
-ALTER ROLE "authenticator" SET "pgrst.db_schemas" TO 'public, bronze';
+ALTER ROLE "authenticator" SET "pgrst.db_schemas" TO 'public, bronze, silver';
 
 RESET ALL;
