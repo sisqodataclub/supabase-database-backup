@@ -129,6 +129,46 @@ ALTER SEQUENCE "bronze"."rightmove_data_brz_id_seq" OWNED BY "bronze"."rightmove
 
 
 
+CREATE TABLE IF NOT EXISTS "public"."properties" (
+    "id" integer NOT NULL,
+    "property_type" "text",
+    "bedrooms" "text",
+    "bathrooms" "text",
+    "locations_df_sil_id" integer,
+    "agents_df_sil_id" integer
+);
+
+
+ALTER TABLE "public"."properties" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."properties1" (
+    "id" "uuid" DEFAULT "gen_random_uuid"() NOT NULL,
+    "property_type" "text",
+    "bedrooms" "text",
+    "bathrooms" "text"
+);
+
+
+ALTER TABLE "public"."properties1" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "public"."properties_id_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "public"."properties_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "public"."properties_id_seq" OWNED BY "public"."properties"."id";
+
+
+
 CREATE TABLE IF NOT EXISTS "public"."query_logs" (
     "id" integer NOT NULL,
     "query" "text" NOT NULL,
@@ -272,6 +312,10 @@ ALTER TABLE ONLY "bronze"."rightmove_data_brz" ALTER COLUMN "id" SET DEFAULT "ne
 
 
 
+ALTER TABLE ONLY "public"."properties" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."properties_id_seq"'::"regclass");
+
+
+
 ALTER TABLE ONLY "public"."query_logs" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."query_logs_id_seq"'::"regclass");
 
 
@@ -297,8 +341,23 @@ ALTER TABLE ONLY "bronze"."rightmove_data_brz"
 
 
 
+ALTER TABLE ONLY "public"."properties1"
+    ADD CONSTRAINT "properties1_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."properties"
+    ADD CONSTRAINT "properties_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "public"."query_logs"
     ADD CONSTRAINT "query_logs_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."properties"
+    ADD CONSTRAINT "unique_property" UNIQUE ("property_type", "bedrooms", "bathrooms", "locations_df_sil_id", "agents_df_sil_id");
 
 
 
@@ -565,6 +624,24 @@ GRANT ALL ON SEQUENCE "bronze"."rightmove_data_brz_id_seq" TO "service_role";
 
 
 
+
+
+
+GRANT ALL ON TABLE "public"."properties" TO "anon";
+GRANT ALL ON TABLE "public"."properties" TO "authenticated";
+GRANT ALL ON TABLE "public"."properties" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."properties1" TO "anon";
+GRANT ALL ON TABLE "public"."properties1" TO "authenticated";
+GRANT ALL ON TABLE "public"."properties1" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "public"."properties_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "public"."properties_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "public"."properties_id_seq" TO "service_role";
 
 
 

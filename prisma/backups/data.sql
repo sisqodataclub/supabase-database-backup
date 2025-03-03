@@ -1062,6 +1062,23 @@ COPY "pgsodium"."key" ("id", "status", "created", "expires", "key_type", "key_id
 
 
 --
+-- Data for Name: properties; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."properties" ("id", "property_type", "bedrooms", "bathrooms", "locations_df_sil_id", "agents_df_sil_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: properties1; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."properties1" ("id", "property_type", "bedrooms", "bathrooms") FROM stdin;
+d1222f0e-61e6-4b44-ab47-059efffbddfe	house	3	3
+\.
+
+
+--
 -- Data for Name: query_logs; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -1173,6 +1190,13 @@ SELECT pg_catalog.setval('"bronze"."rightmove_data_brz_id_seq"', 904, true);
 --
 
 SELECT pg_catalog.setval('"pgsodium"."key_key_id_seq"', 1, false);
+
+
+--
+-- Name: properties_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"public"."properties_id_seq"', 1, false);
 
 
 --
