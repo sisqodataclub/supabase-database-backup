@@ -195,6 +195,32 @@ ALTER SEQUENCE "public"."query_logs_id_seq" OWNED BY "public"."query_logs"."id";
 
 
 
+CREATE TABLE IF NOT EXISTS "silver"."agents_df" (
+    "id" integer NOT NULL,
+    "agent_name" "text",
+    "agent_address" "text",
+    "rowid" "text"
+);
+
+
+ALTER TABLE "silver"."agents_df" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "silver"."agents_df_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "silver"."agents_df_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "silver"."agents_df_id_seq" OWNED BY "silver"."agents_df"."id";
+
+
+
 CREATE TABLE IF NOT EXISTS "silver"."agents_df_sil" (
     "id" integer NOT NULL,
     "agent_name" "text",
@@ -218,6 +244,36 @@ ALTER TABLE "silver"."agents_df_sil_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."agents_df_sil_id_seq" OWNED BY "silver"."agents_df_sil"."id";
+
+
+
+CREATE TABLE IF NOT EXISTS "silver"."listings_df" (
+    "id" integer NOT NULL,
+    "parsed_post_date" "text",
+    "parsed_available_date" timestamp without time zone,
+    "monthly_price" "text",
+    "listing_id" "text",
+    "url" "text",
+    "rowid" "text",
+    "properties_df_sil_id" integer
+);
+
+
+ALTER TABLE "silver"."listings_df" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "silver"."listings_df_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "silver"."listings_df_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "silver"."listings_df_id_seq" OWNED BY "silver"."listings_df"."id";
 
 
 
@@ -251,6 +307,34 @@ ALTER SEQUENCE "silver"."listings_df_sil_id_seq" OWNED BY "silver"."listings_df_
 
 
 
+CREATE TABLE IF NOT EXISTS "silver"."locations_df" (
+    "id" integer NOT NULL,
+    "full_address" "text",
+    "latitude" double precision,
+    "longitude" double precision,
+    "property_address" "text",
+    "rowid" "text"
+);
+
+
+ALTER TABLE "silver"."locations_df" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "silver"."locations_df_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "silver"."locations_df_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "silver"."locations_df_id_seq" OWNED BY "silver"."locations_df"."id";
+
+
+
 CREATE TABLE IF NOT EXISTS "silver"."locations_df_sil" (
     "id" integer NOT NULL,
     "full_address" "text",
@@ -276,6 +360,35 @@ ALTER TABLE "silver"."locations_df_sil_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."locations_df_sil_id_seq" OWNED BY "silver"."locations_df_sil"."id";
+
+
+
+CREATE TABLE IF NOT EXISTS "silver"."properties_df" (
+    "id" integer NOT NULL,
+    "property_type" "text",
+    "bedrooms" "text",
+    "bathrooms" "text",
+    "rowid" "text",
+    "locations_df_sil_id" integer,
+    "agents_df_sil_id" integer
+);
+
+
+ALTER TABLE "silver"."properties_df" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "silver"."properties_df_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "silver"."properties_df_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "silver"."properties_df_id_seq" OWNED BY "silver"."properties_df"."id";
 
 
 
@@ -320,7 +433,15 @@ ALTER TABLE ONLY "public"."query_logs" ALTER COLUMN "id" SET DEFAULT "nextval"('
 
 
 
+ALTER TABLE ONLY "silver"."agents_df" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."agents_df_id_seq"'::"regclass");
+
+
+
 ALTER TABLE ONLY "silver"."agents_df_sil" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."agents_df_sil_id_seq"'::"regclass");
+
+
+
+ALTER TABLE ONLY "silver"."listings_df" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."listings_df_id_seq"'::"regclass");
 
 
 
@@ -328,7 +449,15 @@ ALTER TABLE ONLY "silver"."listings_df_sil" ALTER COLUMN "id" SET DEFAULT "nextv
 
 
 
+ALTER TABLE ONLY "silver"."locations_df" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."locations_df_id_seq"'::"regclass");
+
+
+
 ALTER TABLE ONLY "silver"."locations_df_sil" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."locations_df_sil_id_seq"'::"regclass");
+
+
+
+ALTER TABLE ONLY "silver"."properties_df" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."properties_df_id_seq"'::"regclass");
 
 
 
@@ -361,8 +490,18 @@ ALTER TABLE ONLY "public"."properties"
 
 
 
+ALTER TABLE ONLY "silver"."agents_df"
+    ADD CONSTRAINT "agents_df_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "silver"."agents_df_sil"
     ADD CONSTRAINT "agents_df_sil_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "silver"."listings_df"
+    ADD CONSTRAINT "listings_df_pkey" PRIMARY KEY ("id");
 
 
 
@@ -371,8 +510,18 @@ ALTER TABLE ONLY "silver"."listings_df_sil"
 
 
 
+ALTER TABLE ONLY "silver"."locations_df"
+    ADD CONSTRAINT "locations_df_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "silver"."locations_df_sil"
     ADD CONSTRAINT "locations_df_sil_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "silver"."properties_df"
+    ADD CONSTRAINT "properties_df_pkey" PRIMARY KEY ("id");
 
 
 
@@ -386,13 +535,28 @@ ALTER TABLE ONLY "silver"."properties_df_sil"
 
 
 
+ALTER TABLE ONLY "silver"."properties_df"
+    ADD CONSTRAINT "fk_agents_df_sil_id" FOREIGN KEY ("agents_df_sil_id") REFERENCES "silver"."agents_df"("id") ON DELETE CASCADE;
+
+
+
 ALTER TABLE ONLY "silver"."properties_df_sil"
     ADD CONSTRAINT "fk_locations_df_sil_id" FOREIGN KEY ("locations_df_sil_id") REFERENCES "silver"."locations_df_sil"("id") ON DELETE CASCADE;
 
 
 
+ALTER TABLE ONLY "silver"."properties_df"
+    ADD CONSTRAINT "fk_locations_df_sil_id" FOREIGN KEY ("locations_df_sil_id") REFERENCES "silver"."locations_df"("id") ON DELETE CASCADE;
+
+
+
 ALTER TABLE ONLY "silver"."listings_df_sil"
     ADD CONSTRAINT "fk_properties_df_sil_id" FOREIGN KEY ("properties_df_sil_id") REFERENCES "silver"."properties_df_sil"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "silver"."listings_df"
+    ADD CONSTRAINT "fk_properties_df_sil_id" FOREIGN KEY ("properties_df_sil_id") REFERENCES "silver"."properties_df"("id") ON DELETE CASCADE;
 
 
 
@@ -657,6 +821,18 @@ GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "service_role";
 
 
 
+GRANT ALL ON TABLE "silver"."agents_df" TO "anon";
+GRANT ALL ON TABLE "silver"."agents_df" TO "authenticated";
+GRANT ALL ON TABLE "silver"."agents_df" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."agents_df_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."agents_df_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."agents_df_id_seq" TO "service_role";
+
+
+
 GRANT ALL ON TABLE "silver"."agents_df_sil" TO "anon";
 GRANT ALL ON TABLE "silver"."agents_df_sil" TO "authenticated";
 GRANT ALL ON TABLE "silver"."agents_df_sil" TO "service_role";
@@ -666,6 +842,18 @@ GRANT ALL ON TABLE "silver"."agents_df_sil" TO "service_role";
 GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."listings_df" TO "anon";
+GRANT ALL ON TABLE "silver"."listings_df" TO "authenticated";
+GRANT ALL ON TABLE "silver"."listings_df" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."listings_df_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."listings_df_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."listings_df_id_seq" TO "service_role";
 
 
 
@@ -681,6 +869,18 @@ GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "service_role";
 
 
 
+GRANT ALL ON TABLE "silver"."locations_df" TO "anon";
+GRANT ALL ON TABLE "silver"."locations_df" TO "authenticated";
+GRANT ALL ON TABLE "silver"."locations_df" TO "service_role";
+
+
+
+GRANT SELECT,USAGE ON SEQUENCE "silver"."locations_df_id_seq" TO "authenticated";
+GRANT SELECT,USAGE ON SEQUENCE "silver"."locations_df_id_seq" TO "anon";
+GRANT SELECT,USAGE ON SEQUENCE "silver"."locations_df_id_seq" TO "service_role";
+
+
+
 GRANT ALL ON TABLE "silver"."locations_df_sil" TO "anon";
 GRANT ALL ON TABLE "silver"."locations_df_sil" TO "authenticated";
 GRANT ALL ON TABLE "silver"."locations_df_sil" TO "service_role";
@@ -690,6 +890,18 @@ GRANT ALL ON TABLE "silver"."locations_df_sil" TO "service_role";
 GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."properties_df" TO "anon";
+GRANT ALL ON TABLE "silver"."properties_df" TO "authenticated";
+GRANT ALL ON TABLE "silver"."properties_df" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."properties_df_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."properties_df_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."properties_df_id_seq" TO "service_role";
 
 
 
