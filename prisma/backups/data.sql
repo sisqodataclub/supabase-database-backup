@@ -2627,6 +2627,200 @@ COPY "silver"."locations_df" ("id", "full_address", "latitude", "longitude", "pr
 755	Granby House, Granby Row, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 7AR, United Kingdom	53.47499	-2.2359	Granby House, Granby Row, Manchester, M1	902167527
 756	Parrs Wood Road, Ladybarn, Burnage, Manchester, Greater Manchester, England, M20 4RR, United Kingdom	53.428707	-2.216506	Parrs Wood Road, Fallowfield, Manchester, M20 4RQ	903167527
 757	Cypress Place, 9, New Century Park, Green Quarter, Strangeways, Manchester, Greater Manchester, England, M4 4EE, United Kingdom	53.489762	-2.240247	Cypress Place, 9 New Century Park, Manchester, M4	904167527
+758	Boundary Row, Bankside, Elephant and Castle, London Borough of Southwark, London, Greater London, England, SE1 8HP, United Kingdom	51.502168382426554	-0.10535915173487147	2-6 Boundary Row, London, SE1 8HP	\N
+759	Via Massimo D'Azeglio, None, Torino, Piemonte, Italia	44.933143	7.540121	Web based Estate Agent	\N
+760	Hills, Albert Street, Ellesmere Park, Eccles, Salford, Greater Manchester, England, M30 0NJ, United Kingdom	53.484266	-2.3391974	Sentinel House, Albert Street, Eccles, Manchester, M30 0SS	\N
+761	Stamford Street, Hale, Altrincham, Trafford, Greater Manchester, England, WA14 1EY, United Kingdom	53.38911	-2.34842	Kings House Stamford Street Altrincham WA14 1EX	\N
+762	575-577, Stockport Road, Longsight, Manchester, Greater Manchester, England, M13 0RG, United Kingdom	53.45607334769262	-2.1994493668832895	588 Stockport Road Longsight Manchester M13 0RQ	\N
+763	West Tower, 371, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4LB, United Kingdom	53.47299	-2.25251	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	\N
+764	Monarch Solicitors, 156, Chapel Street, Blackfriars, City Centre, Manchester, Greater Manchester, England, M3 6BF, United Kingdom	53.48363	-2.25685	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	\N
+765	The Battered Cod, 4, Church Road, Gatley, Stockport, Greater Manchester, England, SK8 4NQ, United Kingdom	53.3927652	-2.2351292000000003	53a Church Road, Gatley, Cheadle, SK8 4NG	\N
+766	Worsley Road/Moorside Road, Worsley Road, Dales Brow, Moorside, Swinton, Salford, Greater Manchester, England, M27 0AS, United Kingdom	53.5038399	-2.35539	Bank Chambers Worsley Road Worsley Manchester M27 0FW	\N
+767	104, Stretford Road, First Street, Hulme, Manchester, Greater Manchester, England, M15 5JH, United Kingdom	53.46779979649123	-2.2479680789473684	Meridian Square Stretford Road Hulme Manchester M15 5JH	\N
+768	St Peter's House, 233, Ashley Road, Hale, Altrincham, Trafford, Greater Manchester, England, WA15 9SS, United Kingdom	53.37556815345	-2.342941721622758	175 Ashley Road Hale WA15 9SD	\N
+769	Co-op Food, 756, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 2DW, United Kingdom	53.416421190181026	-2.231728105375664	722 Wilmslow Road, Didsbury, Manchester, M20 2DW	\N
+770	Burgerum, 365, Chapel Street, Blackfriars, Lower Broughton, Salford, Greater Manchester, England, M3 5JT, United Kingdom	53.482848	-2.2639531	365 Chapel Street, Salford, M3 5JT	\N
+771	Reeds Rains, 29, Whitworth Street West, First Street, City Centre, Manchester, Greater Manchester, England, M1 5ND, United Kingdom	53.4741096	-2.2451714	29 Whitworth Street West Manchester M1 5ND	\N
+772	44, Aytoun Street, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 3GL, United Kingdom	53.4777430035588	-2.2338778368283165	Aytoun Street, Manchester, M1 3GL	\N
+773	Porta Delivery, 20, Wenlock Road, Hoxton, London Borough of Hackney, London, Greater London, England, N1 7GU, United Kingdom	51.5305527	-0.0936459	20 Wenlock Road, London, N1 7GU	\N
+774	One St Peter's Square, 1, St Peter's Square, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 3AE, United Kingdom	53.4774635	-2.243006846990335	One St Peter's Square Manchester M2 3DE	\N
+775	Moorside Road, Heaton Mersey, Cheadle, Stockport, Greater Manchester, England, SK4 4DT, United Kingdom	53.415585928719295	-2.189786826961357	14 Moorside Road, Heaton Moor, Stockport, SK4 4DT	\N
+776	NEXIS, 361, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4LG, United Kingdom	53.4736826	-2.2515121	361 Deansgate, Manchester, M3 4LG	\N
+777	3, Cambridge Street, First Street, City Centre, Manchester, Greater Manchester, England, M1 5BZ, United Kingdom	53.4726341	-2.24355025	B2 Chorlton Mill, Cambridge Street, Manchester, M1 5BY	\N
+778	283, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EW, United Kingdom	53.476220177777776	-2.2505764777777775	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	\N
+779	Costa, 306, Wilmslow Road, Ladybarn, Fallowfield, Manchester, Greater Manchester, England, M14 6NS, United Kingdom	53.4411436	-2.2192412	306 Wilmslow Road, Manchester, M14 6LF	\N
+780	Jordan Fishwick, 410-412, Barlow Moor Road, Chorlton-cum-Hardy, Manchester, Greater Manchester, England, M21 8AD, United Kingdom	53.4415136	-2.2760625	410-412 Barlow Moor Road, Chorlton, Manchester, M21 8AD	\N
+781	\N	\N	\N	7a Howick Place London SW1P 1DZ	\N
+782	WeWork, 30, Churchill Place, Canary Wharf, London Borough of Tower Hamlets, London, Greater London, England, E14 5EU, United Kingdom	51.5040521	-0.0148848	30 Churchill Place, London, E14 5RE	\N
+783	Castlefield Locks, 62, Ellesmere Street, Hulme, Manchester, Greater Manchester, England, M15 4QR, United Kingdom	53.4706721853277	-2.2644207733278665	27 Ellesmere Street, Hulme, Manchester, M15 4RU	\N
+784	285, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EW, United Kingdom	53.476148409963415	-2.2508423326028244	289 - 291 Deansgate, Manchester, M3 4EW	\N
+785	Broadway, White Gate, Failsworth, Oldham, Greater Manchester, England, OL9 9NF, United Kingdom	53.521724250000005	-2.16570085	582 Broadway, Chadderton, Oldham OL9 9NF	\N
+786	Jactin House, 24, Hood Street, Ancoats, Collyhurst, Manchester, Greater Manchester, England, M4 6WX, United Kingdom	53.484394449999996	-2.22796473147313	Jactin house 24 Hood Street Manchester M46WX	\N
+787	Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 6UH, United Kingdom	53.41463	-2.23286	Suite 97, 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	\N
+788	921,923,925a,927, Stockport Road, Levenshulme, Manchester, Greater Manchester, England, M19 3PZ, United Kingdom	53.44247843156818	-2.1903510378372752	967 Stockport Road, Levenshulme, Manchester, M19 3NP	\N
+789	Oxid House, 78, Newton Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 1AL, United Kingdom	53.4832934	-2.2305887	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	\N
+790	Thornley Grove, 25, Whitworth Street West, First Street, City Centre, Manchester, Greater Manchester, England, M1 5ND, United Kingdom	53.4741183	-2.2453979	25 Whitworth Street West, Manchester, M1 5ND	\N
+791	admove, 197-201, Manchester Road, Broadheath, Altrincham, Trafford, Greater Manchester, England, WA14 5NU, United Kingdom	53.4010546	-2.3526665	197-201 Manchester Road, Altrincham, WA14 5NU	\N
+792	Black Sheep Coffee, 60, Spring Gardens, Central Retail District, City Centre, Manchester, Greater Manchester, England, M2 2BQ, United Kingdom	53.48012996	-2.24174336	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	\N
+793	Middlewood Street, Ordsall, Salford, Greater Manchester, England, M5 4YW, United Kingdom	53.47884101360276	-2.262658504229584	15 Middlewood Street, Salford, M5 4YW	\N
+794	Smithdown Road, Allerton, Liverpool, Liverpool City Region, England, L15 5BA, United Kingdom	53.3890223798539	-2.915418068583713	605 Smithdown Road, Allerton, Liverpool, L15 5AG	\N
+795	St James House, Pendleton Way, Pendleton, Salford, Greater Manchester, England, M6 5FW, United Kingdom	53.4906486	-2.2878759	Suite 11, 8th Floor, St James House, Pendleton Way, Salford, M6 5FW	\N
+796	M&S Foodhall, 462, Bury New Road, Kirkhams, Prestwich, Bury, Greater Manchester, England, M25 3AN, United Kingdom	53.53397963978541	-2.286123589844378	503-505 Bury New Road, Prestwich, Manchester M25 1AD	\N
+797	Us&Co Stratford, 11, Burford Road, Mill Meads, Stratford, London Borough of Newham, London, Greater London, England, E15 2ST, United Kingdom	51.5372847	-0.0006803	CityZEN Property Group, 11 Burford Road, London, E15 2ST	\N
+798	Lucky Mama's, 565, Barlow Moor Road, Chorlton-cum-Hardy, Manchester, Greater Manchester, England, M21 8AE, United Kingdom	53.44160561646268	-2.2764010972930278	424 Barlow Moor Road, Chorlton Cum Hardy, Manchester, M21 8AD	\N
+799	22, St John Street, Castlefield, City Centre, Manchester, Greater Manchester, England, M3 4EB, United Kingdom	53.4778681	-2.2515156	22 St John Street, Manchester, Greater Manchester, M3 4EB	\N
+800	The Anchorage, 1-4, Anchorage Quay, Salford Quays, Salford, Greater Manchester, England, M50 3YW, United Kingdom	53.47409138441552	-2.286061513838992	Anchorage Quay, Salford, M50 3BX	\N
+801	Victoria Baths, Hathersage Road, Victoria Park, Rusholme, Manchester, Greater Manchester, England, M13 0FE, United Kingdom	53.4601468	-2.2164245	Flat 1, 32 Hathersage Road, Manchester, M13 0FE	\N
+802	Lotus Thai Spa, 58, Swan Street, NOMA, Strangeways, Manchester, Greater Manchester, England, M4 5JU, United Kingdom	53.48601381428571	-2.2351422285714286	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	\N
+803	7, Nobel Way, Circle Square, City Centre, Manchester, Greater Manchester, England, M1 7FU, United Kingdom	53.4732566	-2.2381164	7 Nobel Way, Oxford Road, Manchester, M1 7FU	\N
+804	The Royal Oak, 729, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 6WF, United Kingdom	53.41628565	-2.2315142400694445	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	\N
+805	Cortland at Colliers Yard, 7, Bankside Boulevard, Trinity, City Centre, Salford, Greater Manchester, England, M3 7NB, United Kingdom	53.487280274517325	-2.2495817749064955	5 Bankside Boulevard, Salford, M3 7HD	\N
+806	Spaces, 125, Deansgate, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 2BY, United Kingdom	53.48022805	-2.248032890777097	125 Deansgate, Manchester, M3 2LH	\N
+807	Bridgfords, 21, Albion Street, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 5DA, United Kingdom	53.4743476	-2.2477549	The Hacienda 21 Albion Street Manchester M1 5DA	\N
+808	Rodwell Tower, 111, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 2HY, United Kingdom	53.47937185	-2.2326337961255307	111 Piccadilly, Manchester, M1 2HY	\N
+809	Wilmslow Road, Ladybarn, Fallowfield, Manchester, Greater Manchester, England, M14 6NL, United Kingdom	53.44056121651332	-2.2195271064639854	314 Wilmslow Road Fallowfield Manchester M14 6XQ	\N
+810	Roger Dean, 218, Finney Lane, Heald Green, Stockport, Greater Manchester, England, SK8 3QA, United Kingdom	53.3701077	-2.232292	218 Finney Lane, Heald Green, SK8 3QA	\N
+811	Stockport Homes, 2, Edward Street, Shaw Heath, Stockport, Greater Manchester, England, SK1 3NQ, United Kingdom	53.40556035	-2.157757899761906	2 Edward Street, Stockport, SK1 3NQ	\N
+812	Rose Lane, Mossley Hill, Liverpool, Liverpool City Region, England, L18 8AD, United Kingdom	53.379204599999994	-2.9154017	183 - 185 Rose Lane, Mossley Hill, Liverpool, L18 5EA	\N
+813	Peter House, Oxford Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M1 5AN, United Kingdom	53.4770258	-2.2437623	3, 28 spaces, Peter House, Oxford Street, Manchester, M1 5AN	\N
+814	Elkington Way, Horseshoe Farm, Alderley Edge, Cheshire East, England, SK9 7QW, United Kingdom	53.30785	-2.2349	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	\N
+815	Ascend, 241, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EN, United Kingdom	53.4773874	-2.2499035	241 Deansgate Manchester M3 4EN	\N
+816	50, Barton Road, Winton, Worsley, Salford, Greater Manchester, England, M28 2EA, United Kingdom	53.49803	-2.37821	Suite 4, The Granary, Worsley, Manchester, M28 2EB	\N
+817	Wilmslow Road, Withington, Manchester, Greater Manchester, England, M20 4BW, United Kingdom	53.433543900000004	-2.2286931	416 Wilmslow Road, Withington, Manchester M20 3BW	\N
+818	Reside, 249, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EN, United Kingdom	53.4771436	-2.25005	249 Deansgate, Manchester, M3 4EN	\N
+819	Kabel House, 15, Quay Street, Spinningfields, City Centre, Manchester, Greater Manchester, England, M3 3HN, United Kingdom	53.47844578	-2.2510693600000002	St John's Court 19B Quay Street, Manchester, M3 3HN	\N
+820	52, Port Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 2EQ, United Kingdom	53.4818346	-2.2320209	52 Port Street, Northern Quarter, Manchester, M1 2EQ	\N
+821	Stevenson Whyte, 3-9, Duke Street, Castlefield, City Centre, Manchester, Greater Manchester, England, M3 4NF, United Kingdom	53.476207548828064	-2.2543061669638926	3-5 Duke Street, Manchester, M3 4NF	\N
+822	896, Stockport Road, Levenshulme, Manchester, Greater Manchester, England, M19 3BP, United Kingdom	53.44529225	-2.191779913200717	896 Stockport Road, Levenshulme, Manchester, M19 3AD	\N
+823	Kingsdene, 257, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EN, United Kingdom	53.4769024	-2.2501879	257 Deansgate, Manchester, M3 4EN	\N
+824	Viceroy Court, Grange Lane, Parrs Wood, Didsbury, Manchester, Greater Manchester, England, M20 6RW, United Kingdom	53.41544445	-2.2317171	757 to 759, Wilmslow Road, Manchester, Lancashire, M20 6RN	\N
+825	Peter, 45, Ashby Square, Loughborough, Charnwood, Leicestershire, England, LE11 5AA, United Kingdom	52.77220821086562	-1.2093841264909808	202 Ashby Square, Loughborough, LE11 5AA	\N
+826	Hulme Street, First Street, City Centre, Manchester, Greater Manchester, England, M15 6AA, United Kingdom	53.47143	-2.2449	5 Botanic Avenue, Manchester, M15 6AA	\N
+827	Gloucester Street, First Street, City Centre, Manchester, Greater Manchester, England, M1 5NG, United Kingdom	53.4738789	-2.24467485	68 Arches Whitworth Street West Manchester M1 5WQ	\N
+828	321, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4LQ, United Kingdom	53.474995593476855	-2.2515231839928407	332-334 Deansgate, Manchester, M3 4LY	\N
+829	Co-op Food, 756, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 2DW, United Kingdom	53.416421190181026	-2.231728105375664	764b Wilmslow Road, Didsbury, Manchester, M20 2DR	\N
+830	The Chu's, 436, Palatine Road, Northenden, Manchester, Greater Manchester, England, M22 4JS, United Kingdom	53.40680844868527	-2.2603503385321524	372 Palatine Road, Manchester, M22 4FZ	\N
+831	Lapwing Lane, West Didsbury, Manchester, Greater Manchester, England, M20 2NS, United Kingdom	53.42666399859903	-2.2388286915022286	20a Lapwing Lane, West Didsbury, Manchester, M20 2WS	\N
+832	One Cutting Room Square, 16, Hood Street, Ancoats, Collyhurst, Manchester, Greater Manchester, England, M4 6WX, United Kingdom	53.48420563333333	-2.2285280333333333	Jactin House 24 Hood Street Ancoats Urban Village Manchester M4 6WX	\N
+833	Manchester Town Hall, Albert Square, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 5DB, United Kingdom	53.4794892	-2.2451148	Manchester	\N
+834	The Tanning Shop, 49, Pinfold Street, Chinese Quarter, Edgbaston, Park Central, Birmingham, West Midlands, England, B2 4AY, United Kingdom	52.479231	-1.9019561833333332	Suite 142 51 Pinfold Street Birmingham B2 4AY	\N
+835	Monton Green, Dales Brow, Monton, Eccles, Salford, Greater Manchester, England, M30 9LW, United Kingdom	53.493114938454674	-2.3517462220064345	25-27 Monton Green, Monton, Eccles, Manchester, M30 9LL	\N
+836	Garden Lane, Trinity, City Centre, Salford, Greater Manchester, England, M3 7FJ, United Kingdom	53.4860354345943	-2.2530564021796637	Unit 1 2 Garden Lane Salford M3 7FJ	\N
+837	The Greenfinch, 108, Palatine Road, West Didsbury, Manchester, Greater Manchester, England, M20 3ZA, United Kingdom	53.4252581	-2.2370429	Wren House 108 Palatine Road, Didsbury, Manchester, M20 3ZA	\N
+838	Bytemark Hosting, 5, Archway, Hulme, Manchester, Greater Manchester, England, M15 5RL, United Kingdom	53.4644814	-2.24634135	Karsons Lettings Innospace, 2nd Floor, Turing House, 5 Archway, Manchester M15 5RL	\N
+839	Market Street, Cheetham Fold, Hyde, Tameside, Greater Manchester, England, SK14 1ES, United Kingdom	53.450069799999994	-2.0785246500000003	104-106 Market Street, Hyde, SK14 1ES	\N
+840	Marriott, Water Street, Castlefield, City Centre, Manchester, Greater Manchester, England, M3 4JQ, United Kingdom	53.478987123676596	-2.2568586019381467	Water Street, Manchester, M3 4JQ	\N
+841	AcuSpa, 50, Bridge Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 3BW, United Kingdom	53.4810024	-2.2495638	50 Bridge Street, Manchester, M3 3BW	\N
+842	Viceroy Court, Grange Lane, Parrs Wood, Didsbury, Manchester, Greater Manchester, England, M20 6RW, United Kingdom	53.41544445	-2.2317171	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	\N
+843	Aubergine Distinctive Catering, 53, Church Road, Gatley, Stockport, Greater Manchester, England, SK8 4NG, United Kingdom	53.391234684727216	-2.237920324161755	46 Church Road Gatley SK8 4NQ	\N
+844	Chapel Street, Dukinfield, Tameside, Greater Manchester, England, SK16 4DW, United Kingdom	53.47745	-2.09174	Suite 2, The Old Court House, Chapel Street, Dukinfield, SK16 4DT	\N
+845	Chester Road, Old Trafford, Trafford, Greater Manchester, England, M15 4EX, United Kingdom	53.46948726333746	-2.265813029810347	Chester Road Manchester, M15 4YH	\N
+846	Via Massimo D'Azeglio, None, Torino, Piemonte, Italia	44.933143	7.540121	Covering Manchester	\N
+847	Dickenson Road, Victoria Park, Longsight, Manchester, Greater Manchester, England, M13 0YL, United Kingdom	53.453889275	-2.212203625	Anson Parade, 161a Dickenson Road, Rusholme, Manchester, M14 5HZ	\N
+848	Bishops Corner, 321, Stretford Road, First Street, Hulme, Manchester, Greater Manchester, England, M15 4UW, United Kingdom	53.46702953333333	-2.249969683333333	Unit 1, Bishops Corner 32 Stretford Road, Hulme, Manchester, M15 4UW	\N
+849	Lower Burnham Road, Purleigh, Maldon, Essex, England, CM3 6HQ, United Kingdom	51.65579	0.69952	Marsh Farm House Lower Burnham Road Latchingdon CM3 6HQ	\N
+850	The Quays, Salford Quays, Salford, Greater Manchester, England, M50 3BT, United Kingdom	53.475522691047104	-2.286658415021554	The Quays, Salford, M50 3SF	\N
+851	Travelodge, 22, Great Ancoats Street, Central Retail District, Strangeways, Manchester, Greater Manchester, England, M4 5AZ, United Kingdom	53.484247422708634	-2.231924472678766	6-14 Great Ancoats Street, Manchester, M4 5AZ	\N
+852	Didsbury Road, The Four Heatons, Heaton Mersey, Cheadle, Stockport, Greater Manchester, England, SK4 3BT, United Kingdom	53.41235185419524	-2.2047535331954746	450 Didsbury Road Stockport SK4 3BS	\N
+853	Jordan Fishwick, 95-97, School Road, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7XA, United Kingdom	53.425586590252145	-2.3247970807881257	81-83 School Road, Sale, M33 7XA	\N
+854	Back Hulme Street, Blackfriars, Ordsall, Salford, Greater Manchester, England, M5 4PL, United Kingdom	53.48212596946871	-2.2666734825253143	11 Back Hulme Street, Salford, M5 4QT	\N
+855	One Stop, 180-182, Langworthy Road, Seedley, Eccles, Salford, Greater Manchester, England, M6 5PP, United Kingdom	53.48684844668365	-2.29482537092201	167 Langworthy Road, Salford, M6 5PW	\N
+856	Bridgfords, 561, Barlow Moor Road, Chorlton-cum-Hardy, Manchester, Greater Manchester, England, M21 8AN, United Kingdom	53.441265200000004	-2.276378682002538	561 Barlow Moor Road, Chorlton, Manchester, M21 8AN	\N
+857	Bury Old Road, Sedgley Park, Prestwich, Manchester, Greater Manchester, England, M25 0EX, United Kingdom	53.51636	-2.25222	Suite 8 Broadhurst House Bury Old Road, Salford, M7 4QX	\N
+858	Poulton and Pulford, Chester, Cheshire West and Chester, England, CH4 9EP, United Kingdom	53.13657	-2.9211	First Fl, Kinnerton House Bell Meadow Business Park Park Lane Pulford CH4 9EP	\N
+859	Co-op Food, 756, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 2DW, United Kingdom	53.416421190181026	-2.231728105375664	713 Wilmslow Road, Didsbury, Manchester, M20 6RE	\N
+860	Cousins Estate Agents, 754, Oldham Road, Hollinwood, Failsworth, Manchester, Greater Manchester, England, M35 9FE, United Kingdom	53.5169342	-2.1475018	754 Oldham Road, Failsworth, Oldham, M35 9FE	\N
+861	Prestbury Court, Bridgewater Road, Walkden, Salford, Greater Manchester, England, M28 3JA, United Kingdom	53.52270808521865	-2.399516306849213	1 Bridgewater Road, Worsley, M28 3JE	\N
+862	60, Moss Lane West, Hulme, Manchester, Greater Manchester, England, M15 5PD, United Kingdom	53.46000678829159	-2.2532759254569186	46 Moss Lane West Manchester M15 5FB	\N
+863	Broadway, Weaste, Eccles, Salford, Greater Manchester, England, M50 2UE, United Kingdom	53.47529	-2.30593	Suite A, 2nd Floor, The Nest, Broadway, Salford, M50 2UE	\N
+864	Northern Monkey, 8, Dantzic Street, Central Retail District, City Centre, Manchester, Greater Manchester, England, M4 2AD, United Kingdom	53.4849242	-2.2398917	8 Dantzic Street, Manchester, M4 2AD	\N
+865	\N	\N	\N	1 Northumberland Avenue, Trafalgar Square, London, WC2N 5BW	\N
+866	Northwood, 55-57, Mesnes Street, Scholes Village, Swinley, Wigan, Greater Manchester, England, WN1 1QX, United Kingdom	53.549374	-2.6318544	55-57 Mesnes Street, Wigan, WN1 1QX	\N
+867	Cotton Tree Street, Shaw Heath, Stockport, Greater Manchester, England, SK4 1BS, United Kingdom	53.40973	-2.16336	Suite B, 7th Floor, Beckwith House 1-3 Wellington Road Stockport SK4 1AF	\N
+868	Brogden Terrace, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7UF, United Kingdom	53.42	-2.33117	Simple Life Stafford Court, 145 Washway Road Sale M33 7PE	\N
+869	Cheetham Street, Wardleworth, Rochdale, Greater Manchester, England, OL16 1DG, United Kingdom	53.61948703938918	-2.156843670955583	15b Cheetham Street, Rochdale, OL16 1DG	\N
+870	66, Quay Street, Spinningfields, City Centre, Manchester, Greater Manchester, England, M3 3EJ, United Kingdom	53.4790613	-2.2533179	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	\N
+871	22, Lloyd Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 5WA, United Kingdom	53.4790287	-2.2466045	22 Lloyd Street, Manchester, M2 5WA	\N
+872	Vitalspace, 22, Flixton Road, Davyhulme, Urmston, Trafford, Greater Manchester, England, M41 5AA, United Kingdom	53.4485774	-2.3543878	22 Flixton Road Urmston M41 5AA	\N
+873	Michigan Point Tower A, 9, Michigan Avenue, Salford Quays, Salford, Greater Manchester, England, M50 2GY, United Kingdom	53.4743883	-2.291680407682188	9 Michigan Avenue, Salford, M50 2HA	\N
+874	Manchester Apartments, 60, Oxford Street, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 5EE, United Kingdom	53.4750152	-2.2417109	60 Oxford Street, Manchester, M1 5EE	\N
+875	Alcock House, Dearmans Place, Trinity, City Centre, Salford, Greater Manchester, England, M3 5DZ, United Kingdom	53.4841466	-2.2515864	Alcock House, 99 Chapel Street, Salford, M3 5DZ	\N
+876	323, Wilmslow Road, Fallowfield, Manchester, Greater Manchester, England, M14 6NW, United Kingdom	53.441613849999996	-2.2184498784504143	323 Wilmslow Road, Fallowfield, Manchester, M14 6NW	\N
+877	Roger + Grahame Hairdressing, 10a, Newton Street, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 2AN, United Kingdom	53.481096019999995	-2.23371356	2nd Floor, 8-16 Newton Street, Manchester, M1 2AN	\N
+878	M&S Foodhall, 462, Bury New Road, Kirkhams, Prestwich, Bury, Greater Manchester, England, M25 3AN, United Kingdom	53.53397963978541	-2.286123589844378	493 Bury New Road, Prestwich, Manchester, M25 1AD	\N
+879	The Real Camera Co, 7, Dale Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 1JA, United Kingdom	53.4821306	-2.2346353	Sevendale House, 7 Dale Street, Manchester, M1 1JA	\N
+880	Poundstretcher, 16, Saltergate, Stonegravels, Tapton, Chesterfield, Derbyshire, East Midlands, England, S40 1UT, United Kingdom	53.2371719	-1.4264825	Office 4, Northern Gateway, Enterprise Centre, Saltergate, Chesterfield, S40 1UT	\N
+881	Heywood Way, Pendleton, Salford, Greater Manchester, England, M6 5RQ, United Kingdom	53.4877463	-2.2891921	Salford	\N
+882	The Eccles Cross, 13, Regent Street, Ellesmere Park, Eccles, Manchester, Greater Manchester, England, M30 0BP, United Kingdom	53.48322309669741	-2.334340513032393	52 Regent Street, Eccles, Manchester, M30 0BP	\N
+883	Village News, 138, Ford Road, Overchurch Hill, Upton, Wirral, Liverpool City Region, England, CH49 0TQ, United Kingdom	53.38505425	-3.0982668899999997	118 Ford Road, Upton Village, Wirral CH49 0TQ	\N
+884	Main & Main, 198, Finney Lane, Heald Green, Stockport, Greater Manchester, England, SK8 3QA, United Kingdom	53.3700333	-2.2312749	198 Finney Lane, Heald Green, Cheadle, SK8 3QA	\N
+885	The Green Rooms, Blue, MediaCityUK, Weaste, Eccles, Salford, Greater Manchester, England, M50 2AH, United Kingdom	53.4728	-2.30165	Leader House, Blue Media City, Salford, M50 2AG	\N
+886	Manchester Metropolitan University – All Saints Campus, Moran Walk, Hulme, Manchester, Greater Manchester, England, M15 6GA, United Kingdom	53.47199355	-2.241583	Office 2,8 Chester Street, Manchester, M1 5GE	\N
+887	Apex House, 266, Moseley Road, Levenshulme, Manchester, Greater Manchester, England, M19 2LH, United Kingdom	53.4424222997565	-2.2029112599936775	268 Moseley Road, Levenshulme, Manchester, M19 2LH	\N
+888	Merchants Quay, Ordsall, Salford, Greater Manchester, England, M50 3ST, United Kingdom	53.4688042	-2.284183	Unit 301 The Junction Merchants Quay, Salford, M50 3SG	\N
+889	Gooey, 37, Ducie Street, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 2JW, United Kingdom	53.480467275	-2.22871675	Townhouse, 117 Ducie House, Ducie Street, Manchester, M1 2JW	\N
+890	Oakland House, Talbot Road, Gorse Hill, Stretford, Trafford, Greater Manchester, England, M16 0PQ, United Kingdom	53.460035	-2.2837841	209-210 Oakland House Talbot Road, Stretford, Manchester, M16 0PQ	\N
+891	The Real Camera Co, 7, Dale Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 1JA, United Kingdom	53.4821306	-2.2346353	Sevendale house, 7 Dale Street, Manchester, M1 1JA	\N
+892	Julian Wadden, 81-83, Wellington Road South, Shaw Heath, Stockport, Greater Manchester, England, SK1 3SL, United Kingdom	53.4068083	-2.1594652	81-83 Wellington Road South, Stockport, SK1 3SL	\N
+893	The Local Launderette, 20, Bury New Road, Sedgley Park, Prestwich, Salford, Greater Manchester, England, M25 0LD, United Kingdom	53.518133366813395	-2.271700383511482	39, Bury New Road, Prestwich, Manchester, M25 9JY	\N
+894	Market Street, Fairfield, Droylsden, Tameside, Greater Manchester, England, M43 7AR, United Kingdom	53.48021032487156	-2.145173703605485	116 Market Street, Droylsden, Manchester, M43 7AA	\N
+895	Elm Grove, Parrs Wood, Didsbury, Manchester, Greater Manchester, England, M20 6PL, United Kingdom	53.416035557380496	-2.2308795994628268	3 Elm Grove, Didsbury, Manchester, M20 6PL	\N
+896	Carpe diem, 27, Castle Street, St. Mildred's, Harbledown, Canterbury, Kent, England, CT1 2QD, United Kingdom	51.2760366	1.0757608	27 Castle Street, Canterbury, CT1 2PX	\N
+897	John William Street, Ellesmere Park, Eccles, Salford, Greater Manchester, England, M30 0BL, United Kingdom	53.48522	-2.33763	7th floor, 1 City Approach, Albert Street, Eccles, M30 0BG	\N
+898	Beis Mordechai, 90, King's Road, Sedgley Park, Prestwich, Bury, Greater Manchester, England, M25 0LQ, United Kingdom	53.51965	-2.26443	S&S Property Group 78a Kings Road Manchester M25 0FY	\N
+899	BLANCONERO, 2, Anchorage Quay, Salford Quays, Salford, Greater Manchester, England, M50 3YJ, United Kingdom	53.4740901	-2.286663	2 Anchorage Quay, Salford, M50 3YW	\N
+900	Costa, 306, Wilmslow Road, Ladybarn, Fallowfield, Manchester, Greater Manchester, England, M14 6NS, United Kingdom	53.44095231936922	-2.219172107127625	351 Wilmslow Road, Ladybarn, Manchester, M14 6XS	\N
+901	Franco Manca, 37-43, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 7AT, United Kingdom	53.4812162	-2.2453696	37 King Street, Manchester, M2 7AT	\N
+902	Colchester Business Park, Highwoods, Colchester, Essex, England, CO4 9YQ, United Kingdom	51.9236762	0.9214518	Purplebricks, 650 The Crescent Colchester Business Park, Colchester, United Kingdom CO4 9YQ	\N
+903	Monton Road, Monton, Eccles, Salford, Greater Manchester, England, M30 9LF, United Kingdom	53.4920707991793	-2.353574673031767	222 Monton Road, Eccles, Manchester, M30 9LJ	\N
+904	170, Holliday Street, Attwood Green, Calthorpe Fields, Park Central, Birmingham, West Midlands, England, B1 1TJ, United Kingdom	52.47520945	-1.9090963333333333	Ground Floor, 176 Holliday Street, Birmingham, B1 1TJ	\N
+905	Spaces, 125, Deansgate, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 2BY, United Kingdom	53.48022805	-2.248032890777097	125 Deansgate, Manchester, M3 2LH	\N
+906	Wags and Whiskers, Isle Lane, Calcott, Bicton, Shrewsbury, Shropshire, England, SY3 8DY, United Kingdom	52.7294483	-2.8099846	Unit 5, Bicton Business Park, Shrewsbury, SY3 8DY	\N
+907	Randall Way, Hallcroft, Retford, Bassetlaw, Nottinghamshire, East Midlands, England, DN22 7GR, United Kingdom	53.3346858	-0.9614444809270528	Retford Enterprise Centre, Randall Way, Retford, DN22 7GR	\N
+908	Building 2, 2, Exchange Quay, Ordsall, Salford, Greater Manchester, England, M5 3EB, United Kingdom	53.4664234	-2.2832514	Imperial Court 2 Exchange Quay Salford M5 3EB	\N
+909	Speedwell Motorcycles, 79, Church Street West, Outwood Gate, Radcliffe, Bury, Greater Manchester, England, M26 2SX, United Kingdom	53.56049560457867	-2.3229355197418613	10-12 Church Street West, Radcliffe, Manchester M26 2SQ	\N
+910	Delisa Miller, 44, Hulme High Street, Hulme, Manchester, Greater Manchester, England, M15 5JP, United Kingdom	53.4613097	-2.2484536	44 Hulme High Street, Hulme, Manchester, M15 5JP	\N
+911	Ashton Road East, Holt Lane End, Hollins, Woodhouses, Oldham, Greater Manchester, England, M35 9PG, United Kingdom	53.50997342112695	-2.1482578182639416	61 Ashton Road East, Failsworth, Manchester, M35 9PW	\N
+912	Carrera 10, Galán, Comunera, Santander, RAP Gran Santander, Colombia	6.6390723000000005	-73.29076293275591	Holland House 1-5, Oakfield, Sale, Cheshire, M33 6TT	\N
+913	Jactin House, 24, Hood Street, Ancoats, Collyhurst, Manchester, Greater Manchester, England, M4 6WX, United Kingdom	53.484394449999996	-2.22796473147313	Jactin House, 24 Hood Street, Manchester, M4 6WX	\N
+914	Liveridge Hill, Beaudesert, Henley-in-Arden, Stratford-on-Avon, Warwickshire, England, B95 5QR, United Kingdom	52.30976125	-1.775956875	Brook House, Birmingham Road, Henley in Arden, B95 5QR	\N
+915	Quartz Building, 7, Stanley Street, Trinity, City Centre, Salford, Greater Manchester, England, M3 5EX, United Kingdom	53.4804831	-2.256886216203922	7 Stanley Street, Salford, M3 5GB	\N
+916	INTO Manchester, 58-60, Whitworth Street West, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 6LT, United Kingdom	53.47515503333333	-2.240214933333333	58-60 Whitworth Street, Bridgewater House Manchester, M1 6LT	\N
+917	SDL Group, 17, Regan Way, Chetwynd Business Park, Chilwell, City of Nottingham, Nottinghamshire, East Midlands, England, NG9 6RZ, United Kingdom	52.9080183	-1.2487087206360905	17 Regan Way, Toton, Nottingham, NG9 6RZ	\N
+918	Barton Road, Gorse Hill, Stretford, Trafford, Greater Manchester, England, M32 8DN, United Kingdom	53.445538844268775	-2.313810428114241	133 Barton Road, Stretford, Manchester, M32 8DN	\N
+919	Hyde Road, Crown Point, Kingston, Denton, Tameside, Greater Manchester, England, M34 3AF, United Kingdom	53.4562366	-2.1123616	66 Hyde Road, Denton, M34 3AG	\N
+920	Hamza's, 920, Stockport Road, Levenshulme, Manchester, Greater Manchester, England, M19 3AB, United Kingdom	53.4446026813571	-2.1916058220655694	918 Stockport Road, Levenshulme, Manchester, M19 3AB	\N
+921	Jones and Co Styling Opticians, 82, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 4WQ, United Kingdom	53.4808166	-2.243669	82 King Street, Manchester, M2 4WQ	\N
+922	Woden Street, Ordsall, Salford, Greater Manchester, England, M5 4YE, United Kingdom	53.47334774936026	-2.266188188919014	Woden Street M5 4YE	\N
+923	Jordan Fishwick, 95-97, School Road, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7XA, United Kingdom	53.425586590252145	-2.3247970807881257	91-93 School Road, Sale, M33 7XA	\N
+924	Olympic Way, Olympic Park, Poulton-with-Fearnhead, Warrington, England, WA2 0YL, United Kingdom	53.41191	-2.53727	12b Olympic Way Birchwood Warrington WA2 0YL	\N
+925	Greggs, 45, School Road, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7YE, United Kingdom	53.425248732807404	-2.322916825132502	98 School Road, Sale, M33 7XB	\N
+926	Empress Business Park, Old Trafford, Trafford, Greater Manchester, England, M16 9EB, United Kingdom	53.46617	-2.26762	AiHOMES LTD, Empress Business Centre, 380 Chester Road, Manchester, M16 9EA	\N
+927	Premier Residential Lettings, 16, Commercial Street, First Street, City Centre, Manchester, Greater Manchester, England, M15 4PZ, United Kingdom	53.4728222	-2.2503957	16 Commercial Street, Manchester, M15 4PZ	\N
+928	Blackburn Street, Outwood Gate, Radcliffe, Bury, Greater Manchester, England, M26 1NQ, United Kingdom	53.55948562736968	-2.325754766107109	44 Blackburn Street, Radcliffe, M26 1NQ	\N
+929	Kingsway, Ladybarn, Burnage, Manchester, Greater Manchester, England, M19 1AL, United Kingdom	53.432362219204016	-2.208053539558955	249 Kingsway, Burnage, Manchester, M19 1AL	\N
+930	Leicester Road, Broughton Park, Salford, Greater Manchester, England, M7 4DA, United Kingdom	53.51012117635641	-2.252972865466485	19 Leicester Road Salford M7 4AS	\N
+931	Smile Stylist, 53, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 4LQ, United Kingdom	53.481125	-2.2444198	53 King Street, Manchester, M2 4LQ	\N
+932	Stony Dry Cleaners, 7 Swinfens Yard, High Street, Calverton End, Milton Keynes, City of Milton Keynes, England, MK11 1SY, United Kingdom	52.0557964	-0.8511345	19 London House, High Street, Stony Stratford, Milton Keynes, MK11 1SY	\N
+933	Blackburn Street, Outwood Gate, Radcliffe, Bury, Greater Manchester, England, M26 1NQ, United Kingdom	53.55948562736968	-2.325754766107109	43 Blackburn Street, Radcliffe, M26 1NR	\N
+934	Manchester Muslim Preparatory School, 551, Wilmslow Road, Withington, Manchester, Greater Manchester, England, M20 4BA, United Kingdom	53.43004564994718	-2.2281452569598184	509 Wilmslow Road, Withington, Manchester, M20 4BA	\N
+935	\N	53.4800153	-2.2517994	No1 Spinningfields, Manchester, M3 3JE	\N
+936	\N	53.46997945	-2.265949423048932	1 Trentham Street, Hulme, Manchester, M15 4YG	\N
+937	\N	53.4759623	-2.2524863	33 Liverpool Road, Manchester, M3 4NQ	\N
+938	\N	53.409545208263985	-2.161032161605044	2a Mersey Square Stockport SK1 1NU	\N
+939	Fir Road, Bramhall Green, Woodsmoor, Bramhall, Stockport, Greater Manchester, England, SK7 2NP, United Kingdom	53.37235218048781	-2.159189850999666	8A Fir Road, Bramhall, SK7 2NP	\N
+940	39, Great Ancoats Street, Strangeways, Manchester, Greater Manchester, England, M4 5AE, United Kingdom	53.48378351341219	-2.230821159406311	61 Great Ancoats Street, Manchester, M4 5AB	\N
+941	Rochdale Road, Charlestown, Manchester, Greater Manchester, England, M9 6ER, United Kingdom	53.532033679648265	-2.2085035307747583	1170 Rochdale Road, Blackley, Manchester M9 6ER	\N
+942	4-6, Anderson Place, Pilrig, Leith, City of Edinburgh, Alba / Scotland, EH6 5NP, United Kingdom	55.9708147	-3.181241475	Bonnington Bond, 2 Anderson Place, Edinburgh, EH6 5NP	\N
+943	Bury New Road, Besses o' th' Barn, Whitefield, Bury, Greater Manchester, England, M45 6AA, United Kingdom	53.54617872546642	-2.2921433623184884	114 Bury New Road, Whitefield, M45 6AD	\N
+944	Wilmslow Road, Heald Green, Stockport, Greater Manchester, England, SK8 3NP, United Kingdom	53.36089	-2.21754	Southgate Centre Two, 321 Wilmslow Road, Heald Green, Cheadle, SK8 3PW	\N
+945	21, Bury Old Road, Sedgley Park, Prestwich, Bury, Greater Manchester, England, M25 0EX, United Kingdom	53.51882	-2.25911	2a Park Hill, Bury Old Road, Prestwich, Manchester, M25 0FX	\N
+946	Reddish Road, Reddish, Stockport, Greater Manchester, England, SK5 7AQ, United Kingdom	53.4364326	-2.1591549	410 Reddish Road, Reddish, Stockport, SK5 7AA	\N
+947	The Dragonfly, 60-62, Bradshawgate, Springfield, The Haulgh, Bolton, Greater Manchester, England, BL1 1DP, United Kingdom	53.578239955393634	-2.4265890562430643	2 - 10 Bradshawgate Bolton BL1 1DG	\N
+948	\N	\N	\N	Covering London	\N
+949	Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 6UH, United Kingdom	53.41463	-2.23286	Suite 47 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	\N
+950	Spaces, 125, Deansgate, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 2BY, United Kingdom	53.48018095	-2.24802165	Unit 415 Spaces, 125 Deansgate, Manchester, M3 2BY	\N
+951	Medieval Quarter, City Centre, Manchester, Greater Manchester, England, M4 4LJ, United Kingdom	53.48748	-2.24073	New Victoria, 103 Corporation Street, Manchester, M4 4DZ	\N
 \.
 
 
@@ -4298,7 +4492,7 @@ SELECT pg_catalog.setval('"silver"."listings_df_sil_id_seq"', 1, false);
 -- Name: locations_df_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"silver"."locations_df_id_seq"', 757, true);
+SELECT pg_catalog.setval('"silver"."locations_df_id_seq"', 951, true);
 
 
 --
