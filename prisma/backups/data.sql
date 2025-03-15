@@ -1087,785 +1087,6 @@ COPY "public"."query_logs" ("id", "query", "executed_at") FROM stdin;
 
 
 --
--- Data for Name: agents_df; Type: TABLE DATA; Schema: silver; Owner: postgres
---
-
-COPY "silver"."agents_df" ("id", "agent_name", "agent_address", "rowid") FROM stdin;
-1	Home Made, London	2-6 Boundary Row, London, SE1 8HP	1167527
-2	Visum, Nationwide	Web based Estate Agent	2167527
-3	Hills, Eccles	Sentinel House, Albert Street, Eccles, Manchester, M30 0SS	3167527
-4	Kirn Estates, Altrincham	Kings House Stamford Street Altrincham WA14 1EX	4167527
-5	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	5167527
-6	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	6167527
-7	The Residences - Deansgate Square, The Residences - Deansgate Square	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	7167527
-8	Visum, Nationwide	Web based Estate Agent	8167527
-9	C & R Properties Ltd, Salford Manchester	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	9167527
-10	The Residences - Deansgate Square, The Residences - Deansgate Square	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	10167527
-11	The Residences - Deansgate Square, The Residences - Deansgate Square	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	11167527
-12	The Residences - Deansgate Square, The Residences - Deansgate Square	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	12167527
-13	The Residences - Deansgate Square, The Residences - Deansgate Square	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	13167527
-14	Northern Etchells, Manchester	53a Church Road, Gatley, Cheadle, SK8 4NG	14167527
-15	Your Move, Swinton	Bank Chambers Worsley Road Worsley Manchester M27 0FW	15167527
-16	C & R Properties Ltd, Hulme Manchester	Meridian Square Stretford Road Hulme Manchester M15 5JH	16167527
-17	Hibbert Homes, Hale	175 Ashley Road Hale WA15 9SD	17167527
-18	Thornley Groves, Didsbury	722 Wilmslow Road, Didsbury, Manchester, M20 2DW	18167527
-19	Thornley Groves, Didsbury	722 Wilmslow Road, Didsbury, Manchester, M20 2DW	19167527
-20	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	20167527
-21	Reeds Rains, Manchester	29 Whitworth Street West Manchester M1 5ND	21167527
-22	Home Made, London	2-6 Boundary Row, London, SE1 8HP	22167527
-23	Home Made, London	2-6 Boundary Row, London, SE1 8HP	23167527
-24	Home Made, London	2-6 Boundary Row, London, SE1 8HP	24167527
-25	Home Made, London	2-6 Boundary Row, London, SE1 8HP	25167527
-26	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	126167527
-27	OpenRent, London	20 Wenlock Road, London, N1 7GU	127167527
-28	OpenRent, London	20 Wenlock Road, London, N1 7GU	128167527
-29	Vesper Homes, Manchester	One St Peter's Square Manchester M2 3DE	129167527
-30	Julian Wadden, Heaton Moor	14 Moorside Road, Heaton Moor, Stockport, SK4 4DT	130167527
-31	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	131167527
-32	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	132167527
-33	The Estate Agent Manchester, Manchester	B2 Chorlton Mill, Cambridge Street, Manchester, M1 5BY	133167527
-34	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	134167527
-35	Goodwin Fish, Manchester	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	151167527
-36	Home Made, London	2-6 Boundary Row, London, SE1 8HP	160167527
-37	Home Made, London	2-6 Boundary Row, London, SE1 8HP	161167527
-38	Home Made, London	2-6 Boundary Row, London, SE1 8HP	162167527
-39	Home Made, London	2-6 Boundary Row, London, SE1 8HP	163167527
-40	Home Made, London	2-6 Boundary Row, London, SE1 8HP	164167527
-41	Home Made, London	2-6 Boundary Row, London, SE1 8HP	165167527
-42	Home Made, London	2-6 Boundary Row, London, SE1 8HP	166167527
-43	Home Made, London	2-6 Boundary Row, London, SE1 8HP	167167527
-44	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	168167527
-45	Reeds Rains, Manchester	29 Whitworth Street West Manchester M1 5ND	169167527
-46	Jordan Fishwick, Chorlton	410-412 Barlow Moor Road, Chorlton, Manchester, M21 8AD	170167527
-47	UNCLE, London	7a Howick Place London SW1P 1DZ	171167527
-48	UNCLE, London	7a Howick Place London SW1P 1DZ	172167527
-49	UNCLE, London	7a Howick Place London SW1P 1DZ	173167527
-50	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	174167527
-51	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	175167527
-52	Allsop, The Trilogy	27 Ellesmere Street, Hulme, Manchester, M15 4RU	176167527
-53	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	177167527
-54	Clarke & Co, Chadderton	582 Broadway, Chadderton, Oldham OL9 9NF	178167527
-55	Clarke & Co, Chadderton	582 Broadway, Chadderton, Oldham OL9 9NF	179167527
-56	Livingway Team Ltd, Livingway	Jactin house 24 Hood Street Manchester M46WX	180167527
-57	Livingway Team Ltd, Livingway	Jactin house 24 Hood Street Manchester M46WX	181167527
-58	Livingway Team Ltd, Livingway	Jactin house 24 Hood Street Manchester M46WX	182167527
-59	Livingway Team Ltd, Livingway	Jactin house 24 Hood Street Manchester M46WX	183167527
-60	OpenRent, London	20 Wenlock Road, London, N1 7GU	184167527
-61	OpenRent, London	20 Wenlock Road, London, N1 7GU	185167527
-62	Livingway Team Ltd, Livingway	Jactin house 24 Hood Street Manchester M46WX	186167527
-63	Livingway Team Ltd, Livingway	Jactin house 24 Hood Street Manchester M46WX	187167527
-64	South Manchester Homes, Didsbury	Suite 97, 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	188167527
-65	South Manchester Homes, Didsbury	Suite 97, 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	189167527
-66	Lancashire Properties, Manchester	967 Stockport Road, Levenshulme, Manchester, M19 3NP	190167527
-67	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	191167527
-68	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	192167527
-69	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	193167527
-70	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	194167527
-71	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	195167527
-72	OpenRent, London	20 Wenlock Road, London, N1 7GU	196167527
-73	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	197167527
-74	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	198167527
-75	Admove, Altrincham	197-201 Manchester Road, Altrincham, WA14 5NU	199167527
-76	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	200167527
-77	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	201167527
-78	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	202167527
-79	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	203167527
-80	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	204167527
-81	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	205167527
-82	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	206167527
-83	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	207167527
-84	Get Living, New Maker Yards	15 Middlewood Street, Salford, M5 4YW	208167527
-85	OpenRent, London	20 Wenlock Road, London, N1 7GU	209167527
-86	BRIC Living, Liverpool	605 Smithdown Road, Allerton, Liverpool, L15 5AG	210167527
-87	Admove, Altrincham	197-201 Manchester Road, Altrincham, WA14 5NU	211167527
-88	Thorpe & Co, Salford	Suite 11, 8th Floor, St James House, Pendleton Way, Salford, M6 5FW	212167527
-89	Normie Sales & Lettings, North Manchester	503-505 Bury New Road, Prestwich, Manchester M25 1AD	213167527
-90	C & R Properties Ltd, Salford Manchester	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	214167527
-91	CityZEN, London	CityZEN Property Group, 11 Burford Road, London, E15 2ST	215167527
-92	Property Genius, Manchester	424 Barlow Moor Road, Chorlton Cum Hardy, Manchester, M21 8AD	216167527
-93	Hunters, Manchester	22 St John Street, Manchester, Greater Manchester, M3 4EB	217167527
-94	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	218167527
-95	Homes2share, Manchester	Flat 1, 32 Hathersage Road, Manchester, M13 0FE	219167527
-96	Homes2share, Manchester	Flat 1, 32 Hathersage Road, Manchester, M13 0FE	220167527
-97	Homes2share, Manchester	Flat 1, 32 Hathersage Road, Manchester, M13 0FE	221167527
-98	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	222167527
-99	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	223167527
-100	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	224167527
-101	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	225167527
-102	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	226167527
-103	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	227167527
-104	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	228167527
-105	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	229167527
-106	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	230167527
-107	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	231167527
-108	Bridgfords Lettings, Didsbury	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	232167527
-109	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	233167527
-110	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	234167527
-111	ila, Swan Street House	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	235167527
-112	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	236167527
-113	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	237167527
-114	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	238167527
-115	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	239167527
-116	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	240167527
-117	Accommodation.co.uk, covering National	111 Piccadilly, Manchester, M1 2HY	241167527
-118	Buraq Estates, Manchester	314 Wilmslow Road Fallowfield Manchester M14 6XQ	242167527
-119	Roger Dean, Heald Green	218 Finney Lane, Heald Green, SK8 3QA	243167527
-120	Three Sixty Living, Stockport	2 Edward Street, Stockport, SK1 3NQ	244167527
-121	OpenRent, London	20 Wenlock Road, London, N1 7GU	245167527
-122	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	246167527
-123	Buraq Estates, Manchester	314 Wilmslow Road Fallowfield Manchester M14 6XQ	247167527
-124	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	248167527
-125	Address Properties, Liverpool	183 - 185 Rose Lane, Mossley Hill, Liverpool, L18 5EA	249167527
-126	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	250167527
-127	Ustay Global, Manchester	3, 28 spaces, Peter House, Oxford Street, Manchester, M1 5AN	251167527
-128	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	252167527
-129	Thornley Groves, Didsbury	722 Wilmslow Road, Didsbury, Manchester, M20 2DW	253167527
-130	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	254167527
-131	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	255167527
-132	Hunters, Manchester	22 St John Street, Manchester, Greater Manchester, M3 4EB	256167527
-133	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	257167527
-134	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	258167527
-135	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	259167527
-136	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	260167527
-137	Ascend, Manchester	241 Deansgate Manchester M3 4EN	261167527
-138	Hunters Worsley, Worsley	Suite 4, The Granary, Worsley, Manchester, M28 2EB	262167527
-139	Bridgfords Lettings, Withington	416 Wilmslow Road, Withington, Manchester M20 3BW	263167527
-140	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	264167527
-141	Reside, Manchester	249 Deansgate, Manchester, M3 4EN	265167527
-142	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	266167527
-143	Reside, Manchester	249 Deansgate, Manchester, M3 4EN	267167527
-144	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	268167527
-145	Orlando Reid, Manchester	St John's Court 19B Quay Street, Manchester, M3 3HN	269167527
-146	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	270167527
-147	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	52 Port Street, Northern Quarter, Manchester, M1 2EQ	271167527
-148	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	272167527
-149	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	273167527
-150	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	274167527
-151	Reside, Manchester	249 Deansgate, Manchester, M3 4EN	275167527
-152	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	276167527
-153	Solomon Estates, Manchester	896 Stockport Road, Levenshulme, Manchester, M19 3AD	277167527
-154	Kingsdene Ltd, Manchester	257 Deansgate, Manchester, M3 4EN	278167527
-155	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	279167527
-156	Bridgfords Lettings, Didsbury	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	280167527
-157	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	281167527
-158	Jordan Fishwick, Didsbury	757 to 759, Wilmslow Road, Manchester, Lancashire, M20 6RN	282167527
-159	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	283167527
-160	loc8me, Covering Manchester	202 Ashby Square, Loughborough, LE11 5AA	284167527
-161	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	285167527
-162	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	286167527
-163	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	287167527
-164	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	288167527
-165	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	289167527
-166	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	290167527
-167	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	291167527
-168	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	292167527
-169	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	293167527
-170	OpenRent, London	20 Wenlock Road, London, N1 7GU	295167527
-171	C & R Properties Ltd, Salford Manchester	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	296167527
-172	Jordan Fishwick, Manchester	68 Arches Whitworth Street West Manchester M1 5WQ	297167527
-173	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	298167527
-174	Home Made, London	2-6 Boundary Row, London, SE1 8HP	299167527
-175	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	300167527
-176	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	301167527
-177	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	302167527
-178	Julie Twist Properties, Manchester	332-334 Deansgate, Manchester, M3 4LY	303167527
-179	Home Made, London	2-6 Boundary Row, London, SE1 8HP	304167527
-180	Home Made, London	2-6 Boundary Row, London, SE1 8HP	305167527
-181	Home Made, London	2-6 Boundary Row, London, SE1 8HP	306167527
-182	Julian Wadden, Didsbury	764b Wilmslow Road, Didsbury, Manchester, M20 2DR	307167527
-183	Home Made, London	2-6 Boundary Row, London, SE1 8HP	308167527
-184	Home Made, London	2-6 Boundary Row, London, SE1 8HP	309167527
-185	Hunters, South Manchester	372 Palatine Road, Manchester, M22 4FZ	310167527
-186	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	311167527
-187	Montrose Properties Ltd, West Didsbury	20a Lapwing Lane, West Didsbury, Manchester, M20 2WS	312167527
-188	Ascend, Manchester	241 Deansgate Manchester M3 4EN	313167527
-189	Julie Twist Properties, Manchester	332-334 Deansgate, Manchester, M3 4LY	314167527
-190	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	315167527
-191	Northern Group, Manchester	Jactin House 24 Hood Street Ancoats Urban Village Manchester M4 6WX	316167527
-192	Welcome To Manchester Lettings, Covering Manchester	Manchester	317167527
-193	Complete RPI, Birmingham	Suite 142 51 Pinfold Street Birmingham B2 4AY	318167527
-194	Thornley Groves, Monton	25-27 Monton Green, Monton, Eccles, Manchester, M30 9LL	319167527
-195	Normie Sales & Lettings, North Manchester	503-505 Bury New Road, Prestwich, Manchester M25 1AD	320167527
-196	Reeds Rains, Manchester	29 Whitworth Street West Manchester M1 5ND	321167527
-197	Goodwin Fish, Manchester	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	322167527
-198	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	323167527
-199	LOCAL Manchester, LOCAL Manchester	Unit 1 2 Garden Lane Salford M3 7FJ	324167527
-200	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	325167527
-201	Wren Properties Ltd, Didsbury	Wren House 108 Palatine Road, Didsbury, Manchester, M20 3ZA	327167527
-202	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	328167527
-203	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	329167527
-204	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	330167527
-205	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	331167527
-206	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	332167527
-207	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	333167527
-208	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	334167527
-209	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	335167527
-210	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	337167527
-211	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	338167527
-212	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	339167527
-213	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	340167527
-214	uhaus, uhaus	7 Nobel Way, Oxford Road, Manchester, M1 7FU	341167527
-215	Karsons Lettings, Manchester	Karsons Lettings Innospace, 2nd Floor, Turing House, 5 Archway, Manchester M15 5RL	342167527
-216	Taylor & Wood Estate Agents, Hyde	104-106 Market Street, Hyde, SK14 1ES	343167527
-217	Union, Union	Water Street, Manchester, M3 4JQ	344167527
-218	Union, Union	Water Street, Manchester, M3 4JQ	345167527
-219	Union, Union	Water Street, Manchester, M3 4JQ	346167527
-220	Savills Lettings, Manchester	50 Bridge Street, Manchester, M3 3BW	347167527
-221	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	348167527
-222	C & R Properties Ltd, Salford Manchester	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	349167527
-223	Get Living, New Maker Yards	15 Middlewood Street, Salford, M5 4YW	350167527
-224	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	52 Port Street, Northern Quarter, Manchester, M1 2EQ	351167527
-225	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	352167527
-226	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	353167527
-227	Julian Wadden, Heaton Moor	14 Moorside Road, Heaton Moor, Stockport, SK4 4DT	354167527
-228	Gascoigne Halman, Didsbury	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	355167527
-229	Callaghans, Gatley	46 Church Road Gatley SK8 4NQ	356167527
-230	@ThePlace, Dukinfield	Suite 2, The Old Court House, Chapel Street, Dukinfield, SK16 4DT	357167527
-231	Cortland, Botanica	Chester Road Manchester, M15 4YH	358167527
-232	HYBR, Covering Manchester	Covering Manchester	359167527
-233	HYBR, Covering Manchester	Covering Manchester	360167527
-234	HYBR, Covering Manchester	Covering Manchester	361167527
-235	HYBR, Covering Manchester	Covering Manchester	362167527
-236	HYBR, Covering Manchester	Covering Manchester	363167527
-237	HYBR, Covering Manchester	Covering Manchester	364167527
-238	HYBR, Covering Manchester	Covering Manchester	365167527
-239	HYBR, Covering Manchester	Covering Manchester	366167527
-240	Montrose Properties Ltd, West Didsbury	20a Lapwing Lane, West Didsbury, Manchester, M20 2WS	367167527
-241	HYBR, Covering Manchester	Covering Manchester	368167527
-242	HYBR, Covering Manchester	Covering Manchester	369167527
-243	HYBR, Covering Manchester	Covering Manchester	370167527
-244	HYBR, Covering Manchester	Covering Manchester	371167527
-245	Cortland, Botanica	Chester Road Manchester, M15 4YH	372167527
-246	Cortland, Botanica	Chester Road Manchester, M15 4YH	373167527
-247	CityZEN, London	CityZEN Property Group, 11 Burford Road, London, E15 2ST	374167527
-248	HYBR, Covering Manchester	Covering Manchester	375167527
-249	Cortland, Botanica	Chester Road Manchester, M15 4YH	376167527
-250	HYBR, Covering Manchester	Covering Manchester	377167527
-251	HYBR, Covering Manchester	Covering Manchester	378167527
-252	Drake & Co, Rusholme	Anson Parade, 161a Dickenson Road, Rusholme, Manchester, M14 5HZ	379167527
-253	Drake & Co, Rusholme	Anson Parade, 161a Dickenson Road, Rusholme, Manchester, M14 5HZ	380167527
-254	HYBR, Covering Manchester	Covering Manchester	381167527
-255	HYBR, Covering Manchester	Covering Manchester	382167527
-256	HYBR, Covering Manchester	Covering Manchester	383167527
-257	Drake & Co, Rusholme	Anson Parade, 161a Dickenson Road, Rusholme, Manchester, M14 5HZ	384167527
-258	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	385167527
-259	HYBR, Covering Manchester	Covering Manchester	386167527
-260	George Adams (Estate Agents) Ltd, Manchester	Unit 1, Bishops Corner 32 Stretford Road, Hulme, Manchester, M15 4UW	387167527
-261	Emoov, Chelmsford	Marsh Farm House Lower Burnham Road Latchingdon CM3 6HQ	388167527
-262	Drake & Co, Rusholme	Anson Parade, 161a Dickenson Road, Rusholme, Manchester, M14 5HZ	389167527
-263	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	390167527
-264	Bridgfords Lettings, Didsbury	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	391167527
-265	Duet, Duet	The Quays, Salford, M50 3SF	392167527
-266	Buckley Frayne, Manchester	6-14 Great Ancoats Street, Manchester, M4 5AZ	393167527
-267	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	394167527
-268	Joules Estate Agency, Heaton Mersey	450 Didsbury Road Stockport SK4 3BS	395167527
-269	Union, Union	Water Street, Manchester, M3 4JQ	396167527
-270	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	397167527
-271	Union, Union	Water Street, Manchester, M3 4JQ	398167527
-272	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	399167527
-273	Union, Union	Water Street, Manchester, M3 4JQ	400167527
-274	Union, Union	Water Street, Manchester, M3 4JQ	401167527
-275	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	402167527
-276	Union, Union	Water Street, Manchester, M3 4JQ	403167527
-277	Reeds Rains, Salford	167 Langworthy Road, Salford, M6 5PW	404167527
-278	Union, Union	Water Street, Manchester, M3 4JQ	405167527
-279	George Adams (Estate Agents) Ltd, Manchester	Unit 1, Bishops Corner 32 Stretford Road, Hulme, Manchester, M15 4UW	406167527
-280	Union, Union	Water Street, Manchester, M3 4JQ	407167527
-281	Wren Properties Ltd, Didsbury	Wren House 108 Palatine Road, Didsbury, Manchester, M20 3ZA	408167527
-282	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	409167527
-283	Bridgfords Lettings, Chorlton	561 Barlow Moor Road, Chorlton, Manchester, M21 8AN	410167527
-284	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	411167527
-285	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	412167527
-286	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	413167527
-287	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	414167527
-288	Buckley Frayne, Manchester	6-14 Great Ancoats Street, Manchester, M4 5AZ	415167527
-289	Grovewell, Manchester	Suite 8 Broadhurst House Bury Old Road, Salford, M7 4QX	416167527
-290	LOCAL Manchester, LOCAL Manchester	Unit 1 2 Garden Lane Salford M3 7FJ	417167527
-291	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	418167527
-292	Bridgfords Lettings, Didsbury	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	419167527
-293	Residential Estates, Chester	First Fl, Kinnerton House Bell Meadow Business Park Park Lane Pulford CH4 9EP	420167527
-294	Reeds Rains, Didsbury	713 Wilmslow Road, Didsbury, Manchester, M20 6RE	421167527
-295	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	422167527
-296	Hunters, South Manchester	372 Palatine Road, Manchester, M22 4FZ	423167527
-297	COUSINS ESTATE AGENTS, Failsworth	754 Oldham Road, Failsworth, Oldham, M35 9FE	425167527
-298	Bridgfords Lettings, Chorlton	561 Barlow Moor Road, Chorlton, Manchester, M21 8AN	426167527
-299	LOCAL Manchester, LOCAL Manchester	Unit 1 2 Garden Lane Salford M3 7FJ	427167527
-300	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	428167527
-301	Parello Ltd, Walkden	1 Bridgewater Road, Worsley, M28 3JE	429167527
-302	Northern Etchells, Manchester	53a Church Road, Gatley, Cheadle, SK8 4NG	430167527
-303	Primo Property Management, Manchester	46 Moss Lane West Manchester M15 5FB	431167527
-304	Home Made, London	2-6 Boundary Row, London, SE1 8HP	432167527
-305	Intus Lettings, Manchester	Suite A, 2nd Floor, The Nest, Broadway, Salford, M50 2UE	433167527
-306	Home Made, London	2-6 Boundary Row, London, SE1 8HP	434167527
-307	Julie Twist Properties, Manchester	332-334 Deansgate, Manchester, M3 4LY	435167527
-308	The James Manchester, The James Manchester	8 Dantzic Street, Manchester, M4 2AD	436167527
-309	The James Manchester, The James Manchester	8 Dantzic Street, Manchester, M4 2AD	437167527
-310	The James Manchester, The James Manchester	8 Dantzic Street, Manchester, M4 2AD	438167527
-311	eXp UK, North West	1 Northumberland Avenue, Trafalgar Square, London, WC2N 5BW	439167527
-312	Northwood, Wigan	55-57 Mesnes Street, Wigan, WN1 1QX	440167527
-313	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	441167527
-314	eXp UK, North West	1 Northumberland Avenue, Trafalgar Square, London, WC2N 5BW	442167527
-315	Abode Property Management, Greater Manchester	Suite B, 7th Floor, Beckwith House 1-3 Wellington Road Stockport SK4 1AF	443167527
-316	Simple Life, Simple Life	Simple Life Stafford Court, 145 Washway Road Sale M33 7PE	444167527
-317	Jordan Fishwick, Chorlton	410-412 Barlow Moor Road, Chorlton, Manchester, M21 8AD	445167527
-318	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	446167527
-319	Martin & Co, Rochdale & Oldham	15b Cheetham Street, Rochdale, OL16 1DG	447167527
-320	@ThePlace, Dukinfield	Suite 2, The Old Court House, Chapel Street, Dukinfield, SK16 4DT	448167527
-321	Home Made, London	2-6 Boundary Row, London, SE1 8HP	449167527
-322	Ascend, Manchester	241 Deansgate Manchester M3 4EN	450167527
-323	Goodwin Fish, Manchester	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	451167527
-324	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	452167527
-325	Normie Sales & Lettings, North Manchester	503-505 Bury New Road, Prestwich, Manchester M25 1AD	453167527
-326	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	454167527
-327	Home Made, London	2-6 Boundary Row, London, SE1 8HP	455167527
-328	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	456167527
-329	The Estate Agent Manchester, Manchester	B2 Chorlton Mill, Cambridge Street, Manchester, M1 5BY	457167527
-330	Home Made, London	2-6 Boundary Row, London, SE1 8HP	458167527
-331	Home Made, London	2-6 Boundary Row, London, SE1 8HP	459167527
-332	The Good Estate Agency, Manchester	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	460167527
-333	Home Made, London	2-6 Boundary Row, London, SE1 8HP	461167527
-334	The Good Estate Agency, Manchester	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	463167527
-335	Home Made, London	2-6 Boundary Row, London, SE1 8HP	464167527
-336	The Good Estate Agency, Manchester	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	465167527
-337	The Good Estate Agency, Manchester	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	466167527
-338	Home Made, London	2-6 Boundary Row, London, SE1 8HP	467167527
-339	The Good Estate Agency, Manchester	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	468167527
-340	Home Made, London	2-6 Boundary Row, London, SE1 8HP	469167527
-341	Home Made, London	2-6 Boundary Row, London, SE1 8HP	470167527
-342	Home Made, London	2-6 Boundary Row, London, SE1 8HP	471167527
-343	Home Made, London	2-6 Boundary Row, London, SE1 8HP	472167527
-344	Home Made, London	2-6 Boundary Row, London, SE1 8HP	473167527
-345	OpenRent, London	20 Wenlock Road, London, N1 7GU	475167527
-346	OpenRent, London	20 Wenlock Road, London, N1 7GU	476167527
-347	OpenRent, London	20 Wenlock Road, London, N1 7GU	477167527
-348	OpenRent, London	20 Wenlock Road, London, N1 7GU	478167527
-349	NPP Residential, Manchester	22 Lloyd Street, Manchester, M2 5WA	479167527
-350	NPP Residential, Manchester	22 Lloyd Street, Manchester, M2 5WA	480167527
-351	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	481167527
-352	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	482167527
-353	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	483167527
-354	OpenRent, London	20 Wenlock Road, London, N1 7GU	484167527
-355	OpenRent, London	20 Wenlock Road, London, N1 7GU	485167527
-356	OpenRent, London	20 Wenlock Road, London, N1 7GU	486167527
-357	VitalSpace, South Manchester	22 Flixton Road Urmston M41 5AA	487167527
-358	Accommodation.co.uk, covering National	111 Piccadilly, Manchester, M1 2HY	488167527
-359	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	489167527
-360	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	490167527
-361	Accommodation.co.uk, covering National	111 Piccadilly, Manchester, M1 2HY	491167527
-362	Welcome To Manchester Lettings, Covering Manchester	Manchester	492167527
-363	Welcome To Manchester Lettings, Covering Manchester	Manchester	493167527
-364	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	494167527
-365	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	495167527
-366	Welcome To Manchester Lettings, Covering Manchester	Manchester	496167527
-367	OpenRent, London	20 Wenlock Road, London, N1 7GU	497167527
-368	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	498167527
-369	Manchester Apartments, Manchester Apartments	60 Oxford Street, Manchester, M1 5EE	499167527
-370	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	500167527
-371	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	501167527
-372	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	502167527
-373	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	503167527
-374	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	504167527
-375	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	505167527
-376	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	506167527
-377	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	507167527
-378	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	508167527
-379	Dandara Living, Manchester, Chapel Wharf	Alcock House, 99 Chapel Street, Salford, M3 5DZ	509167527
-380	OpenRent, London	20 Wenlock Road, London, N1 7GU	510167527
-381	OpenRent, London	20 Wenlock Road, London, N1 7GU	511167527
-382	Nicholas Humphreys, Manchester	323 Wilmslow Road, Fallowfield, Manchester, M14 6NW	512167527
-383	HYBR, Covering Manchester	Covering Manchester	513167527
-384	HYBR, Covering Manchester	Covering Manchester	514167527
-385	HYBR, Covering Manchester	Covering Manchester	515167527
-386	HYBR, Covering Manchester	Covering Manchester	516167527
-387	HYBR, Covering Manchester	Covering Manchester	517167527
-388	HYBR, Covering Manchester	Covering Manchester	518167527
-389	North Property Group, Manchester	2nd Floor, 8-16 Newton Street, Manchester, M1 2AN	519167527
-390	Your Move, Swinton	Bank Chambers Worsley Road Worsley Manchester M27 0FW	520167527
-391	Reeds Rains, Didsbury	713 Wilmslow Road, Didsbury, Manchester, M20 6RE	521167527
-392	Hills, Eccles	Sentinel House, Albert Street, Eccles, Manchester, M30 0SS	522167527
-393	Welcome To Manchester Lettings, Covering Manchester	Manchester	523167527
-394	Union, Union	Water Street, Manchester, M3 4JQ	524167527
-395	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	525167527
-396	Thornley Groves, Prestwich	493 Bury New Road, Prestwich, Manchester, M25 1AD	526167527
-397	Joules Estate Agency, Heaton Mersey	450 Didsbury Road Stockport SK4 3BS	527167527
-398	C & R Properties Ltd, Salford Manchester	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	528167527
-399	Home Made, London	2-6 Boundary Row, London, SE1 8HP	626167527
-400	urbanbubble, Manchester	Sevendale House, 7 Dale Street, Manchester, M1 1JA	529167527
-401	PriceLinsey, Sheffield	Office 4, Northern Gateway, Enterprise Centre, Saltergate, Chesterfield, S40 1UT	530167527
-402	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	531167527
-403	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	532167527
-404	COUSINS ESTATE AGENTS, Failsworth	754 Oldham Road, Failsworth, Oldham, M35 9FE	533167527
-405	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	534167527
-406	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	535167527
-407	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	536167527
-408	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	537167527
-409	Thornley Groves, Monton	25-27 Monton Green, Monton, Eccles, Manchester, M30 9LL	538167527
-410	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	539167527
-411	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	540167527
-412	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	541167527
-413	Jordan Fishwick, Manchester	68 Arches Whitworth Street West Manchester M1 5WQ	542167527
-414	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	543167527
-415	SnugPads, Salford	Salford	544167527
-416	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	545167527
-417	Orlando Reid, Manchester	St John's Court 19B Quay Street, Manchester, M3 3HN	546167527
-418	C & R Properties Ltd, Hulme Manchester	Meridian Square Stretford Road Hulme Manchester M15 5JH	547167527
-419	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	548167527
-420	Home Made, London	2-6 Boundary Row, London, SE1 8HP	549167527
-421	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	550167527
-422	OpenRent, London	20 Wenlock Road, London, N1 7GU	551167527
-423	OpenRent, London	20 Wenlock Road, London, N1 7GU	552167527
-424	For Living, For Living	52 Regent Street, Eccles, Manchester, M30 0BP	553167527
-425	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	554167527
-426	NPP Residential, Manchester	22 Lloyd Street, Manchester, M2 5WA	555167527
-427	Fozard Properties Ltd, Upton	118 Ford Road, Upton Village, Wirral CH49 0TQ	556167527
-428	Main & Main, Heald Green	198 Finney Lane, Heald Green, Cheadle, SK8 3QA	557167527
-429	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	558167527
-430	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	559167527
-431	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	560167527
-432	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	561167527
-433	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	562167527
-434	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	563167527
-435	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	564167527
-436	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	565167527
-437	Bridgfords Lettings, Chorlton	561 Barlow Moor Road, Chorlton, Manchester, M21 8AN	566167527
-438	Amro Property Management, The Green Rooms	Leader House, Blue Media City, Salford, M50 2AG	567167527
-439	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	568167527
-440	Rent For Me, Manchester	Office 2,8 Chester Street, Manchester, M1 5GE	569167527
-441	For Living, For Living	52 Regent Street, Eccles, Manchester, M30 0BP	570167527
-442	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	571167527
-443	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	572167527
-444	C & R Properties Ltd, Hulme Manchester	Meridian Square Stretford Road Hulme Manchester M15 5JH	573167527
-445	Reeds Rains, Manchester	29 Whitworth Street West Manchester M1 5ND	575167527
-446	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	576167527
-447	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	577167527
-448	Home Made, London	2-6 Boundary Row, London, SE1 8HP	627167527
-449	Ying Wah Property, Manchester	Unit 301 The Junction Merchants Quay, Salford, M50 3SG	578167527
-450	Townhouse, Manchester	Townhouse, 117 Ducie House, Ducie Street, Manchester, M1 2JW	580167527
-451	City Comfort Luxury Apartments, Manchester	209-210 Oakland House Talbot Road, Stretford, Manchester, M16 0PQ	581167527
-452	Orlando Reid, Manchester	St John's Court 19B Quay Street, Manchester, M3 3HN	582167527
-453	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	583167527
-454	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	584167527
-455	Madina Property, Manchester	588 Stockport Road Longsight Manchester M13 0RQ	585167527
-456	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	586167527
-457	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	587167527
-458	urbanbubble, Manchester	Sevendale house, 7 Dale Street, Manchester, M1 1JA	588167527
-459	Jordan Fishwick, Manchester	68 Arches Whitworth Street West Manchester M1 5WQ	589167527
-460	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	52 Port Street, Northern Quarter, Manchester, M1 2EQ	590167527
-461	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	591167527
-462	OpenRent, London	20 Wenlock Road, London, N1 7GU	592167527
-463	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	593167527
-464	Gascoigne Halman, Didsbury	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	594167527
-465	Bridgfords Lettings, Withington	416 Wilmslow Road, Withington, Manchester M20 3BW	595167527
-466	Ascend, Manchester	241 Deansgate Manchester M3 4EN	596167527
-467	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	597167527
-468	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	598167527
-469	Ustay Global, Manchester	3, 28 spaces, Peter House, Oxford Street, Manchester, M1 5AN	599167527
-470	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	600167527
-471	Julian Wadden, Heaton Moor	14 Moorside Road, Heaton Moor, Stockport, SK4 4DT	601167527
-472	Julian Wadden, Stockport	81-83 Wellington Road South, Stockport, SK1 3SL	602167527
-473	Hills, Eccles	Sentinel House, Albert Street, Eccles, Manchester, M30 0SS	603167527
-474	Aubrey Lee & Co, Prestwich	39, Bury New Road, Prestwich, Manchester, M25 9JY	604167527
-475	Saltsman & co, Droylsden	116 Market Street, Droylsden, Manchester, M43 7AA	605167527
-476	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	606167527
-477	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	52 Port Street, Northern Quarter, Manchester, M1 2EQ	607167527
-478	Richmond Property Management & Letting Ltd, Didsbury	3 Elm Grove, Didsbury, Manchester, M20 6PL	608167527
-479	StudentTenant, Canterbury	27 Castle Street, Canterbury, CT1 2PX	609167527
-480	COUSINS ESTATE AGENTS, Failsworth	754 Oldham Road, Failsworth, Oldham, M35 9FE	611167527
-481	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	612167527
-482	QUBE Residential, Salford Quays	7th floor, 1 City Approach, Albert Street, Eccles, M30 0BG	613167527
-483	S&S Property Group, Manchester	S&S Property Group 78a Kings Road Manchester M25 0FY	614167527
-484	Julian Wadden, Heaton Moor	14 Moorside Road, Heaton Moor, Stockport, SK4 4DT	615167527
-485	C & R Properties Ltd, Salford Manchester	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	616167527
-486	Gascoigne Halman, Didsbury	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	617167527
-487	Ascend, Manchester	241 Deansgate Manchester M3 4EN	618167527
-488	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	619167527
-489	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	620167527
-490	Reeds Rains, Salford Quays City Living	2 Anchorage Quay, Salford, M50 3YW	621167527
-491	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	622167527
-492	Reeds Rains, Salford Quays City Living	2 Anchorage Quay, Salford, M50 3YW	623167527
-493	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	624167527
-494	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	625167527
-495	Home Made, London	2-6 Boundary Row, London, SE1 8HP	628167527
-496	OpenRent, London	20 Wenlock Road, London, N1 7GU	629167527
-497	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	630167527
-498	One Move Group, Manchester	125 Deansgate, Manchester, M3 2LH	631167527
-499	OpenRent, London	20 Wenlock Road, London, N1 7GU	632167527
-500	Jordan Fishwick, Didsbury	757 to 759, Wilmslow Road, Manchester, Lancashire, M20 6RN	633167527
-501	Leaders Lettings, Fallowfield	351 Wilmslow Road, Ladybarn, Manchester, M14 6XS	634167527
-502	OpenRent, London	20 Wenlock Road, London, N1 7GU	635167527
-503	OpenRent, London	20 Wenlock Road, London, N1 7GU	636167527
-504	OpenRent, London	20 Wenlock Road, London, N1 7GU	637167527
-505	Redstone Lettings and Management, Manchester	37 King Street, Manchester, M2 7AT	638167527
-506	Jordan Fishwick, Manchester	68 Arches Whitworth Street West Manchester M1 5WQ	639167527
-507	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	640167527
-508	Purplebricks, covering Manchester	Purplebricks, 650 The Crescent Colchester Business Park, Colchester, United Kingdom CO4 9YQ	641167527
-509	Home Estate Agents, Monton	222 Monton Road, Eccles, Manchester, M30 9LJ	642167527
-510	Hunters, Manchester	22 St John Street, Manchester, Greater Manchester, M3 4EB	643167527
-511	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	644167527
-512	Rentlife, Birmingham	Ground Floor, 176 Holliday Street, Birmingham, B1 1TJ	645167527
-513	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	646167527
-514	The James Manchester, The James Manchester	8 Dantzic Street, Manchester, M4 2AD	647167527
-515	Property Genius, Manchester	424 Barlow Moor Road, Chorlton Cum Hardy, Manchester, M21 8AD	648167527
-516	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	650167527
-517	The James Manchester, The James Manchester	8 Dantzic Street, Manchester, M4 2AD	651167527
-518	StudentTenant, Canterbury	27 Castle Street, Canterbury, CT1 2PX	652167527
-519	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	653167527
-520	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	654167527
-521	Accommodation.co.uk, covering National	111 Piccadilly, Manchester, M1 2HY	655167527
-522	Pure, Manchester	125 Deansgate, Manchester, M3 2LH	656167527
-523	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	657167527
-524	Northern Group, Manchester	Jactin House 24 Hood Street Ancoats Urban Village Manchester M4 6WX	658167527
-525	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	659167527
-526	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	660167527
-527	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	661167527
-528	Pure, Manchester	125 Deansgate, Manchester, M3 2LH	662167527
-529	Pure, Manchester	125 Deansgate, Manchester, M3 2LH	663167527
-530	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	664167527
-531	Lettingsupermarket.com, National	Unit 5, Bicton Business Park, Shrewsbury, SY3 8DY	665167527
-532	LOCAL Manchester, LOCAL Manchester	Unit 1 2 Garden Lane Salford M3 7FJ	666167527
-533	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	667167527
-534	Savills Lettings, Manchester	50 Bridge Street, Manchester, M3 3BW	668167527
-535	Burgin Atkinson, Retford	Retford Enterprise Centre, Randall Way, Retford, DN22 7GR	669167527
-536	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	670167527
-537	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	671167527
-538	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	672167527
-539	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	673167527
-540	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	675167527
-541	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	676167527
-542	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	677167527
-543	Jordan Fishwick, Didsbury	757 to 759, Wilmslow Road, Manchester, Lancashire, M20 6RN	678167527
-544	Thornley Groves, Didsbury	722 Wilmslow Road, Didsbury, Manchester, M20 2DW	679167527
-545	Goodwin Fish, Manchester	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	680167527
-546	Lawrence Copeland (Town & City Centre), Manchester	Imperial Court 2 Exchange Quay Salford M5 3EB	681167527
-547	JonSimon Estate Agents, Radcliffe	10-12 Church Street West, Radcliffe, Manchester M26 2SQ	682167527
-548	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	683167527
-549	Delisa Miller, Manchester	44 Hulme High Street, Hulme, Manchester, M15 5JP	684167527
-550	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	685167527
-551	Home Estate Agents, Monton	222 Monton Road, Eccles, Manchester, M30 9LJ	686167527
-552	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	687167527
-553	N P Estates, Manchester	61 Ashton Road East, Failsworth, Manchester, M35 9PW	688167527
-554	Home Made, London	2-6 Boundary Row, London, SE1 8HP	689167527
-555	George Adams (Estate Agents) Ltd, Manchester	Unit 1, Bishops Corner 32 Stretford Road, Hulme, Manchester, M15 4UW	690167527
-556	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	691167527
-557	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	692167527
-558	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	693167527
-559	International Property Partners, Covering Greater Manchester	Holland House 1-5, Oakfield, Sale, Cheshire, M33 6TT	694167527
-560	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	695167527
-561	LOCAL Manchester, LOCAL Manchester	Unit 1 2 Garden Lane Salford M3 7FJ	696167527
-562	Savills Lettings, Manchester	50 Bridge Street, Manchester, M3 3BW	697167527
-563	Home Made, London	2-6 Boundary Row, London, SE1 8HP	698167527
-564	Northern Group, Manchester	Jactin House, 24 Hood Street, Manchester, M4 6WX	700167527
-565	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	702167527
-566	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	703167527
-567	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	704167527
-568	LettingaProperty.com, Nationwide - Lettings	Brook House, Birmingham Road, Henley in Arden, B95 5QR	705167527
-569	The Slate Yard, Salford	7 Stanley Street, Salford, M3 5GB	706167527
-570	The Slate Yard, Salford	7 Stanley Street, Salford, M3 5GB	707167527
-571	The Slate Yard, Salford	7 Stanley Street, Salford, M3 5GB	708167527
-572	The Slate Yard, Salford	7 Stanley Street, Salford, M3 5GB	709167527
-573	The Slate Yard, Salford	7 Stanley Street, Salford, M3 5GB	710167527
-574	The Slate Yard, Salford	7 Stanley Street, Salford, M3 5GB	711167527
-575	Townhouse, Manchester	Townhouse, 117 Ducie House, Ducie Street, Manchester, M1 2JW	712167527
-576	OpenRent, London	20 Wenlock Road, London, N1 7GU	713167527
-577	OpenRent, London	20 Wenlock Road, London, N1 7GU	714167527
-578	NPP Residential, Manchester	22 Lloyd Street, Manchester, M2 5WA	715167527
-579	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	716167527
-580	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	717167527
-581	Philip James Manchester, Manchester	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	718167527
-582	OpenRent, London	20 Wenlock Road, London, N1 7GU	719167527
-583	OpenRent, London	20 Wenlock Road, London, N1 7GU	720167527
-584	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	721167527
-585	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	722167527
-586	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	723167527
-587	Native Communities, Manchester	Aytoun Street, Manchester, M1 3GL	724167527
-588	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	725167527
-589	OpenRent, London	20 Wenlock Road, London, N1 7GU	726167527
-590	Manlets, Manchester	58-60 Whitworth Street, Bridgewater House Manchester, M1 6LT	727167527
-591	Joules Estate Agency, Heaton Mersey	450 Didsbury Road Stockport SK4 3BS	728167527
-592	Wise Living Homes, Nottingham	17 Regan Way, Toton, Nottingham, NG9 6RZ	729167527
-593	OpenRent, London	20 Wenlock Road, London, N1 7GU	730167527
-594	OpenRent, London	20 Wenlock Road, London, N1 7GU	731167527
-595	OpenRent, London	20 Wenlock Road, London, N1 7GU	732167527
-596	OpenRent, London	20 Wenlock Road, London, N1 7GU	733167527
-597	Jordan Fishwick, Manchester	68 Arches Whitworth Street West Manchester M1 5WQ	734167527
-598	Reeds Rains, Manchester	29 Whitworth Street West Manchester M1 5ND	735167527
-599	Savills Lettings, Manchester	50 Bridge Street, Manchester, M3 3BW	736167527
-600	Trading Places, Stretford	133 Barton Road, Stretford, Manchester, M32 8DN	738167527
-601	Jordan Fishwick, Chorlton	410-412 Barlow Moor Road, Chorlton, Manchester, M21 8AD	739167527
-602	Gascoigne Halman, Didsbury	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	740167527
-603	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	741167527
-604	Thornley Groves, Prestwich	493 Bury New Road, Prestwich, Manchester, M25 1AD	742167527
-605	Gascoigne Halman, Didsbury	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	743167527
-606	Flambard Williams Limited, Canary Wharf	30 Churchill Place, London, E14 5RE	744167527
-607	My Property Club, Denton	66 Hyde Road, Denton, M34 3AG	745167527
-608	Edward Mellor Ltd, Levenshulme	918 Stockport Road, Levenshulme, Manchester, M19 3AB	746167527
-609	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	747167527
-610	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	748167527
-611	JOHNS&CO, Manchester	82 King Street, Manchester, M2 4WQ	749167527
-612	QUBE Residential, Salford Quays	7th floor, 1 City Approach, Albert Street, Eccles, M30 0BG	750167527
-613	Your Move, Swinton	Bank Chambers Worsley Road Worsley Manchester M27 0FW	751167527
-614	OpenRent, London	20 Wenlock Road, London, N1 7GU	752167527
-615	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	753167527
-616	Downtown Asset Management, Salford	Woden Street M5 4YE	754167527
-617	Watersons, Sale	91-93 School Road, Sale, M33 7XA	755167527
-618	Leef Property Management Ltd, Warrington	12b Olympic Way Birchwood Warrington WA2 0YL	756167527
-619	Craven & Company, Sale	98 School Road, Sale, M33 7XB	757167527
-620	Aubrey Lee & Co, Prestwich	39, Bury New Road, Prestwich, Manchester, M25 9JY	758167527
-621	Julie Twist Properties, Manchester	332-334 Deansgate, Manchester, M3 4LY	759167527
-622	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	760167527
-623	Buckley Frayne, Manchester	6-14 Great Ancoats Street, Manchester, M4 5AZ	761167527
-624	Buckley Frayne, Manchester	6-14 Great Ancoats Street, Manchester, M4 5AZ	762167527
-625	AIHOMES LIMITED, Manchester	AiHOMES LTD, Empress Business Centre, 380 Chester Road, Manchester, M16 9EA	763167527
-626	AIHOMES LIMITED, Manchester	AiHOMES LTD, Empress Business Centre, 380 Chester Road, Manchester, M16 9EA	764167527
-627	Premier Residential, Manchester	16 Commercial Street, Manchester, M15 4PZ	765167527
-628	Bridgfords Lettings, Chorlton	561 Barlow Moor Road, Chorlton, Manchester, M21 8AN	766167527
-629	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	767167527
-630	Pearson Ferrier, Radcliffe	44 Blackburn Street, Radcliffe, M26 1NQ	768167527
-631	Property Market Hub, Manchester	249 Kingsway, Burnage, Manchester, M19 1AL	769167527
-632	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	770167527
-633	Bridgfords Lettings, Didsbury	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	771167527
-634	Cortland, Cortland Colliers Yard	5 Bankside Boulevard, Salford, M3 7HD	772167527
-635	Ascend, Manchester	241 Deansgate Manchester M3 4EN	773167527
-636	Settio Property Experience Ltd, Manchester	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	774167527
-637	Greenco, Salford	19 Leicester Road Salford M7 4AS	775167527
-638	Julie Twist Properties, Manchester	332-334 Deansgate, Manchester, M3 4LY	776167527
-639	Manlets, Manchester	58-60 Whitworth Street, Bridgewater House Manchester, M1 6LT	777167527
-640	Henry Wiltshire, Manchester	53 King Street, Manchester, M2 4LQ	778167527
-641	X1 Sales & Lettings, Salford	9 Michigan Avenue, Salford, M50 2HA	779167527
-642	Bridgfords Lettings, Withington	416 Wilmslow Road, Withington, Manchester M20 3BW	780167527
-643	HC-GB, North	19 London House, High Street, Stony Stratford, Milton Keynes, MK11 1SY	781167527
-644	Your Move, Radcliffe	43 Blackburn Street, Radcliffe, M26 1NR	782167527
-645	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	783167527
-646	Flax & Co, Manchester	509 Wilmslow Road, Withington, Manchester, M20 4BA	784167527
-647	Thorpe & Co, Salford	Suite 11, 8th Floor, St James House, Pendleton Way, Salford, M6 5FW	785167527
-648	Reeds Rains, Manchester	29 Whitworth Street West Manchester M1 5ND	786167527
-649	City Centre Chic, Manchester	No1 Spinningfields, Manchester, M3 3JE	787167527
-650	Reside, Manchester	249 Deansgate, Manchester, M3 4EN	788167527
-651	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	789167527
-652	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	790167527
-653	urbanbubble, Manchester	Sevendale House, 7 Dale Street, Manchester, M1 1JA	791167527
-654	LOCAL Manchester, LOCAL Manchester	Unit 1 2 Garden Lane Salford M3 7FJ	792167527
-655	Henry Wiltshire, Manchester	53 King Street, Manchester, M2 4LQ	793167527
-656	Manchester Apartments, Manchester Apartments	60 Oxford Street, Manchester, M1 5EE	794167527
-657	Vox, Vox	1 Trentham Street, Hulme, Manchester, M15 4YG	795167527
-658	Select Residential, Manchester	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	796167527
-659	QUBE Residential, Salford Quays	7th floor, 1 City Approach, Albert Street, Eccles, M30 0BG	797167527
-660	Kingsdene Ltd, Manchester	257 Deansgate, Manchester, M3 4EN	798167527
-661	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	800167527
-662	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	801167527
-663	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	803167527
-664	Martin & Co, Manchester Central	33 Liverpool Road, Manchester, M3 4NQ	805167527
-665	Henry Wiltshire, Manchester	53 King Street, Manchester, M2 4LQ	806167527
-666	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	807167527
-667	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	808167527
-668	MCR Move, Manchester	268 Moseley Road, Levenshulme, Manchester, M19 2LH	809167527
-669	Reeds Rains, Salford Quays City Living	2 Anchorage Quay, Salford, M50 3YW	810167527
-670	Goodwin Fish, Manchester	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	811167527
-671	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	812167527
-672	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	813167527
-673	Bridgfords Lettings, Stockport	2a Mersey Square Stockport SK1 1NU	814167527
-674	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	815167527
-675	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	816167527
-676	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	817167527
-677	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	818167527
-678	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	819167527
-679	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	820167527
-680	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	821167527
-681	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	822167527
-682	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	823167527
-683	Leighton Snow, Bramhall	8A Fir Road, Bramhall, SK7 2NP	825167527
-684	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	826167527
-685	Belvoir, Manchester	61 Great Ancoats Street, Manchester, M4 5AB	827167527
-686	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	829167527
-687	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	830167527
-688	VitalSpace, South Manchester	22 Flixton Road Urmston M41 5AA	831167527
-689	Greystar, Oxbow, Salford	11 Back Hulme Street, Salford, M5 4QT	832167527
-690	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	833167527
-691	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	834167527
-692	Jordan Fishwick, Manchester	68 Arches Whitworth Street West Manchester M1 5WQ	835167527
-693	Ascend, Manchester	241 Deansgate Manchester M3 4EN	836167527
-694	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	837167527
-695	Henry Wiltshire, Manchester	53 King Street, Manchester, M2 4LQ	838167527
-696	Reside, Manchester	249 Deansgate, Manchester, M3 4EN	839167527
-697	Clay Life, Clay	Anchorage Quay, Salford, M50 3BX	840167527
-698	Aubrey Lee & Co, Blackley	1170 Rochdale Road, Blackley, Manchester M9 6ER	841167527
-699	Manchester Apartments, Manchester Apartments	60 Oxford Street, Manchester, M1 5EE	842167527
-700	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	843167527
-701	ARCPROPERTY MANAGEMENT & LETTINGS, Edinburgh	Bonnington Bond, 2 Anderson Place, Edinburgh, EH6 5NP	844167527
-702	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	845167527
-703	Clive Anthony Sales & Lettings, Whitefield	114 Bury New Road, Whitefield, M45 6AD	846167527
-704	Manchester Apartments, Manchester Apartments	60 Oxford Street, Manchester, M1 5EE	847167527
-705	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	850167527
-706	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	851167527
-707	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	852167527
-708	Grovewell, Manchester	Suite 8 Broadhurst House Bury Old Road, Salford, M7 4QX	853167527
-709	Bridgfords Lettings, Sale	81-83 School Road, Sale, M33 7XA	854167527
-710	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	855167527
-711	Downing Property Management Ltd, Square Gardens	5 Botanic Avenue, Manchester, M15 6AA	856167527
-712	Cherry Picked Properties, Heald Green	Southgate Centre Two, 321 Wilmslow Road, Heald Green, Cheadle, SK8 3PW	857167527
-713	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	858167527
-714	Mishkan Estates, Manchester	2a Park Hill, Bury Old Road, Prestwich, Manchester, M25 0FX	859167527
-715	Edward Mellor Ltd, Reddish	410 Reddish Road, Reddish, Stockport, SK5 7AA	860167527
-716	OpenRent, London	20 Wenlock Road, London, N1 7GU	861167527
-717	VitalSpace, South Manchester	22 Flixton Road Urmston M41 5AA	862167527
-718	Vox, Vox	1 Trentham Street, Hulme, Manchester, M15 4YG	863167527
-719	Premier Residential, Manchester	16 Commercial Street, Manchester, M15 4PZ	864167527
-720	Kingsdene Ltd, Manchester	257 Deansgate, Manchester, M3 4EN	865167527
-721	Aubrey Lee & Co, Prestwich	39, Bury New Road, Prestwich, Manchester, M25 9JY	866167527
-722	loc8me, Covering Manchester	202 Ashby Square, Loughborough, LE11 5AA	867167527
-723	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	868167527
-724	Montrose Properties Ltd, West Didsbury	20a Lapwing Lane, West Didsbury, Manchester, M20 2WS	869167527
-725	Kingsdene Ltd, Manchester	257 Deansgate, Manchester, M3 4EN	870167527
-726	Ascend, Manchester	241 Deansgate Manchester M3 4EN	871167527
-727	Miller Metcalfe, Bolton	2 - 10 Bradshawgate Bolton BL1 1DG	872167527
-728	Gascoigne Halman, Didsbury	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	873167527
-729	Montrose Properties Ltd, West Didsbury	20a Lapwing Lane, West Didsbury, Manchester, M20 2WS	875167527
-730	Townhouse, Manchester	Townhouse, 117 Ducie House, Ducie Street, Manchester, M1 2JW	876167527
-731	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	877167527
-732	Thornley Groves, Fallowfield	306 Wilmslow Road, Manchester, M14 6LF	878167527
-733	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	880167527
-734	HASSLE FREE LETTINGS, London	Covering London	881167527
-735	Thornley Groves, Manchester Southern Gateway	25 Whitworth Street West, Manchester, M1 5ND	882167527
-736	Kingsdene Ltd, Manchester	257 Deansgate, Manchester, M3 4EN	883167527
-737	HASSLE FREE LETTINGS, London	Covering London	884167527
-738	We Let Properties, Manchester	3-5 Duke Street, Manchester, M3 4NF	885167527
-739	Goodwin Fish, Manchester	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	886167527
-740	Manchester Easy Rent, Manchester	Suite 47 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	887167527
-741	urbanbubble, Manchester	Sevendale House, 7 Dale Street, Manchester, M1 1JA	888167527
-742	Manchester Easy Rent, Manchester	Suite 47 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	889167527
-743	Leef Property Management Ltd, Warrington	12b Olympic Way Birchwood Warrington WA2 0YL	890167527
-744	Manchester Easy Rent, Manchester	Suite 47 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	891167527
-745	Martin & Co, Manchester Central	33 Liverpool Road, Manchester, M3 4NQ	892167527
-746	Hermes Living, Manchester	Unit 415 Spaces, 125 Deansgate, Manchester, M3 2BY	893167527
-747	Kaytons Estate Agents, Manchester	365 Chapel Street, Salford, M3 5JT	894167527
-748	Bridgfords Lettings, Manchester	The Hacienda 21 Albion Street Manchester M1 5DA	895167527
-749	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	896167527
-750	Hunters, Manchester	22 St John Street, Manchester, Greater Manchester, M3 4EB	897167527
-751	loc8me, Covering Manchester	202 Ashby Square, Loughborough, LE11 5AA	898167527
-752	Savills Lettings, New Vic	New Victoria, 103 Corporation Street, Manchester, M4 4DZ	899167527
-753	Savills Lettings, Manchester	50 Bridge Street, Manchester, M3 3BW	900167527
-754	Hills, Eccles	Sentinel House, Albert Street, Eccles, Manchester, M30 0SS	901167527
-755	Leaders Lettings, Manchester	289 - 291 Deansgate, Manchester, M3 4EW	902167527
-756	Townhouse, Manchester	Townhouse, 117 Ducie House, Ducie Street, Manchester, M1 2JW	903167527
-757	NEXIS Property, Manchester	361 Deansgate, Manchester, M3 4LG	904167527
-\.
-
-
---
--- Data for Name: agents_df_sil; Type: TABLE DATA; Schema: silver; Owner: postgres
---
-
-COPY "silver"."agents_df_sil" ("id", "agent_name", "agent_address") FROM stdin;
-13	John Doe	123 Main St, London
-14	Jane Smith	456 High St, Manchester
-15	Alice Brown	789 Park Ave, Birmingham
-16	Bob Johnson	101 Elm St, Leeds
-17	Charlie White	202 Maple Rd, Bristol
-18	Alice Brown	766 Park
-\.
-
-
---
 -- Data for Name: locations_df; Type: TABLE DATA; Schema: silver; Owner: postgres
 --
 
@@ -2627,6 +1848,979 @@ COPY "silver"."locations_df" ("id", "full_address", "latitude", "longitude", "pr
 755	Granby House, Granby Row, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 7AR, United Kingdom	53.47499	-2.2359	Granby House, Granby Row, Manchester, M1	902167527
 756	Parrs Wood Road, Ladybarn, Burnage, Manchester, Greater Manchester, England, M20 4RR, United Kingdom	53.428707	-2.216506	Parrs Wood Road, Fallowfield, Manchester, M20 4RQ	903167527
 757	Cypress Place, 9, New Century Park, Green Quarter, Strangeways, Manchester, Greater Manchester, England, M4 4EE, United Kingdom	53.489762	-2.240247	Cypress Place, 9 New Century Park, Manchester, M4	904167527
+952	Boundary Row, Bankside, Elephant and Castle, London Borough of Southwark, London, Greater London, England, SE1 8HP, United Kingdom	51.502168382426554	-0.10535915173487147	2-6 Boundary Row, London, SE1 8HP	1167527
+953	Via Massimo D'Azeglio, None, Torino, Piemonte, Italia	44.933143	7.540121	Web based Estate Agent	2167527
+954	Hills, Albert Street, Ellesmere Park, Eccles, Salford, Greater Manchester, England, M30 0NJ, United Kingdom	53.484266	-2.3391974	Sentinel House, Albert Street, Eccles, Manchester, M30 0SS	3167527
+955	Stamford Street, Hale, Altrincham, Trafford, Greater Manchester, England, WA14 1EY, United Kingdom	53.38911	-2.34842	Kings House Stamford Street Altrincham WA14 1EX	4167527
+956	575-577, Stockport Road, Longsight, Manchester, Greater Manchester, England, M13 0RG, United Kingdom	53.45607334769262	-2.1994493668832895	588 Stockport Road Longsight Manchester M13 0RQ	5167527
+957	West Tower, 371, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4LB, United Kingdom	53.47299	-2.25251	West Tower, Deansgate Square 371 Deansgate Manchester M15 4UP	7167527
+958	Monarch Solicitors, 156, Chapel Street, Blackfriars, City Centre, Manchester, Greater Manchester, England, M3 6BF, United Kingdom	53.48363	-2.25685	Citypoint 2, 156 Chapel Street, Manchester M3 6ES	9167527
+959	The Battered Cod, 4, Church Road, Gatley, Stockport, Greater Manchester, England, SK8 4NQ, United Kingdom	53.3927652	-2.2351292000000003	53a Church Road, Gatley, Cheadle, SK8 4NG	14167527
+960	Worsley Road/Moorside Road, Worsley Road, Dales Brow, Moorside, Swinton, Salford, Greater Manchester, England, M27 0AS, United Kingdom	53.5038399	-2.35539	Bank Chambers Worsley Road Worsley Manchester M27 0FW	15167527
+961	104, Stretford Road, First Street, Hulme, Manchester, Greater Manchester, England, M15 5JH, United Kingdom	53.46779979649123	-2.2479680789473684	Meridian Square Stretford Road Hulme Manchester M15 5JH	16167527
+962	St Peter's House, 233, Ashley Road, Hale, Altrincham, Trafford, Greater Manchester, England, WA15 9SS, United Kingdom	53.37556815345	-2.342941721622758	175 Ashley Road Hale WA15 9SD	17167527
+963	Co-op Food, 756, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 2DW, United Kingdom	53.416421190181026	-2.231728105375664	722 Wilmslow Road, Didsbury, Manchester, M20 2DW	18167527
+964	Burgerum, 365, Chapel Street, Blackfriars, Lower Broughton, Salford, Greater Manchester, England, M3 5JT, United Kingdom	53.482848	-2.2639531	365 Chapel Street, Salford, M3 5JT	20167527
+965	Reeds Rains, 29, Whitworth Street West, First Street, City Centre, Manchester, Greater Manchester, England, M1 5ND, United Kingdom	53.4741096	-2.2451714	29 Whitworth Street West Manchester M1 5ND	21167527
+966	44, Aytoun Street, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 3GL, United Kingdom	53.4777430035588	-2.2338778368283165	Aytoun Street, Manchester, M1 3GL	126167527
+967	Porta Delivery, 20, Wenlock Road, Hoxton, London Borough of Hackney, London, Greater London, England, N1 7GU, United Kingdom	51.5305527	-0.0936459	20 Wenlock Road, London, N1 7GU	127167527
+968	One St Peter's Square, 1, St Peter's Square, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 3AE, United Kingdom	53.4774635	-2.243006846990335	One St Peter's Square Manchester M2 3DE	129167527
+969	Moorside Road, Heaton Mersey, Cheadle, Stockport, Greater Manchester, England, SK4 4DT, United Kingdom	53.415585928719295	-2.189786826961357	14 Moorside Road, Heaton Moor, Stockport, SK4 4DT	130167527
+970	NEXIS, 361, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4LG, United Kingdom	53.4736826	-2.2515121	361 Deansgate, Manchester, M3 4LG	131167527
+971	3, Cambridge Street, First Street, City Centre, Manchester, Greater Manchester, England, M1 5BZ, United Kingdom	53.4726341	-2.24355025	B2 Chorlton Mill, Cambridge Street, Manchester, M1 5BY	133167527
+972	283, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EW, United Kingdom	53.476220177777776	-2.2505764777777775	Goodwin Fish 261-263 Deansgate Manchester M3 4EW	151167527
+973	Costa, 306, Wilmslow Road, Ladybarn, Fallowfield, Manchester, Greater Manchester, England, M14 6NS, United Kingdom	53.4411436	-2.2192412	306 Wilmslow Road, Manchester, M14 6LF	168167527
+974	Jordan Fishwick, 410-412, Barlow Moor Road, Chorlton-cum-Hardy, Manchester, Greater Manchester, England, M21 8AD, United Kingdom	53.4415136	-2.2760625	410-412 Barlow Moor Road, Chorlton, Manchester, M21 8AD	170167527
+975	\N	\N	\N	7a Howick Place London SW1P 1DZ	171167527
+976	WeWork, 30, Churchill Place, Canary Wharf, London Borough of Tower Hamlets, London, Greater London, England, E14 5EU, United Kingdom	51.5040521	-0.0148848	30 Churchill Place, London, E14 5RE	174167527
+977	Castlefield Locks, 62, Ellesmere Street, Hulme, Manchester, Greater Manchester, England, M15 4QR, United Kingdom	53.4706721853277	-2.2644207733278665	27 Ellesmere Street, Hulme, Manchester, M15 4RU	176167527
+978	285, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EW, United Kingdom	53.476148409963415	-2.2508423326028244	289 - 291 Deansgate, Manchester, M3 4EW	177167527
+979	Broadway, White Gate, Failsworth, Oldham, Greater Manchester, England, OL9 9NF, United Kingdom	53.521724250000005	-2.16570085	582 Broadway, Chadderton, Oldham OL9 9NF	178167527
+980	Jactin House, 24, Hood Street, Ancoats, Collyhurst, Manchester, Greater Manchester, England, M4 6WX, United Kingdom	53.484394449999996	-2.22796473147313	Jactin house 24 Hood Street Manchester M46WX	180167527
+981	Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 6UH, United Kingdom	53.41463	-2.23286	Suite 97, 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	188167527
+982	921,923,925a,927, Stockport Road, Levenshulme, Manchester, Greater Manchester, England, M19 3PZ, United Kingdom	53.44247843156818	-2.1903510378372752	967 Stockport Road, Levenshulme, Manchester, M19 3NP	190167527
+983	Oxid House, 78, Newton Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 1AL, United Kingdom	53.4832934	-2.2305887	Ground Floor, Oxid House, 78 Newton St, Manchester, M1 1AL	191167527
+984	Thornley Grove, 25, Whitworth Street West, First Street, City Centre, Manchester, Greater Manchester, England, M1 5ND, United Kingdom	53.4741183	-2.2453979	25 Whitworth Street West, Manchester, M1 5ND	198167527
+985	admove, 197-201, Manchester Road, Broadheath, Altrincham, Trafford, Greater Manchester, England, WA14 5NU, United Kingdom	53.4010546	-2.3526665	197-201 Manchester Road, Altrincham, WA14 5NU	199167527
+986	Black Sheep Coffee, 60, Spring Gardens, Central Retail District, City Centre, Manchester, Greater Manchester, England, M2 2BQ, United Kingdom	53.48012996	-2.24174336	Northspring Building, 70 Spring Gardens, Manchester, M2 2BQ	201167527
+987	Middlewood Street, Ordsall, Salford, Greater Manchester, England, M5 4YW, United Kingdom	53.47884101360276	-2.262658504229584	15 Middlewood Street, Salford, M5 4YW	208167527
+988	Smithdown Road, Allerton, Liverpool, Liverpool City Region, England, L15 5BA, United Kingdom	53.3890223798539	-2.915418068583713	605 Smithdown Road, Allerton, Liverpool, L15 5AG	210167527
+989	St James House, Pendleton Way, Pendleton, Salford, Greater Manchester, England, M6 5FW, United Kingdom	53.4906486	-2.2878759	Suite 11, 8th Floor, St James House, Pendleton Way, Salford, M6 5FW	212167527
+990	M&S Foodhall, 462, Bury New Road, Kirkhams, Prestwich, Bury, Greater Manchester, England, M25 3AN, United Kingdom	53.53397963978541	-2.286123589844378	503-505 Bury New Road, Prestwich, Manchester M25 1AD	213167527
+991	Us&Co Stratford, 11, Burford Road, Mill Meads, Stratford, London Borough of Newham, London, Greater London, England, E15 2ST, United Kingdom	51.5372847	-0.0006803	CityZEN Property Group, 11 Burford Road, London, E15 2ST	215167527
+992	Lucky Mama's, 565, Barlow Moor Road, Chorlton-cum-Hardy, Manchester, Greater Manchester, England, M21 8AE, United Kingdom	53.44160561646268	-2.2764010972930278	424 Barlow Moor Road, Chorlton Cum Hardy, Manchester, M21 8AD	216167527
+993	22, St John Street, Castlefield, City Centre, Manchester, Greater Manchester, England, M3 4EB, United Kingdom	53.4778681	-2.2515156	22 St John Street, Manchester, Greater Manchester, M3 4EB	217167527
+994	The Anchorage, 1-4, Anchorage Quay, Salford Quays, Salford, Greater Manchester, England, M50 3YW, United Kingdom	53.47409138441552	-2.286061513838992	Anchorage Quay, Salford, M50 3BX	218167527
+995	Victoria Baths, Hathersage Road, Victoria Park, Rusholme, Manchester, Greater Manchester, England, M13 0FE, United Kingdom	53.4601468	-2.2164245	Flat 1, 32 Hathersage Road, Manchester, M13 0FE	219167527
+996	Lotus Thai Spa, 58, Swan Street, NOMA, Strangeways, Manchester, Greater Manchester, England, M4 5JU, United Kingdom	53.48601381428571	-2.2351422285714286	Swan Street House, Swan Street, Ancoats, Manchester, M4 5JU	222167527
+997	7, Nobel Way, Circle Square, City Centre, Manchester, Greater Manchester, England, M1 7FU, United Kingdom	53.4732566	-2.2381164	7 Nobel Way, Oxford Road, Manchester, M1 7FU	226167527
+998	The Royal Oak, 729, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 6WF, United Kingdom	53.41628565	-2.2315142400694445	731 Wilmslow Road, Didsbury, Manchester, M20 6WF	232167527
+999	Cortland at Colliers Yard, 7, Bankside Boulevard, Trinity, City Centre, Salford, Greater Manchester, England, M3 7NB, United Kingdom	53.487280274517325	-2.2495817749064955	5 Bankside Boulevard, Salford, M3 7HD	236167527
+1000	Spaces, 125, Deansgate, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 2BY, United Kingdom	53.48022805	-2.248032890777097	125 Deansgate, Manchester, M3 2LH	239167527
+1001	Bridgfords, 21, Albion Street, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 5DA, United Kingdom	53.4743476	-2.2477549	The Hacienda 21 Albion Street Manchester M1 5DA	240167527
+1002	Rodwell Tower, 111, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 2HY, United Kingdom	53.47937185	-2.2326337961255307	111 Piccadilly, Manchester, M1 2HY	241167527
+1003	Wilmslow Road, Ladybarn, Fallowfield, Manchester, Greater Manchester, England, M14 6NL, United Kingdom	53.44056121651332	-2.2195271064639854	314 Wilmslow Road Fallowfield Manchester M14 6XQ	242167527
+1004	Roger Dean, 218, Finney Lane, Heald Green, Stockport, Greater Manchester, England, SK8 3QA, United Kingdom	53.3701077	-2.232292	218 Finney Lane, Heald Green, SK8 3QA	243167527
+1005	Stockport Homes, 2, Edward Street, Shaw Heath, Stockport, Greater Manchester, England, SK1 3NQ, United Kingdom	53.40556035	-2.157757899761906	2 Edward Street, Stockport, SK1 3NQ	244167527
+1006	Rose Lane, Mossley Hill, Liverpool, Liverpool City Region, England, L18 8AD, United Kingdom	53.379204599999994	-2.9154017	183 - 185 Rose Lane, Mossley Hill, Liverpool, L18 5EA	249167527
+1007	Peter House, Oxford Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M1 5AN, United Kingdom	53.4770258	-2.2437623	3, 28 spaces, Peter House, Oxford Street, Manchester, M1 5AN	251167527
+1008	Elkington Way, Horseshoe Farm, Alderley Edge, Cheshire East, England, SK9 7QW, United Kingdom	53.30785	-2.2349	Horseshoe Farm, Elkington Way, Alderley Edge, SK9 7GU	258167527
+1009	Ascend, 241, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EN, United Kingdom	53.4773874	-2.2499035	241 Deansgate Manchester M3 4EN	261167527
+1010	50, Barton Road, Winton, Worsley, Salford, Greater Manchester, England, M28 2EA, United Kingdom	53.49803	-2.37821	Suite 4, The Granary, Worsley, Manchester, M28 2EB	262167527
+1011	Wilmslow Road, Withington, Manchester, Greater Manchester, England, M20 4BW, United Kingdom	53.433543900000004	-2.2286931	416 Wilmslow Road, Withington, Manchester M20 3BW	263167527
+1012	Reside, 249, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EN, United Kingdom	53.4771436	-2.25005	249 Deansgate, Manchester, M3 4EN	265167527
+1013	Kabel House, 15, Quay Street, Spinningfields, City Centre, Manchester, Greater Manchester, England, M3 3HN, United Kingdom	53.47844578	-2.2510693600000002	St John's Court 19B Quay Street, Manchester, M3 3HN	269167527
+1014	52, Port Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 2EQ, United Kingdom	53.4818346	-2.2320209	52 Port Street, Northern Quarter, Manchester, M1 2EQ	271167527
+1015	Stevenson Whyte, 3-9, Duke Street, Castlefield, City Centre, Manchester, Greater Manchester, England, M3 4NF, United Kingdom	53.476207548828064	-2.2543061669638926	3-5 Duke Street, Manchester, M3 4NF	272167527
+1016	896, Stockport Road, Levenshulme, Manchester, Greater Manchester, England, M19 3BP, United Kingdom	53.44529225	-2.191779913200717	896 Stockport Road, Levenshulme, Manchester, M19 3AD	277167527
+1017	Kingsdene, 257, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4EN, United Kingdom	53.4769024	-2.2501879	257 Deansgate, Manchester, M3 4EN	278167527
+1018	Viceroy Court, Grange Lane, Parrs Wood, Didsbury, Manchester, Greater Manchester, England, M20 6RW, United Kingdom	53.41544445	-2.2317171	757 to 759, Wilmslow Road, Manchester, Lancashire, M20 6RN	282167527
+1019	Peter, 45, Ashby Square, Loughborough, Charnwood, Leicestershire, England, LE11 5AA, United Kingdom	52.77220821086562	-1.2093841264909808	202 Ashby Square, Loughborough, LE11 5AA	284167527
+1020	Hulme Street, First Street, City Centre, Manchester, Greater Manchester, England, M15 6AA, United Kingdom	53.47143	-2.2449	5 Botanic Avenue, Manchester, M15 6AA	290167527
+1021	Gloucester Street, First Street, City Centre, Manchester, Greater Manchester, England, M1 5NG, United Kingdom	53.4738789	-2.24467485	68 Arches Whitworth Street West Manchester M1 5WQ	297167527
+1022	321, Deansgate, St. Johns, City Centre, Manchester, Greater Manchester, England, M3 4LQ, United Kingdom	53.474995593476855	-2.2515231839928407	332-334 Deansgate, Manchester, M3 4LY	303167527
+1023	Co-op Food, 756, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 2DW, United Kingdom	53.416421190181026	-2.231728105375664	764b Wilmslow Road, Didsbury, Manchester, M20 2DR	307167527
+1024	The Chu's, 436, Palatine Road, Northenden, Manchester, Greater Manchester, England, M22 4JS, United Kingdom	53.40680844868527	-2.2603503385321524	372 Palatine Road, Manchester, M22 4FZ	310167527
+1025	Lapwing Lane, West Didsbury, Manchester, Greater Manchester, England, M20 2NS, United Kingdom	53.42666399859903	-2.2388286915022286	20a Lapwing Lane, West Didsbury, Manchester, M20 2WS	312167527
+1026	One Cutting Room Square, 16, Hood Street, Ancoats, Collyhurst, Manchester, Greater Manchester, England, M4 6WX, United Kingdom	53.48420563333333	-2.2285280333333333	Jactin House 24 Hood Street Ancoats Urban Village Manchester M4 6WX	316167527
+1027	Manchester Town Hall, Albert Square, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 5DB, United Kingdom	53.4794892	-2.2451148	Manchester	317167527
+1028	The Tanning Shop, 49, Pinfold Street, Chinese Quarter, Edgbaston, Park Central, Birmingham, West Midlands, England, B2 4AY, United Kingdom	52.479231	-1.9019561833333332	Suite 142 51 Pinfold Street Birmingham B2 4AY	318167527
+1029	Monton Green, Dales Brow, Monton, Eccles, Salford, Greater Manchester, England, M30 9LW, United Kingdom	53.493114938454674	-2.3517462220064345	25-27 Monton Green, Monton, Eccles, Manchester, M30 9LL	319167527
+1030	Garden Lane, Trinity, City Centre, Salford, Greater Manchester, England, M3 7FJ, United Kingdom	53.4860354345943	-2.2530564021796637	Unit 1 2 Garden Lane Salford M3 7FJ	324167527
+1031	The Greenfinch, 108, Palatine Road, West Didsbury, Manchester, Greater Manchester, England, M20 3ZA, United Kingdom	53.4252581	-2.2370429	Wren House 108 Palatine Road, Didsbury, Manchester, M20 3ZA	327167527
+1032	Bytemark Hosting, 5, Archway, Hulme, Manchester, Greater Manchester, England, M15 5RL, United Kingdom	53.4644814	-2.24634135	Karsons Lettings Innospace, 2nd Floor, Turing House, 5 Archway, Manchester M15 5RL	342167527
+1033	Market Street, Cheetham Fold, Hyde, Tameside, Greater Manchester, England, SK14 1ES, United Kingdom	53.450069799999994	-2.0785246500000003	104-106 Market Street, Hyde, SK14 1ES	343167527
+1034	Marriott, Water Street, Castlefield, City Centre, Manchester, Greater Manchester, England, M3 4JQ, United Kingdom	53.478987123676596	-2.2568586019381467	Water Street, Manchester, M3 4JQ	344167527
+1035	AcuSpa, 50, Bridge Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 3BW, United Kingdom	53.4810024	-2.2495638	50 Bridge Street, Manchester, M3 3BW	347167527
+1036	Viceroy Court, Grange Lane, Parrs Wood, Didsbury, Manchester, Greater Manchester, England, M20 6RW, United Kingdom	53.41544445	-2.2317171	Elm House, 739 Wilmslow Road, Manchester, M20 6RN	355167527
+1037	Aubergine Distinctive Catering, 53, Church Road, Gatley, Stockport, Greater Manchester, England, SK8 4NG, United Kingdom	53.391234684727216	-2.237920324161755	46 Church Road Gatley SK8 4NQ	356167527
+1038	Chapel Street, Dukinfield, Tameside, Greater Manchester, England, SK16 4DW, United Kingdom	53.47745	-2.09174	Suite 2, The Old Court House, Chapel Street, Dukinfield, SK16 4DT	357167527
+1039	Chester Road, Old Trafford, Trafford, Greater Manchester, England, M15 4EX, United Kingdom	53.46948726333746	-2.265813029810347	Chester Road Manchester, M15 4YH	358167527
+1040	Via Massimo D'Azeglio, None, Torino, Piemonte, Italia	44.933143	7.540121	Covering Manchester	359167527
+1041	Dickenson Road, Victoria Park, Longsight, Manchester, Greater Manchester, England, M13 0YL, United Kingdom	53.453889275	-2.212203625	Anson Parade, 161a Dickenson Road, Rusholme, Manchester, M14 5HZ	379167527
+1042	Bishops Corner, 321, Stretford Road, First Street, Hulme, Manchester, Greater Manchester, England, M15 4UW, United Kingdom	53.46702953333333	-2.249969683333333	Unit 1, Bishops Corner 32 Stretford Road, Hulme, Manchester, M15 4UW	387167527
+1043	Lower Burnham Road, Purleigh, Maldon, Essex, England, CM3 6HQ, United Kingdom	51.65579	0.69952	Marsh Farm House Lower Burnham Road Latchingdon CM3 6HQ	388167527
+1044	The Quays, Salford Quays, Salford, Greater Manchester, England, M50 3BT, United Kingdom	53.475522691047104	-2.286658415021554	The Quays, Salford, M50 3SF	392167527
+1045	Travelodge, 22, Great Ancoats Street, Central Retail District, Strangeways, Manchester, Greater Manchester, England, M4 5AZ, United Kingdom	53.484247422708634	-2.231924472678766	6-14 Great Ancoats Street, Manchester, M4 5AZ	393167527
+1046	Didsbury Road, The Four Heatons, Heaton Mersey, Cheadle, Stockport, Greater Manchester, England, SK4 3BT, United Kingdom	53.41235185419524	-2.2047535331954746	450 Didsbury Road Stockport SK4 3BS	395167527
+1047	Jordan Fishwick, 95-97, School Road, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7XA, United Kingdom	53.425586590252145	-2.3247970807881257	81-83 School Road, Sale, M33 7XA	397167527
+1048	Back Hulme Street, Blackfriars, Ordsall, Salford, Greater Manchester, England, M5 4PL, United Kingdom	53.48212596946871	-2.2666734825253143	11 Back Hulme Street, Salford, M5 4QT	399167527
+1049	One Stop, 180-182, Langworthy Road, Seedley, Eccles, Salford, Greater Manchester, England, M6 5PP, United Kingdom	53.48684844668365	-2.29482537092201	167 Langworthy Road, Salford, M6 5PW	404167527
+1050	Bridgfords, 561, Barlow Moor Road, Chorlton-cum-Hardy, Manchester, Greater Manchester, England, M21 8AN, United Kingdom	53.441265200000004	-2.276378682002538	561 Barlow Moor Road, Chorlton, Manchester, M21 8AN	410167527
+1051	Bury Old Road, Sedgley Park, Prestwich, Manchester, Greater Manchester, England, M25 0EX, United Kingdom	53.51636	-2.25222	Suite 8 Broadhurst House Bury Old Road, Salford, M7 4QX	416167527
+1052	Poulton and Pulford, Chester, Cheshire West and Chester, England, CH4 9EP, United Kingdom	53.13657	-2.9211	First Fl, Kinnerton House Bell Meadow Business Park Park Lane Pulford CH4 9EP	420167527
+1053	Co-op Food, 756, Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 2DW, United Kingdom	53.416421190181026	-2.231728105375664	713 Wilmslow Road, Didsbury, Manchester, M20 6RE	421167527
+1054	Cousins Estate Agents, 754, Oldham Road, Hollinwood, Failsworth, Manchester, Greater Manchester, England, M35 9FE, United Kingdom	53.5169342	-2.1475018	754 Oldham Road, Failsworth, Oldham, M35 9FE	425167527
+1055	Prestbury Court, Bridgewater Road, Walkden, Salford, Greater Manchester, England, M28 3JA, United Kingdom	53.52270808521865	-2.399516306849213	1 Bridgewater Road, Worsley, M28 3JE	429167527
+1056	60, Moss Lane West, Hulme, Manchester, Greater Manchester, England, M15 5PD, United Kingdom	53.46000678829159	-2.2532759254569186	46 Moss Lane West Manchester M15 5FB	431167527
+1057	Broadway, Weaste, Eccles, Salford, Greater Manchester, England, M50 2UE, United Kingdom	53.47529	-2.30593	Suite A, 2nd Floor, The Nest, Broadway, Salford, M50 2UE	433167527
+1058	Northern Monkey, 8, Dantzic Street, Central Retail District, City Centre, Manchester, Greater Manchester, England, M4 2AD, United Kingdom	53.4849242	-2.2398917	8 Dantzic Street, Manchester, M4 2AD	436167527
+1059	\N	\N	\N	1 Northumberland Avenue, Trafalgar Square, London, WC2N 5BW	439167527
+1060	Northwood, 55-57, Mesnes Street, Scholes Village, Swinley, Wigan, Greater Manchester, England, WN1 1QX, United Kingdom	53.549374	-2.6318544	55-57 Mesnes Street, Wigan, WN1 1QX	440167527
+1061	Cotton Tree Street, Shaw Heath, Stockport, Greater Manchester, England, SK4 1BS, United Kingdom	53.40973	-2.16336	Suite B, 7th Floor, Beckwith House 1-3 Wellington Road Stockport SK4 1AF	443167527
+1062	Brogden Terrace, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7UF, United Kingdom	53.42	-2.33117	Simple Life Stafford Court, 145 Washway Road Sale M33 7PE	444167527
+1063	Cheetham Street, Wardleworth, Rochdale, Greater Manchester, England, OL16 1DG, United Kingdom	53.61948703938918	-2.156843670955583	15b Cheetham Street, Rochdale, OL16 1DG	447167527
+1064	66, Quay Street, Spinningfields, City Centre, Manchester, Greater Manchester, England, M3 3EJ, United Kingdom	53.4790613	-2.2533179	The Good Estate Agency, 68 Quay Street, Manchester, M3 3EJ	460167527
+1065	22, Lloyd Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 5WA, United Kingdom	53.4790287	-2.2466045	22 Lloyd Street, Manchester, M2 5WA	479167527
+1066	Vitalspace, 22, Flixton Road, Davyhulme, Urmston, Trafford, Greater Manchester, England, M41 5AA, United Kingdom	53.4485774	-2.3543878	22 Flixton Road Urmston M41 5AA	487167527
+1067	Michigan Point Tower A, 9, Michigan Avenue, Salford Quays, Salford, Greater Manchester, England, M50 2GY, United Kingdom	53.4743883	-2.291680407682188	9 Michigan Avenue, Salford, M50 2HA	494167527
+1068	Manchester Apartments, 60, Oxford Street, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 5EE, United Kingdom	53.4750152	-2.2417109	60 Oxford Street, Manchester, M1 5EE	499167527
+1069	Alcock House, Dearmans Place, Trinity, City Centre, Salford, Greater Manchester, England, M3 5DZ, United Kingdom	53.4841466	-2.2515864	Alcock House, 99 Chapel Street, Salford, M3 5DZ	500167527
+1070	323, Wilmslow Road, Fallowfield, Manchester, Greater Manchester, England, M14 6NW, United Kingdom	53.441613849999996	-2.2184498784504143	323 Wilmslow Road, Fallowfield, Manchester, M14 6NW	512167527
+1071	Roger + Grahame Hairdressing, 10a, Newton Street, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 2AN, United Kingdom	53.481096019999995	-2.23371356	2nd Floor, 8-16 Newton Street, Manchester, M1 2AN	519167527
+1072	M&S Foodhall, 462, Bury New Road, Kirkhams, Prestwich, Bury, Greater Manchester, England, M25 3AN, United Kingdom	53.53397963978541	-2.286123589844378	493 Bury New Road, Prestwich, Manchester, M25 1AD	526167527
+1073	The Real Camera Co, 7, Dale Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 1JA, United Kingdom	53.4821306	-2.2346353	Sevendale House, 7 Dale Street, Manchester, M1 1JA	529167527
+1074	Poundstretcher, 16, Saltergate, Stonegravels, Tapton, Chesterfield, Derbyshire, East Midlands, England, S40 1UT, United Kingdom	53.2371719	-1.4264825	Office 4, Northern Gateway, Enterprise Centre, Saltergate, Chesterfield, S40 1UT	530167527
+1075	Heywood Way, Pendleton, Salford, Greater Manchester, England, M6 5RQ, United Kingdom	53.4877463	-2.2891921	Salford	544167527
+1076	The Eccles Cross, 13, Regent Street, Ellesmere Park, Eccles, Manchester, Greater Manchester, England, M30 0BP, United Kingdom	53.48322309669741	-2.334340513032393	52 Regent Street, Eccles, Manchester, M30 0BP	553167527
+1077	Village News, 138, Ford Road, Overchurch Hill, Upton, Wirral, Liverpool City Region, England, CH49 0TQ, United Kingdom	53.38505425	-3.0982668899999997	118 Ford Road, Upton Village, Wirral CH49 0TQ	556167527
+1078	Main & Main, 198, Finney Lane, Heald Green, Stockport, Greater Manchester, England, SK8 3QA, United Kingdom	53.3700333	-2.2312749	198 Finney Lane, Heald Green, Cheadle, SK8 3QA	557167527
+1079	The Green Rooms, Blue, MediaCityUK, Weaste, Eccles, Salford, Greater Manchester, England, M50 2AH, United Kingdom	53.4728	-2.30165	Leader House, Blue Media City, Salford, M50 2AG	567167527
+1080	Manchester Metropolitan University – All Saints Campus, Moran Walk, Hulme, Manchester, Greater Manchester, England, M15 6GA, United Kingdom	53.47199355	-2.241583	Office 2,8 Chester Street, Manchester, M1 5GE	569167527
+1081	Apex House, 266, Moseley Road, Levenshulme, Manchester, Greater Manchester, England, M19 2LH, United Kingdom	53.4424222997565	-2.2029112599936775	268 Moseley Road, Levenshulme, Manchester, M19 2LH	577167527
+1082	Merchants Quay, Ordsall, Salford, Greater Manchester, England, M50 3ST, United Kingdom	53.4688042	-2.284183	Unit 301 The Junction Merchants Quay, Salford, M50 3SG	578167527
+1083	Gooey, 37, Ducie Street, Piccadilly, City Centre, Manchester, Greater Manchester, England, M1 2JW, United Kingdom	53.480467275	-2.22871675	Townhouse, 117 Ducie House, Ducie Street, Manchester, M1 2JW	580167527
+1084	Oakland House, Talbot Road, Gorse Hill, Stretford, Trafford, Greater Manchester, England, M16 0PQ, United Kingdom	53.460035	-2.2837841	209-210 Oakland House Talbot Road, Stretford, Manchester, M16 0PQ	581167527
+1085	The Real Camera Co, 7, Dale Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M1 1JA, United Kingdom	53.4821306	-2.2346353	Sevendale house, 7 Dale Street, Manchester, M1 1JA	588167527
+1086	Julian Wadden, 81-83, Wellington Road South, Shaw Heath, Stockport, Greater Manchester, England, SK1 3SL, United Kingdom	53.4068083	-2.1594652	81-83 Wellington Road South, Stockport, SK1 3SL	602167527
+1087	The Local Launderette, 20, Bury New Road, Sedgley Park, Prestwich, Salford, Greater Manchester, England, M25 0LD, United Kingdom	53.518133366813395	-2.271700383511482	39, Bury New Road, Prestwich, Manchester, M25 9JY	604167527
+1088	Market Street, Fairfield, Droylsden, Tameside, Greater Manchester, England, M43 7AR, United Kingdom	53.48021032487156	-2.145173703605485	116 Market Street, Droylsden, Manchester, M43 7AA	605167527
+1089	Elm Grove, Parrs Wood, Didsbury, Manchester, Greater Manchester, England, M20 6PL, United Kingdom	53.416035557380496	-2.2308795994628268	3 Elm Grove, Didsbury, Manchester, M20 6PL	608167527
+1090	Carpe diem, 27, Castle Street, St. Mildred's, Harbledown, Canterbury, Kent, England, CT1 2QD, United Kingdom	51.2760366	1.0757608	27 Castle Street, Canterbury, CT1 2PX	609167527
+1091	John William Street, Ellesmere Park, Eccles, Salford, Greater Manchester, England, M30 0BL, United Kingdom	53.48522	-2.33763	7th floor, 1 City Approach, Albert Street, Eccles, M30 0BG	613167527
+1092	Beis Mordechai, 90, King's Road, Sedgley Park, Prestwich, Bury, Greater Manchester, England, M25 0LQ, United Kingdom	53.51965	-2.26443	S&S Property Group 78a Kings Road Manchester M25 0FY	614167527
+1093	BLANCONERO, 2, Anchorage Quay, Salford Quays, Salford, Greater Manchester, England, M50 3YJ, United Kingdom	53.4740901	-2.286663	2 Anchorage Quay, Salford, M50 3YW	621167527
+1094	Costa, 306, Wilmslow Road, Ladybarn, Fallowfield, Manchester, Greater Manchester, England, M14 6NS, United Kingdom	53.44095231936922	-2.219172107127625	351 Wilmslow Road, Ladybarn, Manchester, M14 6XS	634167527
+1095	Franco Manca, 37-43, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 7AT, United Kingdom	53.4812162	-2.2453696	37 King Street, Manchester, M2 7AT	638167527
+1096	Colchester Business Park, Highwoods, Colchester, Essex, England, CO4 9YQ, United Kingdom	51.9236762	0.9214518	Purplebricks, 650 The Crescent Colchester Business Park, Colchester, United Kingdom CO4 9YQ	641167527
+1097	Monton Road, Monton, Eccles, Salford, Greater Manchester, England, M30 9LF, United Kingdom	53.4920707991793	-2.353574673031767	222 Monton Road, Eccles, Manchester, M30 9LJ	642167527
+1098	170, Holliday Street, Attwood Green, Calthorpe Fields, Park Central, Birmingham, West Midlands, England, B1 1TJ, United Kingdom	52.47520945	-1.9090963333333333	Ground Floor, 176 Holliday Street, Birmingham, B1 1TJ	645167527
+1099	Spaces, 125, Deansgate, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 2BY, United Kingdom	53.48022805	-2.248032890777097	125 Deansgate, Manchester, M3 2LH	656167527
+1100	Wags and Whiskers, Isle Lane, Calcott, Bicton, Shrewsbury, Shropshire, England, SY3 8DY, United Kingdom	52.7294483	-2.8099846	Unit 5, Bicton Business Park, Shrewsbury, SY3 8DY	665167527
+1101	Randall Way, Hallcroft, Retford, Bassetlaw, Nottinghamshire, East Midlands, England, DN22 7GR, United Kingdom	53.3346858	-0.9614444809270528	Retford Enterprise Centre, Randall Way, Retford, DN22 7GR	669167527
+1102	Building 2, 2, Exchange Quay, Ordsall, Salford, Greater Manchester, England, M5 3EB, United Kingdom	53.4664234	-2.2832514	Imperial Court 2 Exchange Quay Salford M5 3EB	681167527
+1103	Speedwell Motorcycles, 79, Church Street West, Outwood Gate, Radcliffe, Bury, Greater Manchester, England, M26 2SX, United Kingdom	53.56049560457867	-2.3229355197418613	10-12 Church Street West, Radcliffe, Manchester M26 2SQ	682167527
+1104	Delisa Miller, 44, Hulme High Street, Hulme, Manchester, Greater Manchester, England, M15 5JP, United Kingdom	53.4613097	-2.2484536	44 Hulme High Street, Hulme, Manchester, M15 5JP	684167527
+1105	Ashton Road East, Holt Lane End, Hollins, Woodhouses, Oldham, Greater Manchester, England, M35 9PG, United Kingdom	53.50997342112695	-2.1482578182639416	61 Ashton Road East, Failsworth, Manchester, M35 9PW	688167527
+1106	Carrera 10, Galán, Comunera, Santander, RAP Gran Santander, Colombia	6.6390723000000005	-73.29076293275591	Holland House 1-5, Oakfield, Sale, Cheshire, M33 6TT	694167527
+1107	Jactin House, 24, Hood Street, Ancoats, Collyhurst, Manchester, Greater Manchester, England, M4 6WX, United Kingdom	53.484394449999996	-2.22796473147313	Jactin House, 24 Hood Street, Manchester, M4 6WX	700167527
+1108	Liveridge Hill, Beaudesert, Henley-in-Arden, Stratford-on-Avon, Warwickshire, England, B95 5QR, United Kingdom	52.30976125	-1.775956875	Brook House, Birmingham Road, Henley in Arden, B95 5QR	705167527
+1109	Quartz Building, 7, Stanley Street, Trinity, City Centre, Salford, Greater Manchester, England, M3 5EX, United Kingdom	53.4804831	-2.256886216203922	7 Stanley Street, Salford, M3 5GB	706167527
+1110	INTO Manchester, 58-60, Whitworth Street West, Petersfield, City Centre, Manchester, Greater Manchester, England, M1 6LT, United Kingdom	53.47515503333333	-2.240214933333333	58-60 Whitworth Street, Bridgewater House Manchester, M1 6LT	727167527
+1111	SDL Group, 17, Regan Way, Chetwynd Business Park, Chilwell, City of Nottingham, Nottinghamshire, East Midlands, England, NG9 6RZ, United Kingdom	52.9080183	-1.2487087206360905	17 Regan Way, Toton, Nottingham, NG9 6RZ	729167527
+1112	Barton Road, Gorse Hill, Stretford, Trafford, Greater Manchester, England, M32 8DN, United Kingdom	53.445538844268775	-2.313810428114241	133 Barton Road, Stretford, Manchester, M32 8DN	738167527
+1113	Hyde Road, Crown Point, Kingston, Denton, Tameside, Greater Manchester, England, M34 3AF, United Kingdom	53.4562366	-2.1123616	66 Hyde Road, Denton, M34 3AG	745167527
+1114	Hamza's, 920, Stockport Road, Levenshulme, Manchester, Greater Manchester, England, M19 3AB, United Kingdom	53.4446026813571	-2.1916058220655694	918 Stockport Road, Levenshulme, Manchester, M19 3AB	746167527
+1115	Jones and Co Styling Opticians, 82, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 4WQ, United Kingdom	53.4808166	-2.243669	82 King Street, Manchester, M2 4WQ	749167527
+1116	Woden Street, Ordsall, Salford, Greater Manchester, England, M5 4YE, United Kingdom	53.47334774936026	-2.266188188919014	Woden Street M5 4YE	754167527
+1117	Jordan Fishwick, 95-97, School Road, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7XA, United Kingdom	53.425586590252145	-2.3247970807881257	91-93 School Road, Sale, M33 7XA	755167527
+1118	Olympic Way, Olympic Park, Poulton-with-Fearnhead, Warrington, England, WA2 0YL, United Kingdom	53.41191	-2.53727	12b Olympic Way Birchwood Warrington WA2 0YL	756167527
+1119	Greggs, 45, School Road, Brooklands, Sale, Trafford, Greater Manchester, England, M33 7YE, United Kingdom	53.425248732807404	-2.322916825132502	98 School Road, Sale, M33 7XB	757167527
+1120	Empress Business Park, Old Trafford, Trafford, Greater Manchester, England, M16 9EB, United Kingdom	53.46617	-2.26762	AiHOMES LTD, Empress Business Centre, 380 Chester Road, Manchester, M16 9EA	763167527
+1121	Premier Residential Lettings, 16, Commercial Street, First Street, City Centre, Manchester, Greater Manchester, England, M15 4PZ, United Kingdom	53.4728222	-2.2503957	16 Commercial Street, Manchester, M15 4PZ	765167527
+1122	Blackburn Street, Outwood Gate, Radcliffe, Bury, Greater Manchester, England, M26 1NQ, United Kingdom	53.55948562736968	-2.325754766107109	44 Blackburn Street, Radcliffe, M26 1NQ	768167527
+1123	Kingsway, Ladybarn, Burnage, Manchester, Greater Manchester, England, M19 1AL, United Kingdom	53.432362219204016	-2.208053539558955	249 Kingsway, Burnage, Manchester, M19 1AL	769167527
+1124	Leicester Road, Broughton Park, Salford, Greater Manchester, England, M7 4DA, United Kingdom	53.51012117635641	-2.252972865466485	19 Leicester Road Salford M7 4AS	775167527
+1125	Smile Stylist, 53, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 4LQ, United Kingdom	53.481125	-2.2444198	53 King Street, Manchester, M2 4LQ	778167527
+1126	Stony Dry Cleaners, 7 Swinfens Yard, High Street, Calverton End, Milton Keynes, City of Milton Keynes, England, MK11 1SY, United Kingdom	52.0557964	-0.8511345	19 London House, High Street, Stony Stratford, Milton Keynes, MK11 1SY	781167527
+1127	Blackburn Street, Outwood Gate, Radcliffe, Bury, Greater Manchester, England, M26 1NQ, United Kingdom	53.55948562736968	-2.325754766107109	43 Blackburn Street, Radcliffe, M26 1NR	782167527
+1128	Manchester Muslim Preparatory School, 551, Wilmslow Road, Withington, Manchester, Greater Manchester, England, M20 4BA, United Kingdom	53.43004564994718	-2.2281452569598184	509 Wilmslow Road, Withington, Manchester, M20 4BA	784167527
+1129	\N	53.4800153	-2.2517994	No1 Spinningfields, Manchester, M3 3JE	787167527
+1130	\N	53.46997945	-2.265949423048932	1 Trentham Street, Hulme, Manchester, M15 4YG	795167527
+1131	\N	53.4759623	-2.2524863	33 Liverpool Road, Manchester, M3 4NQ	805167527
+1132	\N	53.409545208263985	-2.161032161605044	2a Mersey Square Stockport SK1 1NU	814167527
+1133	Fir Road, Bramhall Green, Woodsmoor, Bramhall, Stockport, Greater Manchester, England, SK7 2NP, United Kingdom	53.37235218048781	-2.159189850999666	8A Fir Road, Bramhall, SK7 2NP	825167527
+1134	39, Great Ancoats Street, Strangeways, Manchester, Greater Manchester, England, M4 5AE, United Kingdom	53.48378351341219	-2.230821159406311	61 Great Ancoats Street, Manchester, M4 5AB	827167527
+1135	Rochdale Road, Charlestown, Manchester, Greater Manchester, England, M9 6ER, United Kingdom	53.532033679648265	-2.2085035307747583	1170 Rochdale Road, Blackley, Manchester M9 6ER	841167527
+1136	4-6, Anderson Place, Pilrig, Leith, City of Edinburgh, Alba / Scotland, EH6 5NP, United Kingdom	55.9708147	-3.181241475	Bonnington Bond, 2 Anderson Place, Edinburgh, EH6 5NP	844167527
+1137	Bury New Road, Besses o' th' Barn, Whitefield, Bury, Greater Manchester, England, M45 6AA, United Kingdom	53.54617872546642	-2.2921433623184884	114 Bury New Road, Whitefield, M45 6AD	846167527
+1138	Wilmslow Road, Heald Green, Stockport, Greater Manchester, England, SK8 3NP, United Kingdom	53.36089	-2.21754	Southgate Centre Two, 321 Wilmslow Road, Heald Green, Cheadle, SK8 3PW	857167527
+1139	21, Bury Old Road, Sedgley Park, Prestwich, Bury, Greater Manchester, England, M25 0EX, United Kingdom	53.51882	-2.25911	2a Park Hill, Bury Old Road, Prestwich, Manchester, M25 0FX	859167527
+1140	Reddish Road, Reddish, Stockport, Greater Manchester, England, SK5 7AQ, United Kingdom	53.4364326	-2.1591549	410 Reddish Road, Reddish, Stockport, SK5 7AA	860167527
+1141	The Dragonfly, 60-62, Bradshawgate, Springfield, The Haulgh, Bolton, Greater Manchester, England, BL1 1DP, United Kingdom	53.578239955393634	-2.4265890562430643	2 - 10 Bradshawgate Bolton BL1 1DG	872167527
+1142	\N	\N	\N	Covering London	881167527
+1143	Wilmslow Road, Didsbury, Manchester, Greater Manchester, England, M20 6UH, United Kingdom	53.41463	-2.23286	Suite 47 792 Wilmslow Road, Didsbury, Manchester, M20 6UG	887167527
+1144	Spaces, 125, Deansgate, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M3 2BY, United Kingdom	53.48018095	-2.24802165	Unit 415 Spaces, 125 Deansgate, Manchester, M3 2BY	893167527
+1145	Medieval Quarter, City Centre, Manchester, Greater Manchester, England, M4 4LJ, United Kingdom	53.48748	-2.24073	New Victoria, 103 Corporation Street, Manchester, M4 4DZ	899167527
+\.
+
+
+--
+-- Data for Name: agents_df; Type: TABLE DATA; Schema: silver; Owner: postgres
+--
+
+COPY "silver"."agents_df" ("id", "agent_name", "rowid", "locations_df_id") FROM stdin;
+6	Madina Property, Manchester	6167527	\N
+8	Visum, Nationwide	8167527	\N
+10	The Residences - Deansgate Square, The Residences - Deansgate Square	10167527	\N
+11	The Residences - Deansgate Square, The Residences - Deansgate Square	11167527	\N
+12	The Residences - Deansgate Square, The Residences - Deansgate Square	12167527	\N
+13	The Residences - Deansgate Square, The Residences - Deansgate Square	13167527	\N
+19	Thornley Groves, Didsbury	19167527	\N
+22	Home Made, London	22167527	\N
+23	Home Made, London	23167527	\N
+24	Home Made, London	24167527	\N
+25	Home Made, London	25167527	\N
+28	OpenRent, London	128167527	\N
+32	NEXIS Property, Manchester	132167527	\N
+34	NEXIS Property, Manchester	134167527	\N
+36	Home Made, London	160167527	\N
+37	Home Made, London	161167527	\N
+38	Home Made, London	162167527	\N
+39	Home Made, London	163167527	\N
+40	Home Made, London	164167527	\N
+41	Home Made, London	165167527	\N
+42	Home Made, London	166167527	\N
+43	Home Made, London	167167527	\N
+45	Reeds Rains, Manchester	169167527	\N
+48	UNCLE, London	172167527	\N
+49	UNCLE, London	173167527	\N
+51	Flambard Williams Limited, Canary Wharf	175167527	\N
+55	Clarke & Co, Chadderton	179167527	\N
+57	Livingway Team Ltd, Livingway	181167527	\N
+58	Livingway Team Ltd, Livingway	182167527	\N
+59	Livingway Team Ltd, Livingway	183167527	\N
+60	OpenRent, London	184167527	\N
+61	OpenRent, London	185167527	\N
+62	Livingway Team Ltd, Livingway	186167527	\N
+63	Livingway Team Ltd, Livingway	187167527	\N
+65	South Manchester Homes, Didsbury	189167527	\N
+68	Philip James Manchester, Manchester	192167527	\N
+69	Philip James Manchester, Manchester	193167527	\N
+70	NEXIS Property, Manchester	194167527	\N
+71	NEXIS Property, Manchester	195167527	\N
+72	OpenRent, London	196167527	\N
+73	Madina Property, Manchester	197167527	\N
+76	Native Communities, Manchester	200167527	\N
+78	Native Communities, Manchester	202167527	\N
+79	Native Communities, Manchester	203167527	\N
+80	Native Communities, Manchester	204167527	\N
+81	Native Communities, Manchester	205167527	\N
+82	Native Communities, Manchester	206167527	\N
+83	Native Communities, Manchester	207167527	\N
+85	OpenRent, London	209167527	\N
+87	Admove, Altrincham	211167527	\N
+90	C & R Properties Ltd, Salford Manchester	214167527	\N
+96	Homes2share, Manchester	220167527	\N
+97	Homes2share, Manchester	221167527	\N
+99	ila, Swan Street House	223167527	\N
+100	ila, Swan Street House	224167527	\N
+101	ila, Swan Street House	225167527	\N
+103	ila, Swan Street House	227167527	\N
+104	ila, Swan Street House	228167527	\N
+105	ila, Swan Street House	229167527	\N
+106	ila, Swan Street House	230167527	\N
+107	ila, Swan Street House	231167527	\N
+109	ila, Swan Street House	233167527	\N
+110	ila, Swan Street House	234167527	\N
+111	ila, Swan Street House	235167527	\N
+113	Cortland, Cortland Colliers Yard	237167527	\N
+114	Cortland, Cortland Colliers Yard	238167527	\N
+121	OpenRent, London	245167527	\N
+122	Cortland, Cortland Colliers Yard	246167527	\N
+123	Buraq Estates, Manchester	247167527	\N
+124	Cortland, Cortland Colliers Yard	248167527	\N
+126	Cortland, Cortland Colliers Yard	250167527	\N
+128	Cortland, Cortland Colliers Yard	252167527	\N
+129	Thornley Groves, Didsbury	253167527	\N
+130	One Move Group, Manchester	254167527	\N
+131	One Move Group, Manchester	255167527	\N
+132	Hunters, Manchester	256167527	\N
+133	One Move Group, Manchester	257167527	\N
+135	Thornley Groves, Manchester Southern Gateway	259167527	\N
+136	One Move Group, Manchester	260167527	\N
+74	Thornley Groves, Manchester Southern Gateway	198167527	984
+140	One Move Group, Manchester	264167527	\N
+142	Thornley Groves, Manchester Southern Gateway	266167527	\N
+143	Reside, Manchester	267167527	\N
+144	One Move Group, Manchester	268167527	\N
+146	Thornley Groves, Manchester Southern Gateway	270167527	\N
+149	NEXIS Property, Manchester	273167527	\N
+150	One Move Group, Manchester	274167527	\N
+151	Reside, Manchester	275167527	\N
+152	Settio Property Experience Ltd, Manchester	276167527	\N
+155	NEXIS Property, Manchester	279167527	\N
+156	Bridgfords Lettings, Didsbury	280167527	\N
+157	One Move Group, Manchester	281167527	\N
+159	One Move Group, Manchester	283167527	\N
+161	Settio Property Experience Ltd, Manchester	285167527	\N
+162	Settio Property Experience Ltd, Manchester	286167527	\N
+163	Settio Property Experience Ltd, Manchester	287167527	\N
+164	Settio Property Experience Ltd, Manchester	288167527	\N
+165	Settio Property Experience Ltd, Manchester	289167527	\N
+167	Settio Property Experience Ltd, Manchester	291167527	\N
+168	Settio Property Experience Ltd, Manchester	292167527	\N
+169	Settio Property Experience Ltd, Manchester	293167527	\N
+170	OpenRent, London	295167527	\N
+171	C & R Properties Ltd, Salford Manchester	296167527	\N
+173	NEXIS Property, Manchester	298167527	\N
+174	Home Made, London	299167527	\N
+175	NEXIS Property, Manchester	300167527	\N
+176	Clay Life, Clay	301167527	\N
+177	Cortland, Cortland Colliers Yard	302167527	\N
+179	Home Made, London	304167527	\N
+180	Home Made, London	305167527	\N
+181	Home Made, London	306167527	\N
+183	Home Made, London	308167527	\N
+184	Home Made, London	309167527	\N
+186	Settio Property Experience Ltd, Manchester	311167527	\N
+188	Ascend, Manchester	313167527	\N
+189	Julie Twist Properties, Manchester	314167527	\N
+190	Thornley Groves, Manchester Southern Gateway	315167527	\N
+195	Normie Sales & Lettings, North Manchester	320167527	\N
+196	Reeds Rains, Manchester	321167527	\N
+197	Goodwin Fish, Manchester	322167527	\N
+198	Select Residential, Manchester	323167527	\N
+200	Thornley Groves, Manchester Southern Gateway	325167527	\N
+202	uhaus, uhaus	328167527	\N
+203	uhaus, uhaus	329167527	\N
+204	uhaus, uhaus	330167527	\N
+205	Settio Property Experience Ltd, Manchester	331167527	\N
+206	uhaus, uhaus	332167527	\N
+207	uhaus, uhaus	333167527	\N
+208	uhaus, uhaus	334167527	\N
+209	uhaus, uhaus	335167527	\N
+210	uhaus, uhaus	337167527	\N
+211	uhaus, uhaus	338167527	\N
+212	uhaus, uhaus	339167527	\N
+213	uhaus, uhaus	340167527	\N
+214	uhaus, uhaus	341167527	\N
+218	Union, Union	345167527	\N
+219	Union, Union	346167527	\N
+221	We Let Properties, Manchester	348167527	\N
+222	C & R Properties Ltd, Salford Manchester	349167527	\N
+223	Get Living, New Maker Yards	350167527	\N
+224	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	351167527	\N
+225	NEXIS Property, Manchester	352167527	\N
+226	NEXIS Property, Manchester	353167527	\N
+227	Julian Wadden, Heaton Moor	354167527	\N
+233	HYBR, Covering Manchester	360167527	\N
+234	HYBR, Covering Manchester	361167527	\N
+235	HYBR, Covering Manchester	362167527	\N
+236	HYBR, Covering Manchester	363167527	\N
+237	HYBR, Covering Manchester	364167527	\N
+238	HYBR, Covering Manchester	365167527	\N
+239	HYBR, Covering Manchester	366167527	\N
+240	Montrose Properties Ltd, West Didsbury	367167527	\N
+241	HYBR, Covering Manchester	368167527	\N
+242	HYBR, Covering Manchester	369167527	\N
+243	HYBR, Covering Manchester	370167527	\N
+244	HYBR, Covering Manchester	371167527	\N
+245	Cortland, Botanica	372167527	\N
+246	Cortland, Botanica	373167527	\N
+247	CityZEN, London	374167527	\N
+248	HYBR, Covering Manchester	375167527	\N
+249	Cortland, Botanica	376167527	\N
+250	HYBR, Covering Manchester	377167527	\N
+251	HYBR, Covering Manchester	378167527	\N
+253	Drake & Co, Rusholme	380167527	\N
+254	HYBR, Covering Manchester	381167527	\N
+255	HYBR, Covering Manchester	382167527	\N
+256	HYBR, Covering Manchester	383167527	\N
+257	Drake & Co, Rusholme	384167527	\N
+258	We Let Properties, Manchester	385167527	\N
+259	HYBR, Covering Manchester	386167527	\N
+262	Drake & Co, Rusholme	389167527	\N
+263	Philip James Manchester, Manchester	390167527	\N
+264	Bridgfords Lettings, Didsbury	391167527	\N
+267	Thornley Groves, Manchester Southern Gateway	394167527	\N
+269	Union, Union	396167527	\N
+271	Union, Union	398167527	\N
+273	Union, Union	400167527	\N
+274	Union, Union	401167527	\N
+275	Thornley Groves, Fallowfield	402167527	\N
+276	Union, Union	403167527	\N
+278	Union, Union	405167527	\N
+279	George Adams (Estate Agents) Ltd, Manchester	406167527	\N
+280	Union, Union	407167527	\N
+29	Vesper Homes, Manchester	129167527	968
+281	Wren Properties Ltd, Didsbury	408167527	\N
+282	Thornley Groves, Fallowfield	409167527	\N
+284	NEXIS Property, Manchester	411167527	\N
+285	NEXIS Property, Manchester	412167527	\N
+286	Downing Property Management Ltd, Square Gardens	413167527	\N
+287	Thornley Groves, Manchester Southern Gateway	414167527	\N
+288	Buckley Frayne, Manchester	415167527	\N
+290	LOCAL Manchester, LOCAL Manchester	417167527	\N
+291	Downing Property Management Ltd, Square Gardens	418167527	\N
+292	Bridgfords Lettings, Didsbury	419167527	\N
+295	Philip James Manchester, Manchester	422167527	\N
+296	Hunters, South Manchester	423167527	\N
+298	Bridgfords Lettings, Chorlton	426167527	\N
+299	LOCAL Manchester, LOCAL Manchester	427167527	\N
+300	Settio Property Experience Ltd, Manchester	428167527	\N
+302	Northern Etchells, Manchester	430167527	\N
+304	Home Made, London	432167527	\N
+306	Home Made, London	434167527	\N
+307	Julie Twist Properties, Manchester	435167527	\N
+309	The James Manchester, The James Manchester	437167527	\N
+310	The James Manchester, The James Manchester	438167527	\N
+313	Kaytons Estate Agents, Manchester	441167527	\N
+314	eXp UK, North West	442167527	\N
+317	Jordan Fishwick, Chorlton	445167527	\N
+318	Bridgfords Lettings, Sale	446167527	\N
+320	@ThePlace, Dukinfield	448167527	\N
+321	Home Made, London	449167527	\N
+322	Ascend, Manchester	450167527	\N
+323	Goodwin Fish, Manchester	451167527	\N
+324	Thornley Groves, Manchester Southern Gateway	452167527	\N
+325	Normie Sales & Lettings, North Manchester	453167527	\N
+326	Thornley Groves, Fallowfield	454167527	\N
+327	Home Made, London	455167527	\N
+328	Kaytons Estate Agents, Manchester	456167527	\N
+329	The Estate Agent Manchester, Manchester	457167527	\N
+330	Home Made, London	458167527	\N
+331	Home Made, London	459167527	\N
+333	Home Made, London	461167527	\N
+334	The Good Estate Agency, Manchester	463167527	\N
+335	Home Made, London	464167527	\N
+336	The Good Estate Agency, Manchester	465167527	\N
+337	The Good Estate Agency, Manchester	466167527	\N
+338	Home Made, London	467167527	\N
+339	The Good Estate Agency, Manchester	468167527	\N
+340	Home Made, London	469167527	\N
+341	Home Made, London	470167527	\N
+342	Home Made, London	471167527	\N
+343	Home Made, London	472167527	\N
+344	Home Made, London	473167527	\N
+345	OpenRent, London	475167527	\N
+346	OpenRent, London	476167527	\N
+347	OpenRent, London	477167527	\N
+348	OpenRent, London	478167527	\N
+350	NPP Residential, Manchester	480167527	\N
+351	Philip James Manchester, Manchester	481167527	\N
+352	Philip James Manchester, Manchester	482167527	\N
+353	Philip James Manchester, Manchester	483167527	\N
+354	OpenRent, London	484167527	\N
+355	OpenRent, London	485167527	\N
+356	OpenRent, London	486167527	\N
+358	Accommodation.co.uk, covering National	488167527	\N
+359	NEXIS Property, Manchester	489167527	\N
+360	NEXIS Property, Manchester	490167527	\N
+361	Accommodation.co.uk, covering National	491167527	\N
+362	Welcome To Manchester Lettings, Covering Manchester	492167527	\N
+363	Welcome To Manchester Lettings, Covering Manchester	493167527	\N
+365	X1 Sales & Lettings, Salford	495167527	\N
+366	Welcome To Manchester Lettings, Covering Manchester	496167527	\N
+367	OpenRent, London	497167527	\N
+368	X1 Sales & Lettings, Salford	498167527	\N
+371	Dandara Living, Manchester, Chapel Wharf	501167527	\N
+372	Dandara Living, Manchester, Chapel Wharf	502167527	\N
+373	Dandara Living, Manchester, Chapel Wharf	503167527	\N
+374	Dandara Living, Manchester, Chapel Wharf	504167527	\N
+375	Dandara Living, Manchester, Chapel Wharf	505167527	\N
+376	Dandara Living, Manchester, Chapel Wharf	506167527	\N
+377	Dandara Living, Manchester, Chapel Wharf	507167527	\N
+378	Dandara Living, Manchester, Chapel Wharf	508167527	\N
+379	Dandara Living, Manchester, Chapel Wharf	509167527	\N
+380	OpenRent, London	510167527	\N
+381	OpenRent, London	511167527	\N
+383	HYBR, Covering Manchester	513167527	\N
+384	HYBR, Covering Manchester	514167527	\N
+385	HYBR, Covering Manchester	515167527	\N
+386	HYBR, Covering Manchester	516167527	\N
+387	HYBR, Covering Manchester	517167527	\N
+388	HYBR, Covering Manchester	518167527	\N
+390	Your Move, Swinton	520167527	\N
+391	Reeds Rains, Didsbury	521167527	\N
+392	Hills, Eccles	522167527	\N
+393	Welcome To Manchester Lettings, Covering Manchester	523167527	\N
+394	Union, Union	524167527	\N
+395	Bridgfords Lettings, Sale	525167527	\N
+397	Joules Estate Agency, Heaton Mersey	527167527	\N
+398	C & R Properties Ltd, Salford Manchester	528167527	\N
+399	Home Made, London	626167527	\N
+402	Select Residential, Manchester	531167527	\N
+403	Settio Property Experience Ltd, Manchester	532167527	\N
+404	COUSINS ESTATE AGENTS, Failsworth	533167527	\N
+405	Madina Property, Manchester	534167527	\N
+406	Madina Property, Manchester	535167527	\N
+407	One Move Group, Manchester	536167527	\N
+408	Kaytons Estate Agents, Manchester	537167527	\N
+409	Thornley Groves, Monton	538167527	\N
+410	Clay Life, Clay	539167527	\N
+411	One Move Group, Manchester	540167527	\N
+412	Clay Life, Clay	541167527	\N
+413	Jordan Fishwick, Manchester	542167527	\N
+414	Clay Life, Clay	543167527	\N
+416	Clay Life, Clay	545167527	\N
+417	Orlando Reid, Manchester	546167527	\N
+418	C & R Properties Ltd, Hulme Manchester	547167527	\N
+419	Thornley Groves, Manchester Southern Gateway	548167527	\N
+420	Home Made, London	549167527	\N
+421	Thornley Groves, Manchester Southern Gateway	550167527	\N
+422	OpenRent, London	551167527	\N
+423	OpenRent, London	552167527	\N
+425	NEXIS Property, Manchester	554167527	\N
+426	NPP Residential, Manchester	555167527	\N
+429	NEXIS Property, Manchester	558167527	\N
+430	Cortland, Cortland Colliers Yard	559167527	\N
+431	Cortland, Cortland Colliers Yard	560167527	\N
+432	Clay Life, Clay	561167527	\N
+433	Cortland, Cortland Colliers Yard	562167527	\N
+434	Cortland, Cortland Colliers Yard	563167527	\N
+435	Cortland, Cortland Colliers Yard	564167527	\N
+436	NEXIS Property, Manchester	565167527	\N
+437	Bridgfords Lettings, Chorlton	566167527	\N
+439	Clay Life, Clay	568167527	\N
+441	For Living, For Living	570167527	\N
+442	NEXIS Property, Manchester	571167527	\N
+443	Clay Life, Clay	572167527	\N
+444	C & R Properties Ltd, Hulme Manchester	573167527	\N
+445	Reeds Rains, Manchester	575167527	\N
+446	Leaders Lettings, Manchester	576167527	\N
+448	Home Made, London	627167527	\N
+452	Orlando Reid, Manchester	582167527	\N
+453	Madina Property, Manchester	583167527	\N
+454	Clay Life, Clay	584167527	\N
+455	Madina Property, Manchester	585167527	\N
+456	Bridgfords Lettings, Manchester	586167527	\N
+457	Bridgfords Lettings, Sale	587167527	\N
+459	Jordan Fishwick, Manchester	589167527	\N
+460	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	590167527	\N
+461	Bridgfords Lettings, Manchester	591167527	\N
+462	OpenRent, London	592167527	\N
+463	Downing Property Management Ltd, Square Gardens	593167527	\N
+464	Gascoigne Halman, Didsbury	594167527	\N
+465	Bridgfords Lettings, Withington	595167527	\N
+466	Ascend, Manchester	596167527	\N
+467	Thornley Groves, Fallowfield	597167527	\N
+468	Select Residential, Manchester	598167527	\N
+469	Ustay Global, Manchester	599167527	\N
+470	Thornley Groves, Fallowfield	600167527	\N
+471	Julian Wadden, Heaton Moor	601167527	\N
+473	Hills, Eccles	603167527	\N
+476	NEXIS Property, Manchester	606167527	\N
+477	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	607167527	\N
+480	COUSINS ESTATE AGENTS, Failsworth	611167527	\N
+481	Thornley Groves, Manchester Southern Gateway	612167527	\N
+484	Julian Wadden, Heaton Moor	615167527	\N
+485	C & R Properties Ltd, Salford Manchester	616167527	\N
+486	Gascoigne Halman, Didsbury	617167527	\N
+487	Ascend, Manchester	618167527	\N
+488	One Move Group, Manchester	619167527	\N
+489	One Move Group, Manchester	620167527	\N
+491	Downing Property Management Ltd, Square Gardens	622167527	\N
+492	Reeds Rains, Salford Quays City Living	623167527	\N
+493	Downing Property Management Ltd, Square Gardens	624167527	\N
+494	One Move Group, Manchester	625167527	\N
+495	Home Made, London	628167527	\N
+496	OpenRent, London	629167527	\N
+497	One Move Group, Manchester	630167527	\N
+498	One Move Group, Manchester	631167527	\N
+499	OpenRent, London	632167527	\N
+500	Jordan Fishwick, Didsbury	633167527	\N
+502	OpenRent, London	635167527	\N
+503	OpenRent, London	636167527	\N
+504	OpenRent, London	637167527	\N
+506	Jordan Fishwick, Manchester	639167527	\N
+507	Leaders Lettings, Manchester	640167527	\N
+510	Hunters, Manchester	643167527	\N
+511	X1 Sales & Lettings, Salford	644167527	\N
+513	We Let Properties, Manchester	646167527	\N
+514	The James Manchester, The James Manchester	647167527	\N
+515	Property Genius, Manchester	648167527	\N
+516	X1 Sales & Lettings, Salford	650167527	\N
+517	The James Manchester, The James Manchester	651167527	\N
+518	StudentTenant, Canterbury	652167527	\N
+519	Flambard Williams Limited, Canary Wharf	653167527	\N
+520	Flambard Williams Limited, Canary Wharf	654167527	\N
+521	Accommodation.co.uk, covering National	655167527	\N
+523	Flambard Williams Limited, Canary Wharf	657167527	\N
+524	Northern Group, Manchester	658167527	\N
+525	X1 Sales & Lettings, Salford	659167527	\N
+526	We Let Properties, Manchester	660167527	\N
+527	We Let Properties, Manchester	661167527	\N
+528	Pure, Manchester	662167527	\N
+529	Pure, Manchester	663167527	\N
+530	Settio Property Experience Ltd, Manchester	664167527	\N
+532	LOCAL Manchester, LOCAL Manchester	666167527	\N
+533	Bridgfords Lettings, Manchester	667167527	\N
+534	Savills Lettings, Manchester	668167527	\N
+536	Kaytons Estate Agents, Manchester	670167527	\N
+537	MCR Move, Manchester	671167527	\N
+538	MCR Move, Manchester	672167527	\N
+539	Flambard Williams Limited, Canary Wharf	673167527	\N
+540	Flambard Williams Limited, Canary Wharf	675167527	\N
+541	Flambard Williams Limited, Canary Wharf	676167527	\N
+542	Kaytons Estate Agents, Manchester	677167527	\N
+543	Jordan Fishwick, Didsbury	678167527	\N
+544	Thornley Groves, Didsbury	679167527	\N
+545	Goodwin Fish, Manchester	680167527	\N
+548	Leaders Lettings, Manchester	683167527	\N
+550	Leaders Lettings, Manchester	685167527	\N
+551	Home Estate Agents, Monton	686167527	\N
+552	Leaders Lettings, Manchester	687167527	\N
+554	Home Made, London	689167527	\N
+555	George Adams (Estate Agents) Ltd, Manchester	690167527	\N
+556	Leaders Lettings, Manchester	691167527	\N
+557	Thornley Groves, Fallowfield	692167527	\N
+558	Downing Property Management Ltd, Square Gardens	693167527	\N
+560	MCR Move, Manchester	695167527	\N
+561	LOCAL Manchester, LOCAL Manchester	696167527	\N
+562	Savills Lettings, Manchester	697167527	\N
+563	Home Made, London	698167527	\N
+565	Native Communities, Manchester	702167527	\N
+566	Native Communities, Manchester	703167527	\N
+567	Native Communities, Manchester	704167527	\N
+570	The Slate Yard, Salford	707167527	\N
+571	The Slate Yard, Salford	708167527	\N
+572	The Slate Yard, Salford	709167527	\N
+573	The Slate Yard, Salford	710167527	\N
+574	The Slate Yard, Salford	711167527	\N
+575	Townhouse, Manchester	712167527	\N
+576	OpenRent, London	713167527	\N
+577	OpenRent, London	714167527	\N
+578	NPP Residential, Manchester	715167527	\N
+579	Philip James Manchester, Manchester	716167527	\N
+580	Philip James Manchester, Manchester	717167527	\N
+581	Philip James Manchester, Manchester	718167527	\N
+582	OpenRent, London	719167527	\N
+583	OpenRent, London	720167527	\N
+584	X1 Sales & Lettings, Salford	721167527	\N
+585	X1 Sales & Lettings, Salford	722167527	\N
+586	X1 Sales & Lettings, Salford	723167527	\N
+587	Native Communities, Manchester	724167527	\N
+588	X1 Sales & Lettings, Salford	725167527	\N
+589	OpenRent, London	726167527	\N
+591	Joules Estate Agency, Heaton Mersey	728167527	\N
+593	OpenRent, London	730167527	\N
+594	OpenRent, London	731167527	\N
+595	OpenRent, London	732167527	\N
+596	OpenRent, London	733167527	\N
+597	Jordan Fishwick, Manchester	734167527	\N
+598	Reeds Rains, Manchester	735167527	\N
+599	Savills Lettings, Manchester	736167527	\N
+601	Jordan Fishwick, Chorlton	739167527	\N
+602	Gascoigne Halman, Didsbury	740167527	\N
+603	Leaders Lettings, Manchester	741167527	\N
+604	Thornley Groves, Prestwich	742167527	\N
+605	Gascoigne Halman, Didsbury	743167527	\N
+606	Flambard Williams Limited, Canary Wharf	744167527	\N
+609	MCR Move, Manchester	747167527	\N
+610	Cortland, Cortland Colliers Yard	748167527	\N
+612	QUBE Residential, Salford Quays	750167527	\N
+613	Your Move, Swinton	751167527	\N
+614	OpenRent, London	752167527	\N
+615	NEXIS Property, Manchester	753167527	\N
+620	Aubrey Lee & Co, Prestwich	758167527	\N
+621	Julie Twist Properties, Manchester	759167527	\N
+622	Bridgfords Lettings, Manchester	760167527	\N
+623	Buckley Frayne, Manchester	761167527	\N
+624	Buckley Frayne, Manchester	762167527	\N
+626	AIHOMES LIMITED, Manchester	764167527	\N
+628	Bridgfords Lettings, Chorlton	766167527	\N
+564	Northern Group, Manchester	700167527	1107
+629	Bridgfords Lettings, Manchester	767167527	\N
+632	Thornley Groves, Fallowfield	770167527	\N
+633	Bridgfords Lettings, Didsbury	771167527	\N
+634	Cortland, Cortland Colliers Yard	772167527	\N
+635	Ascend, Manchester	773167527	\N
+636	Settio Property Experience Ltd, Manchester	774167527	\N
+638	Julie Twist Properties, Manchester	776167527	\N
+639	Manlets, Manchester	777167527	\N
+641	X1 Sales & Lettings, Salford	779167527	\N
+642	Bridgfords Lettings, Withington	780167527	\N
+645	Bridgfords Lettings, Manchester	783167527	\N
+647	Thorpe & Co, Salford	785167527	\N
+648	Reeds Rains, Manchester	786167527	\N
+650	Reside, Manchester	788167527	\N
+651	Select Residential, Manchester	789167527	\N
+652	Select Residential, Manchester	790167527	\N
+653	urbanbubble, Manchester	791167527	\N
+654	LOCAL Manchester, LOCAL Manchester	792167527	\N
+655	Henry Wiltshire, Manchester	793167527	\N
+656	Manchester Apartments, Manchester Apartments	794167527	\N
+658	Select Residential, Manchester	796167527	\N
+659	QUBE Residential, Salford Quays	797167527	\N
+660	Kingsdene Ltd, Manchester	798167527	\N
+661	MCR Move, Manchester	800167527	\N
+662	MCR Move, Manchester	801167527	\N
+663	MCR Move, Manchester	803167527	\N
+665	Henry Wiltshire, Manchester	806167527	\N
+666	MCR Move, Manchester	807167527	\N
+667	MCR Move, Manchester	808167527	\N
+668	MCR Move, Manchester	809167527	\N
+669	Reeds Rains, Salford Quays City Living	810167527	\N
+670	Goodwin Fish, Manchester	811167527	\N
+671	Greystar, Oxbow, Salford	812167527	\N
+672	Greystar, Oxbow, Salford	813167527	\N
+674	Greystar, Oxbow, Salford	815167527	\N
+675	Greystar, Oxbow, Salford	816167527	\N
+676	Greystar, Oxbow, Salford	817167527	\N
+677	Greystar, Oxbow, Salford	818167527	\N
+678	Greystar, Oxbow, Salford	819167527	\N
+679	Greystar, Oxbow, Salford	820167527	\N
+680	Greystar, Oxbow, Salford	821167527	\N
+681	Greystar, Oxbow, Salford	822167527	\N
+682	Greystar, Oxbow, Salford	823167527	\N
+684	Greystar, Oxbow, Salford	826167527	\N
+686	Greystar, Oxbow, Salford	829167527	\N
+687	Greystar, Oxbow, Salford	830167527	\N
+688	VitalSpace, South Manchester	831167527	\N
+689	Greystar, Oxbow, Salford	832167527	\N
+690	Bridgfords Lettings, Manchester	833167527	\N
+691	Clay Life, Clay	834167527	\N
+692	Jordan Fishwick, Manchester	835167527	\N
+693	Ascend, Manchester	836167527	\N
+694	Thornley Groves, Manchester Southern Gateway	837167527	\N
+695	Henry Wiltshire, Manchester	838167527	\N
+696	Reside, Manchester	839167527	\N
+697	Clay Life, Clay	840167527	\N
+699	Manchester Apartments, Manchester Apartments	842167527	\N
+643	HC-GB, North	781167527	1126
+700	Bridgfords Lettings, Sale	843167527	\N
+702	Bridgfords Lettings, Sale	845167527	\N
+704	Manchester Apartments, Manchester Apartments	847167527	\N
+705	Bridgfords Lettings, Sale	850167527	\N
+706	Bridgfords Lettings, Sale	851167527	\N
+707	Bridgfords Lettings, Sale	852167527	\N
+708	Grovewell, Manchester	853167527	\N
+709	Bridgfords Lettings, Sale	854167527	\N
+710	Bridgfords Lettings, Manchester	855167527	\N
+711	Downing Property Management Ltd, Square Gardens	856167527	\N
+713	Thornley Groves, Manchester Southern Gateway	858167527	\N
+716	OpenRent, London	861167527	\N
+717	VitalSpace, South Manchester	862167527	\N
+718	Vox, Vox	863167527	\N
+719	Premier Residential, Manchester	864167527	\N
+720	Kingsdene Ltd, Manchester	865167527	\N
+721	Aubrey Lee & Co, Prestwich	866167527	\N
+722	loc8me, Covering Manchester	867167527	\N
+723	We Let Properties, Manchester	868167527	\N
+724	Montrose Properties Ltd, West Didsbury	869167527	\N
+725	Kingsdene Ltd, Manchester	870167527	\N
+726	Ascend, Manchester	871167527	\N
+728	Gascoigne Halman, Didsbury	873167527	\N
+729	Montrose Properties Ltd, West Didsbury	875167527	\N
+730	Townhouse, Manchester	876167527	\N
+731	Bridgfords Lettings, Manchester	877167527	\N
+732	Thornley Groves, Fallowfield	878167527	\N
+733	Thornley Groves, Manchester Southern Gateway	880167527	\N
+735	Thornley Groves, Manchester Southern Gateway	882167527	\N
+736	Kingsdene Ltd, Manchester	883167527	\N
+737	HASSLE FREE LETTINGS, London	884167527	\N
+738	We Let Properties, Manchester	885167527	\N
+739	Goodwin Fish, Manchester	886167527	\N
+741	urbanbubble, Manchester	888167527	\N
+742	Manchester Easy Rent, Manchester	889167527	\N
+743	Leef Property Management Ltd, Warrington	890167527	\N
+744	Manchester Easy Rent, Manchester	891167527	\N
+745	Martin & Co, Manchester Central	892167527	\N
+747	Kaytons Estate Agents, Manchester	894167527	\N
+748	Bridgfords Lettings, Manchester	895167527	\N
+749	Leaders Lettings, Manchester	896167527	\N
+750	Hunters, Manchester	897167527	\N
+751	loc8me, Covering Manchester	898167527	\N
+753	Savills Lettings, Manchester	900167527	\N
+754	Hills, Eccles	901167527	\N
+755	Leaders Lettings, Manchester	902167527	\N
+756	Townhouse, Manchester	903167527	\N
+757	NEXIS Property, Manchester	904167527	\N
+1	Home Made, London	1167527	952
+2	Visum, Nationwide	2167527	953
+3	Hills, Eccles	3167527	954
+4	Kirn Estates, Altrincham	4167527	955
+5	Madina Property, Manchester	5167527	956
+7	The Residences - Deansgate Square, The Residences - Deansgate Square	7167527	957
+9	C & R Properties Ltd, Salford Manchester	9167527	958
+14	Northern Etchells, Manchester	14167527	959
+15	Your Move, Swinton	15167527	960
+16	C & R Properties Ltd, Hulme Manchester	16167527	961
+17	Hibbert Homes, Hale	17167527	962
+18	Thornley Groves, Didsbury	18167527	963
+20	Kaytons Estate Agents, Manchester	20167527	964
+21	Reeds Rains, Manchester	21167527	965
+26	Native Communities, Manchester	126167527	966
+27	OpenRent, London	127167527	967
+30	Julian Wadden, Heaton Moor	130167527	969
+31	NEXIS Property, Manchester	131167527	970
+33	The Estate Agent Manchester, Manchester	133167527	971
+35	Goodwin Fish, Manchester	151167527	972
+44	Thornley Groves, Fallowfield	168167527	973
+46	Jordan Fishwick, Chorlton	170167527	974
+47	UNCLE, London	171167527	975
+50	Flambard Williams Limited, Canary Wharf	174167527	976
+52	Allsop, The Trilogy	176167527	977
+53	Leaders Lettings, Manchester	177167527	978
+54	Clarke & Co, Chadderton	178167527	979
+56	Livingway Team Ltd, Livingway	180167527	980
+64	South Manchester Homes, Didsbury	188167527	981
+66	Lancashire Properties, Manchester	190167527	982
+67	Philip James Manchester, Manchester	191167527	983
+75	Admove, Altrincham	199167527	985
+77	Settio Property Experience Ltd, Manchester	201167527	986
+84	Get Living, New Maker Yards	208167527	987
+86	BRIC Living, Liverpool	210167527	988
+88	Thorpe & Co, Salford	212167527	989
+89	Normie Sales & Lettings, North Manchester	213167527	990
+91	CityZEN, London	215167527	991
+92	Property Genius, Manchester	216167527	992
+93	Hunters, Manchester	217167527	993
+94	Clay Life, Clay	218167527	994
+95	Homes2share, Manchester	219167527	995
+98	ila, Swan Street House	222167527	996
+102	uhaus, uhaus	226167527	997
+108	Bridgfords Lettings, Didsbury	232167527	998
+112	Cortland, Cortland Colliers Yard	236167527	999
+115	One Move Group, Manchester	239167527	1000
+116	Bridgfords Lettings, Manchester	240167527	1001
+117	Accommodation.co.uk, covering National	241167527	1002
+118	Buraq Estates, Manchester	242167527	1003
+119	Roger Dean, Heald Green	243167527	1004
+120	Three Sixty Living, Stockport	244167527	1005
+125	Address Properties, Liverpool	249167527	1006
+127	Ustay Global, Manchester	251167527	1007
+134	Select Residential, Manchester	258167527	1008
+137	Ascend, Manchester	261167527	1009
+138	Hunters Worsley, Worsley	262167527	1010
+139	Bridgfords Lettings, Withington	263167527	1011
+141	Reside, Manchester	265167527	1012
+145	Orlando Reid, Manchester	269167527	1013
+147	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	271167527	1014
+148	We Let Properties, Manchester	272167527	1015
+153	Solomon Estates, Manchester	277167527	1016
+154	Kingsdene Ltd, Manchester	278167527	1017
+158	Jordan Fishwick, Didsbury	282167527	1018
+160	loc8me, Covering Manchester	284167527	1019
+166	Downing Property Management Ltd, Square Gardens	290167527	1020
+172	Jordan Fishwick, Manchester	297167527	1021
+178	Julie Twist Properties, Manchester	303167527	1022
+182	Julian Wadden, Didsbury	307167527	1023
+185	Hunters, South Manchester	310167527	1024
+187	Montrose Properties Ltd, West Didsbury	312167527	1025
+191	Northern Group, Manchester	316167527	1026
+192	Welcome To Manchester Lettings, Covering Manchester	317167527	1027
+193	Complete RPI, Birmingham	318167527	1028
+194	Thornley Groves, Monton	319167527	1029
+199	LOCAL Manchester, LOCAL Manchester	324167527	1030
+201	Wren Properties Ltd, Didsbury	327167527	1031
+215	Karsons Lettings, Manchester	342167527	1032
+216	Taylor & Wood Estate Agents, Hyde	343167527	1033
+217	Union, Union	344167527	1034
+220	Savills Lettings, Manchester	347167527	1035
+228	Gascoigne Halman, Didsbury	355167527	1036
+229	Callaghans, Gatley	356167527	1037
+230	@ThePlace, Dukinfield	357167527	1038
+231	Cortland, Botanica	358167527	1039
+232	HYBR, Covering Manchester	359167527	1040
+252	Drake & Co, Rusholme	379167527	1041
+260	George Adams (Estate Agents) Ltd, Manchester	387167527	1042
+261	Emoov, Chelmsford	388167527	1043
+265	Duet, Duet	392167527	1044
+266	Buckley Frayne, Manchester	393167527	1045
+268	Joules Estate Agency, Heaton Mersey	395167527	1046
+270	Bridgfords Lettings, Sale	397167527	1047
+272	Greystar, Oxbow, Salford	399167527	1048
+277	Reeds Rains, Salford	404167527	1049
+283	Bridgfords Lettings, Chorlton	410167527	1050
+289	Grovewell, Manchester	416167527	1051
+293	Residential Estates, Chester	420167527	1052
+294	Reeds Rains, Didsbury	421167527	1053
+297	COUSINS ESTATE AGENTS, Failsworth	425167527	1054
+301	Parello Ltd, Walkden	429167527	1055
+303	Primo Property Management, Manchester	431167527	1056
+305	Intus Lettings, Manchester	433167527	1057
+308	The James Manchester, The James Manchester	436167527	1058
+311	eXp UK, North West	439167527	1059
+312	Northwood, Wigan	440167527	1060
+315	Abode Property Management, Greater Manchester	443167527	1061
+316	Simple Life, Simple Life	444167527	1062
+319	Martin & Co, Rochdale & Oldham	447167527	1063
+332	The Good Estate Agency, Manchester	460167527	1064
+349	NPP Residential, Manchester	479167527	1065
+357	VitalSpace, South Manchester	487167527	1066
+364	X1 Sales & Lettings, Salford	494167527	1067
+369	Manchester Apartments, Manchester Apartments	499167527	1068
+370	Dandara Living, Manchester, Chapel Wharf	500167527	1069
+382	Nicholas Humphreys, Manchester	512167527	1070
+389	North Property Group, Manchester	519167527	1071
+396	Thornley Groves, Prestwich	526167527	1072
+400	urbanbubble, Manchester	529167527	1073
+401	PriceLinsey, Sheffield	530167527	1074
+415	SnugPads, Salford	544167527	1075
+424	For Living, For Living	553167527	1076
+427	Fozard Properties Ltd, Upton	556167527	1077
+428	Main & Main, Heald Green	557167527	1078
+438	Amro Property Management, The Green Rooms	567167527	1079
+440	Rent For Me, Manchester	569167527	1080
+447	MCR Move, Manchester	577167527	1081
+449	Ying Wah Property, Manchester	578167527	1082
+450	Townhouse, Manchester	580167527	1083
+451	City Comfort Luxury Apartments, Manchester	581167527	1084
+458	urbanbubble, Manchester	588167527	1085
+472	Julian Wadden, Stockport	602167527	1086
+474	Aubrey Lee & Co, Prestwich	604167527	1087
+475	Saltsman & co, Droylsden	605167527	1088
+478	Richmond Property Management & Letting Ltd, Didsbury	608167527	1089
+479	StudentTenant, Canterbury	609167527	1090
+482	QUBE Residential, Salford Quays	613167527	1091
+483	S&S Property Group, Manchester	614167527	1092
+490	Reeds Rains, Salford Quays City Living	621167527	1093
+501	Leaders Lettings, Fallowfield	634167527	1094
+505	Redstone Lettings and Management, Manchester	638167527	1095
+508	Purplebricks, covering Manchester	641167527	1096
+509	Home Estate Agents, Monton	642167527	1097
+512	Rentlife, Birmingham	645167527	1098
+522	Pure, Manchester	656167527	1099
+531	Lettingsupermarket.com, National	665167527	1100
+535	Burgin Atkinson, Retford	669167527	1101
+546	Lawrence Copeland (Town & City Centre), Manchester	681167527	1102
+547	JonSimon Estate Agents, Radcliffe	682167527	1103
+549	Delisa Miller, Manchester	684167527	1104
+553	N P Estates, Manchester	688167527	1105
+559	International Property Partners, Covering Greater Manchester	694167527	1106
+568	LettingaProperty.com, Nationwide - Lettings	705167527	1108
+569	The Slate Yard, Salford	706167527	1109
+590	Manlets, Manchester	727167527	1110
+592	Wise Living Homes, Nottingham	729167527	1111
+600	Trading Places, Stretford	738167527	1112
+607	My Property Club, Denton	745167527	1113
+608	Edward Mellor Ltd, Levenshulme	746167527	1114
+611	JOHNS&CO, Manchester	749167527	1115
+616	Downtown Asset Management, Salford	754167527	1116
+617	Watersons, Sale	755167527	1117
+618	Leef Property Management Ltd, Warrington	756167527	1118
+619	Craven & Company, Sale	757167527	1119
+625	AIHOMES LIMITED, Manchester	763167527	1120
+627	Premier Residential, Manchester	765167527	1121
+630	Pearson Ferrier, Radcliffe	768167527	1122
+631	Property Market Hub, Manchester	769167527	1123
+637	Greenco, Salford	775167527	1124
+640	Henry Wiltshire, Manchester	778167527	1125
+644	Your Move, Radcliffe	782167527	1127
+646	Flax & Co, Manchester	784167527	1128
+649	City Centre Chic, Manchester	787167527	1129
+657	Vox, Vox	795167527	1130
+664	Martin & Co, Manchester Central	805167527	1131
+673	Bridgfords Lettings, Stockport	814167527	1132
+683	Leighton Snow, Bramhall	825167527	1133
+685	Belvoir, Manchester	827167527	1134
+698	Aubrey Lee & Co, Blackley	841167527	1135
+701	ARCPROPERTY MANAGEMENT & LETTINGS, Edinburgh	844167527	1136
+703	Clive Anthony Sales & Lettings, Whitefield	846167527	1137
+712	Cherry Picked Properties, Heald Green	857167527	1138
+714	Mishkan Estates, Manchester	859167527	1139
+715	Edward Mellor Ltd, Reddish	860167527	1140
+727	Miller Metcalfe, Bolton	872167527	1141
+734	HASSLE FREE LETTINGS, London	881167527	1142
+740	Manchester Easy Rent, Manchester	887167527	1143
+746	Hermes Living, Manchester	893167527	1144
+752	Savills Lettings, New Vic	899167527	1145
+\.
+
+
+--
+-- Data for Name: agents_df_sil; Type: TABLE DATA; Schema: silver; Owner: postgres
+--
+
+COPY "silver"."agents_df_sil" ("id", "agent_name", "agent_address") FROM stdin;
+13	John Doe	123 Main St, London
+14	Jane Smith	456 High St, Manchester
+15	Alice Brown	789 Park Ave, Birmingham
+16	Bob Johnson	101 Elm St, Leeds
+17	Charlie White	202 Maple Rd, Bristol
+18	Alice Brown	766 Park
 \.
 
 
@@ -4298,7 +4492,7 @@ SELECT pg_catalog.setval('"silver"."listings_df_sil_id_seq"', 1, false);
 -- Name: locations_df_id_seq; Type: SEQUENCE SET; Schema: silver; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"silver"."locations_df_id_seq"', 951, true);
+SELECT pg_catalog.setval('"silver"."locations_df_id_seq"', 1145, true);
 
 
 --

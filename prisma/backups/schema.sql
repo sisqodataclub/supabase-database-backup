@@ -198,8 +198,8 @@ ALTER SEQUENCE "public"."query_logs_id_seq" OWNED BY "public"."query_logs"."id";
 CREATE TABLE IF NOT EXISTS "silver"."agents_df" (
     "id" integer NOT NULL,
     "agent_name" "text",
-    "agent_address" "text",
-    "rowid" "text"
+    "rowid" "text",
+    "locations_df_id" integer
 );
 
 
@@ -537,6 +537,11 @@ ALTER TABLE ONLY "silver"."properties_df_sil"
 
 ALTER TABLE ONLY "silver"."properties_df"
     ADD CONSTRAINT "fk_agents_df_sil_id" FOREIGN KEY ("agents_df_sil_id") REFERENCES "silver"."agents_df"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "silver"."agents_df"
+    ADD CONSTRAINT "fk_locations" FOREIGN KEY ("locations_df_id") REFERENCES "silver"."locations_df"("id") ON DELETE CASCADE;
 
 
 
