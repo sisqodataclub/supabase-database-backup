@@ -2050,573 +2050,9 @@ COPY "silver"."locations_df" ("id", "full_address", "latitude", "longitude", "pr
 --
 
 COPY "silver"."agents_df" ("id", "agent_name", "rowid", "locations_df_id") FROM stdin;
-6	Madina Property, Manchester	6167527	\N
-8	Visum, Nationwide	8167527	\N
-10	The Residences - Deansgate Square, The Residences - Deansgate Square	10167527	\N
-11	The Residences - Deansgate Square, The Residences - Deansgate Square	11167527	\N
-12	The Residences - Deansgate Square, The Residences - Deansgate Square	12167527	\N
-13	The Residences - Deansgate Square, The Residences - Deansgate Square	13167527	\N
-19	Thornley Groves, Didsbury	19167527	\N
-22	Home Made, London	22167527	\N
-23	Home Made, London	23167527	\N
-24	Home Made, London	24167527	\N
-25	Home Made, London	25167527	\N
-28	OpenRent, London	128167527	\N
-32	NEXIS Property, Manchester	132167527	\N
-34	NEXIS Property, Manchester	134167527	\N
-36	Home Made, London	160167527	\N
-37	Home Made, London	161167527	\N
-38	Home Made, London	162167527	\N
-39	Home Made, London	163167527	\N
-40	Home Made, London	164167527	\N
-41	Home Made, London	165167527	\N
-42	Home Made, London	166167527	\N
-43	Home Made, London	167167527	\N
-45	Reeds Rains, Manchester	169167527	\N
-48	UNCLE, London	172167527	\N
-49	UNCLE, London	173167527	\N
-51	Flambard Williams Limited, Canary Wharf	175167527	\N
-55	Clarke & Co, Chadderton	179167527	\N
-57	Livingway Team Ltd, Livingway	181167527	\N
-58	Livingway Team Ltd, Livingway	182167527	\N
-59	Livingway Team Ltd, Livingway	183167527	\N
-60	OpenRent, London	184167527	\N
-61	OpenRent, London	185167527	\N
-62	Livingway Team Ltd, Livingway	186167527	\N
-63	Livingway Team Ltd, Livingway	187167527	\N
-65	South Manchester Homes, Didsbury	189167527	\N
-68	Philip James Manchester, Manchester	192167527	\N
-69	Philip James Manchester, Manchester	193167527	\N
-70	NEXIS Property, Manchester	194167527	\N
-71	NEXIS Property, Manchester	195167527	\N
-72	OpenRent, London	196167527	\N
-73	Madina Property, Manchester	197167527	\N
-76	Native Communities, Manchester	200167527	\N
-78	Native Communities, Manchester	202167527	\N
-79	Native Communities, Manchester	203167527	\N
-80	Native Communities, Manchester	204167527	\N
-81	Native Communities, Manchester	205167527	\N
-82	Native Communities, Manchester	206167527	\N
-83	Native Communities, Manchester	207167527	\N
-85	OpenRent, London	209167527	\N
-87	Admove, Altrincham	211167527	\N
-90	C & R Properties Ltd, Salford Manchester	214167527	\N
-96	Homes2share, Manchester	220167527	\N
-97	Homes2share, Manchester	221167527	\N
-99	ila, Swan Street House	223167527	\N
-100	ila, Swan Street House	224167527	\N
-101	ila, Swan Street House	225167527	\N
-103	ila, Swan Street House	227167527	\N
-104	ila, Swan Street House	228167527	\N
-105	ila, Swan Street House	229167527	\N
-106	ila, Swan Street House	230167527	\N
-107	ila, Swan Street House	231167527	\N
-109	ila, Swan Street House	233167527	\N
-110	ila, Swan Street House	234167527	\N
-111	ila, Swan Street House	235167527	\N
-113	Cortland, Cortland Colliers Yard	237167527	\N
-114	Cortland, Cortland Colliers Yard	238167527	\N
-121	OpenRent, London	245167527	\N
-122	Cortland, Cortland Colliers Yard	246167527	\N
-123	Buraq Estates, Manchester	247167527	\N
-124	Cortland, Cortland Colliers Yard	248167527	\N
-126	Cortland, Cortland Colliers Yard	250167527	\N
-128	Cortland, Cortland Colliers Yard	252167527	\N
-129	Thornley Groves, Didsbury	253167527	\N
-130	One Move Group, Manchester	254167527	\N
-131	One Move Group, Manchester	255167527	\N
-132	Hunters, Manchester	256167527	\N
-133	One Move Group, Manchester	257167527	\N
-135	Thornley Groves, Manchester Southern Gateway	259167527	\N
-136	One Move Group, Manchester	260167527	\N
 74	Thornley Groves, Manchester Southern Gateway	198167527	984
-140	One Move Group, Manchester	264167527	\N
-142	Thornley Groves, Manchester Southern Gateway	266167527	\N
-143	Reside, Manchester	267167527	\N
-144	One Move Group, Manchester	268167527	\N
-146	Thornley Groves, Manchester Southern Gateway	270167527	\N
-149	NEXIS Property, Manchester	273167527	\N
-150	One Move Group, Manchester	274167527	\N
-151	Reside, Manchester	275167527	\N
-152	Settio Property Experience Ltd, Manchester	276167527	\N
-155	NEXIS Property, Manchester	279167527	\N
-156	Bridgfords Lettings, Didsbury	280167527	\N
-157	One Move Group, Manchester	281167527	\N
-159	One Move Group, Manchester	283167527	\N
-161	Settio Property Experience Ltd, Manchester	285167527	\N
-162	Settio Property Experience Ltd, Manchester	286167527	\N
-163	Settio Property Experience Ltd, Manchester	287167527	\N
-164	Settio Property Experience Ltd, Manchester	288167527	\N
-165	Settio Property Experience Ltd, Manchester	289167527	\N
-167	Settio Property Experience Ltd, Manchester	291167527	\N
-168	Settio Property Experience Ltd, Manchester	292167527	\N
-169	Settio Property Experience Ltd, Manchester	293167527	\N
-170	OpenRent, London	295167527	\N
-171	C & R Properties Ltd, Salford Manchester	296167527	\N
-173	NEXIS Property, Manchester	298167527	\N
-174	Home Made, London	299167527	\N
-175	NEXIS Property, Manchester	300167527	\N
-176	Clay Life, Clay	301167527	\N
-177	Cortland, Cortland Colliers Yard	302167527	\N
-179	Home Made, London	304167527	\N
-180	Home Made, London	305167527	\N
-181	Home Made, London	306167527	\N
-183	Home Made, London	308167527	\N
-184	Home Made, London	309167527	\N
-186	Settio Property Experience Ltd, Manchester	311167527	\N
-188	Ascend, Manchester	313167527	\N
-189	Julie Twist Properties, Manchester	314167527	\N
-190	Thornley Groves, Manchester Southern Gateway	315167527	\N
-195	Normie Sales & Lettings, North Manchester	320167527	\N
-196	Reeds Rains, Manchester	321167527	\N
-197	Goodwin Fish, Manchester	322167527	\N
-198	Select Residential, Manchester	323167527	\N
-200	Thornley Groves, Manchester Southern Gateway	325167527	\N
-202	uhaus, uhaus	328167527	\N
-203	uhaus, uhaus	329167527	\N
-204	uhaus, uhaus	330167527	\N
-205	Settio Property Experience Ltd, Manchester	331167527	\N
-206	uhaus, uhaus	332167527	\N
-207	uhaus, uhaus	333167527	\N
-208	uhaus, uhaus	334167527	\N
-209	uhaus, uhaus	335167527	\N
-210	uhaus, uhaus	337167527	\N
-211	uhaus, uhaus	338167527	\N
-212	uhaus, uhaus	339167527	\N
-213	uhaus, uhaus	340167527	\N
-214	uhaus, uhaus	341167527	\N
-218	Union, Union	345167527	\N
-219	Union, Union	346167527	\N
-221	We Let Properties, Manchester	348167527	\N
-222	C & R Properties Ltd, Salford Manchester	349167527	\N
-223	Get Living, New Maker Yards	350167527	\N
-224	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	351167527	\N
-225	NEXIS Property, Manchester	352167527	\N
-226	NEXIS Property, Manchester	353167527	\N
-227	Julian Wadden, Heaton Moor	354167527	\N
-233	HYBR, Covering Manchester	360167527	\N
-234	HYBR, Covering Manchester	361167527	\N
-235	HYBR, Covering Manchester	362167527	\N
-236	HYBR, Covering Manchester	363167527	\N
-237	HYBR, Covering Manchester	364167527	\N
-238	HYBR, Covering Manchester	365167527	\N
-239	HYBR, Covering Manchester	366167527	\N
-240	Montrose Properties Ltd, West Didsbury	367167527	\N
-241	HYBR, Covering Manchester	368167527	\N
-242	HYBR, Covering Manchester	369167527	\N
-243	HYBR, Covering Manchester	370167527	\N
-244	HYBR, Covering Manchester	371167527	\N
-245	Cortland, Botanica	372167527	\N
-246	Cortland, Botanica	373167527	\N
-247	CityZEN, London	374167527	\N
-248	HYBR, Covering Manchester	375167527	\N
-249	Cortland, Botanica	376167527	\N
-250	HYBR, Covering Manchester	377167527	\N
-251	HYBR, Covering Manchester	378167527	\N
-253	Drake & Co, Rusholme	380167527	\N
-254	HYBR, Covering Manchester	381167527	\N
-255	HYBR, Covering Manchester	382167527	\N
-256	HYBR, Covering Manchester	383167527	\N
-257	Drake & Co, Rusholme	384167527	\N
-258	We Let Properties, Manchester	385167527	\N
-259	HYBR, Covering Manchester	386167527	\N
-262	Drake & Co, Rusholme	389167527	\N
-263	Philip James Manchester, Manchester	390167527	\N
-264	Bridgfords Lettings, Didsbury	391167527	\N
-267	Thornley Groves, Manchester Southern Gateway	394167527	\N
-269	Union, Union	396167527	\N
-271	Union, Union	398167527	\N
-273	Union, Union	400167527	\N
-274	Union, Union	401167527	\N
-275	Thornley Groves, Fallowfield	402167527	\N
-276	Union, Union	403167527	\N
-278	Union, Union	405167527	\N
-279	George Adams (Estate Agents) Ltd, Manchester	406167527	\N
-280	Union, Union	407167527	\N
 29	Vesper Homes, Manchester	129167527	968
-281	Wren Properties Ltd, Didsbury	408167527	\N
-282	Thornley Groves, Fallowfield	409167527	\N
-284	NEXIS Property, Manchester	411167527	\N
-285	NEXIS Property, Manchester	412167527	\N
-286	Downing Property Management Ltd, Square Gardens	413167527	\N
-287	Thornley Groves, Manchester Southern Gateway	414167527	\N
-288	Buckley Frayne, Manchester	415167527	\N
-290	LOCAL Manchester, LOCAL Manchester	417167527	\N
-291	Downing Property Management Ltd, Square Gardens	418167527	\N
-292	Bridgfords Lettings, Didsbury	419167527	\N
-295	Philip James Manchester, Manchester	422167527	\N
-296	Hunters, South Manchester	423167527	\N
-298	Bridgfords Lettings, Chorlton	426167527	\N
-299	LOCAL Manchester, LOCAL Manchester	427167527	\N
-300	Settio Property Experience Ltd, Manchester	428167527	\N
-302	Northern Etchells, Manchester	430167527	\N
-304	Home Made, London	432167527	\N
-306	Home Made, London	434167527	\N
-307	Julie Twist Properties, Manchester	435167527	\N
-309	The James Manchester, The James Manchester	437167527	\N
-310	The James Manchester, The James Manchester	438167527	\N
-313	Kaytons Estate Agents, Manchester	441167527	\N
-314	eXp UK, North West	442167527	\N
-317	Jordan Fishwick, Chorlton	445167527	\N
-318	Bridgfords Lettings, Sale	446167527	\N
-320	@ThePlace, Dukinfield	448167527	\N
-321	Home Made, London	449167527	\N
-322	Ascend, Manchester	450167527	\N
-323	Goodwin Fish, Manchester	451167527	\N
-324	Thornley Groves, Manchester Southern Gateway	452167527	\N
-325	Normie Sales & Lettings, North Manchester	453167527	\N
-326	Thornley Groves, Fallowfield	454167527	\N
-327	Home Made, London	455167527	\N
-328	Kaytons Estate Agents, Manchester	456167527	\N
-329	The Estate Agent Manchester, Manchester	457167527	\N
-330	Home Made, London	458167527	\N
-331	Home Made, London	459167527	\N
-333	Home Made, London	461167527	\N
-334	The Good Estate Agency, Manchester	463167527	\N
-335	Home Made, London	464167527	\N
-336	The Good Estate Agency, Manchester	465167527	\N
-337	The Good Estate Agency, Manchester	466167527	\N
-338	Home Made, London	467167527	\N
-339	The Good Estate Agency, Manchester	468167527	\N
-340	Home Made, London	469167527	\N
-341	Home Made, London	470167527	\N
-342	Home Made, London	471167527	\N
-343	Home Made, London	472167527	\N
-344	Home Made, London	473167527	\N
-345	OpenRent, London	475167527	\N
-346	OpenRent, London	476167527	\N
-347	OpenRent, London	477167527	\N
-348	OpenRent, London	478167527	\N
-350	NPP Residential, Manchester	480167527	\N
-351	Philip James Manchester, Manchester	481167527	\N
-352	Philip James Manchester, Manchester	482167527	\N
-353	Philip James Manchester, Manchester	483167527	\N
-354	OpenRent, London	484167527	\N
-355	OpenRent, London	485167527	\N
-356	OpenRent, London	486167527	\N
-358	Accommodation.co.uk, covering National	488167527	\N
-359	NEXIS Property, Manchester	489167527	\N
-360	NEXIS Property, Manchester	490167527	\N
-361	Accommodation.co.uk, covering National	491167527	\N
-362	Welcome To Manchester Lettings, Covering Manchester	492167527	\N
-363	Welcome To Manchester Lettings, Covering Manchester	493167527	\N
-365	X1 Sales & Lettings, Salford	495167527	\N
-366	Welcome To Manchester Lettings, Covering Manchester	496167527	\N
-367	OpenRent, London	497167527	\N
-368	X1 Sales & Lettings, Salford	498167527	\N
-371	Dandara Living, Manchester, Chapel Wharf	501167527	\N
-372	Dandara Living, Manchester, Chapel Wharf	502167527	\N
-373	Dandara Living, Manchester, Chapel Wharf	503167527	\N
-374	Dandara Living, Manchester, Chapel Wharf	504167527	\N
-375	Dandara Living, Manchester, Chapel Wharf	505167527	\N
-376	Dandara Living, Manchester, Chapel Wharf	506167527	\N
-377	Dandara Living, Manchester, Chapel Wharf	507167527	\N
-378	Dandara Living, Manchester, Chapel Wharf	508167527	\N
-379	Dandara Living, Manchester, Chapel Wharf	509167527	\N
-380	OpenRent, London	510167527	\N
-381	OpenRent, London	511167527	\N
-383	HYBR, Covering Manchester	513167527	\N
-384	HYBR, Covering Manchester	514167527	\N
-385	HYBR, Covering Manchester	515167527	\N
-386	HYBR, Covering Manchester	516167527	\N
-387	HYBR, Covering Manchester	517167527	\N
-388	HYBR, Covering Manchester	518167527	\N
-390	Your Move, Swinton	520167527	\N
-391	Reeds Rains, Didsbury	521167527	\N
-392	Hills, Eccles	522167527	\N
-393	Welcome To Manchester Lettings, Covering Manchester	523167527	\N
-394	Union, Union	524167527	\N
-395	Bridgfords Lettings, Sale	525167527	\N
-397	Joules Estate Agency, Heaton Mersey	527167527	\N
-398	C & R Properties Ltd, Salford Manchester	528167527	\N
-399	Home Made, London	626167527	\N
-402	Select Residential, Manchester	531167527	\N
-403	Settio Property Experience Ltd, Manchester	532167527	\N
-404	COUSINS ESTATE AGENTS, Failsworth	533167527	\N
-405	Madina Property, Manchester	534167527	\N
-406	Madina Property, Manchester	535167527	\N
-407	One Move Group, Manchester	536167527	\N
-408	Kaytons Estate Agents, Manchester	537167527	\N
-409	Thornley Groves, Monton	538167527	\N
-410	Clay Life, Clay	539167527	\N
-411	One Move Group, Manchester	540167527	\N
-412	Clay Life, Clay	541167527	\N
-413	Jordan Fishwick, Manchester	542167527	\N
-414	Clay Life, Clay	543167527	\N
-416	Clay Life, Clay	545167527	\N
-417	Orlando Reid, Manchester	546167527	\N
-418	C & R Properties Ltd, Hulme Manchester	547167527	\N
-419	Thornley Groves, Manchester Southern Gateway	548167527	\N
-420	Home Made, London	549167527	\N
-421	Thornley Groves, Manchester Southern Gateway	550167527	\N
-422	OpenRent, London	551167527	\N
-423	OpenRent, London	552167527	\N
-425	NEXIS Property, Manchester	554167527	\N
-426	NPP Residential, Manchester	555167527	\N
-429	NEXIS Property, Manchester	558167527	\N
-430	Cortland, Cortland Colliers Yard	559167527	\N
-431	Cortland, Cortland Colliers Yard	560167527	\N
-432	Clay Life, Clay	561167527	\N
-433	Cortland, Cortland Colliers Yard	562167527	\N
-434	Cortland, Cortland Colliers Yard	563167527	\N
-435	Cortland, Cortland Colliers Yard	564167527	\N
-436	NEXIS Property, Manchester	565167527	\N
-437	Bridgfords Lettings, Chorlton	566167527	\N
-439	Clay Life, Clay	568167527	\N
-441	For Living, For Living	570167527	\N
-442	NEXIS Property, Manchester	571167527	\N
-443	Clay Life, Clay	572167527	\N
-444	C & R Properties Ltd, Hulme Manchester	573167527	\N
-445	Reeds Rains, Manchester	575167527	\N
-446	Leaders Lettings, Manchester	576167527	\N
-448	Home Made, London	627167527	\N
-452	Orlando Reid, Manchester	582167527	\N
-453	Madina Property, Manchester	583167527	\N
-454	Clay Life, Clay	584167527	\N
-455	Madina Property, Manchester	585167527	\N
-456	Bridgfords Lettings, Manchester	586167527	\N
-457	Bridgfords Lettings, Sale	587167527	\N
-459	Jordan Fishwick, Manchester	589167527	\N
-460	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	590167527	\N
-461	Bridgfords Lettings, Manchester	591167527	\N
-462	OpenRent, London	592167527	\N
-463	Downing Property Management Ltd, Square Gardens	593167527	\N
-464	Gascoigne Halman, Didsbury	594167527	\N
-465	Bridgfords Lettings, Withington	595167527	\N
-466	Ascend, Manchester	596167527	\N
-467	Thornley Groves, Fallowfield	597167527	\N
-468	Select Residential, Manchester	598167527	\N
-469	Ustay Global, Manchester	599167527	\N
-470	Thornley Groves, Fallowfield	600167527	\N
-471	Julian Wadden, Heaton Moor	601167527	\N
-473	Hills, Eccles	603167527	\N
-476	NEXIS Property, Manchester	606167527	\N
-477	Granite Lettings & Property Management - Residential Lettings & Sales, Northern Quarter	607167527	\N
-480	COUSINS ESTATE AGENTS, Failsworth	611167527	\N
-481	Thornley Groves, Manchester Southern Gateway	612167527	\N
-484	Julian Wadden, Heaton Moor	615167527	\N
-485	C & R Properties Ltd, Salford Manchester	616167527	\N
-486	Gascoigne Halman, Didsbury	617167527	\N
-487	Ascend, Manchester	618167527	\N
-488	One Move Group, Manchester	619167527	\N
-489	One Move Group, Manchester	620167527	\N
-491	Downing Property Management Ltd, Square Gardens	622167527	\N
-492	Reeds Rains, Salford Quays City Living	623167527	\N
-493	Downing Property Management Ltd, Square Gardens	624167527	\N
-494	One Move Group, Manchester	625167527	\N
-495	Home Made, London	628167527	\N
-496	OpenRent, London	629167527	\N
-497	One Move Group, Manchester	630167527	\N
-498	One Move Group, Manchester	631167527	\N
-499	OpenRent, London	632167527	\N
-500	Jordan Fishwick, Didsbury	633167527	\N
-502	OpenRent, London	635167527	\N
-503	OpenRent, London	636167527	\N
-504	OpenRent, London	637167527	\N
-506	Jordan Fishwick, Manchester	639167527	\N
-507	Leaders Lettings, Manchester	640167527	\N
-510	Hunters, Manchester	643167527	\N
-511	X1 Sales & Lettings, Salford	644167527	\N
-513	We Let Properties, Manchester	646167527	\N
-514	The James Manchester, The James Manchester	647167527	\N
-515	Property Genius, Manchester	648167527	\N
-516	X1 Sales & Lettings, Salford	650167527	\N
-517	The James Manchester, The James Manchester	651167527	\N
-518	StudentTenant, Canterbury	652167527	\N
-519	Flambard Williams Limited, Canary Wharf	653167527	\N
-520	Flambard Williams Limited, Canary Wharf	654167527	\N
-521	Accommodation.co.uk, covering National	655167527	\N
-523	Flambard Williams Limited, Canary Wharf	657167527	\N
-524	Northern Group, Manchester	658167527	\N
-525	X1 Sales & Lettings, Salford	659167527	\N
-526	We Let Properties, Manchester	660167527	\N
-527	We Let Properties, Manchester	661167527	\N
-528	Pure, Manchester	662167527	\N
-529	Pure, Manchester	663167527	\N
-530	Settio Property Experience Ltd, Manchester	664167527	\N
-532	LOCAL Manchester, LOCAL Manchester	666167527	\N
-533	Bridgfords Lettings, Manchester	667167527	\N
-534	Savills Lettings, Manchester	668167527	\N
-536	Kaytons Estate Agents, Manchester	670167527	\N
-537	MCR Move, Manchester	671167527	\N
-538	MCR Move, Manchester	672167527	\N
-539	Flambard Williams Limited, Canary Wharf	673167527	\N
-540	Flambard Williams Limited, Canary Wharf	675167527	\N
-541	Flambard Williams Limited, Canary Wharf	676167527	\N
-542	Kaytons Estate Agents, Manchester	677167527	\N
-543	Jordan Fishwick, Didsbury	678167527	\N
-544	Thornley Groves, Didsbury	679167527	\N
-545	Goodwin Fish, Manchester	680167527	\N
-548	Leaders Lettings, Manchester	683167527	\N
-550	Leaders Lettings, Manchester	685167527	\N
-551	Home Estate Agents, Monton	686167527	\N
-552	Leaders Lettings, Manchester	687167527	\N
-554	Home Made, London	689167527	\N
-555	George Adams (Estate Agents) Ltd, Manchester	690167527	\N
-556	Leaders Lettings, Manchester	691167527	\N
-557	Thornley Groves, Fallowfield	692167527	\N
-558	Downing Property Management Ltd, Square Gardens	693167527	\N
-560	MCR Move, Manchester	695167527	\N
-561	LOCAL Manchester, LOCAL Manchester	696167527	\N
-562	Savills Lettings, Manchester	697167527	\N
-563	Home Made, London	698167527	\N
-565	Native Communities, Manchester	702167527	\N
-566	Native Communities, Manchester	703167527	\N
-567	Native Communities, Manchester	704167527	\N
-570	The Slate Yard, Salford	707167527	\N
-571	The Slate Yard, Salford	708167527	\N
-572	The Slate Yard, Salford	709167527	\N
-573	The Slate Yard, Salford	710167527	\N
-574	The Slate Yard, Salford	711167527	\N
-575	Townhouse, Manchester	712167527	\N
-576	OpenRent, London	713167527	\N
-577	OpenRent, London	714167527	\N
-578	NPP Residential, Manchester	715167527	\N
-579	Philip James Manchester, Manchester	716167527	\N
-580	Philip James Manchester, Manchester	717167527	\N
-581	Philip James Manchester, Manchester	718167527	\N
-582	OpenRent, London	719167527	\N
-583	OpenRent, London	720167527	\N
-584	X1 Sales & Lettings, Salford	721167527	\N
-585	X1 Sales & Lettings, Salford	722167527	\N
-586	X1 Sales & Lettings, Salford	723167527	\N
-587	Native Communities, Manchester	724167527	\N
-588	X1 Sales & Lettings, Salford	725167527	\N
-589	OpenRent, London	726167527	\N
-591	Joules Estate Agency, Heaton Mersey	728167527	\N
-593	OpenRent, London	730167527	\N
-594	OpenRent, London	731167527	\N
-595	OpenRent, London	732167527	\N
-596	OpenRent, London	733167527	\N
-597	Jordan Fishwick, Manchester	734167527	\N
-598	Reeds Rains, Manchester	735167527	\N
-599	Savills Lettings, Manchester	736167527	\N
-601	Jordan Fishwick, Chorlton	739167527	\N
-602	Gascoigne Halman, Didsbury	740167527	\N
-603	Leaders Lettings, Manchester	741167527	\N
-604	Thornley Groves, Prestwich	742167527	\N
-605	Gascoigne Halman, Didsbury	743167527	\N
-606	Flambard Williams Limited, Canary Wharf	744167527	\N
-609	MCR Move, Manchester	747167527	\N
-610	Cortland, Cortland Colliers Yard	748167527	\N
-612	QUBE Residential, Salford Quays	750167527	\N
-613	Your Move, Swinton	751167527	\N
-614	OpenRent, London	752167527	\N
-615	NEXIS Property, Manchester	753167527	\N
-620	Aubrey Lee & Co, Prestwich	758167527	\N
-621	Julie Twist Properties, Manchester	759167527	\N
-622	Bridgfords Lettings, Manchester	760167527	\N
-623	Buckley Frayne, Manchester	761167527	\N
-624	Buckley Frayne, Manchester	762167527	\N
-626	AIHOMES LIMITED, Manchester	764167527	\N
-628	Bridgfords Lettings, Chorlton	766167527	\N
-564	Northern Group, Manchester	700167527	1107
-629	Bridgfords Lettings, Manchester	767167527	\N
-632	Thornley Groves, Fallowfield	770167527	\N
-633	Bridgfords Lettings, Didsbury	771167527	\N
-634	Cortland, Cortland Colliers Yard	772167527	\N
-635	Ascend, Manchester	773167527	\N
-636	Settio Property Experience Ltd, Manchester	774167527	\N
-638	Julie Twist Properties, Manchester	776167527	\N
-639	Manlets, Manchester	777167527	\N
-641	X1 Sales & Lettings, Salford	779167527	\N
-642	Bridgfords Lettings, Withington	780167527	\N
-645	Bridgfords Lettings, Manchester	783167527	\N
-647	Thorpe & Co, Salford	785167527	\N
-648	Reeds Rains, Manchester	786167527	\N
-650	Reside, Manchester	788167527	\N
-651	Select Residential, Manchester	789167527	\N
-652	Select Residential, Manchester	790167527	\N
-653	urbanbubble, Manchester	791167527	\N
-654	LOCAL Manchester, LOCAL Manchester	792167527	\N
-655	Henry Wiltshire, Manchester	793167527	\N
-656	Manchester Apartments, Manchester Apartments	794167527	\N
-658	Select Residential, Manchester	796167527	\N
-659	QUBE Residential, Salford Quays	797167527	\N
-660	Kingsdene Ltd, Manchester	798167527	\N
-661	MCR Move, Manchester	800167527	\N
-662	MCR Move, Manchester	801167527	\N
-663	MCR Move, Manchester	803167527	\N
-665	Henry Wiltshire, Manchester	806167527	\N
-666	MCR Move, Manchester	807167527	\N
-667	MCR Move, Manchester	808167527	\N
-668	MCR Move, Manchester	809167527	\N
-669	Reeds Rains, Salford Quays City Living	810167527	\N
-670	Goodwin Fish, Manchester	811167527	\N
-671	Greystar, Oxbow, Salford	812167527	\N
-672	Greystar, Oxbow, Salford	813167527	\N
-674	Greystar, Oxbow, Salford	815167527	\N
-675	Greystar, Oxbow, Salford	816167527	\N
-676	Greystar, Oxbow, Salford	817167527	\N
-677	Greystar, Oxbow, Salford	818167527	\N
-678	Greystar, Oxbow, Salford	819167527	\N
-679	Greystar, Oxbow, Salford	820167527	\N
-680	Greystar, Oxbow, Salford	821167527	\N
-681	Greystar, Oxbow, Salford	822167527	\N
-682	Greystar, Oxbow, Salford	823167527	\N
-684	Greystar, Oxbow, Salford	826167527	\N
-686	Greystar, Oxbow, Salford	829167527	\N
-687	Greystar, Oxbow, Salford	830167527	\N
-688	VitalSpace, South Manchester	831167527	\N
-689	Greystar, Oxbow, Salford	832167527	\N
-690	Bridgfords Lettings, Manchester	833167527	\N
-691	Clay Life, Clay	834167527	\N
-692	Jordan Fishwick, Manchester	835167527	\N
-693	Ascend, Manchester	836167527	\N
-694	Thornley Groves, Manchester Southern Gateway	837167527	\N
-695	Henry Wiltshire, Manchester	838167527	\N
-696	Reside, Manchester	839167527	\N
-697	Clay Life, Clay	840167527	\N
-699	Manchester Apartments, Manchester Apartments	842167527	\N
 643	HC-GB, North	781167527	1126
-700	Bridgfords Lettings, Sale	843167527	\N
-702	Bridgfords Lettings, Sale	845167527	\N
-704	Manchester Apartments, Manchester Apartments	847167527	\N
-705	Bridgfords Lettings, Sale	850167527	\N
-706	Bridgfords Lettings, Sale	851167527	\N
-707	Bridgfords Lettings, Sale	852167527	\N
-708	Grovewell, Manchester	853167527	\N
-709	Bridgfords Lettings, Sale	854167527	\N
-710	Bridgfords Lettings, Manchester	855167527	\N
-711	Downing Property Management Ltd, Square Gardens	856167527	\N
-713	Thornley Groves, Manchester Southern Gateway	858167527	\N
-716	OpenRent, London	861167527	\N
-717	VitalSpace, South Manchester	862167527	\N
-718	Vox, Vox	863167527	\N
-719	Premier Residential, Manchester	864167527	\N
-720	Kingsdene Ltd, Manchester	865167527	\N
-721	Aubrey Lee & Co, Prestwich	866167527	\N
-722	loc8me, Covering Manchester	867167527	\N
-723	We Let Properties, Manchester	868167527	\N
-724	Montrose Properties Ltd, West Didsbury	869167527	\N
-725	Kingsdene Ltd, Manchester	870167527	\N
-726	Ascend, Manchester	871167527	\N
-728	Gascoigne Halman, Didsbury	873167527	\N
-729	Montrose Properties Ltd, West Didsbury	875167527	\N
-730	Townhouse, Manchester	876167527	\N
-731	Bridgfords Lettings, Manchester	877167527	\N
-732	Thornley Groves, Fallowfield	878167527	\N
-733	Thornley Groves, Manchester Southern Gateway	880167527	\N
-735	Thornley Groves, Manchester Southern Gateway	882167527	\N
-736	Kingsdene Ltd, Manchester	883167527	\N
-737	HASSLE FREE LETTINGS, London	884167527	\N
-738	We Let Properties, Manchester	885167527	\N
-739	Goodwin Fish, Manchester	886167527	\N
-741	urbanbubble, Manchester	888167527	\N
-742	Manchester Easy Rent, Manchester	889167527	\N
-743	Leef Property Management Ltd, Warrington	890167527	\N
-744	Manchester Easy Rent, Manchester	891167527	\N
-745	Martin & Co, Manchester Central	892167527	\N
-747	Kaytons Estate Agents, Manchester	894167527	\N
-748	Bridgfords Lettings, Manchester	895167527	\N
-749	Leaders Lettings, Manchester	896167527	\N
-750	Hunters, Manchester	897167527	\N
-751	loc8me, Covering Manchester	898167527	\N
-753	Savills Lettings, Manchester	900167527	\N
-754	Hills, Eccles	901167527	\N
-755	Leaders Lettings, Manchester	902167527	\N
-756	Townhouse, Manchester	903167527	\N
-757	NEXIS Property, Manchester	904167527	\N
 1	Home Made, London	1167527	952
 2	Visum, Nationwide	2167527	953
 3	Hills, Eccles	3167527	954
@@ -2748,7 +2184,6 @@ COPY "silver"."agents_df" ("id", "agent_name", "rowid", "locations_df_id") FROM 
 449	Ying Wah Property, Manchester	578167527	1082
 450	Townhouse, Manchester	580167527	1083
 451	City Comfort Luxury Apartments, Manchester	581167527	1084
-458	urbanbubble, Manchester	588167527	1085
 472	Julian Wadden, Stockport	602167527	1086
 474	Aubrey Lee & Co, Prestwich	604167527	1087
 475	Saltsman & co, Droylsden	605167527	1088
@@ -2834,758 +2269,193 @@ COPY "silver"."properties_df" ("id", "property_type", "bedrooms", "bathrooms", "
 3	Terraced	2	1	3167527	3	3
 4	Apartment	2	1	4167527	4	4
 5	Terraced	2	1	5167527	5	5
-6	Flat	2	1	6167527	6	6
 7	Apartment	2	2	7167527	7	7
-8	House Share	3	2	8167527	8	8
 9	Apartment	2	2	9167527	9	9
-10	Apartment	2	2	10167527	10	10
-11	Apartment	3	3	11167527	11	11
-12	Apartment	2	2	12167527	12	12
-13	Penthouse	4	4	13167527	13	13
 14	Terraced	2	1	14167527	14	14
 15	Flat	1	1	15167527	15	15
 16	Semi-Detached	4	3	16167527	16	16
 17	Town House	3	2	17167527	17	17
 18	Flat	1	1	18167527	18	18
-19	Semi-Detached	3	1	19167527	19	19
 20	Apartment	2	2	20167527	20	20
 21	Semi-Detached	2	2	21167527	21	21
-22	Flat	2	1	22167527	22	22
-23	Flat	3	2	23167527	23	23
-24	Flat	1	1	24167527	24	24
-25	Flat	3	2	25167527	25	25
 26	Unknown	1	1	126167527	26	26
 27	Flat	1	1	127167527	27	27
-28	Flat	1	1	128167527	28	28
 29	Apartment	2	1	129167527	29	29
 30	Semi-Detached	3	1	130167527	30	30
 31	Apartment	2	2	131167527	31	31
-32	Apartment	2	2	132167527	32	32
 33	Flat	2	2	133167527	33	33
-34	Apartment	2	2	134167527	34	34
 35	Apartment	1	1	151167527	35	35
-36	Flat	1	1	160167527	36	36
-37	Flat	2	2	161167527	37	37
-38	Studio	0	1	162167527	38	38
-39	Flat	1	1	163167527	39	39
-40	Flat	2	2	164167527	40	40
-41	Flat	2	1	165167527	41	41
-42	Flat	1	1	166167527	42	42
-43	Flat	1	1	167167527	43	43
 44	Semi-Detached	2	0	168167527	44	44
-45	Apartment	1	1	169167527	45	45
 46	Ground Flat	1	1	170167527	46	46
 47	Apartment	0	1	171167527	47	47
-48	Apartment	1	1	172167527	48	48
-49	Apartment	1	1	173167527	49	49
 50	Apartment	2	2	174167527	50	50
-51	Apartment	2	2	175167527	51	51
 52	Apartment	1	1	176167527	52	52
 53	House Share	1	1	177167527	53	53
 54	Semi-Detached	4	1	178167527	54	54
-55	Semi-Detached	3	1	179167527	55	55
 56	Apartment	2	1	180167527	56	56
-57	Apartment	1	1	181167527	57	57
-58	Apartment	1	1	182167527	58	58
-59	Apartment	1	1	183167527	59	59
-60	Terraced	3	3	184167527	60	60
-61	Flat	2	2	185167527	61	61
-62	Ground Flat	1	1	186167527	62	62
-63	Apartment	1	1	187167527	63	63
 64	Apartment	2	1	188167527	64	64
-65	Apartment	2	2	189167527	65	65
 66	Semi-Detached	3	1	190167527	66	66
 67	Terraced	2	1	191167527	67	67
-68	Apartment	2	2	192167527	68	68
-69	Apartment	2	1	193167527	69	69
-70	Apartment	1	1	194167527	70	70
-71	Apartment	2	2	195167527	71	71
-72	Flat	2	2	196167527	72	72
-73	Semi-Detached	5	3	197167527	73	73
 74	Flat	2	2	198167527	74	74
 75	Apartment	2	1	199167527	75	75
-76	Apartment	2	2	200167527	76	76
 77	Apartment	2	2	201167527	77	77
-78	Apartment	2	2	202167527	78	78
-79	Apartment	2	2	203167527	79	79
-80	Apartment	1	1	204167527	80	80
-81	Apartment	1	1	205167527	81	81
-82	Apartment	1	1	206167527	82	82
-83	Apartment	2	2	207167527	83	83
 84	Apartment	1	1	208167527	84	84
-85	Flat	2	2	209167527	85	85
 86	Terraced	6	6	210167527	86	86
-87	Apartment	1	1	211167527	87	87
 88	House	8	7	212167527	88	88
 89	Apartment	1	1	213167527	89	89
-90	Apartment	2	2	214167527	90	90
 91	Flat	1	1	215167527	91	91
 92	Semi-Detached	4	3	216167527	92	92
 93	Apartment	2	1	217167527	93	93
 94	Apartment	1	1	218167527	94	94
 95	Studio	0	0	219167527	95	95
-96	Flat	1	1	220167527	96	96
-97	Flat	1	0	221167527	97	97
 98	Flat	3	2	222167527	98	98
-99	Flat	2	2	223167527	99	99
-100	Flat	1	1	224167527	100	100
-101	Flat	3	2	225167527	101	101
 102	Apartment	2	2	226167527	102	102
-103	Flat	3	2	227167527	103	103
-104	Flat	2	2	228167527	104	104
-105	Flat	2	2	229167527	105	105
-106	Flat	2	1	230167527	106	106
-107	Flat	2	2	231167527	107	107
 108	Apartment	2	1	232167527	108	108
-109	Flat	1	1	233167527	109	109
-110	Flat	1	1	234167527	110	110
-111	Flat	1	1	235167527	111	111
 112	Apartment	3	2	236167527	112	112
-113	Apartment	3	2	237167527	113	113
-114	Apartment	2	2	238167527	114	114
 115	Flat	1	1	239167527	115	115
 116	Apartment	2	2	240167527	116	116
 117	Flat	2	1	241167527	117	117
 118	Detached	9	4	242167527	118	118
 119	Apartment	2	0	243167527	119	119
 120	Semi-Detached	2	0	244167527	120	120
-121	Terraced	2	1	245167527	121	121
-122	Apartment	2	2	246167527	122	122
-123	Detached	10	4	247167527	123	123
-124	Apartment	1	1	248167527	124	124
 125	Flat	2	1	249167527	125	125
-126	Apartment	2	2	250167527	126	126
 127	Flat	1	1	251167527	127	127
-128	Apartment	1	1	252167527	128	128
-129	Terraced	3	2	253167527	129	129
-130	Flat	2	2	254167527	130	130
-131	Flat	2	2	255167527	131	131
-132	Apartment	0	1	256167527	132	132
-133	Flat	1	1	257167527	133	133
 134	Apartment	2	2	258167527	134	134
-135	Flat	2	2	259167527	135	135
-136	Flat	2	2	260167527	136	136
 137	Apartment	2	1	261167527	137	137
 138	Terraced	2	1	262167527	138	138
 139	House	2	1	263167527	139	139
-140	Flat	1	1	264167527	140	140
 141	Apartment	3	2	265167527	141	141
-142	Flat	1	1	266167527	142	142
-143	Apartment	1	1	267167527	143	143
-144	Flat	3	2	268167527	144	144
 145	Apartment	3	2	269167527	145	145
-146	Flat	2	2	270167527	146	146
 147	Apartment	2	1	271167527	147	147
 148	Apartment	2	1	272167527	148	148
-149	Apartment	2	2	273167527	149	149
-150	Flat	2	2	274167527	150	150
-151	Apartment	2	2	275167527	151	151
-152	Apartment	1	1	276167527	152	152
 153	House Share	1	2	277167527	153	153
 154	Apartment	1	1	278167527	154	154
-155	Apartment	2	2	279167527	155	155
-156	House	2	1	280167527	156	156
-157	Flat	2	2	281167527	157	157
 158	Apartment	2	2	282167527	158	158
-159	Flat	1	1	283167527	159	159
 160	House	5	0	284167527	160	160
-161	Apartment	1	1	285167527	161	161
-162	Apartment	2	2	286167527	162	162
-163	Apartment	2	2	287167527	163	163
-164	Apartment	2	2	288167527	164	164
-165	Apartment	1	1	289167527	165	165
 166	Studio	0	1	290167527	166	166
-167	Apartment	1	1	291167527	167	167
-168	Apartment	1	1	292167527	168	168
-169	Apartment	2	2	293167527	169	169
-170	Flat	1	1	295167527	170	170
-171	Apartment	2	2	296167527	171	171
 172	Apartment	1	1	297167527	172	172
-173	Apartment	3	2	298167527	173	173
-174	Flat	1	1	299167527	174	174
-175	Apartment	1	1	300167527	175	175
-176	Studio	0	1	301167527	176	176
-177	Apartment	2	2	302167527	177	177
 178	Apartment	2	0	303167527	178	178
-179	Flat	1	1	304167527	179	179
-180	Flat	3	2	305167527	180	180
-181	Flat	2	1	306167527	181	181
 182	Flat	2	1	307167527	182	182
-183	Flat	3	2	308167527	183	183
-184	Flat	1	1	309167527	184	184
 185	Flat	1	1	310167527	185	185
-186	Apartment	1	1	311167527	186	186
 187	Terraced	3	1	312167527	187	187
-188	Apartment	2	1	313167527	188	188
-189	Apartment	2	2	314167527	189	189
-190	Flat	2	1	315167527	190	190
 191	Semi-Detached	3	2	316167527	191	191
 192	Semi-Detached	7	0	317167527	192	192
 193	Apartment	2	0	318167527	193	193
 194	Flat	2	2	319167527	194	194
-195	Flat	2	1	320167527	195	195
-196	Semi-Detached	3	1	321167527	196	196
-197	Apartment	2	2	322167527	197	197
-198	Apartment	1	1	323167527	198	198
 199	Apartment	2	0	324167527	199	199
-200	Flat	2	2	325167527	200	200
 201	Semi-Detached	3	1	327167527	201	201
-202	Apartment	2	2	328167527	202	202
-203	Apartment	2	2	329167527	203	203
-204	Apartment	2	2	330167527	204	204
-205	Apartment	2	2	331167527	205	205
-206	Apartment	2	2	332167527	206	206
-207	Apartment	2	2	333167527	207	207
-208	Apartment	3	3	334167527	208	208
-209	Apartment	2	2	335167527	209	209
-210	Apartment	1	1	337167527	210	210
-211	Studio	0	1	338167527	211	211
-212	Apartment	2	2	339167527	212	212
-213	Apartment	2	2	340167527	213	213
-214	Apartment	2	2	341167527	214	214
 215	Apartment	2	0	342167527	215	215
 216	Apartment	2	0	343167527	216	216
 217	Studio	0	0	344167527	217	217
-218	Studio	0	0	345167527	218	218
-219	Studio	0	0	346167527	219	219
 220	Apartment	2	2	347167527	220	220
-221	Apartment	1	1	348167527	221	221
-222	Apartment	2	1	349167527	222	222
-223	Apartment	1	1	350167527	223	223
-224	Apartment	2	1	351167527	224	224
-225	Apartment	2	2	352167527	225	225
-226	Apartment	2	2	353167527	226	226
-227	Flat	1	1	354167527	227	227
 228	Apartment	3	2	355167527	228	228
 229	Terraced	2	1	356167527	229	229
 230	Terraced	3	1	357167527	230	230
 231	Apartment	2	2	358167527	231	231
 232	House	6	2	359167527	232	232
-233	House	6	2	360167527	233	233
-234	House	6	2	361167527	234	234
-235	House	1	1	362167527	235	235
-236	House	6	2	363167527	236	236
-237	House	5	2	364167527	237	237
-238	House	3	1	365167527	238	238
-239	House	5	2	366167527	239	239
-240	Flat	4	2	367167527	240	240
-241	House	3	1	368167527	241	241
-242	House	4	2	369167527	242	242
-243	House	3	1	370167527	243	243
-244	House	5	2	371167527	244	244
-245	Apartment	2	2	372167527	245	245
-246	Apartment	1	1	373167527	246	246
-247	Flat	2	1	374167527	247	247
-248	House	4	2	375167527	248	248
-249	Apartment	1	1	376167527	249	249
-250	House	3	1	377167527	250	250
-251	House	3	1	378167527	251	251
 252	House	4	0	379167527	252	252
-253	House	4	0	380167527	253	253
-254	House	3	1	381167527	254	254
-255	House	3	1	382167527	255	255
-256	House	3	1	383167527	256	256
-257	House	4	0	384167527	257	257
-258	Apartment	2	2	385167527	258	258
-259	House	7	2	386167527	259	259
 260	House	3	2	387167527	260	260
 261	Flat	1	1	388167527	261	261
-262	House	4	0	389167527	262	262
-263	Apartment	2	2	390167527	263	263
-264	Apartment	2	1	391167527	264	264
 265	Flat	2	2	392167527	265	265
 266	Apartment	1	1	393167527	266	266
-267	Flat	2	2	394167527	267	267
 268	Flat	2	2	395167527	268	268
-269	Flat Share	1	1	396167527	269	269
 270	Terraced	3	1	397167527	270	270
-271	Flat Share	1	1	398167527	271	271
 272	Apartment	1	1	399167527	272	272
-273	Flat Share	1	1	400167527	273	273
-274	Flat Share	1	1	401167527	274	274
-275	House	4	0	402167527	275	275
-276	Flat Share	1	1	403167527	276	276
 277	Terraced	3	1	404167527	277	277
-278	Flat Share	1	1	405167527	278	278
-279	Flat	2	2	406167527	279	279
-280	Flat Share	1	1	407167527	280	280
-281	Apartment	3	2	408167527	281	281
-282	Terraced	2	1	409167527	282	282
 283	Flat	2	1	410167527	283	283
-284	Apartment	1	1	411167527	284	284
-285	Apartment	1	1	412167527	285	285
-286	Apartment	1	1	413167527	286	286
-287	Flat	1	1	414167527	287	287
-288	Apartment	2	2	415167527	288	288
 289	Terraced	2	1	416167527	289	289
-290	Apartment	1	0	417167527	290	290
-291	Flat Share	1	1	418167527	291	291
-292	Apartment	2	1	419167527	292	292
 293	Apartment	2	2	420167527	293	293
 294	Apartment	2	2	421167527	294	294
-295	Apartment	2	1	422167527	295	295
-296	Flat	1	1	423167527	296	296
 297	Semi-Detached	3	1	425167527	297	297
-298	Flat	1	1	426167527	298	298
-299	Apartment	2	0	427167527	299	299
-300	Apartment	2	2	428167527	300	300
 301	Apartment	2	1	429167527	301	301
-302	Semi-Detached	1	2	430167527	302	302
 303	Apartment	1	1	431167527	303	303
-304	Flat	1	1	432167527	304	304
 305	Apartment	1	1	433167527	305	305
-306	Flat	2	1	434167527	306	306
-307	Apartment	2	2	435167527	307	307
 308	Flat	2	2	436167527	308	308
-309	Flat	2	2	437167527	309	309
-310	Flat	2	1	438167527	310	310
 311	Apartment	2	2	439167527	311	311
 312	Terraced	3	1	440167527	312	312
-313	Duplex	2	1	441167527	313	313
-314	Terraced	2	1	442167527	314	314
 315	Flat	2	1	443167527	315	315
 316	Terraced	3	2	444167527	316	316
-317	Duplex	3	1	445167527	317	317
-318	Studio	0	1	446167527	318	318
 319	Semi-Detached	5	5	447167527	319	319
-320	Semi-Detached	3	1	448167527	320	320
-321	Flat	1	1	449167527	321	321
-322	House	4	2	450167527	322	322
-323	Apartment	2	2	451167527	323	323
-324	Flat	2	2	452167527	324	324
-325	Apartment	2	1	453167527	325	325
-326	Flat	2	1	454167527	326	326
-327	Flat	2	1	455167527	327	327
-328	Apartment	2	2	456167527	328	328
-329	Apartment	3	2	457167527	329	329
-330	Flat	3	2	458167527	330	330
-331	Flat	0	1	459167527	331	331
 332	Apartment	2	2	460167527	332	332
-333	Flat	1	1	461167527	333	333
-334	Apartment	2	2	463167527	334	334
-335	Flat	1	1	464167527	335	335
-336	Apartment	2	2	465167527	336	336
-337	Apartment	1	1	466167527	337	337
-338	Flat	2	2	467167527	338	338
-339	Apartment	2	2	468167527	339	339
-340	Studio	0	1	469167527	340	340
-341	Flat	3	3	470167527	341	341
-342	Flat	2	2	471167527	342	342
-343	Flat	2	2	472167527	343	343
-344	Flat	1	1	473167527	344	344
-345	Flat	1	1	475167527	345	345
-346	End of Terrace	2	1	476167527	346	346
-347	Studio	0	1	477167527	347	347
-348	Penthouse	1	1	478167527	348	348
 349	Apartment	2	2	479167527	349	349
-350	Apartment	2	2	480167527	350	350
-351	Apartment	1	1	481167527	351	351
-352	Apartment	1	1	482167527	352	352
-353	Apartment	2	2	483167527	353	353
-354	Studio	0	1	484167527	354	354
-355	Flat	1	1	485167527	355	355
-356	Flat	2	2	486167527	356	356
 357	Terraced	2	1	487167527	357	357
-358	Terraced	2	1	488167527	358	358
-359	Apartment	2	2	489167527	359	359
-360	Apartment	2	2	490167527	360	360
-361	Terraced	3	1	491167527	361	361
-362	House	3	1	492167527	362	362
-363	Terraced	7	3	493167527	363	363
 364	Flat	2	2	494167527	364	364
-365	Flat	1	1	495167527	365	365
-366	Terraced	4	2	496167527	366	366
-367	End of Terrace	4	1	497167527	367	367
-368	Flat	1	1	498167527	368	368
 369	Apartment	1	1	499167527	369	369
 370	Apartment	1	1	500167527	370	370
-371	Apartment	1	1	501167527	371	371
-372	Apartment	1	1	502167527	372	372
-373	Apartment	1	1	503167527	373	373
-374	Apartment	2	2	504167527	374	374
-375	Apartment	2	2	505167527	375	375
-376	Apartment	2	2	506167527	376	376
-377	Apartment	2	2	507167527	377	377
-378	Apartment	2	2	508167527	378	378
-379	Duplex	3	2	509167527	379	379
-380	Flat	2	2	510167527	380	380
-381	Flat	2	2	511167527	381	381
 382	Semi-Detached	6	2	512167527	382	382
-383	House	2	1	513167527	383	383
-384	House	6	2	514167527	384	384
-385	House	6	2	515167527	385	385
-386	House	7	2	516167527	386	386
-387	House	7	2	517167527	387	387
-388	House	4	1	518167527	388	388
 389	Apartment	2	1	519167527	389	389
-390	Semi-Detached	3	1	520167527	390	390
-391	House	3	0	521167527	391	391
-392	Flat	2	2	522167527	392	392
-393	Penthouse	2	1	523167527	393	393
-394	Flat Share	1	1	524167527	394	394
-395	House	3	1	525167527	395	395
 396	Semi-Detached	4	2	526167527	396	396
-397	Semi-Detached	3	1	527167527	397	397
-398	Apartment	2	1	528167527	398	398
-399	Flat	1	1	626167527	399	399
 400	Apartment	1	1	529167527	400	400
 401	Town House	4	2	530167527	401	401
-402	Apartment	2	2	531167527	402	402
-403	1	1	1	532167527	403	403
-404	Terraced	3	1	533167527	404	404
-405	Terraced	2	1	534167527	405	405
-406	Studio	0	1	535167527	406	406
-407	Flat	2	2	536167527	407	407
-408	Apartment	2	2	537167527	408	408
-409	Semi-Detached	3	1	538167527	409	409
-410	Studio	0	1	539167527	410	410
-411	Flat	2	2	540167527	411	411
-412	Apartment	3	3	541167527	412	412
-413	Flat	2	2	542167527	413	413
-414	Apartment	2	2	543167527	414	414
 415	Studio	0	0	544167527	415	415
-416	Apartment	2	2	545167527	416	416
-417	Apartment	1	1	546167527	417	417
-418	Apartment	3	1	547167527	418	418
-419	House Share	1	1	548167527	419	419
-420	Flat	3	2	549167527	420	420
-421	Flat	3	2	550167527	421	421
-422	Detached	3	2	551167527	422	422
-423	Penthouse	3	3	552167527	423	423
 424	Apartment	2	2	553167527	424	424
-425	Apartment	1	1	554167527	425	425
-426	Apartment	2	2	555167527	426	426
 427	Apartment	2	0	556167527	427	427
 428	Terraced	2	1	557167527	428	428
-429	Apartment	3	2	558167527	429	429
-430	Apartment	3	2	559167527	430	430
-431	Apartment	3	2	560167527	431	431
-432	Duplex	1	1	561167527	432	432
-433	Apartment	3	2	562167527	433	433
-434	Apartment	2	2	563167527	434	434
-435	Apartment	1	1	564167527	435	435
-436	Apartment	2	2	565167527	436	436
-437	Flat	2	1	566167527	437	437
 438	Apartment	1	1	567167527	438	438
-439	Duplex	1	1	568167527	439	439
 440	Apartment	1	1	569167527	440	440
-441	Apartment	2	0	570167527	441	441
-442	Apartment	2	2	571167527	442	442
-443	Apartment	1	1	572167527	443	443
-444	Terraced	3	2	573167527	444	444
-445	Apartment	2	2	575167527	445	445
-446	Apartment	1	1	576167527	446	446
 447	Terraced	4	1	577167527	447	447
-448	Flat	2	1	627167527	448	448
 449	Apartment	2	2	578167527	449	449
 450	Semi-Detached	6	2	580167527	450	450
 451	House	2	2	581167527	451	451
-452	Apartment	2	1	582167527	452	452
-453	Terraced	2	3	583167527	453	453
-454	Apartment	1	1	584167527	454	454
-455	Terraced	2	2	585167527	455	455
-456	Apartment	3	2	586167527	456	456
-457	Semi-Detached	3	2	587167527	457	457
-458	Flat	2	0	588167527	458	458
-459	Duplex	2	2	589167527	459	459
-460	Apartment	1	1	590167527	460	460
-461	Apartment	1	1	591167527	461	461
-462	Semi-Detached	3	1	592167527	462	462
-463	Studio	0	1	593167527	463	463
-464	Apartment	1	1	594167527	464	464
-465	Apartment	1	0	595167527	465	465
-466	Apartment	2	1	596167527	466	466
-467	Terraced	2	1	597167527	467	467
-468	Apartment	2	2	598167527	468	468
-469	Flat	2	2	599167527	469	469
-470	Terraced	2	1	600167527	470	470
-471	Terraced	2	1	601167527	471	471
 472	Semi-Detached	2	1	602167527	472	472
-473	Detached	4	4	603167527	473	473
 474	Apartment	2	1	604167527	474	474
 475	Flat	0	0	605167527	475	475
-476	Apartment	2	2	606167527	476	476
-477	Apartment	2	2	607167527	477	477
 478	Flat	1	0	608167527	478	478
 479	House Share	6	0	609167527	479	479
-480	Flat	2	2	611167527	480	480
-481	Flat	2	2	612167527	481	481
 482	Flat	2	2	613167527	482	482
 483	Flat	1	1	614167527	483	483
-484	Flat	2	1	615167527	484	484
-485	Apartment	2	1	616167527	485	485
-486	Apartment	2	1	617167527	486	486
-487	Apartment	1	1	618167527	487	487
-488	Flat	2	2	619167527	488	488
-489	Flat	2	2	620167527	489	489
 490	Apartment	1	1	621167527	490	490
-491	Studio	0	1	622167527	491	491
-492	Apartment	1	1	623167527	492	492
-493	Studio	0	1	624167527	493	493
-494	Flat	2	2	625167527	494	494
-495	Flat	2	1	628167527	495	495
-496	Semi-Detached	3	1	629167527	496	496
-497	Flat	2	2	630167527	497	497
-498	Flat	2	2	631167527	498	498
-499	Flat	1	1	632167527	499	499
-500	Apartment	1	1	633167527	500	500
 501	Apartment	4	2	634167527	501	501
-502	Semi-Detached	2	1	635167527	502	502
-503	Semi-Detached	3	1	636167527	503	503
-504	Flat	3	1	637167527	504	504
 505	Apartment	1	1	638167527	505	505
-506	Apartment	2	2	639167527	506	506
-507	Apartment	1	0	640167527	507	507
 508	Semi-Detached	4	3	641167527	508	508
 509	Flat	3	1	642167527	509	509
-510	Flat	1	0	643167527	510	510
-511	Apartment	0	1	644167527	511	511
 512	Apartment	1	1	645167527	512	512
-513	Apartment	1	1	646167527	513	513
-514	Flat	1	1	647167527	514	514
-515	Apartment	2	1	648167527	515	515
-516	Apartment	0	1	650167527	516	516
-517	Flat	1	1	651167527	517	517
-518	House Share	6	0	652167527	518	518
-519	Apartment	1	1	653167527	519	519
-520	Apartment	1	1	654167527	520	520
-521	Flat	1	1	655167527	521	521
 522	Terraced	3	1	656167527	522	522
-523	Apartment	1	1	657167527	523	523
-524	Terraced	2	1	658167527	524	524
-525	Apartment	0	1	659167527	525	525
-526	Apartment	2	2	660167527	526	526
-527	House	2	1	661167527	527	527
-528	Apartment	2	2	662167527	528	528
-529	Apartment	2	2	663167527	529	529
-530	Apartment	2	2	664167527	530	530
 531	Flat	2	1	665167527	531	531
-532	Apartment	2	0	666167527	532	532
-533	Flat	2	1	667167527	533	533
-534	Apartment	2	2	668167527	534	534
 535	Flat	2	1	669167527	535	535
-536	Apartment	1	1	670167527	536	536
-537	House Share	1	2	671167527	537	537
-538	House Share	1	1	672167527	538	538
-539	Apartment	1	1	673167527	539	539
-540	Apartment	1	1	675167527	540	540
-541	Apartment	1	1	676167527	541	541
-542	Apartment	2	1	677167527	542	542
-543	Flat	2	1	678167527	543	543
-544	Flat	1	1	679167527	544	544
-545	Apartment	1	1	680167527	545	545
 546	Semi-Detached	3	1	681167527	546	546
 547	House	3	1	682167527	547	547
-548	Apartment	1	1	683167527	548	548
 549	Terraced	2	1	684167527	549	549
-550	Apartment	1	1	685167527	550	550
-551	Flat	1	1	686167527	551	551
-552	Apartment	2	2	687167527	552	552
 553	Terraced	2	1	688167527	553	553
-554	Flat	1	1	689167527	554	554
-555	Flat	2	1	690167527	555	555
-556	Apartment	2	2	691167527	556	556
-557	Semi-Detached	7	3	692167527	557	557
-558	Flat Share	1	1	693167527	558	558
 559	Apartment	1	0	694167527	559	559
-560	Apartment	2	2	695167527	560	560
-561	Apartment	2	2	696167527	561	561
-562	Apartment	1	1	697167527	562	562
-563	Flat	2	2	698167527	563	563
-564	Apartment	1	1	700167527	564	564
-565	Apartment	2	2	702167527	565	565
-566	Apartment	1	1	703167527	566	566
-567	Apartment	2	2	704167527	567	567
 568	Apartment	1	1	705167527	568	568
 569	Apartment	1	1	706167527	569	569
-570	Apartment	1	1	707167527	570	570
-571	Apartment	1	1	708167527	571	571
-572	Apartment	1	1	709167527	572	572
-573	Apartment	1	1	710167527	573	573
-574	Apartment	1	1	711167527	574	574
-575	Apartment	2	1	712167527	575	575
-576	Flat	1	2	713167527	576	576
-577	Flat	1	1	714167527	577	577
-578	Town House	3	2	715167527	578	578
-579	Semi-Detached	3	1	716167527	579	579
-580	Apartment	1	1	717167527	580	580
-581	Apartment	1	1	718167527	581	581
-582	Flat	2	1	719167527	582	582
-583	Terraced	2	1	720167527	583	583
-584	Flat	3	2	721167527	584	584
-585	Flat	2	2	722167527	585	585
-586	Flat	2	2	723167527	586	586
-587	Apartment	1	1	724167527	587	587
-588	Flat	0	1	725167527	588	588
-589	Terraced	7	4	726167527	589	589
 590	Apartment	2	2	727167527	590	590
-591	Terraced	2	1	728167527	591	591
 592	Semi-Detached	3	2	729167527	592	592
-593	Flat	2	1	730167527	593	593
-594	Flat	1	1	731167527	594	594
-595	Semi-Detached	3	1	732167527	595	595
-596	Flat Share	1	2	733167527	596	596
-597	Apartment	2	2	734167527	597	597
-598	Apartment	2	2	735167527	598	598
-599	Apartment	2	2	736167527	599	599
 600	Semi-Detached	3	1	738167527	600	600
-601	Ground Flat	1	1	739167527	601	601
-602	Apartment	2	1	740167527	602	602
-603	Town House	2	2	741167527	603	603
-604	Flat	2	1	742167527	604	604
-605	Apartment	1	1	743167527	605	605
-606	Apartment	1	1	744167527	606	606
 607	Terraced	2	1	745167527	607	607
 608	Flat	2	1	746167527	608	608
-609	Semi-Detached	5	2	747167527	609	609
-610	Apartment	3	2	748167527	610	610
 611	Apartment	2	2	749167527	611	611
-612	Flat	1	1	750167527	612	612
-613	Semi-Detached	3	1	751167527	613	613
-614	Terraced	3	1	752167527	614	614
-615	Apartment	2	2	753167527	615	615
 616	Apartment	1	1	754167527	616	616
 617	Terraced	2	1	755167527	617	617
 618	Apartment	2	0	756167527	618	618
 619	Flat	1	0	757167527	619	619
-620	Bungalow	3	1	758167527	620	620
-621	Apartment	1	1	759167527	621	621
-622	Apartment	1	1	760167527	622	622
-623	Studio	0	1	761167527	623	623
-624	Apartment	2	2	762167527	624	624
 625	Flat	1	1	763167527	625	625
-626	Flat	1	1	764167527	626	626
 627	Apartment	2	1	765167527	627	627
-628	Semi-Detached	3	1	766167527	628	628
-629	Apartment	2	2	767167527	629	629
 630	Apartment	1	1	768167527	630	630
 631	Flat	2	1	769167527	631	631
-632	Terraced	4	1	770167527	632	632
-633	Apartment	1	1	771167527	633	633
-634	Apartment	1	1	772167527	634	634
-635	Apartment	2	1	773167527	635	635
-636	Apartment	1	1	774167527	636	636
 637	Terraced	2	1	775167527	637	637
-638	Apartment	2	2	776167527	638	638
-639	Apartment	2	1	777167527	639	639
 640	Apartment	2	2	778167527	640	640
-641	Flat	2	0	779167527	641	641
-642	4	4	1	780167527	642	642
 643	Apartment	3	2	781167527	643	643
 644	Flat	1	1	782167527	644	644
-645	Flat	1	1	783167527	645	645
 646	Terraced	9	2	784167527	646	646
-647	House Share	1	1	785167527	647	647
-648	Terraced	4	1	786167527	648	648
 649	Apartment	2	2	787167527	649	649
-650	House	3	1	788167527	650	650
-651	Apartment	2	2	789167527	651	651
-652	Apartment	2	2	790167527	652	652
-653	Apartment	2	2	791167527	653	653
-654	Apartment	2	2	792167527	654	654
-655	Flat	1	1	793167527	655	655
-656	Studio	0	1	794167527	656	656
 657	Apartment	1	1	795167527	657	657
-658	Apartment	3	1	796167527	658	658
-659	Flat	3	2	797167527	659	659
-660	Apartment	2	1	798167527	660	660
-661	Terraced	6	2	800167527	661	661
-662	Semi-Detached	8	3	801167527	662	662
-663	Terraced	6	2	803167527	663	663
 664	Apartment	2	1	805167527	664	664
-665	Apartment	2	2	806167527	665	665
-666	Apartment	5	5	807167527	666	666
-667	Apartment	5	5	808167527	667	667
-668	Apartment	5	5	809167527	668	668
-669	Apartment	1	1	810167527	669	669
-670	Apartment	2	1	811167527	670	670
-671	Apartment	1	1	812167527	671	671
-672	Apartment	2	2	813167527	672	672
 673	Apartment	1	1	814167527	673	673
-674	Apartment	1	1	815167527	674	674
-675	Apartment	1	1	816167527	675	675
-676	Apartment	2	2	817167527	676	676
-677	Apartment	2	2	818167527	677	677
-678	Apartment	2	2	819167527	678	678
-679	Apartment	1	1	820167527	679	679
-680	Apartment	2	2	821167527	680	680
-681	Apartment	2	2	822167527	681	681
-682	Apartment	2	2	823167527	682	682
 683	Apartment	2	1	825167527	683	683
-684	Apartment	1	1	826167527	684	684
 685	Studio	0	1	827167527	685	685
-686	Apartment	1	1	829167527	686	686
-687	Apartment	1	1	830167527	687	687
-688	Semi-Detached	3	2	831167527	688	688
-689	Apartment	1	1	832167527	689	689
-690	Flat	2	2	833167527	690	690
-691	Apartment	2	2	834167527	691	691
-692	Apartment	2	1	835167527	692	692
-693	Apartment	1	1	836167527	693	693
-694	Flat	2	2	837167527	694	694
-695	Apartment	1	1	838167527	695	695
-696	House	2	2	839167527	696	696
-697	Apartment	3	3	840167527	697	697
 698	House Share	3	0	841167527	698	698
-699	Apartment	1	0	842167527	699	699
-700	Semi-Detached	4	1	843167527	700	700
 701	Flat	6	2	844167527	701	701
-702	House	4	2	845167527	702	702
 703	House	3	2	846167527	703	703
-704	Apartment	1	1	847167527	704	704
-705	Semi-Detached	4	2	850167527	705	705
-706	Semi-Detached	3	1	851167527	706	706
-707	End of Terrace	3	1	852167527	707	707
-708	Semi-Detached	3	1	853167527	708	708
-709	House	3	1	854167527	709	709
-710	Apartment	2	2	855167527	710	710
-711	Flat Share	1	1	856167527	711	711
 712	Flat	0	1	857167527	712	712
-713	Flat	1	1	858167527	713	713
 714	Apartment	2	1	859167527	714	714
 715	Terraced	2	1	860167527	715	715
-716	Semi-Detached	3	1	861167527	716	716
-717	Apartment	2	2	862167527	717	717
-718	Apartment	3	2	863167527	718	718
-719	Apartment	2	2	864167527	719	719
-720	Apartment	2	2	865167527	720	720
-721	Terraced	2	1	866167527	721	721
-722	House Share	4	0	867167527	722	722
-723	Apartment	1	1	868167527	723	723
-724	Terraced	4	1	869167527	724	724
-725	Apartment	3	2	870167527	725	725
-726	Apartment	2	2	871167527	726	726
 727	Semi-Detached	3	1	872167527	727	727
-728	Apartment	1	1	873167527	728	728
-729	Apartment	2	2	875167527	729	729
-730	Apartment	2	2	876167527	730	730
-731	Apartment	1	1	877167527	731	731
-732	Terraced	4	1	878167527	732	732
-733	Flat	2	2	880167527	733	733
 734	Apartment	2	1	881167527	734	734
-735	Flat	2	2	882167527	735	735
-736	Apartment	2	2	883167527	736	736
-737	Terraced	3	1	884167527	737	737
-738	Apartment	2	2	885167527	738	738
-739	Apartment	2	2	886167527	739	739
 740	Terraced	6	1	887167527	740	740
-741	Apartment	2	1	888167527	741	741
-742	Semi-Detached	4	0	889167527	742	742
-743	Apartment	1	0	890167527	743	743
-744	End of Terrace	4	0	891167527	744	744
-745	Apartment	1	1	892167527	745	745
 746	Apartment	2	1	893167527	746	746
-747	Terraced	3	1	894167527	747	747
-748	Apartment	2	1	895167527	748	748
-749	Detached	10	3	896167527	749	749
-750	Apartment	1	1	897167527	750	750
-751	House Share	3	0	898167527	751	751
 752	Flat	2	2	899167527	752	752
-753	Apartment	0	1	900167527	753	753
-754	Terraced	2	1	901167527	754	754
-755	Apartment	1	1	902167527	755	755
-756	Semi-Detached	6	2	903167527	756	756
-757	Apartment	2	2	904167527	757	757
 \.
 
 
@@ -3599,758 +2469,193 @@ COPY "silver"."listings_df" ("id", "parsed_post_date", "parsed_available_date", 
 3	2025-03-05	2025-03-17 00:00:00	995	158316059	https://www.rightmove.co.uk/properties/158316059#/?channel=RES_LET	3167527	3
 4	2025-03-05	2025-02-28 00:00:00	1150	158315960	https://www.rightmove.co.uk/properties/158315960#/?channel=RES_LET	4167527	4
 5	2025-03-05	2025-03-05 00:00:00	1200	158315822	https://www.rightmove.co.uk/properties/158315822#/?channel=RES_LET	5167527	5
-6	2025-03-05	2025-03-05 00:00:00	995	158314349	https://www.rightmove.co.uk/properties/158314349#/?channel=RES_LET	6167527	6
 7	2025-03-05	2025-03-03 00:00:00	1930	158314298	https://www.rightmove.co.uk/properties/158314298#/?channel=RES_LET	7167527	7
-8	2025-03-05	2025-02-28 00:00:00	997	158272538	https://www.rightmove.co.uk/properties/158272538#/?channel=RES_LET	8167527	8
 9	2025-03-05	2025-03-05 00:00:00	1750	158314154	https://www.rightmove.co.uk/properties/158314154#/?channel=RES_LET	9167527	9
-10	2025-03-05	2025-03-03 00:00:00	2220	158314031	https://www.rightmove.co.uk/properties/158314031#/?channel=RES_LET	10167527	10
-11	2025-03-05	2025-03-23 00:00:00	2405	158313977	https://www.rightmove.co.uk/properties/158313977#/?channel=RES_LET	11167527	11
-12	2025-03-05	2025-03-03 00:00:00	2790	158313941	https://www.rightmove.co.uk/properties/158313941#/?channel=RES_LET	12167527	12
-13	2025-03-05	2025-03-01 00:00:00	12530	158313899	https://www.rightmove.co.uk/properties/158313899#/?channel=RES_LET	13167527	13
 14	2025-03-05	2025-03-05 00:00:00	1200	158313851	https://www.rightmove.co.uk/properties/158313851#/?channel=RES_LET	14167527	14
 15	2025-03-05	2025-03-05 00:00:00	850	157325948	https://www.rightmove.co.uk/properties/157325948#/?channel=RES_LET	15167527	15
 16	2025-03-05	2025-08-19 00:00:00	2380	158313419	https://www.rightmove.co.uk/properties/158313419#/?channel=RES_LET	16167527	16
 17	2025-03-05	2025-03-05 00:00:00	1550	156027971	https://www.rightmove.co.uk/properties/156027971#/?channel=RES_LET	17167527	17
 18	2025-03-05	1900-01-01 00:00:00	975	157711934	https://www.rightmove.co.uk/properties/157711934#/?channel=RES_LET	18167527	18
-19	2025-03-05	2025-03-05 00:00:00	1600	156922322	https://www.rightmove.co.uk/properties/156922322#/?channel=RES_LET	19167527	19
 20	2025-03-05	2025-03-05 00:00:00	1300	158311145	https://www.rightmove.co.uk/properties/158311145#/?channel=RES_LET	20167527	20
 21	2025-03-05	2025-03-21 00:00:00	1200	158310608	https://www.rightmove.co.uk/properties/158310608#/?channel=RES_LET	21167527	21
-22	2025-03-05	2025-03-05 00:00:00	2000	158310464	https://www.rightmove.co.uk/properties/158310464#/?channel=RES_LET	22167527	22
-23	2025-03-05	2025-03-05 00:00:00	2775	158310455	https://www.rightmove.co.uk/properties/158310455#/?channel=RES_LET	23167527	23
-24	2025-03-05	2025-03-05 00:00:00	1405	158310443	https://www.rightmove.co.uk/properties/158310443#/?channel=RES_LET	24167527	24
-25	2025-03-05	2025-03-05 00:00:00	3000	158310425	https://www.rightmove.co.uk/properties/158310425#/?channel=RES_LET	25167527	25
 26	2025-02-13	2025-03-05 00:00:00	1525	158195420	https://www.rightmove.co.uk/properties/158195420#/?channel=RES_LET	126167527	26
 27	2025-03-05	2025-03-05 00:00:00	975	158001974	https://www.rightmove.co.uk/properties/158001974#/?channel=RES_LET	127167527	27
-28	2025-03-05	2025-02-22 00:00:00	1100	157381079	https://www.rightmove.co.uk/properties/157381079#/?channel=RES_LET	128167527	28
 29	2025-03-05	2025-03-05 00:00:00	1300	154848287	https://www.rightmove.co.uk/properties/154848287#/?channel=RES_LET	129167527	29
 30	2025-03-05	2025-03-17 00:00:00	1450	157463765	https://www.rightmove.co.uk/properties/157463765#/?channel=RES_LET	130167527	30
 31	2025-03-05	2025-03-05 00:00:00	1250	157631504	https://www.rightmove.co.uk/properties/157631504#/?channel=RES_LET	131167527	31
-32	2025-03-05	2025-03-05 00:00:00	1200	156543662	https://www.rightmove.co.uk/properties/156543662#/?channel=RES_LET	132167527	32
 33	2025-03-05	2025-02-21 00:00:00	1875	157655816	https://www.rightmove.co.uk/properties/157655816#/?channel=RES_LET	133167527	33
-34	2025-03-05	2025-03-05 00:00:00	1250	156348833	https://www.rightmove.co.uk/properties/156348833#/?channel=RES_LET	134167527	34
 35	2025-02-11	2025-05-03 00:00:00	1000	158119919	https://www.rightmove.co.uk/properties/158119919#/?channel=RES_LET	151167527	35
-36	2025-03-05	2025-03-05 00:00:00	1610	158310404	https://www.rightmove.co.uk/properties/158310404#/?channel=RES_LET	160167527	36
-37	2025-03-05	2025-03-05 00:00:00	1504	158309528	https://www.rightmove.co.uk/properties/158309528#/?channel=RES_LET	161167527	37
-38	2025-03-05	2025-03-05 00:00:00	1079	158309519	https://www.rightmove.co.uk/properties/158309519#/?channel=RES_LET	162167527	38
-39	2025-03-05	2025-03-05 00:00:00	1484	158309399	https://www.rightmove.co.uk/properties/158309399#/?channel=RES_LET	163167527	39
-40	2025-03-05	2025-03-05 00:00:00	1689	158309366	https://www.rightmove.co.uk/properties/158309366#/?channel=RES_LET	164167527	40
-41	2025-03-05	2025-03-05 00:00:00	1475	158309345	https://www.rightmove.co.uk/properties/158309345#/?channel=RES_LET	165167527	41
-42	2025-03-05	2025-03-05 00:00:00	1139	158309138	https://www.rightmove.co.uk/properties/158309138#/?channel=RES_LET	166167527	42
-43	2025-03-05	2025-03-05 00:00:00	1250	158308970	https://www.rightmove.co.uk/properties/158308970#/?channel=RES_LET	167167527	43
 44	2025-03-05	2025-03-24 00:00:00	1400	158308538	https://www.rightmove.co.uk/properties/158308538#/?channel=RES_LET	168167527	44
-45	2025-03-05	2025-03-05 00:00:00	1100	156763559	https://www.rightmove.co.uk/properties/156763559#/?channel=RES_LET	169167527	45
 46	2025-03-05	2025-03-14 00:00:00	1050	158308289	https://www.rightmove.co.uk/properties/158308289#/?channel=RES_LET	170167527	46
 47	2025-03-05	2025-03-05 00:00:00	1150	158307581	https://www.rightmove.co.uk/properties/158307581#/?channel=RES_LET	171167527	47
-48	2025-03-05	2025-03-05 00:00:00	1250	158307503	https://www.rightmove.co.uk/properties/158307503#/?channel=RES_LET	172167527	48
-49	2025-03-05	2025-03-05 00:00:00	1225	158307461	https://www.rightmove.co.uk/properties/158307461#/?channel=RES_LET	173167527	49
 50	2025-03-05	2025-03-05 00:00:00	1275	158307557	https://www.rightmove.co.uk/properties/158307557#/?channel=RES_LET	174167527	50
-51	2025-03-05	2025-03-05 00:00:00	1275	156565448	https://www.rightmove.co.uk/properties/156565448#/?channel=RES_LET	175167527	51
 52	2025-02-12	1900-01-01 00:00:00	1230	158178989	https://www.rightmove.co.uk/properties/158178989#/?channel=RES_LET	176167527	52
 53	2025-03-05	2025-07-01 00:00:00	650	158307095	https://www.rightmove.co.uk/properties/158307095#/?channel=RES_LET	177167527	53
 54	2025-03-05	2025-03-05 00:00:00	1400	158306813	https://www.rightmove.co.uk/properties/158306813#/?channel=RES_LET	178167527	54
-55	2025-03-05	2025-03-05 00:00:00	1350	158306603	https://www.rightmove.co.uk/properties/158306603#/?channel=RES_LET	179167527	55
 56	2025-03-05	2025-03-05 00:00:00	1240	158305355	https://www.rightmove.co.uk/properties/158305355#/?channel=RES_LET	180167527	56
-57	2025-03-05	2025-02-17 00:00:00	1165	158305322	https://www.rightmove.co.uk/properties/158305322#/?channel=RES_LET	181167527	57
-58	2025-03-05	2025-03-06 00:00:00	1135	158305292	https://www.rightmove.co.uk/properties/158305292#/?channel=RES_LET	182167527	58
-59	2025-03-05	2025-02-28 00:00:00	1060	158305172	https://www.rightmove.co.uk/properties/158305172#/?channel=RES_LET	183167527	59
-60	2025-03-05	2025-03-09 00:00:00	2700	158305124	https://www.rightmove.co.uk/properties/158305124#/?channel=RES_LET	184167527	60
-61	2025-03-05	2025-03-11 00:00:00	1450	157406669	https://www.rightmove.co.uk/properties/157406669#/?channel=RES_LET	185167527	61
-62	2025-03-05	2025-04-01 00:00:00	1035	158305055	https://www.rightmove.co.uk/properties/158305055#/?channel=RES_LET	186167527	62
-63	2025-03-05	2025-02-21 00:00:00	1015	158304878	https://www.rightmove.co.uk/properties/158304878#/?channel=RES_LET	187167527	63
 64	2025-03-05	2025-03-21 00:00:00	1250	158304671	https://www.rightmove.co.uk/properties/158304671#/?channel=RES_LET	188167527	64
-65	2025-03-05	2025-03-05 00:00:00	1100	155659016	https://www.rightmove.co.uk/properties/155659016#/?channel=RES_LET	189167527	65
 66	2025-03-05	2025-02-17 00:00:00	1500	158300357	https://www.rightmove.co.uk/properties/158300357#/?channel=RES_LET	190167527	66
 67	2025-03-05	2025-03-28 00:00:00	950	158300015	https://www.rightmove.co.uk/properties/158300015#/?channel=RES_LET	191167527	67
-68	2025-03-05	2025-03-31 00:00:00	1200	158300012	https://www.rightmove.co.uk/properties/158300012#/?channel=RES_LET	192167527	68
-69	2025-03-05	2025-02-18 00:00:00	1050	156992240	https://www.rightmove.co.uk/properties/156992240#/?channel=RES_LET	193167527	69
-70	2025-03-04	2025-02-25 00:00:00	1150	156195479	https://www.rightmove.co.uk/properties/156195479#/?channel=RES_LET	194167527	70
-71	2025-03-04	2025-03-05 00:00:00	2250	146165039	https://www.rightmove.co.uk/properties/146165039#/?channel=RES_LET	195167527	71
-72	2025-03-04	2025-03-05 00:00:00	1400	157429919	https://www.rightmove.co.uk/properties/157429919#/?channel=RES_LET	196167527	72
-73	2025-03-04	2025-03-05 00:00:00	2500	158298329	https://www.rightmove.co.uk/properties/158298329#/?channel=RES_LET	197167527	73
 74	2025-03-04	2025-03-04 00:00:00	1250	158297354	https://www.rightmove.co.uk/properties/158297354#/?channel=RES_LET	198167527	74
 75	2025-03-04	1900-01-01 00:00:00	1075	158296610	https://www.rightmove.co.uk/properties/158296610#/?channel=RES_LET	199167527	75
-76	2025-03-04	1900-01-01 00:00:00	1925	158296607	https://www.rightmove.co.uk/properties/158296607#/?channel=RES_LET	200167527	76
 77	2025-01-10	2025-02-19 00:00:00	1300	156167261	https://www.rightmove.co.uk/properties/156167261#/?channel=RES_LET	201167527	77
-78	2025-03-04	2025-03-05 00:00:00	2100	158296595	https://www.rightmove.co.uk/properties/158296595#/?channel=RES_LET	202167527	78
-79	2025-03-04	1900-01-01 00:00:00	2150	158296568	https://www.rightmove.co.uk/properties/158296568#/?channel=RES_LET	203167527	79
-80	2025-03-04	2025-03-05 00:00:00	1495	158296529	https://www.rightmove.co.uk/properties/158296529#/?channel=RES_LET	204167527	80
-81	2025-03-04	2025-03-05 00:00:00	1490	158296457	https://www.rightmove.co.uk/properties/158296457#/?channel=RES_LET	205167527	81
-82	2025-03-04	2025-03-05 00:00:00	1550	158296424	https://www.rightmove.co.uk/properties/158296424#/?channel=RES_LET	206167527	82
-83	2025-03-04	2025-03-05 00:00:00	1925	158296382	https://www.rightmove.co.uk/properties/158296382#/?channel=RES_LET	207167527	83
 84	2025-03-04	2025-05-07 00:00:00	1320	158296091	https://www.rightmove.co.uk/properties/158296091#/?channel=RES_LET	208167527	84
-85	2025-03-04	2025-03-05 00:00:00	1850	157926821	https://www.rightmove.co.uk/properties/157926821#/?channel=RES_LET	209167527	85
 86	2025-03-04	2025-07-01 00:00:00	780	144682514	https://www.rightmove.co.uk/properties/144682514#/?channel=RES_LET	210167527	86
-87	2025-03-04	1900-01-01 00:00:00	850	157213397	https://www.rightmove.co.uk/properties/157213397#/?channel=RES_LET	211167527	87
 88	2025-03-04	2025-07-11 00:00:00	1600	157773698	https://www.rightmove.co.uk/properties/157773698#/?channel=RES_LET	212167527	88
 89	2025-03-04	2025-03-08 00:00:00	725	158294474	https://www.rightmove.co.uk/properties/158294474#/?channel=RES_LET	213167527	89
-90	2025-03-04	2025-03-05 00:00:00	1350	158294417	https://www.rightmove.co.uk/properties/158294417#/?channel=RES_LET	214167527	90
 91	2025-03-04	2025-03-05 00:00:00	975	155350376	https://www.rightmove.co.uk/properties/155350376#/?channel=RES_LET	215167527	91
 92	2025-03-04	2025-05-01 00:00:00	2500	158293460	https://www.rightmove.co.uk/properties/158293460#/?channel=RES_LET	216167527	92
 93	2025-03-04	2025-03-05 00:00:00	1150	156896657	https://www.rightmove.co.uk/properties/156896657#/?channel=RES_LET	217167527	93
 94	2025-03-04	2025-03-05 00:00:00	1267	158291408	https://www.rightmove.co.uk/properties/158291408#/?channel=RES_LET	218167527	94
 95	2025-03-04	2025-07-01 00:00:00	795	42944848	https://www.rightmove.co.uk/properties/42944848#/?channel=RES_LET	219167527	95
-96	2025-03-04	2025-07-01 00:00:00	855	42883612	https://www.rightmove.co.uk/properties/42883612#/?channel=RES_LET	220167527	96
-97	2025-03-04	2025-07-01 00:00:00	825	56971487	https://www.rightmove.co.uk/properties/56971487#/?channel=RES_LET	221167527	97
 98	2025-03-04	1900-01-01 00:00:00	2600	158290445	https://www.rightmove.co.uk/properties/158290445#/?channel=RES_LET	222167527	98
-99	2025-03-04	1900-01-01 00:00:00	1800	158290364	https://www.rightmove.co.uk/properties/158290364#/?channel=RES_LET	223167527	99
-100	2025-03-04	1900-01-01 00:00:00	1500	158290199	https://www.rightmove.co.uk/properties/158290199#/?channel=RES_LET	224167527	100
-101	2025-03-04	1900-01-01 00:00:00	2300	158290139	https://www.rightmove.co.uk/properties/158290139#/?channel=RES_LET	225167527	101
 102	2025-03-04	2025-03-05 00:00:00	1991	158271701	https://www.rightmove.co.uk/properties/158271701#/?channel=RES_LET	226167527	102
-103	2025-03-04	1900-01-01 00:00:00	2300	158290061	https://www.rightmove.co.uk/properties/158290061#/?channel=RES_LET	227167527	103
-104	2025-03-04	1900-01-01 00:00:00	1600	158289947	https://www.rightmove.co.uk/properties/158289947#/?channel=RES_LET	228167527	104
-105	2025-03-04	1900-01-01 00:00:00	1500	158289860	https://www.rightmove.co.uk/properties/158289860#/?channel=RES_LET	229167527	105
-106	2025-03-04	1900-01-01 00:00:00	1600	158289782	https://www.rightmove.co.uk/properties/158289782#/?channel=RES_LET	230167527	106
-107	2025-03-04	1900-01-01 00:00:00	1500	158289668	https://www.rightmove.co.uk/properties/158289668#/?channel=RES_LET	231167527	107
 108	2025-03-04	2025-03-05 00:00:00	1000	157456400	https://www.rightmove.co.uk/properties/157456400#/?channel=RES_LET	232167527	108
-109	2025-03-04	1900-01-01 00:00:00	1300	158289575	https://www.rightmove.co.uk/properties/158289575#/?channel=RES_LET	233167527	109
-110	2025-03-04	1900-01-01 00:00:00	1250	158289491	https://www.rightmove.co.uk/properties/158289491#/?channel=RES_LET	234167527	110
-111	2025-03-04	1900-01-01 00:00:00	1300	158289398	https://www.rightmove.co.uk/properties/158289398#/?channel=RES_LET	235167527	111
 112	2025-03-04	2025-03-05 00:00:00	4290	158288924	https://www.rightmove.co.uk/properties/158288924#/?channel=RES_LET	236167527	112
-113	2025-03-04	2025-03-05 00:00:00	3000	158288423	https://www.rightmove.co.uk/properties/158288423#/?channel=RES_LET	237167527	113
-114	2025-03-04	2025-03-05 00:00:00	2850	158288036	https://www.rightmove.co.uk/properties/158288036#/?channel=RES_LET	238167527	114
 115	2025-03-04	2025-09-23 00:00:00	1700	158287994	https://www.rightmove.co.uk/properties/158287994#/?channel=RES_LET	239167527	115
 116	2025-03-04	2025-03-05 00:00:00	1100	141910406	https://www.rightmove.co.uk/properties/141910406#/?channel=RES_LET	240167527	116
 117	2025-03-04	2025-03-19 00:00:00	1300	144952919	https://www.rightmove.co.uk/properties/144952919#/?channel=RES_LET	241167527	117
 118	2025-03-04	2025-07-01 00:00:00	5070	155965412	https://www.rightmove.co.uk/properties/155965412#/?channel=RES_LET	242167527	118
 119	2025-03-04	1900-01-01 00:00:00	1100	158287175	https://www.rightmove.co.uk/properties/158287175#/?channel=RES_LET	243167527	119
 120	2025-03-04	1900-01-01 00:00:00	1200	157578236	https://www.rightmove.co.uk/properties/157578236#/?channel=RES_LET	244167527	120
-121	2025-03-04	2025-03-28 00:00:00	945	158287163	https://www.rightmove.co.uk/properties/158287163#/?channel=RES_LET	245167527	121
-122	2025-03-04	2025-03-05 00:00:00	2035	158286842	https://www.rightmove.co.uk/properties/158286842#/?channel=RES_LET	246167527	122
-123	2025-03-04	2025-07-01 00:00:00	5633	155387444	https://www.rightmove.co.uk/properties/155387444#/?channel=RES_LET	247167527	123
-124	2025-03-04	2025-03-05 00:00:00	1685	158286374	https://www.rightmove.co.uk/properties/158286374#/?channel=RES_LET	248167527	124
 125	2025-03-04	2025-08-01 00:00:00	1000	158286383	https://www.rightmove.co.uk/properties/158286383#/?channel=RES_LET	249167527	125
-126	2025-03-04	2025-03-05 00:00:00	1840	158286386	https://www.rightmove.co.uk/properties/158286386#/?channel=RES_LET	250167527	126
 127	2024-12-09	2025-03-01 00:00:00	1200	155798354	https://www.rightmove.co.uk/properties/155798354#/?channel=RES_LET	251167527	127
-128	2025-03-04	2025-03-05 00:00:00	1660	158286365	https://www.rightmove.co.uk/properties/158286365#/?channel=RES_LET	252167527	128
-129	2025-03-04	2025-03-05 00:00:00	2100	158285987	https://www.rightmove.co.uk/properties/158285987#/?channel=RES_LET	253167527	129
-130	2025-03-04	2025-09-24 00:00:00	2200	158285924	https://www.rightmove.co.uk/properties/158285924#/?channel=RES_LET	254167527	130
-131	2025-03-04	2025-09-11 00:00:00	2250	158285582	https://www.rightmove.co.uk/properties/158285582#/?channel=RES_LET	255167527	131
-132	2025-03-04	2025-02-17 00:00:00	925	157526585	https://www.rightmove.co.uk/properties/157526585#/?channel=RES_LET	256167527	132
-133	2025-03-04	2025-08-29 00:00:00	1700	158284877	https://www.rightmove.co.uk/properties/158284877#/?channel=RES_LET	257167527	133
 134	2025-03-04	2025-04-01 00:00:00	2205	158283800	https://www.rightmove.co.uk/properties/158283800#/?channel=RES_LET	258167527	134
-135	2025-03-04	2025-03-10 00:00:00	1300	158284034	https://www.rightmove.co.uk/properties/158284034#/?channel=RES_LET	259167527	135
-136	2025-03-04	2025-09-30 00:00:00	2300	158284007	https://www.rightmove.co.uk/properties/158284007#/?channel=RES_LET	260167527	136
 137	2025-03-04	2025-02-24 00:00:00	1200	158283899	https://www.rightmove.co.uk/properties/158283899#/?channel=RES_LET	261167527	137
 138	2025-03-04	2025-03-17 00:00:00	1100	158283767	https://www.rightmove.co.uk/properties/158283767#/?channel=RES_LET	262167527	138
 139	2025-03-04	2025-03-05 00:00:00	1200	157586192	https://www.rightmove.co.uk/properties/157586192#/?channel=RES_LET	263167527	139
-140	2025-03-04	2025-09-19 00:00:00	1750	158283446	https://www.rightmove.co.uk/properties/158283446#/?channel=RES_LET	264167527	140
 141	2025-03-04	2025-03-05 00:00:00	1595	155165555	https://www.rightmove.co.uk/properties/155165555#/?channel=RES_LET	265167527	141
-142	2025-03-04	2025-03-17 00:00:00	895	158283005	https://www.rightmove.co.uk/properties/158283005#/?channel=RES_LET	266167527	142
-143	2025-03-04	2025-02-25 00:00:00	1180	158282960	https://www.rightmove.co.uk/properties/158282960#/?channel=RES_LET	267167527	143
-144	2025-03-04	2025-09-23 00:00:00	2300	158283011	https://www.rightmove.co.uk/properties/158283011#/?channel=RES_LET	268167527	144
 145	2025-03-04	2025-03-05 00:00:00	1350	158282651	https://www.rightmove.co.uk/properties/158282651#/?channel=RES_LET	269167527	145
-146	2025-03-04	2025-03-21 00:00:00	1100	158282405	https://www.rightmove.co.uk/properties/158282405#/?channel=RES_LET	270167527	146
 147	2025-03-04	2025-02-21 00:00:00	1450	158282063	https://www.rightmove.co.uk/properties/158282063#/?channel=RES_LET	271167527	147
 148	2025-03-04	2025-03-05 00:00:00	1300	157263494	https://www.rightmove.co.uk/properties/157263494#/?channel=RES_LET	272167527	148
-149	2025-03-04	2025-04-28 00:00:00	1850	158281466	https://www.rightmove.co.uk/properties/158281466#/?channel=RES_LET	273167527	149
-150	2025-03-04	2025-09-28 00:00:00	2350	158284127	https://www.rightmove.co.uk/properties/158284127#/?channel=RES_LET	274167527	150
-151	2025-03-04	2025-02-17 00:00:00	1350	157705121	https://www.rightmove.co.uk/properties/157705121#/?channel=RES_LET	275167527	151
-152	2025-03-04	2025-04-15 00:00:00	1250	158279801	https://www.rightmove.co.uk/properties/158279801#/?channel=RES_LET	276167527	152
 153	2025-03-04	2025-03-05 00:00:00	700	158281001	https://www.rightmove.co.uk/properties/158281001#/?channel=RES_LET	277167527	153
 154	2025-03-04	2025-03-03 00:00:00	1150	158280959	https://www.rightmove.co.uk/properties/158280959#/?channel=RES_LET	278167527	154
-155	2025-03-04	2025-04-28 00:00:00	1750	158280617	https://www.rightmove.co.uk/properties/158280617#/?channel=RES_LET	279167527	155
-156	2025-03-04	2025-03-05 00:00:00	1200	157314830	https://www.rightmove.co.uk/properties/157314830#/?channel=RES_LET	280167527	156
-157	2025-03-04	2025-09-16 00:00:00	2400	158283245	https://www.rightmove.co.uk/properties/158283245#/?channel=RES_LET	281167527	157
 158	2025-03-04	2025-03-06 00:00:00	1225	158280080	https://www.rightmove.co.uk/properties/158280080#/?channel=RES_LET	282167527	158
-159	2025-03-04	2025-09-05 00:00:00	1700	158279861	https://www.rightmove.co.uk/properties/158279861#/?channel=RES_LET	283167527	159
 160	2025-03-04	2025-09-09 00:00:00	589	158279843	https://www.rightmove.co.uk/properties/158279843#/?channel=RES_LET	284167527	160
-161	2025-03-04	2025-04-01 00:00:00	1125	158279828	https://www.rightmove.co.uk/properties/158279828#/?channel=RES_LET	285167527	161
-162	2025-03-04	2025-04-21 00:00:00	1800	158279825	https://www.rightmove.co.uk/properties/158279825#/?channel=RES_LET	286167527	162
-163	2025-03-04	2025-04-15 00:00:00	2200	158279822	https://www.rightmove.co.uk/properties/158279822#/?channel=RES_LET	287167527	163
-164	2025-03-04	2025-04-07 00:00:00	1600	158279816	https://www.rightmove.co.uk/properties/158279816#/?channel=RES_LET	288167527	164
-165	2025-03-04	2025-04-08 00:00:00	1350	158279813	https://www.rightmove.co.uk/properties/158279813#/?channel=RES_LET	289167527	165
 166	2025-03-04	1900-01-01 00:00:00	1755	87084207	https://www.rightmove.co.uk/properties/87084207#/?channel=RES_LET	290167527	166
-167	2025-03-04	2025-04-22 00:00:00	1050	158279807	https://www.rightmove.co.uk/properties/158279807#/?channel=RES_LET	291167527	167
-168	2025-03-04	2025-04-23 00:00:00	1150	158279786	https://www.rightmove.co.uk/properties/158279786#/?channel=RES_LET	292167527	168
-169	2025-03-04	2025-03-07 00:00:00	1850	158279789	https://www.rightmove.co.uk/properties/158279789#/?channel=RES_LET	293167527	169
-170	2025-03-04	2025-03-20 00:00:00	1100	157885685	https://www.rightmove.co.uk/properties/157885685#/?channel=RES_LET	295167527	170
-171	2025-03-04	2025-03-07 00:00:00	1250	157643099	https://www.rightmove.co.uk/properties/157643099#/?channel=RES_LET	296167527	171
 172	2025-03-04	2025-02-26 00:00:00	1100	158278553	https://www.rightmove.co.uk/properties/158278553#/?channel=RES_LET	297167527	172
-173	2025-03-04	2025-04-10 00:00:00	2850	152968910	https://www.rightmove.co.uk/properties/152968910#/?channel=RES_LET	298167527	173
-174	2025-03-04	2025-03-05 00:00:00	1685	158278022	https://www.rightmove.co.uk/properties/158278022#/?channel=RES_LET	299167527	174
-175	2025-03-04	2025-02-24 00:00:00	1000	143585015	https://www.rightmove.co.uk/properties/143585015#/?channel=RES_LET	300167527	175
-176	2025-02-13	2025-03-05 00:00:00	1211	158225144	https://www.rightmove.co.uk/properties/158225144#/?channel=RES_LET	301167527	176
-177	2025-03-04	2025-03-05 00:00:00	2535	158176907	https://www.rightmove.co.uk/properties/158176907#/?channel=RES_LET	302167527	177
 178	2025-03-04	2025-03-21 00:00:00	1450	158277278	https://www.rightmove.co.uk/properties/158277278#/?channel=RES_LET	303167527	178
-179	2025-03-04	2025-03-05 00:00:00	1405	158277263	https://www.rightmove.co.uk/properties/158277263#/?channel=RES_LET	304167527	179
-180	2025-03-04	2025-03-05 00:00:00	3250	158277236	https://www.rightmove.co.uk/properties/158277236#/?channel=RES_LET	305167527	180
-181	2025-03-04	2025-03-05 00:00:00	1690	158277227	https://www.rightmove.co.uk/properties/158277227#/?channel=RES_LET	306167527	181
 182	2025-03-04	2025-02-19 00:00:00	1050	158277053	https://www.rightmove.co.uk/properties/158277053#/?channel=RES_LET	307167527	182
-183	2025-03-04	2025-03-05 00:00:00	2775	158276894	https://www.rightmove.co.uk/properties/158276894#/?channel=RES_LET	308167527	183
-184	2025-03-04	2025-03-05 00:00:00	1610	158276648	https://www.rightmove.co.uk/properties/158276648#/?channel=RES_LET	309167527	184
 185	2025-03-04	2025-03-24 00:00:00	575	158276459	https://www.rightmove.co.uk/properties/158276459#/?channel=RES_LET	310167527	185
-186	2025-03-04	2025-02-17 00:00:00	1250	158276135	https://www.rightmove.co.uk/properties/158276135#/?channel=RES_LET	311167527	186
 187	2025-03-04	2025-07-01 00:00:00	1950	158276084	https://www.rightmove.co.uk/properties/158276084#/?channel=RES_LET	312167527	187
-188	2025-03-04	2025-03-20 00:00:00	1100	158275970	https://www.rightmove.co.uk/properties/158275970#/?channel=RES_LET	313167527	188
-189	2025-03-04	2025-03-03 00:00:00	1450	158275703	https://www.rightmove.co.uk/properties/158275703#/?channel=RES_LET	314167527	189
-190	2025-03-04	2025-03-17 00:00:00	1200	158275487	https://www.rightmove.co.uk/properties/158275487#/?channel=RES_LET	315167527	190
 191	2025-03-04	2025-02-24 00:00:00	1350	156122393	https://www.rightmove.co.uk/properties/156122393#/?channel=RES_LET	316167527	191
 192	2025-03-04	2025-03-05 00:00:00	2500	158201399	https://www.rightmove.co.uk/properties/158201399#/?channel=RES_LET	317167527	192
 193	2025-03-04	2025-03-05 00:00:00	1900	158275064	https://www.rightmove.co.uk/properties/158275064#/?channel=RES_LET	318167527	193
 194	2025-03-04	2025-03-21 00:00:00	1150	158274281	https://www.rightmove.co.uk/properties/158274281#/?channel=RES_LET	319167527	194
-195	2025-03-04	2025-03-05 00:00:00	1200	157157366	https://www.rightmove.co.uk/properties/157157366#/?channel=RES_LET	320167527	195
-196	2025-03-04	2025-03-05 00:00:00	1500	158273477	https://www.rightmove.co.uk/properties/158273477#/?channel=RES_LET	321167527	196
-197	2025-03-04	2025-03-05 00:00:00	1400	157294841	https://www.rightmove.co.uk/properties/157294841#/?channel=RES_LET	322167527	197
-198	2025-03-04	2025-03-21 00:00:00	1350	158272955	https://www.rightmove.co.uk/properties/158272955#/?channel=RES_LET	323167527	198
 199	2025-03-04	1900-01-01 00:00:00	1350	132736481	https://www.rightmove.co.uk/properties/132736481#/?channel=RES_LET	324167527	199
-200	2025-03-04	2025-03-13 00:00:00	1300	158272796	https://www.rightmove.co.uk/properties/158272796#/?channel=RES_LET	325167527	200
 201	2025-03-04	2025-03-01 00:00:00	1275	157100198	https://www.rightmove.co.uk/properties/157100198#/?channel=RES_LET	327167527	201
-202	2025-03-04	1900-01-01 00:00:00	2162	158272484	https://www.rightmove.co.uk/properties/158272484#/?channel=RES_LET	328167527	202
-203	2025-03-04	1900-01-01 00:00:00	2129	158272460	https://www.rightmove.co.uk/properties/158272460#/?channel=RES_LET	329167527	203
-204	2025-03-04	1900-01-01 00:00:00	2316	158272424	https://www.rightmove.co.uk/properties/158272424#/?channel=RES_LET	330167527	204
-205	2025-03-04	2025-03-19 00:00:00	1500	157040021	https://www.rightmove.co.uk/properties/157040021#/?channel=RES_LET	331167527	205
-206	2025-03-04	1900-01-01 00:00:00	2050	158272223	https://www.rightmove.co.uk/properties/158272223#/?channel=RES_LET	332167527	206
-207	2025-03-04	1900-01-01 00:00:00	2075	158272094	https://www.rightmove.co.uk/properties/158272094#/?channel=RES_LET	333167527	207
-208	2025-03-04	1900-01-01 00:00:00	2983	158271899	https://www.rightmove.co.uk/properties/158271899#/?channel=RES_LET	334167527	208
-209	2025-03-04	1900-01-01 00:00:00	1908	158271809	https://www.rightmove.co.uk/properties/158271809#/?channel=RES_LET	335167527	209
-210	2025-03-04	1900-01-01 00:00:00	1600	158271590	https://www.rightmove.co.uk/properties/158271590#/?channel=RES_LET	337167527	210
-211	2025-03-04	1900-01-01 00:00:00	1498	158271461	https://www.rightmove.co.uk/properties/158271461#/?channel=RES_LET	338167527	211
-212	2025-03-04	1900-01-01 00:00:00	1975	158271338	https://www.rightmove.co.uk/properties/158271338#/?channel=RES_LET	339167527	212
-213	2025-03-04	1900-01-01 00:00:00	2050	158271215	https://www.rightmove.co.uk/properties/158271215#/?channel=RES_LET	340167527	213
-214	2025-03-04	1900-01-01 00:00:00	2058	158271152	https://www.rightmove.co.uk/properties/158271152#/?channel=RES_LET	341167527	214
 215	2025-03-04	2025-03-01 00:00:00	1175	31399351	https://www.rightmove.co.uk/properties/31399351#/?channel=RES_LET	342167527	215
 216	2025-03-04	2025-03-05 00:00:00	1000	157818002	https://www.rightmove.co.uk/properties/157818002#/?channel=RES_LET	343167527	216
 217	2025-03-04	1900-01-01 00:00:00	1316	158270537	https://www.rightmove.co.uk/properties/158270537#/?channel=RES_LET	344167527	217
-218	2025-03-04	1900-01-01 00:00:00	1170	158270483	https://www.rightmove.co.uk/properties/158270483#/?channel=RES_LET	345167527	218
-219	2025-03-04	1900-01-01 00:00:00	1120	158270402	https://www.rightmove.co.uk/properties/158270402#/?channel=RES_LET	346167527	219
 220	2025-03-04	2025-03-26 00:00:00	1400	157729610	https://www.rightmove.co.uk/properties/157729610#/?channel=RES_LET	347167527	220
-221	2025-03-04	2025-03-05 00:00:00	1100	158270375	https://www.rightmove.co.uk/properties/158270375#/?channel=RES_LET	348167527	221
-222	2025-03-04	2025-03-15 00:00:00	1100	158269553	https://www.rightmove.co.uk/properties/158269553#/?channel=RES_LET	349167527	222
-223	2025-02-10	2025-03-05 00:00:00	1150	158038433	https://www.rightmove.co.uk/properties/158038433#/?channel=RES_LET	350167527	223
-224	2025-03-04	2025-03-21 00:00:00	1130	158269310	https://www.rightmove.co.uk/properties/158269310#/?channel=RES_LET	351167527	224
-225	2025-03-04	2025-03-05 00:00:00	1400	146750435	https://www.rightmove.co.uk/properties/146750435#/?channel=RES_LET	352167527	225
-226	2025-03-04	2025-03-05 00:00:00	1900	152724128	https://www.rightmove.co.uk/properties/152724128#/?channel=RES_LET	353167527	226
-227	2025-03-04	2025-03-05 00:00:00	850	158268506	https://www.rightmove.co.uk/properties/158268506#/?channel=RES_LET	354167527	227
 228	2025-03-04	2025-03-05 00:00:00	1750	156598532	https://www.rightmove.co.uk/properties/156598532#/?channel=RES_LET	355167527	228
 229	2025-03-04	1900-01-01 00:00:00	1200	158268254	https://www.rightmove.co.uk/properties/158268254#/?channel=RES_LET	356167527	229
 230	2025-03-04	1900-01-01 00:00:00	1250	158268101	https://www.rightmove.co.uk/properties/158268101#/?channel=RES_LET	357167527	230
 231	2025-03-04	2025-02-19 00:00:00	1530	158267954	https://www.rightmove.co.uk/properties/158267954#/?channel=RES_LET	358167527	231
 232	2025-03-04	1900-01-01 00:00:00	4345	158267945	https://www.rightmove.co.uk/properties/158267945#/?channel=RES_LET	359167527	232
-233	2025-03-04	2025-08-05 00:00:00	4525	158267807	https://www.rightmove.co.uk/properties/158267807#/?channel=RES_LET	360167527	233
-234	2025-03-04	1900-01-01 00:00:00	4782	158267816	https://www.rightmove.co.uk/properties/158267816#/?channel=RES_LET	361167527	234
-235	2025-03-04	2025-07-15 00:00:00	981	158267798	https://www.rightmove.co.uk/properties/158267798#/?channel=RES_LET	362167527	235
-236	2025-03-04	1900-01-01 00:00:00	4217	158267564	https://www.rightmove.co.uk/properties/158267564#/?channel=RES_LET	363167527	236
-237	2025-03-04	1900-01-01 00:00:00	3621	158267561	https://www.rightmove.co.uk/properties/158267561#/?channel=RES_LET	364167527	237
-238	2025-03-04	2025-09-12 00:00:00	2494	158267555	https://www.rightmove.co.uk/properties/158267555#/?channel=RES_LET	365167527	238
-239	2025-03-04	1900-01-01 00:00:00	3621	158267552	https://www.rightmove.co.uk/properties/158267552#/?channel=RES_LET	366167527	239
-240	2025-03-04	2025-03-14 00:00:00	1950	158267537	https://www.rightmove.co.uk/properties/158267537#/?channel=RES_LET	367167527	240
-241	2025-03-04	2025-09-05 00:00:00	2172	158267501	https://www.rightmove.co.uk/properties/158267501#/?channel=RES_LET	368167527	241
-242	2025-03-04	1900-01-01 00:00:00	3068	158267492	https://www.rightmove.co.uk/properties/158267492#/?channel=RES_LET	369167527	242
-243	2025-03-04	2029-09-05 00:00:00	2301	158267498	https://www.rightmove.co.uk/properties/158267498#/?channel=RES_LET	370167527	243
-244	2025-03-04	2025-09-05 00:00:00	3557	158267489	https://www.rightmove.co.uk/properties/158267489#/?channel=RES_LET	371167527	244
-245	2025-03-04	2025-02-19 00:00:00	1730	158267393	https://www.rightmove.co.uk/properties/158267393#/?channel=RES_LET	372167527	245
-246	2025-03-04	2025-02-19 00:00:00	1225	158267384	https://www.rightmove.co.uk/properties/158267384#/?channel=RES_LET	373167527	246
-247	2025-02-13	2025-03-05 00:00:00	1343	158215868	https://www.rightmove.co.uk/properties/158215868#/?channel=RES_LET	374167527	247
-248	2025-03-04	2025-09-05 00:00:00	2982	158267363	https://www.rightmove.co.uk/properties/158267363#/?channel=RES_LET	375167527	248
-249	2025-03-04	2025-02-19 00:00:00	1275	158267375	https://www.rightmove.co.uk/properties/158267375#/?channel=RES_LET	376167527	249
-250	2025-03-04	2025-09-08 00:00:00	2108	158267294	https://www.rightmove.co.uk/properties/158267294#/?channel=RES_LET	377167527	250
-251	2025-03-04	2025-09-05 00:00:00	2301	158267150	https://www.rightmove.co.uk/properties/158267150#/?channel=RES_LET	378167527	251
 252	2025-03-04	2025-08-02 00:00:00	520	158267078	https://www.rightmove.co.uk/properties/158267078#/?channel=RES_LET	379167527	252
-253	2025-03-04	2025-08-02 00:00:00	563	158267057	https://www.rightmove.co.uk/properties/158267057#/?channel=RES_LET	380167527	253
-254	2025-03-04	2025-09-08 00:00:00	2301	158267054	https://www.rightmove.co.uk/properties/158267054#/?channel=RES_LET	381167527	254
-255	2025-03-04	2025-09-05 00:00:00	2172	158267051	https://www.rightmove.co.uk/properties/158267051#/?channel=RES_LET	382167527	255
-256	2025-03-04	2025-09-08 00:00:00	2430	158267048	https://www.rightmove.co.uk/properties/158267048#/?channel=RES_LET	383167527	256
-257	2025-03-04	2025-08-02 00:00:00	520	158267027	https://www.rightmove.co.uk/properties/158267027#/?channel=RES_LET	384167527	257
-258	2025-03-04	2025-03-19 00:00:00	1250	158267006	https://www.rightmove.co.uk/properties/158267006#/?channel=RES_LET	385167527	258
-259	2025-03-04	2025-09-06 00:00:00	4920	158266991	https://www.rightmove.co.uk/properties/158266991#/?channel=RES_LET	386167527	259
 260	2025-03-04	2025-07-07 00:00:00	1600	158266865	https://www.rightmove.co.uk/properties/158266865#/?channel=RES_LET	387167527	260
 261	2025-03-04	2025-03-24 00:00:00	1150	158266790	https://www.rightmove.co.uk/properties/158266790#/?channel=RES_LET	388167527	261
-262	2025-03-04	2025-08-02 00:00:00	520	158266736	https://www.rightmove.co.uk/properties/158266736#/?channel=RES_LET	389167527	262
-263	2025-03-04	2025-02-28 00:00:00	1550	158266088	https://www.rightmove.co.uk/properties/158266088#/?channel=RES_LET	390167527	263
-264	2025-03-04	2025-03-21 00:00:00	1100	158266040	https://www.rightmove.co.uk/properties/158266040#/?channel=RES_LET	391167527	264
 265	2025-03-04	2025-03-05 00:00:00	1355	158265791	https://www.rightmove.co.uk/properties/158265791#/?channel=RES_LET	392167527	265
 266	2025-03-04	2025-05-01 00:00:00	1150	158265692	https://www.rightmove.co.uk/properties/158265692#/?channel=RES_LET	393167527	266
-267	2025-03-04	2025-03-20 00:00:00	1295	158265038	https://www.rightmove.co.uk/properties/158265038#/?channel=RES_LET	394167527	267
 268	2025-03-04	2025-02-21 00:00:00	1100	158264861	https://www.rightmove.co.uk/properties/158264861#/?channel=RES_LET	395167527	268
-269	2025-03-04	1900-01-01 00:00:00	975	158264147	https://www.rightmove.co.uk/properties/158264147#/?channel=RES_LET	396167527	269
 270	2025-03-04	2025-03-05 00:00:00	1200	158264132	https://www.rightmove.co.uk/properties/158264132#/?channel=RES_LET	397167527	270
-271	2025-03-04	2025-03-05 00:00:00	990	158264075	https://www.rightmove.co.uk/properties/158264075#/?channel=RES_LET	398167527	271
 272	2025-02-12	2025-03-06 00:00:00	1135	158159300	https://www.rightmove.co.uk/properties/158159300#/?channel=RES_LET	399167527	272
-273	2025-03-04	1900-01-01 00:00:00	1014	158263850	https://www.rightmove.co.uk/properties/158263850#/?channel=RES_LET	400167527	273
-274	2025-03-04	1900-01-01 00:00:00	1009	158263799	https://www.rightmove.co.uk/properties/158263799#/?channel=RES_LET	401167527	274
-275	2025-03-04	2025-07-01 00:00:00	2080	155183024	https://www.rightmove.co.uk/properties/155183024#/?channel=RES_LET	402167527	275
-276	2025-03-04	1900-01-01 00:00:00	1062	158263727	https://www.rightmove.co.uk/properties/158263727#/?channel=RES_LET	403167527	276
 277	2025-03-04	2025-03-03 00:00:00	1200	157621739	https://www.rightmove.co.uk/properties/157621739#/?channel=RES_LET	404167527	277
-278	2025-03-04	1900-01-01 00:00:00	970	158263607	https://www.rightmove.co.uk/properties/158263607#/?channel=RES_LET	405167527	278
-279	2025-03-04	2025-04-12 00:00:00	1300	158263586	https://www.rightmove.co.uk/properties/158263586#/?channel=RES_LET	406167527	279
-280	2025-03-04	1900-01-01 00:00:00	970	158263568	https://www.rightmove.co.uk/properties/158263568#/?channel=RES_LET	407167527	280
-281	2025-03-04	2025-03-01 00:00:00	1600	158263526	https://www.rightmove.co.uk/properties/158263526#/?channel=RES_LET	408167527	281
-282	2025-03-04	2025-08-09 00:00:00	1385	158263496	https://www.rightmove.co.uk/properties/158263496#/?channel=RES_LET	409167527	282
 283	2025-03-04	2025-03-05 00:00:00	1050	158263436	https://www.rightmove.co.uk/properties/158263436#/?channel=RES_LET	410167527	283
-284	2025-03-04	2025-04-28 00:00:00	1550	158263469	https://www.rightmove.co.uk/properties/158263469#/?channel=RES_LET	411167527	284
-285	2025-03-04	2025-04-28 00:00:00	1400	157285700	https://www.rightmove.co.uk/properties/157285700#/?channel=RES_LET	412167527	285
-286	2025-03-04	2025-03-05 00:00:00	2167	158262866	https://www.rightmove.co.uk/properties/158262866#/?channel=RES_LET	413167527	286
-287	2025-03-04	2025-02-25 00:00:00	1195	158262617	https://www.rightmove.co.uk/properties/158262617#/?channel=RES_LET	414167527	287
-288	2025-03-04	2025-02-19 00:00:00	1300	158262536	https://www.rightmove.co.uk/properties/158262536#/?channel=RES_LET	415167527	288
 289	2025-03-04	2025-03-05 00:00:00	1100	158261732	https://www.rightmove.co.uk/properties/158261732#/?channel=RES_LET	416167527	289
-290	2025-03-04	1900-01-01 00:00:00	1200	131300669	https://www.rightmove.co.uk/properties/131300669#/?channel=RES_LET	417167527	290
-291	2025-03-04	1900-01-01 00:00:00	1148	158260952	https://www.rightmove.co.uk/properties/158260952#/?channel=RES_LET	418167527	291
-292	2025-03-04	2025-03-05 00:00:00	1000	156575117	https://www.rightmove.co.uk/properties/156575117#/?channel=RES_LET	419167527	292
 293	2025-03-04	2025-03-05 00:00:00	1500	154638344	https://www.rightmove.co.uk/properties/154638344#/?channel=RES_LET	420167527	293
 294	2025-03-04	1900-01-01 00:00:00	1250	154667126	https://www.rightmove.co.uk/properties/154667126#/?channel=RES_LET	421167527	294
-295	2025-03-04	2025-02-20 00:00:00	1250	158259101	https://www.rightmove.co.uk/properties/158259101#/?channel=RES_LET	422167527	295
-296	2025-03-04	2025-03-06 00:00:00	800	158259119	https://www.rightmove.co.uk/properties/158259119#/?channel=RES_LET	423167527	296
 297	2025-03-04	2025-03-05 00:00:00	1200	158258942	https://www.rightmove.co.uk/properties/158258942#/?channel=RES_LET	425167527	297
-298	2025-03-04	2025-02-21 00:00:00	875	158314370	https://www.rightmove.co.uk/properties/158314370#/?channel=RES_LET	426167527	298
-299	2025-03-04	1900-01-01 00:00:00	1450	115758911	https://www.rightmove.co.uk/properties/115758911#/?channel=RES_LET	427167527	299
-300	2025-03-04	2025-02-26 00:00:00	1650	158258726	https://www.rightmove.co.uk/properties/158258726#/?channel=RES_LET	428167527	300
 301	2025-03-04	2025-03-24 00:00:00	850	158258666	https://www.rightmove.co.uk/properties/158258666#/?channel=RES_LET	429167527	301
-302	2025-03-04	2025-03-05 00:00:00	675	64888845	https://www.rightmove.co.uk/properties/64888845#/?channel=RES_LET	430167527	302
 303	2025-03-04	2025-03-31 00:00:00	950	73350572	https://www.rightmove.co.uk/properties/73350572#/?channel=RES_LET	431167527	303
-304	2025-03-04	2025-03-05 00:00:00	1250	158258558	https://www.rightmove.co.uk/properties/158258558#/?channel=RES_LET	432167527	304
 305	2025-03-04	2025-03-20 00:00:00	800	158258492	https://www.rightmove.co.uk/properties/158258492#/?channel=RES_LET	433167527	305
-306	2025-03-04	2025-03-05 00:00:00	1500	158258033	https://www.rightmove.co.uk/properties/158258033#/?channel=RES_LET	434167527	306
-307	2025-03-04	2025-03-24 00:00:00	1400	158258036	https://www.rightmove.co.uk/properties/158258036#/?channel=RES_LET	435167527	307
 308	2025-03-04	1900-01-01 00:00:00	1820	158257481	https://www.rightmove.co.uk/properties/158257481#/?channel=RES_LET	436167527	308
-309	2025-03-04	1900-01-01 00:00:00	1647	158257460	https://www.rightmove.co.uk/properties/158257460#/?channel=RES_LET	437167527	309
-310	2025-03-04	1900-01-01 00:00:00	1603	158257403	https://www.rightmove.co.uk/properties/158257403#/?channel=RES_LET	438167527	310
 311	2025-03-04	2025-02-17 00:00:00	1700	158257181	https://www.rightmove.co.uk/properties/158257181#/?channel=RES_LET	439167527	311
 312	2025-03-04	2025-03-07 00:00:00	1100	158256971	https://www.rightmove.co.uk/properties/158256971#/?channel=RES_LET	440167527	312
-313	2025-03-04	2025-02-27 00:00:00	1250	157104650	https://www.rightmove.co.uk/properties/157104650#/?channel=RES_LET	441167527	313
-314	2025-03-04	2025-02-17 00:00:00	1100	158256833	https://www.rightmove.co.uk/properties/158256833#/?channel=RES_LET	442167527	314
 315	2025-03-04	2025-03-05 00:00:00	900	158256656	https://www.rightmove.co.uk/properties/158256656#/?channel=RES_LET	443167527	315
 316	2025-03-04	2025-04-08 00:00:00	1400	158256332	https://www.rightmove.co.uk/properties/158256332#/?channel=RES_LET	444167527	316
-317	2025-03-04	2025-02-24 00:00:00	1750	158306684	https://www.rightmove.co.uk/properties/158306684#/?channel=RES_LET	445167527	317
-318	2025-03-04	2025-03-05 00:00:00	795	158255801	https://www.rightmove.co.uk/properties/158255801#/?channel=RES_LET	446167527	318
 319	2025-03-04	2025-03-05 00:00:00	650	156536360	https://www.rightmove.co.uk/properties/156536360#/?channel=RES_LET	447167527	319
-320	2025-03-04	1900-01-01 00:00:00	1250	158254568	https://www.rightmove.co.uk/properties/158254568#/?channel=RES_LET	448167527	320
-321	2025-03-04	2025-03-05 00:00:00	1139	158252285	https://www.rightmove.co.uk/properties/158252285#/?channel=RES_LET	449167527	321
-322	2025-03-04	2025-03-17 00:00:00	1550	158254064	https://www.rightmove.co.uk/properties/158254064#/?channel=RES_LET	450167527	322
-323	2025-03-04	2025-03-22 00:00:00	1495	157133408	https://www.rightmove.co.uk/properties/157133408#/?channel=RES_LET	451167527	323
-324	2025-03-04	2025-03-05 00:00:00	1200	155471684	https://www.rightmove.co.uk/properties/155471684#/?channel=RES_LET	452167527	324
-325	2025-03-04	2025-03-05 00:00:00	925	158253440	https://www.rightmove.co.uk/properties/158253440#/?channel=RES_LET	453167527	325
-326	2025-03-04	2025-03-05 00:00:00	1250	157517720	https://www.rightmove.co.uk/properties/157517720#/?channel=RES_LET	454167527	326
-327	2025-03-04	2025-03-05 00:00:00	1475	158253215	https://www.rightmove.co.uk/properties/158253215#/?channel=RES_LET	455167527	327
-328	2025-03-04	2025-03-05 00:00:00	1400	156970898	https://www.rightmove.co.uk/properties/156970898#/?channel=RES_LET	456167527	328
-329	2025-03-04	2025-03-05 00:00:00	1250	156590234	https://www.rightmove.co.uk/properties/156590234#/?channel=RES_LET	457167527	329
-330	2025-03-04	2025-03-05 00:00:00	2417	158252402	https://www.rightmove.co.uk/properties/158252402#/?channel=RES_LET	458167527	330
-331	2025-03-04	2025-03-05 00:00:00	1314	158252375	https://www.rightmove.co.uk/properties/158252375#/?channel=RES_LET	459167527	331
 332	2025-03-04	2025-04-14 00:00:00	1250	158252333	https://www.rightmove.co.uk/properties/158252333#/?channel=RES_LET	460167527	332
-333	2025-03-04	2025-03-05 00:00:00	1707	158252309	https://www.rightmove.co.uk/properties/158252309#/?channel=RES_LET	461167527	333
-334	2025-03-04	2025-04-04 00:00:00	1250	158252255	https://www.rightmove.co.uk/properties/158252255#/?channel=RES_LET	463167527	334
-335	2025-03-04	2025-03-05 00:00:00	1345	158252252	https://www.rightmove.co.uk/properties/158252252#/?channel=RES_LET	464167527	335
-336	2025-03-04	2025-03-07 00:00:00	1375	158252177	https://www.rightmove.co.uk/properties/158252177#/?channel=RES_LET	465167527	336
-337	2025-03-04	2025-03-17 00:00:00	975	158252129	https://www.rightmove.co.uk/properties/158252129#/?channel=RES_LET	466167527	337
-338	2025-03-04	2025-03-05 00:00:00	1504	158252054	https://www.rightmove.co.uk/properties/158252054#/?channel=RES_LET	467167527	338
-339	2025-03-04	2025-04-04 00:00:00	2295	157194482	https://www.rightmove.co.uk/properties/157194482#/?channel=RES_LET	468167527	339
-340	2025-03-04	2025-03-05 00:00:00	1079	158252009	https://www.rightmove.co.uk/properties/158252009#/?channel=RES_LET	469167527	340
-341	2025-03-04	2025-03-05 00:00:00	2429	158252012	https://www.rightmove.co.uk/properties/158252012#/?channel=RES_LET	470167527	341
-342	2025-03-04	2025-03-05 00:00:00	1689	158251883	https://www.rightmove.co.uk/properties/158251883#/?channel=RES_LET	471167527	342
-343	2025-03-04	2025-03-05 00:00:00	1841	158251850	https://www.rightmove.co.uk/properties/158251850#/?channel=RES_LET	472167527	343
-344	2025-03-04	2025-03-05 00:00:00	1484	158251844	https://www.rightmove.co.uk/properties/158251844#/?channel=RES_LET	473167527	344
-345	2025-03-04	2025-03-16 00:00:00	1100	158248664	https://www.rightmove.co.uk/properties/158248664#/?channel=RES_LET	475167527	345
-346	2025-03-04	2025-03-09 00:00:00	1300	158248661	https://www.rightmove.co.uk/properties/158248661#/?channel=RES_LET	476167527	346
-347	2025-03-04	2025-02-16 00:00:00	900	158247053	https://www.rightmove.co.uk/properties/158247053#/?channel=RES_LET	477167527	347
-348	2025-03-04	2025-03-01 00:00:00	1200	158209700	https://www.rightmove.co.uk/properties/158209700#/?channel=RES_LET	478167527	348
 349	2025-03-04	2025-02-26 00:00:00	1500	157947308	https://www.rightmove.co.uk/properties/157947308#/?channel=RES_LET	479167527	349
-350	2025-03-04	2025-03-05 00:00:00	1650	157812758	https://www.rightmove.co.uk/properties/157812758#/?channel=RES_LET	480167527	350
-351	2025-03-04	2025-03-05 00:00:00	850	158246936	https://www.rightmove.co.uk/properties/158246936#/?channel=RES_LET	481167527	351
-352	2025-03-04	2025-03-05 00:00:00	775	158246939	https://www.rightmove.co.uk/properties/158246939#/?channel=RES_LET	482167527	352
-353	2025-03-04	2025-03-21 00:00:00	1450	157730087	https://www.rightmove.co.uk/properties/157730087#/?channel=RES_LET	483167527	353
-354	2025-03-04	2025-03-05 00:00:00	900	158246570	https://www.rightmove.co.uk/properties/158246570#/?channel=RES_LET	484167527	354
-355	2025-03-04	2025-03-05 00:00:00	1000	158246576	https://www.rightmove.co.uk/properties/158246576#/?channel=RES_LET	485167527	355
-356	2025-03-04	2025-03-05 00:00:00	1550	158246546	https://www.rightmove.co.uk/properties/158246546#/?channel=RES_LET	486167527	356
 357	2025-02-13	2025-03-05 00:00:00	950	158246429	https://www.rightmove.co.uk/properties/158246429#/?channel=RES_LET	487167527	357
-358	2025-02-13	2025-02-21 00:00:00	1300	158246327	https://www.rightmove.co.uk/properties/158246327#/?channel=RES_LET	488167527	358
-359	2025-02-13	2025-04-07 00:00:00	1450	152217659	https://www.rightmove.co.uk/properties/152217659#/?channel=RES_LET	489167527	359
-360	2025-02-13	2025-03-05 00:00:00	1150	152303648	https://www.rightmove.co.uk/properties/152303648#/?channel=RES_LET	490167527	360
-361	2025-02-13	2025-02-21 00:00:00	1250	156101567	https://www.rightmove.co.uk/properties/156101567#/?channel=RES_LET	491167527	361
-362	2025-02-13	2025-07-07 00:00:00	1600	156865772	https://www.rightmove.co.uk/properties/156865772#/?channel=RES_LET	492167527	362
-363	2025-02-13	2025-07-07 00:00:00	4000	156865202	https://www.rightmove.co.uk/properties/156865202#/?channel=RES_LET	493167527	363
 364	2025-02-13	2025-03-10 00:00:00	1250	158245880	https://www.rightmove.co.uk/properties/158245880#/?channel=RES_LET	494167527	364
-365	2025-02-13	2025-03-24 00:00:00	975	158245883	https://www.rightmove.co.uk/properties/158245883#/?channel=RES_LET	495167527	365
-366	2025-02-13	2025-03-05 00:00:00	1950	157441385	https://www.rightmove.co.uk/properties/157441385#/?channel=RES_LET	496167527	366
-367	2025-02-13	2025-03-07 00:00:00	2550	158209733	https://www.rightmove.co.uk/properties/158209733#/?channel=RES_LET	497167527	367
-368	2025-02-13	2025-04-10 00:00:00	975	158243906	https://www.rightmove.co.uk/properties/158243906#/?channel=RES_LET	498167527	368
 369	2025-02-12	2025-03-05 00:00:00	1634	158154743	https://www.rightmove.co.uk/properties/158154743#/?channel=RES_LET	499167527	369
 370	2025-02-13	2025-03-16 00:00:00	1180	158242631	https://www.rightmove.co.uk/properties/158242631#/?channel=RES_LET	500167527	370
-371	2025-02-13	2025-03-05 00:00:00	1230	158242607	https://www.rightmove.co.uk/properties/158242607#/?channel=RES_LET	501167527	371
-372	2025-02-13	2025-03-05 00:00:00	1260	158242568	https://www.rightmove.co.uk/properties/158242568#/?channel=RES_LET	502167527	372
-373	2025-02-13	1900-01-01 00:00:00	1310	158242538	https://www.rightmove.co.uk/properties/158242538#/?channel=RES_LET	503167527	373
-374	2025-02-13	2025-03-05 00:00:00	1450	158242502	https://www.rightmove.co.uk/properties/158242502#/?channel=RES_LET	504167527	374
-375	2025-02-13	2025-03-05 00:00:00	1470	158242475	https://www.rightmove.co.uk/properties/158242475#/?channel=RES_LET	505167527	375
-376	2025-02-13	2025-03-05 00:00:00	1475	158242454	https://www.rightmove.co.uk/properties/158242454#/?channel=RES_LET	506167527	376
-377	2025-02-13	2025-03-05 00:00:00	1520	158242418	https://www.rightmove.co.uk/properties/158242418#/?channel=RES_LET	507167527	377
-378	2025-02-13	2025-03-05 00:00:00	1650	158242376	https://www.rightmove.co.uk/properties/158242376#/?channel=RES_LET	508167527	378
-379	2025-02-13	2025-03-05 00:00:00	2100	158242349	https://www.rightmove.co.uk/properties/158242349#/?channel=RES_LET	509167527	379
-380	2025-02-13	2025-03-05 00:00:00	1350	156334721	https://www.rightmove.co.uk/properties/156334721#/?channel=RES_LET	510167527	380
-381	2025-02-13	2025-03-15 00:00:00	1100	158239430	https://www.rightmove.co.uk/properties/158239430#/?channel=RES_LET	511167527	381
 382	2025-02-13	2025-07-18 00:00:00	4030	158237939	https://www.rightmove.co.uk/properties/158237939#/?channel=RES_LET	512167527	382
-383	2025-02-13	1900-01-01 00:00:00	1834	158237267	https://www.rightmove.co.uk/properties/158237267#/?channel=RES_LET	513167527	383
-384	2025-02-13	1900-01-01 00:00:00	4757	158237264	https://www.rightmove.co.uk/properties/158237264#/?channel=RES_LET	514167527	384
-385	2025-02-13	2025-09-15 00:00:00	4088	158237210	https://www.rightmove.co.uk/properties/158237210#/?channel=RES_LET	515167527	385
-386	2025-02-13	1900-01-01 00:00:00	4920	158237201	https://www.rightmove.co.uk/properties/158237201#/?channel=RES_LET	516167527	386
-387	2025-02-13	2025-10-06 00:00:00	4860	158237144	https://www.rightmove.co.uk/properties/158237144#/?channel=RES_LET	517167527	387
-388	2025-02-13	2025-09-05 00:00:00	2811	158237099	https://www.rightmove.co.uk/properties/158237099#/?channel=RES_LET	518167527	388
 389	2025-02-13	2025-03-07 00:00:00	1050	157486439	https://www.rightmove.co.uk/properties/157486439#/?channel=RES_LET	519167527	389
-390	2025-02-13	2025-03-05 00:00:00	1500	158236628	https://www.rightmove.co.uk/properties/158236628#/?channel=RES_LET	520167527	390
-391	2025-02-13	2025-03-05 00:00:00	1750	158236190	https://www.rightmove.co.uk/properties/158236190#/?channel=RES_LET	521167527	391
-392	2025-02-13	2025-02-24 00:00:00	1350	158235476	https://www.rightmove.co.uk/properties/158235476#/?channel=RES_LET	522167527	392
-393	2025-02-13	2025-03-03 00:00:00	2000	158234333	https://www.rightmove.co.uk/properties/158234333#/?channel=RES_LET	523167527	393
-394	2025-01-23	1900-01-01 00:00:00	1020	158263691	https://www.rightmove.co.uk/properties/158263691#/?channel=RES_LET	524167527	394
-395	2025-02-13	2025-03-05 00:00:00	1900	157715684	https://www.rightmove.co.uk/properties/157715684#/?channel=RES_LET	525167527	395
 396	2025-02-13	2025-03-05 00:00:00	1800	158234825	https://www.rightmove.co.uk/properties/158234825#/?channel=RES_LET	526167527	396
-397	2025-02-13	2025-02-21 00:00:00	1600	158234429	https://www.rightmove.co.uk/properties/158234429#/?channel=RES_LET	527167527	397
-398	2025-02-13	2025-03-01 00:00:00	1200	158233670	https://www.rightmove.co.uk/properties/158233670#/?channel=RES_LET	528167527	398
-399	2025-02-13	2025-03-05 00:00:00	1760	158211740	https://www.rightmove.co.uk/properties/158211740#/?channel=RES_LET	626167527	399
 400	2025-02-13	1900-01-01 00:00:00	1050	65193055	https://www.rightmove.co.uk/properties/65193055#/?channel=RES_LET	529167527	400
 401	2025-02-13	1900-01-01 00:00:00	2800	158232731	https://www.rightmove.co.uk/properties/158232731#/?channel=RES_LET	530167527	401
-402	2025-02-13	2025-02-20 00:00:00	1750	158231555	https://www.rightmove.co.uk/properties/158231555#/?channel=RES_LET	531167527	402
-403	2025-02-13	2025-03-05 00:00:00	1200	158232191	https://www.rightmove.co.uk/properties/158232191#/?channel=RES_LET	532167527	403
-404	2025-02-13	1900-01-01 00:00:00	1500	158232038	https://www.rightmove.co.uk/properties/158232038#/?channel=RES_LET	533167527	404
-405	2025-02-13	2025-03-05 00:00:00	1150	157836995	https://www.rightmove.co.uk/properties/157836995#/?channel=RES_LET	534167527	405
-406	2025-02-13	2025-03-05 00:00:00	650	155906102	https://www.rightmove.co.uk/properties/155906102#/?channel=RES_LET	535167527	406
-407	2025-02-13	2025-09-01 00:00:00	1600	158231288	https://www.rightmove.co.uk/properties/158231288#/?channel=RES_LET	536167527	407
-408	2025-02-13	2025-03-05 00:00:00	1200	156083369	https://www.rightmove.co.uk/properties/156083369#/?channel=RES_LET	537167527	408
-409	2025-02-13	2025-03-08 00:00:00	1200	158230709	https://www.rightmove.co.uk/properties/158230709#/?channel=RES_LET	538167527	409
-410	2025-02-13	2025-03-05 00:00:00	1079	158230394	https://www.rightmove.co.uk/properties/158230394#/?channel=RES_LET	539167527	410
-411	2025-02-13	2025-08-27 00:00:00	1700	158230391	https://www.rightmove.co.uk/properties/158230391#/?channel=RES_LET	540167527	411
-412	2025-02-13	2025-03-05 00:00:00	2429	158229326	https://www.rightmove.co.uk/properties/158229326#/?channel=RES_LET	541167527	412
-413	2025-02-13	2025-02-24 00:00:00	1200	158229611	https://www.rightmove.co.uk/properties/158229611#/?channel=RES_LET	542167527	413
-414	2025-02-13	2025-02-16 00:00:00	1504	158229200	https://www.rightmove.co.uk/properties/158229200#/?channel=RES_LET	543167527	414
 415	2025-02-13	2025-03-05 00:00:00	690	158229101	https://www.rightmove.co.uk/properties/158229101#/?channel=RES_LET	544167527	415
-416	2025-02-13	2025-03-05 00:00:00	1871	158228255	https://www.rightmove.co.uk/properties/158228255#/?channel=RES_LET	545167527	416
-417	2025-02-13	2025-03-05 00:00:00	950	157736438	https://www.rightmove.co.uk/properties/157736438#/?channel=RES_LET	546167527	417
-418	2025-02-13	2025-03-05 00:00:00	935	158227907	https://www.rightmove.co.uk/properties/158227907#/?channel=RES_LET	547167527	418
-419	2025-02-13	2025-03-05 00:00:00	750	156791336	https://www.rightmove.co.uk/properties/156791336#/?channel=RES_LET	548167527	419
-420	2025-02-12	2025-03-05 00:00:00	2775	158160644	https://www.rightmove.co.uk/properties/158160644#/?channel=RES_LET	549167527	420
-421	2025-02-13	2025-03-05 00:00:00	2100	158227688	https://www.rightmove.co.uk/properties/158227688#/?channel=RES_LET	550167527	421
-422	2025-02-13	2025-03-05 00:00:00	1400	158227667	https://www.rightmove.co.uk/properties/158227667#/?channel=RES_LET	551167527	422
-423	2025-02-13	2025-03-02 00:00:00	2300	158227577	https://www.rightmove.co.uk/properties/158227577#/?channel=RES_LET	552167527	423
 424	2025-02-13	2025-03-03 00:00:00	1254	158227100	https://www.rightmove.co.uk/properties/158227100#/?channel=RES_LET	553167527	424
-425	2025-02-13	2025-04-30 00:00:00	1100	146040914	https://www.rightmove.co.uk/properties/146040914#/?channel=RES_LET	554167527	425
-426	2025-02-13	2025-02-20 00:00:00	1300	158227439	https://www.rightmove.co.uk/properties/158227439#/?channel=RES_LET	555167527	426
 427	2025-02-13	1900-01-01 00:00:00	1100	31300546	https://www.rightmove.co.uk/properties/31300546#/?channel=RES_LET	556167527	427
 428	2025-02-13	2025-03-01 00:00:00	1100	157216853	https://www.rightmove.co.uk/properties/157216853#/?channel=RES_LET	557167527	428
-429	2025-02-13	2025-04-18 00:00:00	1500	86833722	https://www.rightmove.co.uk/properties/86833722#/?channel=RES_LET	558167527	429
-430	2025-02-13	2025-03-05 00:00:00	2775	158227298	https://www.rightmove.co.uk/properties/158227298#/?channel=RES_LET	559167527	430
-431	2025-02-13	2025-03-05 00:00:00	3250	158227292	https://www.rightmove.co.uk/properties/158227292#/?channel=RES_LET	560167527	431
-432	2025-02-13	2025-03-01 00:00:00	1368	158226713	https://www.rightmove.co.uk/properties/158226713#/?channel=RES_LET	561167527	432
-433	2025-02-13	2025-03-05 00:00:00	2900	158227286	https://www.rightmove.co.uk/properties/158227286#/?channel=RES_LET	562167527	433
-434	2025-02-13	2025-03-05 00:00:00	1970	158227277	https://www.rightmove.co.uk/properties/158227277#/?channel=RES_LET	563167527	434
-435	2025-02-13	2025-03-05 00:00:00	1535	158227259	https://www.rightmove.co.uk/properties/158227259#/?channel=RES_LET	564167527	435
-436	2025-02-13	2025-04-29 00:00:00	1450	146717912	https://www.rightmove.co.uk/properties/146717912#/?channel=RES_LET	565167527	436
-437	2025-02-13	2025-03-14 00:00:00	1200	158226806	https://www.rightmove.co.uk/properties/158226806#/?channel=RES_LET	566167527	437
 438	2025-02-13	2025-02-22 00:00:00	1175	158226131	https://www.rightmove.co.uk/properties/158226131#/?channel=RES_LET	567167527	438
-439	2025-02-13	2025-03-01 00:00:00	1249	158225867	https://www.rightmove.co.uk/properties/158225867#/?channel=RES_LET	568167527	439
 440	2025-02-13	2025-03-01 00:00:00	1200	155717333	https://www.rightmove.co.uk/properties/155717333#/?channel=RES_LET	569167527	440
-441	2025-02-13	2025-03-03 00:00:00	1145	158225756	https://www.rightmove.co.uk/properties/158225756#/?channel=RES_LET	570167527	441
-442	2025-02-13	2025-03-31 00:00:00	2050	152366048	https://www.rightmove.co.uk/properties/152366048#/?channel=RES_LET	571167527	442
-443	2025-02-13	2025-03-05 00:00:00	1283	158225705	https://www.rightmove.co.uk/properties/158225705#/?channel=RES_LET	572167527	443
-444	2025-02-13	2025-03-05 00:00:00	1295	158225591	https://www.rightmove.co.uk/properties/158225591#/?channel=RES_LET	573167527	444
-445	2025-02-13	2025-03-19 00:00:00	1250	158225456	https://www.rightmove.co.uk/properties/158225456#/?channel=RES_LET	575167527	445
-446	2025-02-13	2025-03-03 00:00:00	950	156043943	https://www.rightmove.co.uk/properties/156043943#/?channel=RES_LET	576167527	446
 447	2025-02-13	2025-07-01 00:00:00	2427	157161521	https://www.rightmove.co.uk/properties/157161521#/?channel=RES_LET	577167527	447
-448	2025-02-13	2025-03-05 00:00:00	2140	158211569	https://www.rightmove.co.uk/properties/158211569#/?channel=RES_LET	627167527	448
 449	2025-02-13	2025-04-09 00:00:00	1400	158225255	https://www.rightmove.co.uk/properties/158225255#/?channel=RES_LET	578167527	449
 450	2025-02-13	2025-07-01 00:00:00	4160	157585385	https://www.rightmove.co.uk/properties/157585385#/?channel=RES_LET	580167527	450
 451	2025-02-13	2025-02-20 00:00:00	1450	158224925	https://www.rightmove.co.uk/properties/158224925#/?channel=RES_LET	581167527	451
-452	2025-02-13	2025-03-05 00:00:00	1150	157716611	https://www.rightmove.co.uk/properties/157716611#/?channel=RES_LET	582167527	452
-453	2025-02-13	2025-03-05 00:00:00	1250	158224787	https://www.rightmove.co.uk/properties/158224787#/?channel=RES_LET	583167527	453
-454	2025-02-13	2025-03-05 00:00:00	1139	158224229	https://www.rightmove.co.uk/properties/158224229#/?channel=RES_LET	584167527	454
-455	2025-02-13	2025-03-05 00:00:00	1095	158120243	https://www.rightmove.co.uk/properties/158120243#/?channel=RES_LET	585167527	455
-456	2025-02-13	2025-02-22 00:00:00	1550	158224265	https://www.rightmove.co.uk/properties/158224265#/?channel=RES_LET	586167527	456
-457	2025-02-13	2025-03-08 00:00:00	1600	158223695	https://www.rightmove.co.uk/properties/158223695#/?channel=RES_LET	587167527	457
-458	2025-02-13	2025-03-05 00:00:00	1500	158222114	https://www.rightmove.co.uk/properties/158222114#/?channel=RES_LET	588167527	458
-459	2025-02-13	2025-02-25 00:00:00	2200	158222666	https://www.rightmove.co.uk/properties/158222666#/?channel=RES_LET	589167527	459
-460	2025-02-13	2025-03-04 00:00:00	1095	158221799	https://www.rightmove.co.uk/properties/158221799#/?channel=RES_LET	590167527	460
-461	2025-02-13	2025-03-13 00:00:00	900	158221646	https://www.rightmove.co.uk/properties/158221646#/?channel=RES_LET	591167527	461
-462	2025-02-13	2025-03-05 00:00:00	1250	158221151	https://www.rightmove.co.uk/properties/158221151#/?channel=RES_LET	592167527	462
-463	2025-02-13	1900-01-01 00:00:00	1885	158221010	https://www.rightmove.co.uk/properties/158221010#/?channel=RES_LET	593167527	463
-464	2025-02-13	2025-03-11 00:00:00	1050	158220578	https://www.rightmove.co.uk/properties/158220578#/?channel=RES_LET	594167527	464
-465	2025-02-13	2025-03-05 00:00:00	1000	158220125	https://www.rightmove.co.uk/properties/158220125#/?channel=RES_LET	595167527	465
-466	2025-02-13	2025-03-18 00:00:00	1200	158219444	https://www.rightmove.co.uk/properties/158219444#/?channel=RES_LET	596167527	466
-467	2025-02-13	2025-07-24 00:00:00	1370	158219402	https://www.rightmove.co.uk/properties/158219402#/?channel=RES_LET	597167527	467
-468	2025-02-13	2025-03-05 00:00:00	1780	158219090	https://www.rightmove.co.uk/properties/158219090#/?channel=RES_LET	598167527	468
-469	2024-09-02	2025-03-05 00:00:00	1950	151920767	https://www.rightmove.co.uk/properties/151920767#/?channel=RES_LET	599167527	469
-470	2025-02-13	2025-07-01 00:00:00	1300	158218913	https://www.rightmove.co.uk/properties/158218913#/?channel=RES_LET	600167527	470
-471	2025-02-13	2025-02-28 00:00:00	1300	158217761	https://www.rightmove.co.uk/properties/158217761#/?channel=RES_LET	601167527	471
 472	2025-02-13	2025-03-14 00:00:00	1100	158217443	https://www.rightmove.co.uk/properties/158217443#/?channel=RES_LET	602167527	472
-473	2025-02-13	2025-03-05 00:00:00	2200	157799717	https://www.rightmove.co.uk/properties/157799717#/?channel=RES_LET	603167527	473
 474	2025-02-13	2025-03-05 00:00:00	895	158217266	https://www.rightmove.co.uk/properties/158217266#/?channel=RES_LET	604167527	474
 475	2025-02-13	2025-03-05 00:00:00	850	158216969	https://www.rightmove.co.uk/properties/158216969#/?channel=RES_LET	605167527	475
-476	2025-02-13	2025-04-16 00:00:00	1300	158216336	https://www.rightmove.co.uk/properties/158216336#/?channel=RES_LET	606167527	476
-477	2025-02-13	2025-03-19 00:00:00	1695	158216174	https://www.rightmove.co.uk/properties/158216174#/?channel=RES_LET	607167527	477
 478	2025-02-13	2025-02-23 00:00:00	810	47788765	https://www.rightmove.co.uk/properties/47788765#/?channel=RES_LET	608167527	478
 479	2025-02-13	2025-07-01 00:00:00	672	157992689	https://www.rightmove.co.uk/properties/157992689#/?channel=RES_LET	609167527	479
-480	2025-02-13	1900-01-01 00:00:00	1200	157897421	https://www.rightmove.co.uk/properties/157897421#/?channel=RES_LET	611167527	480
-481	2025-02-13	2025-03-05 00:00:00	1150	155109551	https://www.rightmove.co.uk/properties/155109551#/?channel=RES_LET	612167527	481
 482	2025-02-13	2025-02-27 00:00:00	1300	158214989	https://www.rightmove.co.uk/properties/158214989#/?channel=RES_LET	613167527	482
 483	2025-02-13	1900-01-01 00:00:00	975	156188963	https://www.rightmove.co.uk/properties/156188963#/?channel=RES_LET	614167527	483
-484	2025-02-13	2025-03-05 00:00:00	1200	158214194	https://www.rightmove.co.uk/properties/158214194#/?channel=RES_LET	615167527	484
-485	2025-02-13	2025-03-05 00:00:00	1150	158214011	https://www.rightmove.co.uk/properties/158214011#/?channel=RES_LET	616167527	485
-486	2025-02-13	2025-03-05 00:00:00	1100	158213246	https://www.rightmove.co.uk/properties/158213246#/?channel=RES_LET	617167527	486
-487	2025-02-13	2025-03-10 00:00:00	925	158213018	https://www.rightmove.co.uk/properties/158213018#/?channel=RES_LET	618167527	487
-488	2025-02-13	2025-08-29 00:00:00	2450	158212847	https://www.rightmove.co.uk/properties/158212847#/?channel=RES_LET	619167527	488
-489	2025-02-13	2025-08-21 00:00:00	2300	158212358	https://www.rightmove.co.uk/properties/158212358#/?channel=RES_LET	620167527	489
 490	2025-02-13	2025-02-26 00:00:00	1100	158212268	https://www.rightmove.co.uk/properties/158212268#/?channel=RES_LET	621167527	490
-491	2025-02-13	1900-01-01 00:00:00	1755	158212256	https://www.rightmove.co.uk/properties/158212256#/?channel=RES_LET	622167527	491
-492	2025-02-13	2025-02-25 00:00:00	1000	158212265	https://www.rightmove.co.uk/properties/158212265#/?channel=RES_LET	623167527	492
-493	2025-02-12	1900-01-01 00:00:00	1625	87083313	https://www.rightmove.co.uk/properties/87083313#/?channel=RES_LET	624167527	493
-494	2025-02-13	2025-08-14 00:00:00	2400	158212223	https://www.rightmove.co.uk/properties/158212223#/?channel=RES_LET	625167527	494
-495	2025-02-13	2025-03-05 00:00:00	2480	158211539	https://www.rightmove.co.uk/properties/158211539#/?channel=RES_LET	628167527	495
-496	2025-02-13	2025-02-16 00:00:00	1200	158209988	https://www.rightmove.co.uk/properties/158209988#/?channel=RES_LET	629167527	496
-497	2025-02-13	2025-07-25 00:00:00	2350	158209817	https://www.rightmove.co.uk/properties/158209817#/?channel=RES_LET	630167527	497
-498	2025-02-13	2025-07-24 00:00:00	2300	158209682	https://www.rightmove.co.uk/properties/158209682#/?channel=RES_LET	631167527	498
-499	2025-02-13	2025-03-05 00:00:00	900	158209559	https://www.rightmove.co.uk/properties/158209559#/?channel=RES_LET	632167527	499
-500	2025-02-13	2025-02-22 00:00:00	625	158209277	https://www.rightmove.co.uk/properties/158209277#/?channel=RES_LET	633167527	500
 501	2025-02-13	2025-07-07 00:00:00	2513	158209202	https://www.rightmove.co.uk/properties/158209202#/?channel=RES_LET	634167527	501
-502	2025-02-13	2025-03-05 00:00:00	1090	157821899	https://www.rightmove.co.uk/properties/157821899#/?channel=RES_LET	635167527	502
-503	2025-02-13	2025-03-05 00:00:00	1650	157758944	https://www.rightmove.co.uk/properties/157758944#/?channel=RES_LET	636167527	503
-504	2025-02-13	2025-03-05 00:00:00	1295	157272755	https://www.rightmove.co.uk/properties/157272755#/?channel=RES_LET	637167527	504
 505	2025-02-13	2025-03-05 00:00:00	1150	158209040	https://www.rightmove.co.uk/properties/158209040#/?channel=RES_LET	638167527	505
-506	2025-02-13	2025-03-10 00:00:00	1450	158208392	https://www.rightmove.co.uk/properties/158208392#/?channel=RES_LET	639167527	506
-507	2025-02-13	2025-02-27 00:00:00	795	158208281	https://www.rightmove.co.uk/properties/158208281#/?channel=RES_LET	640167527	507
 508	2025-02-13	1900-01-01 00:00:00	1800	157130870	https://www.rightmove.co.uk/properties/157130870#/?channel=RES_LET	641167527	508
 509	2025-02-13	1900-01-01 00:00:00	1000	158207507	https://www.rightmove.co.uk/properties/158207507#/?channel=RES_LET	642167527	509
-510	2025-02-13	2025-03-04 00:00:00	1050	158207342	https://www.rightmove.co.uk/properties/158207342#/?channel=RES_LET	643167527	510
-511	2025-02-13	2025-03-05 00:00:00	900	158205998	https://www.rightmove.co.uk/properties/158205998#/?channel=RES_LET	644167527	511
 512	2025-02-13	2025-03-05 00:00:00	1025	156675614	https://www.rightmove.co.uk/properties/156675614#/?channel=RES_LET	645167527	512
-513	2025-02-13	2025-03-21 00:00:00	1000	158206061	https://www.rightmove.co.uk/properties/158206061#/?channel=RES_LET	646167527	513
-514	2025-02-13	2025-03-05 00:00:00	1495	158205593	https://www.rightmove.co.uk/properties/158205593#/?channel=RES_LET	647167527	514
-515	2025-02-13	2025-03-05 00:00:00	1295	158205587	https://www.rightmove.co.uk/properties/158205587#/?channel=RES_LET	648167527	515
-516	2025-02-13	2025-03-05 00:00:00	758	158205269	https://www.rightmove.co.uk/properties/158205269#/?channel=RES_LET	650167527	516
-517	2025-02-13	2025-03-04 00:00:00	1495	158204834	https://www.rightmove.co.uk/properties/158204834#/?channel=RES_LET	651167527	517
-518	2025-02-13	2025-08-01 00:00:00	684	156534407	https://www.rightmove.co.uk/properties/156534407#/?channel=RES_LET	652167527	518
-519	2025-02-13	2025-03-05 00:00:00	1200	157842287	https://www.rightmove.co.uk/properties/157842287#/?channel=RES_LET	653167527	519
-520	2025-02-13	2025-03-05 00:00:00	1200	158205953	https://www.rightmove.co.uk/properties/158205953#/?channel=RES_LET	654167527	520
-521	2025-02-13	2025-02-28 00:00:00	975	135169505	https://www.rightmove.co.uk/properties/135169505#/?channel=RES_LET	655167527	521
 522	2025-02-13	1900-01-01 00:00:00	1250	158204729	https://www.rightmove.co.uk/properties/158204729#/?channel=RES_LET	656167527	522
-523	2025-02-13	2025-03-05 00:00:00	1200	156962507	https://www.rightmove.co.uk/properties/156962507#/?channel=RES_LET	657167527	523
-524	2025-02-13	2025-03-05 00:00:00	1450	158205329	https://www.rightmove.co.uk/properties/158205329#/?channel=RES_LET	658167527	524
-525	2025-02-13	2025-03-05 00:00:00	758	158204663	https://www.rightmove.co.uk/properties/158204663#/?channel=RES_LET	659167527	525
-526	2025-02-13	2025-03-21 00:00:00	1250	158205011	https://www.rightmove.co.uk/properties/158205011#/?channel=RES_LET	660167527	526
-527	2025-02-13	2025-03-21 00:00:00	1200	158205017	https://www.rightmove.co.uk/properties/158205017#/?channel=RES_LET	661167527	527
-528	2025-02-13	1900-01-01 00:00:00	1950	158089733	https://www.rightmove.co.uk/properties/158089733#/?channel=RES_LET	662167527	528
-529	2025-02-13	1900-01-01 00:00:00	1950	158089694	https://www.rightmove.co.uk/properties/158089694#/?channel=RES_LET	663167527	529
-530	2025-02-13	2025-04-14 00:00:00	1600	158204840	https://www.rightmove.co.uk/properties/158204840#/?channel=RES_LET	664167527	530
 531	2025-02-13	2025-03-05 00:00:00	995	155429615	https://www.rightmove.co.uk/properties/155429615#/?channel=RES_LET	665167527	531
-532	2025-02-13	1900-01-01 00:00:00	1350	116401295	https://www.rightmove.co.uk/properties/116401295#/?channel=RES_LET	666167527	532
-533	2025-02-13	2025-03-05 00:00:00	1175	156590075	https://www.rightmove.co.uk/properties/156590075#/?channel=RES_LET	667167527	533
-534	2025-02-13	2025-04-03 00:00:00	1150	158203877	https://www.rightmove.co.uk/properties/158203877#/?channel=RES_LET	668167527	534
 535	2025-02-13	2025-03-05 00:00:00	1150	158044355	https://www.rightmove.co.uk/properties/158044355#/?channel=RES_LET	669167527	535
-536	2025-02-13	2025-02-27 00:00:00	1050	157755707	https://www.rightmove.co.uk/properties/157755707#/?channel=RES_LET	670167527	536
-537	2025-02-13	2025-03-05 00:00:00	710	157532921	https://www.rightmove.co.uk/properties/157532921#/?channel=RES_LET	671167527	537
-538	2025-02-13	2025-02-21 00:00:00	700	156564938	https://www.rightmove.co.uk/properties/156564938#/?channel=RES_LET	672167527	538
-539	2025-02-13	2025-03-05 00:00:00	1050	157007597	https://www.rightmove.co.uk/properties/157007597#/?channel=RES_LET	673167527	539
-540	2025-02-13	2025-03-05 00:00:00	1050	157007537	https://www.rightmove.co.uk/properties/157007537#/?channel=RES_LET	675167527	540
-541	2025-02-13	2025-03-05 00:00:00	1050	157007696	https://www.rightmove.co.uk/properties/157007696#/?channel=RES_LET	676167527	541
-542	2025-02-13	2025-03-01 00:00:00	1100	157827479	https://www.rightmove.co.uk/properties/157827479#/?channel=RES_LET	677167527	542
-543	2025-02-13	2025-03-05 00:00:00	1250	156885017	https://www.rightmove.co.uk/properties/156885017#/?channel=RES_LET	678167527	543
-544	2025-02-13	2025-03-05 00:00:00	995	156418874	https://www.rightmove.co.uk/properties/156418874#/?channel=RES_LET	679167527	544
-545	2025-02-13	2025-03-10 00:00:00	1050	157705316	https://www.rightmove.co.uk/properties/157705316#/?channel=RES_LET	680167527	545
 546	2025-02-13	2025-03-05 00:00:00	1400	158200310	https://www.rightmove.co.uk/properties/158200310#/?channel=RES_LET	681167527	546
 547	2025-02-13	2025-03-05 00:00:00	1100	158200271	https://www.rightmove.co.uk/properties/158200271#/?channel=RES_LET	682167527	547
-548	2025-02-13	2025-03-07 00:00:00	925	158200250	https://www.rightmove.co.uk/properties/158200250#/?channel=RES_LET	683167527	548
 549	2025-02-13	2025-03-05 00:00:00	1200	158200043	https://www.rightmove.co.uk/properties/158200043#/?channel=RES_LET	684167527	549
-550	2025-02-13	2025-02-24 00:00:00	1230	157521692	https://www.rightmove.co.uk/properties/157521692#/?channel=RES_LET	685167527	550
-551	2025-02-13	1900-01-01 00:00:00	825	158199917	https://www.rightmove.co.uk/properties/158199917#/?channel=RES_LET	686167527	551
-552	2025-02-13	2025-03-05 00:00:00	1375	157585250	https://www.rightmove.co.uk/properties/157585250#/?channel=RES_LET	687167527	552
 553	2025-02-13	1900-01-01 00:00:00	895	158199071	https://www.rightmove.co.uk/properties/158199071#/?channel=RES_LET	688167527	553
-554	2025-02-13	2025-03-05 00:00:00	1590	158198933	https://www.rightmove.co.uk/properties/158198933#/?channel=RES_LET	689167527	554
-555	2025-02-13	2025-04-01 00:00:00	1300	158198795	https://www.rightmove.co.uk/properties/158198795#/?channel=RES_LET	690167527	555
-556	2025-02-13	2025-03-05 00:00:00	1600	156004028	https://www.rightmove.co.uk/properties/156004028#/?channel=RES_LET	691167527	556
-557	2025-02-13	2025-07-01 00:00:00	4702	154424642	https://www.rightmove.co.uk/properties/154424642#/?channel=RES_LET	692167527	557
-558	2025-02-13	1900-01-01 00:00:00	1148	158198075	https://www.rightmove.co.uk/properties/158198075#/?channel=RES_LET	693167527	558
 559	2025-02-13	1900-01-01 00:00:00	1850	158197520	https://www.rightmove.co.uk/properties/158197520#/?channel=RES_LET	694167527	559
-560	2025-02-13	2025-07-01 00:00:00	1595	158197505	https://www.rightmove.co.uk/properties/158197505#/?channel=RES_LET	695167527	560
-561	2025-02-13	2025-03-05 00:00:00	2300	154501556	https://www.rightmove.co.uk/properties/154501556#/?channel=RES_LET	696167527	561
-562	2025-02-13	2025-03-10 00:00:00	1550	158196845	https://www.rightmove.co.uk/properties/158196845#/?channel=RES_LET	697167527	562
-563	2025-02-13	2025-03-05 00:00:00	2042	158196452	https://www.rightmove.co.uk/properties/158196452#/?channel=RES_LET	698167527	563
-564	2025-02-13	2025-04-17 00:00:00	1350	158196236	https://www.rightmove.co.uk/properties/158196236#/?channel=RES_LET	700167527	564
-565	2025-02-13	2025-03-05 00:00:00	1925	158195435	https://www.rightmove.co.uk/properties/158195435#/?channel=RES_LET	702167527	565
-566	2025-02-13	2025-03-05 00:00:00	1405	158195393	https://www.rightmove.co.uk/properties/158195393#/?channel=RES_LET	703167527	566
-567	2025-02-13	1900-01-01 00:00:00	2195	158195408	https://www.rightmove.co.uk/properties/158195408#/?channel=RES_LET	704167527	567
 568	2025-02-13	2025-03-05 00:00:00	1200	157872416	https://www.rightmove.co.uk/properties/157872416#/?channel=RES_LET	705167527	568
 569	2025-02-13	2025-03-05 00:00:00	1320	158195063	https://www.rightmove.co.uk/properties/158195063#/?channel=RES_LET	706167527	569
-570	2025-02-13	2025-03-05 00:00:00	1260	158195036	https://www.rightmove.co.uk/properties/158195036#/?channel=RES_LET	707167527	570
-571	2025-02-13	2025-03-05 00:00:00	1275	158195012	https://www.rightmove.co.uk/properties/158195012#/?channel=RES_LET	708167527	571
-572	2025-02-13	2025-03-05 00:00:00	1270	158195021	https://www.rightmove.co.uk/properties/158195021#/?channel=RES_LET	709167527	572
-573	2025-02-13	2025-03-05 00:00:00	1260	158194958	https://www.rightmove.co.uk/properties/158194958#/?channel=RES_LET	710167527	573
-574	2025-02-13	2025-03-05 00:00:00	1250	158194928	https://www.rightmove.co.uk/properties/158194928#/?channel=RES_LET	711167527	574
-575	2025-02-13	1900-01-01 00:00:00	1200	157817000	https://www.rightmove.co.uk/properties/157817000#/?channel=RES_LET	712167527	575
-576	2025-02-13	2025-03-01 00:00:00	1100	157719656	https://www.rightmove.co.uk/properties/157719656#/?channel=RES_LET	713167527	576
-577	2025-02-13	2025-03-10 00:00:00	950	158189951	https://www.rightmove.co.uk/properties/158189951#/?channel=RES_LET	714167527	577
-578	2025-02-13	2025-03-14 00:00:00	2100	157772810	https://www.rightmove.co.uk/properties/157772810#/?channel=RES_LET	715167527	578
-579	2025-02-13	2025-03-19 00:00:00	1450	157490306	https://www.rightmove.co.uk/properties/157490306#/?channel=RES_LET	716167527	579
-580	2025-02-13	2025-03-05 00:00:00	1500	87070872	https://www.rightmove.co.uk/properties/87070872#/?channel=RES_LET	717167527	580
-581	2025-02-13	2025-03-11 00:00:00	925	156992234	https://www.rightmove.co.uk/properties/156992234#/?channel=RES_LET	718167527	581
-582	2025-02-13	2025-03-01 00:00:00	1200	158188148	https://www.rightmove.co.uk/properties/158188148#/?channel=RES_LET	719167527	582
-583	2025-02-13	2025-03-07 00:00:00	900	158188004	https://www.rightmove.co.uk/properties/158188004#/?channel=RES_LET	720167527	583
-584	2025-02-12	2025-03-05 00:00:00	1800	152841935	https://www.rightmove.co.uk/properties/152841935#/?channel=RES_LET	721167527	584
-585	2025-02-12	2025-03-05 00:00:00	1300	157045388	https://www.rightmove.co.uk/properties/157045388#/?channel=RES_LET	722167527	585
-586	2025-02-12	2025-03-05 00:00:00	1100	157489016	https://www.rightmove.co.uk/properties/157489016#/?channel=RES_LET	723167527	586
-587	2025-02-10	1900-01-01 00:00:00	1595	158056742	https://www.rightmove.co.uk/properties/158056742#/?channel=RES_LET	724167527	587
-588	2025-02-12	2025-03-05 00:00:00	975	157783517	https://www.rightmove.co.uk/properties/157783517#/?channel=RES_LET	725167527	588
-589	2025-02-12	2025-07-01 00:00:00	4095	154612661	https://www.rightmove.co.uk/properties/154612661#/?channel=RES_LET	726167527	589
 590	2025-02-12	2025-02-17 00:00:00	2100	158183606	https://www.rightmove.co.uk/properties/158183606#/?channel=RES_LET	727167527	590
-591	2025-02-12	2025-02-21 00:00:00	950	156030881	https://www.rightmove.co.uk/properties/156030881#/?channel=RES_LET	728167527	591
 592	2025-02-12	2025-02-21 00:00:00	1550	158183249	https://www.rightmove.co.uk/properties/158183249#/?channel=RES_LET	729167527	592
-593	2025-02-12	2025-03-05 00:00:00	1375	158182004	https://www.rightmove.co.uk/properties/158182004#/?channel=RES_LET	730167527	593
-594	2025-02-12	2025-02-23 00:00:00	975	158181971	https://www.rightmove.co.uk/properties/158181971#/?channel=RES_LET	731167527	594
-595	2025-02-12	2025-03-05 00:00:00	1450	158181929	https://www.rightmove.co.uk/properties/158181929#/?channel=RES_LET	732167527	595
-596	2025-02-12	2025-03-05 00:00:00	800	156837101	https://www.rightmove.co.uk/properties/156837101#/?channel=RES_LET	733167527	596
-597	2025-02-12	2025-03-12 00:00:00	1325	157503287	https://www.rightmove.co.uk/properties/157503287#/?channel=RES_LET	734167527	597
-598	2025-02-12	2025-03-10 00:00:00	1550	158180393	https://www.rightmove.co.uk/properties/158180393#/?channel=RES_LET	735167527	598
-599	2025-02-12	2025-03-20 00:00:00	1400	158180240	https://www.rightmove.co.uk/properties/158180240#/?channel=RES_LET	736167527	599
 600	2025-02-12	2025-02-17 00:00:00	1400	158178983	https://www.rightmove.co.uk/properties/158178983#/?channel=RES_LET	738167527	600
-601	2025-02-12	2025-02-21 00:00:00	1100	158178908	https://www.rightmove.co.uk/properties/158178908#/?channel=RES_LET	739167527	601
-602	2025-02-12	2025-03-05 00:00:00	1100	156457454	https://www.rightmove.co.uk/properties/156457454#/?channel=RES_LET	740167527	602
-603	2025-02-12	2025-02-17 00:00:00	2000	158178320	https://www.rightmove.co.uk/properties/158178320#/?channel=RES_LET	741167527	603
-604	2025-02-12	2025-03-05 00:00:00	950	156423461	https://www.rightmove.co.uk/properties/156423461#/?channel=RES_LET	742167527	604
-605	2025-02-12	2025-03-05 00:00:00	800	158177951	https://www.rightmove.co.uk/properties/158177951#/?channel=RES_LET	743167527	605
-606	2025-02-12	2025-03-01 00:00:00	1000	158177747	https://www.rightmove.co.uk/properties/158177747#/?channel=RES_LET	744167527	606
 607	2025-02-12	1900-01-01 00:00:00	995	158177552	https://www.rightmove.co.uk/properties/158177552#/?channel=RES_LET	745167527	607
 608	2025-02-12	2025-03-05 00:00:00	1150	156907328	https://www.rightmove.co.uk/properties/156907328#/?channel=RES_LET	746167527	608
-609	2025-02-12	2025-07-01 00:00:00	3575	57088153	https://www.rightmove.co.uk/properties/57088153#/?channel=RES_LET	747167527	609
-610	2025-02-12	2025-03-05 00:00:00	3275	158176919	https://www.rightmove.co.uk/properties/158176919#/?channel=RES_LET	748167527	610
 611	2025-02-04	2025-03-05 00:00:00	1846	157466939	https://www.rightmove.co.uk/properties/157466939#/?channel=RES_LET	749167527	611
-612	2025-02-12	2025-02-26 00:00:00	950	158176049	https://www.rightmove.co.uk/properties/158176049#/?channel=RES_LET	750167527	612
-613	2025-02-12	2025-03-12 00:00:00	1300	158175791	https://www.rightmove.co.uk/properties/158175791#/?channel=RES_LET	751167527	613
-614	2025-02-12	2025-03-05 00:00:00	1195	157753940	https://www.rightmove.co.uk/properties/157753940#/?channel=RES_LET	752167527	614
-615	2025-02-12	2025-03-05 00:00:00	1400	158175494	https://www.rightmove.co.uk/properties/158175494#/?channel=RES_LET	753167527	615
 616	2025-02-12	2025-02-17 00:00:00	1150	157618394	https://www.rightmove.co.uk/properties/157618394#/?channel=RES_LET	754167527	616
 617	2025-02-12	2025-03-28 00:00:00	1450	158174996	https://www.rightmove.co.uk/properties/158174996#/?channel=RES_LET	755167527	617
 618	2025-02-12	2025-03-05 00:00:00	1700	158170847	https://www.rightmove.co.uk/properties/158170847#/?channel=RES_LET	756167527	618
 619	2025-02-12	2025-03-05 00:00:00	800	158173559	https://www.rightmove.co.uk/properties/158173559#/?channel=RES_LET	757167527	619
-620	2025-02-12	2025-03-05 00:00:00	1500	158173115	https://www.rightmove.co.uk/properties/158173115#/?channel=RES_LET	758167527	620
-621	2025-02-12	1900-01-01 00:00:00	1250	156108041	https://www.rightmove.co.uk/properties/156108041#/?channel=RES_LET	759167527	621
-622	2025-02-12	2025-02-22 00:00:00	950	158172821	https://www.rightmove.co.uk/properties/158172821#/?channel=RES_LET	760167527	622
-623	2025-02-12	2025-02-18 00:00:00	900	157795715	https://www.rightmove.co.uk/properties/157795715#/?channel=RES_LET	761167527	623
-624	2025-02-12	2025-03-05 00:00:00	1150	157837517	https://www.rightmove.co.uk/properties/157837517#/?channel=RES_LET	762167527	624
 625	2025-02-12	2025-04-20 00:00:00	1150	158171534	https://www.rightmove.co.uk/properties/158171534#/?channel=RES_LET	763167527	625
-626	2025-02-12	2025-04-07 00:00:00	1080	158171531	https://www.rightmove.co.uk/properties/158171531#/?channel=RES_LET	764167527	626
 627	2025-02-12	2025-03-05 00:00:00	1300	157273844	https://www.rightmove.co.uk/properties/157273844#/?channel=RES_LET	765167527	627
-628	2025-02-12	2025-03-05 00:00:00	1600	158171126	https://www.rightmove.co.uk/properties/158171126#/?channel=RES_LET	766167527	628
-629	2025-02-12	2025-02-22 00:00:00	1150	158170493	https://www.rightmove.co.uk/properties/158170493#/?channel=RES_LET	767167527	629
 630	2025-02-12	2025-03-05 00:00:00	900	158105492	https://www.rightmove.co.uk/properties/158105492#/?channel=RES_LET	768167527	630
 631	2025-02-12	2025-03-05 00:00:00	850	158170232	https://www.rightmove.co.uk/properties/158170232#/?channel=RES_LET	769167527	631
-632	2025-02-12	2025-07-01 00:00:00	2514	152869622	https://www.rightmove.co.uk/properties/152869622#/?channel=RES_LET	770167527	632
-633	2025-02-12	2025-03-21 00:00:00	895	158167298	https://www.rightmove.co.uk/properties/158167298#/?channel=RES_LET	771167527	633
-634	2025-02-12	2025-03-05 00:00:00	1710	158167187	https://www.rightmove.co.uk/properties/158167187#/?channel=RES_LET	772167527	634
-635	2025-02-12	2025-03-10 00:00:00	1100	158167046	https://www.rightmove.co.uk/properties/158167046#/?channel=RES_LET	773167527	635
-636	2025-01-31	2025-04-25 00:00:00	1450	157638104	https://www.rightmove.co.uk/properties/157638104#/?channel=RES_LET	774167527	636
 637	2025-02-12	2025-03-05 00:00:00	900	156852404	https://www.rightmove.co.uk/properties/156852404#/?channel=RES_LET	775167527	637
-638	2025-02-12	1900-01-01 00:00:00	1450	154099571	https://www.rightmove.co.uk/properties/154099571#/?channel=RES_LET	776167527	638
-639	2025-02-12	2025-02-28 00:00:00	1300	158166059	https://www.rightmove.co.uk/properties/158166059#/?channel=RES_LET	777167527	639
 640	2025-02-12	2025-02-21 00:00:00	1600	158165651	https://www.rightmove.co.uk/properties/158165651#/?channel=RES_LET	778167527	640
-641	2025-02-12	2025-03-05 00:00:00	1275	154367975	https://www.rightmove.co.uk/properties/154367975#/?channel=RES_LET	779167527	641
-642	2025-02-12	2025-03-05 00:00:00	1500	158164559	https://www.rightmove.co.uk/properties/158164559#/?channel=RES_LET	780167527	642
 643	2025-02-12	2025-02-19 00:00:00	1260	158163458	https://www.rightmove.co.uk/properties/158163458#/?channel=RES_LET	781167527	643
 644	2025-02-12	2025-02-17 00:00:00	975	158164316	https://www.rightmove.co.uk/properties/158164316#/?channel=RES_LET	782167527	644
-645	2025-02-12	2025-03-05 00:00:00	850	157824767	https://www.rightmove.co.uk/properties/157824767#/?channel=RES_LET	783167527	645
 646	2025-02-12	2025-07-01 00:00:00	5070	158163848	https://www.rightmove.co.uk/properties/158163848#/?channel=RES_LET	784167527	646
-647	2025-02-12	2025-03-05 00:00:00	650	158163620	https://www.rightmove.co.uk/properties/158163620#/?channel=RES_LET	785167527	647
-648	2025-02-12	2025-03-05 00:00:00	1200	157302170	https://www.rightmove.co.uk/properties/157302170#/?channel=RES_LET	786167527	648
 649	2025-02-12	2025-02-17 00:00:00	1400	156536897	https://www.rightmove.co.uk/properties/156536897#/?channel=RES_LET	787167527	649
-650	2025-02-12	2025-03-13 00:00:00	1400	158163356	https://www.rightmove.co.uk/properties/158163356#/?channel=RES_LET	788167527	650
-651	2025-02-12	2025-02-19 00:00:00	1575	158162417	https://www.rightmove.co.uk/properties/158162417#/?channel=RES_LET	789167527	651
-652	2025-02-12	2025-02-19 00:00:00	1595	158164826	https://www.rightmove.co.uk/properties/158164826#/?channel=RES_LET	790167527	652
-653	2025-02-12	1900-01-01 00:00:00	1100	153310466	https://www.rightmove.co.uk/properties/153310466#/?channel=RES_LET	791167527	653
-654	2025-02-12	1900-01-01 00:00:00	1800	151144412	https://www.rightmove.co.uk/properties/151144412#/?channel=RES_LET	792167527	654
-655	2025-02-12	2025-02-21 00:00:00	1300	158162390	https://www.rightmove.co.uk/properties/158162390#/?channel=RES_LET	793167527	655
-656	2025-02-12	2025-03-05 00:00:00	1170	158162072	https://www.rightmove.co.uk/properties/158162072#/?channel=RES_LET	794167527	656
 657	2025-02-12	1900-01-01 00:00:00	1150	158161829	https://www.rightmove.co.uk/properties/158161829#/?channel=RES_LET	795167527	657
-658	2025-02-12	2025-02-19 00:00:00	1995	158161898	https://www.rightmove.co.uk/properties/158161898#/?channel=RES_LET	796167527	658
-659	2025-02-12	2025-03-05 00:00:00	1650	156513749	https://www.rightmove.co.uk/properties/156513749#/?channel=RES_LET	797167527	659
-660	2025-02-12	2025-02-24 00:00:00	1200	156378338	https://www.rightmove.co.uk/properties/156378338#/?channel=RES_LET	798167527	660
-661	2025-02-12	2025-07-01 00:00:00	4420	155418977	https://www.rightmove.co.uk/properties/155418977#/?channel=RES_LET	800167527	661
-662	2025-02-12	2025-07-01 00:00:00	5790	154838762	https://www.rightmove.co.uk/properties/154838762#/?channel=RES_LET	801167527	662
-663	2025-02-12	2025-07-01 00:00:00	3952	155853380	https://www.rightmove.co.uk/properties/155853380#/?channel=RES_LET	803167527	663
 664	2025-02-12	2025-03-05 00:00:00	1150	157175582	https://www.rightmove.co.uk/properties/157175582#/?channel=RES_LET	805167527	664
-665	2025-02-12	2025-02-21 00:00:00	1500	158160089	https://www.rightmove.co.uk/properties/158160089#/?channel=RES_LET	806167527	665
-666	2025-02-12	2025-07-01 00:00:00	3575	154914029	https://www.rightmove.co.uk/properties/154914029#/?channel=RES_LET	807167527	666
-667	2025-02-12	2025-07-01 00:00:00	3792	155809649	https://www.rightmove.co.uk/properties/155809649#/?channel=RES_LET	808167527	667
-668	2025-02-12	2025-07-01 00:00:00	3792	155723636	https://www.rightmove.co.uk/properties/155723636#/?channel=RES_LET	809167527	668
-669	2025-02-12	2025-03-22 00:00:00	1200	158159759	https://www.rightmove.co.uk/properties/158159759#/?channel=RES_LET	810167527	669
-670	2025-02-12	2025-03-05 00:00:00	1200	158159612	https://www.rightmove.co.uk/properties/158159612#/?channel=RES_LET	811167527	670
-671	2025-02-12	2025-06-04 00:00:00	1185	158159573	https://www.rightmove.co.uk/properties/158159573#/?channel=RES_LET	812167527	671
-672	2025-02-12	2025-03-10 00:00:00	1365	158096729	https://www.rightmove.co.uk/properties/158096729#/?channel=RES_LET	813167527	672
 673	2025-02-12	2025-03-05 00:00:00	925	156381410	https://www.rightmove.co.uk/properties/156381410#/?channel=RES_LET	814167527	673
-674	2025-02-12	2025-04-22 00:00:00	1185	158159522	https://www.rightmove.co.uk/properties/158159522#/?channel=RES_LET	815167527	674
-675	2025-02-12	2025-04-28 00:00:00	1125	158159489	https://www.rightmove.co.uk/properties/158159489#/?channel=RES_LET	816167527	675
-676	2025-02-12	2025-04-03 00:00:00	1420	158096786	https://www.rightmove.co.uk/properties/158096786#/?channel=RES_LET	817167527	676
-677	2025-02-12	2025-03-05 00:00:00	1365	158096669	https://www.rightmove.co.uk/properties/158096669#/?channel=RES_LET	818167527	677
-678	2025-02-12	2025-03-05 00:00:00	1440	158096486	https://www.rightmove.co.uk/properties/158096486#/?channel=RES_LET	819167527	678
-679	2025-02-12	2025-04-07 00:00:00	1135	158159435	https://www.rightmove.co.uk/properties/158159435#/?channel=RES_LET	820167527	679
-680	2025-02-12	2025-04-30 00:00:00	1390	158096390	https://www.rightmove.co.uk/properties/158096390#/?channel=RES_LET	821167527	680
-681	2025-02-12	2025-04-02 00:00:00	1440	158096318	https://www.rightmove.co.uk/properties/158096318#/?channel=RES_LET	822167527	681
-682	2025-02-12	2025-03-07 00:00:00	1440	158096246	https://www.rightmove.co.uk/properties/158096246#/?channel=RES_LET	823167527	682
 683	2025-02-12	2025-02-21 00:00:00	900	158159411	https://www.rightmove.co.uk/properties/158159411#/?channel=RES_LET	825167527	683
-684	2025-02-12	2025-03-28 00:00:00	1125	158159405	https://www.rightmove.co.uk/properties/158159405#/?channel=RES_LET	826167527	684
 685	2025-02-12	2025-02-28 00:00:00	1050	156564860	https://www.rightmove.co.uk/properties/156564860#/?channel=RES_LET	827167527	685
-686	2025-02-12	2025-02-22 00:00:00	1155	158159660	https://www.rightmove.co.uk/properties/158159660#/?channel=RES_LET	829167527	686
-687	2025-02-12	2025-02-26 00:00:00	1125	158159276	https://www.rightmove.co.uk/properties/158159276#/?channel=RES_LET	830167527	687
-688	2025-02-12	2025-03-05 00:00:00	1350	157686131	https://www.rightmove.co.uk/properties/157686131#/?channel=RES_LET	831167527	688
-689	2025-02-12	2025-02-19 00:00:00	1125	158159237	https://www.rightmove.co.uk/properties/158159237#/?channel=RES_LET	832167527	689
-690	2025-02-12	2025-02-24 00:00:00	1400	156689513	https://www.rightmove.co.uk/properties/156689513#/?channel=RES_LET	833167527	690
-691	2025-02-12	2025-03-05 00:00:00	1622	158158415	https://www.rightmove.co.uk/properties/158158415#/?channel=RES_LET	834167527	691
-692	2025-02-12	2025-02-27 00:00:00	1050	157244120	https://www.rightmove.co.uk/properties/157244120#/?channel=RES_LET	835167527	692
-693	2025-02-12	2025-02-24 00:00:00	950	158158544	https://www.rightmove.co.uk/properties/158158544#/?channel=RES_LET	836167527	693
-694	2025-02-12	2025-04-14 00:00:00	1250	158158421	https://www.rightmove.co.uk/properties/158158421#/?channel=RES_LET	837167527	694
-695	2025-02-12	2025-02-21 00:00:00	1300	158158271	https://www.rightmove.co.uk/properties/158158271#/?channel=RES_LET	838167527	695
-696	2025-02-12	2025-03-05 00:00:00	1480	157824071	https://www.rightmove.co.uk/properties/157824071#/?channel=RES_LET	839167527	696
-697	2025-02-12	2025-03-05 00:00:00	2475	158157815	https://www.rightmove.co.uk/properties/158157815#/?channel=RES_LET	840167527	697
 698	2025-02-12	1900-01-01 00:00:00	1450	157609715	https://www.rightmove.co.uk/properties/157609715#/?channel=RES_LET	841167527	698
-699	2025-02-12	2025-03-05 00:00:00	1014	158157068	https://www.rightmove.co.uk/properties/158157068#/?channel=RES_LET	842167527	699
-700	2025-02-12	2025-03-05 00:00:00	1900	157990625	https://www.rightmove.co.uk/properties/157990625#/?channel=RES_LET	843167527	700
 701	2025-02-12	2025-09-12 00:00:00	3950	158157407	https://www.rightmove.co.uk/properties/158157407#/?channel=RES_LET	844167527	701
-702	2025-02-12	2025-03-05 00:00:00	1900	157987499	https://www.rightmove.co.uk/properties/157987499#/?channel=RES_LET	845167527	702
 703	2025-02-12	1900-01-01 00:00:00	1450	158157032	https://www.rightmove.co.uk/properties/158157032#/?channel=RES_LET	846167527	703
-704	2025-02-12	2025-03-05 00:00:00	1140	158156816	https://www.rightmove.co.uk/properties/158156816#/?channel=RES_LET	847167527	704
-705	2025-02-12	2025-03-05 00:00:00	1900	157586606	https://www.rightmove.co.uk/properties/157586606#/?channel=RES_LET	850167527	705
-706	2025-02-12	2025-03-05 00:00:00	1900	157627043	https://www.rightmove.co.uk/properties/157627043#/?channel=RES_LET	851167527	706
-707	2025-02-12	2025-03-05 00:00:00	1900	157624280	https://www.rightmove.co.uk/properties/157624280#/?channel=RES_LET	852167527	707
-708	2025-02-12	2025-03-05 00:00:00	1150	157754567	https://www.rightmove.co.uk/properties/157754567#/?channel=RES_LET	853167527	708
-709	2025-02-12	2025-03-05 00:00:00	1900	157610915	https://www.rightmove.co.uk/properties/157610915#/?channel=RES_LET	854167527	709
-710	2025-02-12	2025-03-05 00:00:00	1150	157477715	https://www.rightmove.co.uk/properties/157477715#/?channel=RES_LET	855167527	710
-711	2025-02-12	1900-01-01 00:00:00	1148	87084456	https://www.rightmove.co.uk/properties/87084456#/?channel=RES_LET	856167527	711
 712	2025-02-12	2025-03-17 00:00:00	750	142197284	https://www.rightmove.co.uk/properties/142197284#/?channel=RES_LET	857167527	712
-713	2025-02-12	2025-03-18 00:00:00	1000	158153744	https://www.rightmove.co.uk/properties/158153744#/?channel=RES_LET	858167527	713
 714	2025-02-12	1900-01-01 00:00:00	1050	158153567	https://www.rightmove.co.uk/properties/158153567#/?channel=RES_LET	859167527	714
 715	2025-02-12	2025-03-23 00:00:00	950	158153414	https://www.rightmove.co.uk/properties/158153414#/?channel=RES_LET	860167527	715
-716	2025-02-12	2025-03-05 00:00:00	1400	158152991	https://www.rightmove.co.uk/properties/158152991#/?channel=RES_LET	861167527	716
-717	2025-02-12	2025-03-17 00:00:00	1250	157923887	https://www.rightmove.co.uk/properties/157923887#/?channel=RES_LET	862167527	717
-718	2025-02-12	1900-01-01 00:00:00	1880	158151632	https://www.rightmove.co.uk/properties/158151632#/?channel=RES_LET	863167527	718
-719	2025-02-12	2025-02-21 00:00:00	1150	157215911	https://www.rightmove.co.uk/properties/157215911#/?channel=RES_LET	864167527	719
-720	2025-02-12	2025-03-18 00:00:00	1450	158151542	https://www.rightmove.co.uk/properties/158151542#/?channel=RES_LET	865167527	720
-721	2025-02-12	2025-03-05 00:00:00	1000	158151194	https://www.rightmove.co.uk/properties/158151194#/?channel=RES_LET	866167527	721
-722	2025-02-12	2025-09-05 00:00:00	841	158151017	https://www.rightmove.co.uk/properties/158151017#/?channel=RES_LET	867167527	722
-723	2025-02-12	2025-03-05 00:00:00	950	156848327	https://www.rightmove.co.uk/properties/156848327#/?channel=RES_LET	868167527	723
-724	2025-02-12	2025-03-05 00:00:00	1950	158150069	https://www.rightmove.co.uk/properties/158150069#/?channel=RES_LET	869167527	724
-725	2025-02-12	2025-03-05 00:00:00	2900	156434465	https://www.rightmove.co.uk/properties/156434465#/?channel=RES_LET	870167527	725
-726	2025-02-12	2025-02-21 00:00:00	1400	154846988	https://www.rightmove.co.uk/properties/154846988#/?channel=RES_LET	871167527	726
 727	2025-02-12	1900-01-01 00:00:00	1500	158148026	https://www.rightmove.co.uk/properties/158148026#/?channel=RES_LET	872167527	727
-728	2025-02-12	2025-03-05 00:00:00	925	157276196	https://www.rightmove.co.uk/properties/157276196#/?channel=RES_LET	873167527	728
-729	2025-02-12	2025-03-05 00:00:00	2250	87083886	https://www.rightmove.co.uk/properties/87083886#/?channel=RES_LET	875167527	729
-730	2025-02-12	2025-03-05 00:00:00	1350	156923966	https://www.rightmove.co.uk/properties/156923966#/?channel=RES_LET	876167527	730
-731	2025-02-12	2025-02-28 00:00:00	950	87083469	https://www.rightmove.co.uk/properties/87083469#/?channel=RES_LET	877167527	731
-732	2025-02-12	2025-07-01 00:00:00	2253	87083442	https://www.rightmove.co.uk/properties/87083442#/?channel=RES_LET	878167527	732
-733	2025-02-12	2025-03-07 00:00:00	1250	87083304	https://www.rightmove.co.uk/properties/87083304#/?channel=RES_LET	880167527	733
 734	2025-02-12	2025-03-10 00:00:00	1350	87082764	https://www.rightmove.co.uk/properties/87082764#/?channel=RES_LET	881167527	734
-735	2025-02-12	2025-03-05 00:00:00	1390	87082554	https://www.rightmove.co.uk/properties/87082554#/?channel=RES_LET	882167527	735
-736	2025-02-12	2025-02-24 00:00:00	1170	153997127	https://www.rightmove.co.uk/properties/153997127#/?channel=RES_LET	883167527	736
-737	2025-02-12	2025-03-05 00:00:00	1150	157707785	https://www.rightmove.co.uk/properties/157707785#/?channel=RES_LET	884167527	737
-738	2025-02-12	2025-03-05 00:00:00	1400	87082197	https://www.rightmove.co.uk/properties/87082197#/?channel=RES_LET	885167527	738
-739	2025-02-12	2025-03-05 00:00:00	1650	87081051	https://www.rightmove.co.uk/properties/87081051#/?channel=RES_LET	886167527	739
 740	2025-02-12	1900-01-01 00:00:00	2700	76959380	https://www.rightmove.co.uk/properties/76959380#/?channel=RES_LET	887167527	740
-741	2025-02-12	2025-03-05 00:00:00	1500	157889114	https://www.rightmove.co.uk/properties/157889114#/?channel=RES_LET	888167527	741
-742	2025-02-12	1900-01-01 00:00:00	1920	86986682	https://www.rightmove.co.uk/properties/86986682#/?channel=RES_LET	889167527	742
-743	2025-02-12	2025-03-21 00:00:00	1100	145040864	https://www.rightmove.co.uk/properties/145040864#/?channel=RES_LET	890167527	743
-744	2025-02-12	2025-07-01 00:00:00	1900	130462787	https://www.rightmove.co.uk/properties/130462787#/?channel=RES_LET	891167527	744
-745	2025-02-12	2025-03-05 00:00:00	850	157175651	https://www.rightmove.co.uk/properties/157175651#/?channel=RES_LET	892167527	745
 746	2025-02-12	2025-03-12 00:00:00	1500	87079995	https://www.rightmove.co.uk/properties/87079995#/?channel=RES_LET	893167527	746
-747	2025-02-12	2025-03-19 00:00:00	1200	87079767	https://www.rightmove.co.uk/properties/87079767#/?channel=RES_LET	894167527	747
-748	2025-02-12	2025-03-05 00:00:00	1150	104282804	https://www.rightmove.co.uk/properties/104282804#/?channel=RES_LET	895167527	748
-749	2025-02-12	2025-07-01 00:00:00	4900	155972312	https://www.rightmove.co.uk/properties/155972312#/?channel=RES_LET	896167527	749
-750	2025-02-12	2025-03-21 00:00:00	825	87078732	https://www.rightmove.co.uk/properties/87078732#/?channel=RES_LET	897167527	750
-751	2025-02-12	2025-09-05 00:00:00	776	87078699	https://www.rightmove.co.uk/properties/87078699#/?channel=RES_LET	898167527	751
 752	2025-02-11	2025-04-09 00:00:00	1700	158092766	https://www.rightmove.co.uk/properties/158092766#/?channel=RES_LET	899167527	752
-753	2025-02-12	2025-03-05 00:00:00	1350	87078282	https://www.rightmove.co.uk/properties/87078282#/?channel=RES_LET	900167527	753
-754	2025-02-12	2025-03-05 00:00:00	1050	156664946	https://www.rightmove.co.uk/properties/156664946#/?channel=RES_LET	901167527	754
-755	2025-02-12	2025-04-14 00:00:00	995	158147615	https://www.rightmove.co.uk/properties/158147615#/?channel=RES_LET	902167527	755
-756	2025-02-12	2025-07-01 00:00:00	4030	154123958	https://www.rightmove.co.uk/properties/154123958#/?channel=RES_LET	903167527	756
-757	2025-02-12	2025-03-05 00:00:00	1200	155836268	https://www.rightmove.co.uk/properties/155836268#/?channel=RES_LET	904167527	757
 \.
 
 

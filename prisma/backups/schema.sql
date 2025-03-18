@@ -129,6 +129,46 @@ ALTER SEQUENCE "bronze"."rightmove_data_brz_id_seq" OWNED BY "bronze"."rightmove
 
 
 
+CREATE TABLE IF NOT EXISTS "silver"."agents_df" (
+    "id" integer NOT NULL,
+    "agent_name" "text",
+    "rowid" "text",
+    "locations_df_id" integer
+);
+
+
+ALTER TABLE "silver"."agents_df" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "silver"."locations_df" (
+    "id" integer NOT NULL,
+    "full_address" "text",
+    "latitude" double precision,
+    "longitude" double precision,
+    "property_address" "text",
+    "rowid" "text"
+);
+
+
+ALTER TABLE "silver"."locations_df" OWNER TO "postgres";
+
+
+CREATE OR REPLACE VIEW "public"."agents_locations" AS
+ SELECT "a"."id" AS "agent_id",
+    "a"."agent_name",
+    "a"."rowid",
+    "a"."locations_df_id",
+    "l"."latitude",
+    "l"."longitude",
+    "l"."full_address",
+    "l"."property_address"
+   FROM ("silver"."agents_df" "a"
+     JOIN "silver"."locations_df" "l" ON (("a"."rowid" = "l"."rowid")));
+
+
+ALTER TABLE "public"."agents_locations" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."properties" (
     "id" integer NOT NULL,
     "property_type" "text",
@@ -193,17 +233,6 @@ ALTER TABLE "public"."query_logs_id_seq" OWNER TO "postgres";
 
 ALTER SEQUENCE "public"."query_logs_id_seq" OWNED BY "public"."query_logs"."id";
 
-
-
-CREATE TABLE IF NOT EXISTS "silver"."agents_df" (
-    "id" integer NOT NULL,
-    "agent_name" "text",
-    "rowid" "text",
-    "locations_df_id" integer
-);
-
-
-ALTER TABLE "silver"."agents_df" OWNER TO "postgres";
 
 
 CREATE SEQUENCE IF NOT EXISTS "silver"."agents_df_id_seq"
@@ -305,19 +334,6 @@ ALTER TABLE "silver"."listings_df_sil_id_seq" OWNER TO "postgres";
 
 ALTER SEQUENCE "silver"."listings_df_sil_id_seq" OWNED BY "silver"."listings_df_sil"."id";
 
-
-
-CREATE TABLE IF NOT EXISTS "silver"."locations_df" (
-    "id" integer NOT NULL,
-    "full_address" "text",
-    "latitude" double precision,
-    "longitude" double precision,
-    "property_address" "text",
-    "rowid" "text"
-);
-
-
-ALTER TABLE "silver"."locations_df" OWNER TO "postgres";
 
 
 CREATE SEQUENCE IF NOT EXISTS "silver"."locations_df_id_seq"
@@ -527,6 +543,11 @@ ALTER TABLE ONLY "silver"."properties_df"
 
 ALTER TABLE ONLY "silver"."properties_df_sil"
     ADD CONSTRAINT "properties_df_sil_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "silver"."agents_df"
+    ADD CONSTRAINT "unique_agent_name" UNIQUE ("agent_name");
 
 
 
@@ -796,6 +817,24 @@ GRANT ALL ON SEQUENCE "bronze"."rightmove_data_brz_id_seq" TO "service_role";
 
 
 
+GRANT ALL ON TABLE "silver"."agents_df" TO "anon";
+GRANT ALL ON TABLE "silver"."agents_df" TO "authenticated";
+GRANT ALL ON TABLE "silver"."agents_df" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "silver"."locations_df" TO "anon";
+GRANT ALL ON TABLE "silver"."locations_df" TO "authenticated";
+GRANT ALL ON TABLE "silver"."locations_df" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."agents_locations" TO "anon";
+GRANT ALL ON TABLE "public"."agents_locations" TO "authenticated";
+GRANT ALL ON TABLE "public"."agents_locations" TO "service_role";
+
+
+
 GRANT ALL ON TABLE "public"."properties" TO "anon";
 GRANT ALL ON TABLE "public"."properties" TO "authenticated";
 GRANT ALL ON TABLE "public"."properties" TO "service_role";
@@ -823,12 +862,6 @@ GRANT ALL ON TABLE "public"."query_logs" TO "service_role";
 GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "public"."query_logs_id_seq" TO "service_role";
-
-
-
-GRANT ALL ON TABLE "silver"."agents_df" TO "anon";
-GRANT ALL ON TABLE "silver"."agents_df" TO "authenticated";
-GRANT ALL ON TABLE "silver"."agents_df" TO "service_role";
 
 
 
@@ -871,12 +904,6 @@ GRANT ALL ON TABLE "silver"."listings_df_sil" TO "service_role";
 GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "silver"."listings_df_sil_id_seq" TO "service_role";
-
-
-
-GRANT ALL ON TABLE "silver"."locations_df" TO "anon";
-GRANT ALL ON TABLE "silver"."locations_df" TO "authenticated";
-GRANT ALL ON TABLE "silver"."locations_df" TO "service_role";
 
 
 
