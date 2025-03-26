@@ -379,6 +379,49 @@ ALTER SEQUENCE "silver"."locations_df_sil_id_seq" OWNED BY "silver"."locations_d
 
 
 
+CREATE TABLE IF NOT EXISTS "silver"."processed_data" (
+    "id" integer NOT NULL,
+    "property_address" "text",
+    "agent_address" "text",
+    "agent_name" "text",
+    "available_date" "text",
+    "property_type" "text",
+    "bedrooms" "text",
+    "bathrooms" "text",
+    "post_date" "text",
+    "price" "text",
+    "latitude" double precision,
+    "longitude" double precision,
+    "url" "text",
+    "ingestion_timestamp" timestamp without time zone,
+    "monthly_price" "text",
+    "parsed_post_date" "text",
+    "parsed_available_date" timestamp without time zone,
+    "full_address" "text",
+    "listing_id" "text",
+    "rowid" "text"
+);
+
+
+ALTER TABLE "silver"."processed_data" OWNER TO "postgres";
+
+
+CREATE SEQUENCE IF NOT EXISTS "silver"."processed_data_id_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE "silver"."processed_data_id_seq" OWNER TO "postgres";
+
+
+ALTER SEQUENCE "silver"."processed_data_id_seq" OWNED BY "silver"."processed_data"."id";
+
+
+
 CREATE TABLE IF NOT EXISTS "silver"."properties_df" (
     "id" integer NOT NULL,
     "property_type" "text",
@@ -473,6 +516,10 @@ ALTER TABLE ONLY "silver"."locations_df_sil" ALTER COLUMN "id" SET DEFAULT "next
 
 
 
+ALTER TABLE ONLY "silver"."processed_data" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."processed_data_id_seq"'::"regclass");
+
+
+
 ALTER TABLE ONLY "silver"."properties_df" ALTER COLUMN "id" SET DEFAULT "nextval"('"silver"."properties_df_id_seq"'::"regclass");
 
 
@@ -533,6 +580,11 @@ ALTER TABLE ONLY "silver"."locations_df"
 
 ALTER TABLE ONLY "silver"."locations_df_sil"
     ADD CONSTRAINT "locations_df_sil_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "silver"."processed_data"
+    ADD CONSTRAINT "processed_data_pkey" PRIMARY KEY ("id");
 
 
 
@@ -922,6 +974,18 @@ GRANT ALL ON TABLE "silver"."locations_df_sil" TO "service_role";
 GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "silver"."locations_df_sil_id_seq" TO "service_role";
+
+
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE "silver"."processed_data" TO "authenticated";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE "silver"."processed_data" TO "anon";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE "silver"."processed_data" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "silver"."processed_data_id_seq" TO "authenticated";
+GRANT ALL ON SEQUENCE "silver"."processed_data_id_seq" TO "anon";
+GRANT ALL ON SEQUENCE "silver"."processed_data_id_seq" TO "service_role";
 
 
 
