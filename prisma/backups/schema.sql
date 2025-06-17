@@ -3,6 +3,7 @@
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
@@ -122,7 +123,7 @@ CREATE SEQUENCE IF NOT EXISTS "bronze"."rightmove_data_brz_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "bronze"."rightmove_data_brz_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "bronze"."rightmove_data_brz_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "bronze"."rightmove_data_brz_id_seq" OWNED BY "bronze"."rightmove_data_brz"."id";
@@ -166,7 +167,7 @@ CREATE OR REPLACE VIEW "public"."agents_locations" AS
      JOIN "silver"."locations_df" "l" ON (("a"."rowid" = "l"."rowid")));
 
 
-ALTER TABLE "public"."agents_locations" OWNER TO "postgres";
+ALTER VIEW "public"."agents_locations" OWNER TO "postgres";
 
 
 CREATE TABLE IF NOT EXISTS "public"."auth_group" (
@@ -438,7 +439,7 @@ CREATE SEQUENCE IF NOT EXISTS "public"."properties_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "public"."properties_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "public"."properties_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "public"."properties_id_seq" OWNED BY "public"."properties"."id";
@@ -464,7 +465,7 @@ CREATE SEQUENCE IF NOT EXISTS "public"."query_logs_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "public"."query_logs_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "public"."query_logs_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "public"."query_logs_id_seq" OWNED BY "public"."query_logs"."id";
@@ -479,7 +480,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."agents_df_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."agents_df_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."agents_df_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."agents_df_id_seq" OWNED BY "silver"."agents_df"."id";
@@ -505,7 +506,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."agents_df_sil_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."agents_df_sil_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."agents_df_sil_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."agents_df_sil_id_seq" OWNED BY "silver"."agents_df_sil"."id";
@@ -535,7 +536,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."listings_df_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."listings_df_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."listings_df_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."listings_df_id_seq" OWNED BY "silver"."listings_df"."id";
@@ -565,7 +566,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."listings_df_sil_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."listings_df_sil_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."listings_df_sil_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."listings_df_sil_id_seq" OWNED BY "silver"."listings_df_sil"."id";
@@ -580,7 +581,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."locations_df_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."locations_df_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."locations_df_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."locations_df_id_seq" OWNED BY "silver"."locations_df"."id";
@@ -608,7 +609,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."locations_df_sil_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."locations_df_sil_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."locations_df_sil_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."locations_df_sil_id_seq" OWNED BY "silver"."locations_df_sil"."id";
@@ -651,7 +652,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."processed_data_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."processed_data_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."processed_data_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."processed_data_id_seq" OWNED BY "silver"."processed_data"."id";
@@ -680,7 +681,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."properties_df_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."properties_df_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."properties_df_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."properties_df_id_seq" OWNED BY "silver"."properties_df"."id";
@@ -709,7 +710,7 @@ CREATE SEQUENCE IF NOT EXISTS "silver"."properties_df_sil_id_seq"
     CACHE 1;
 
 
-ALTER TABLE "silver"."properties_df_sil_id_seq" OWNER TO "postgres";
+ALTER SEQUENCE "silver"."properties_df_sil_id_seq" OWNER TO "postgres";
 
 
 ALTER SEQUENCE "silver"."properties_df_sil_id_seq" OWNED BY "silver"."properties_df_sil"."id";
@@ -1265,9 +1266,9 @@ GRANT ALL ON FUNCTION "public"."log_queries"() TO "service_role";
 
 
 
-GRANT ALL ON TABLE "bronze"."rightmove_data_brz" TO "anon";
-GRANT ALL ON TABLE "bronze"."rightmove_data_brz" TO "authenticated";
-GRANT ALL ON TABLE "bronze"."rightmove_data_brz" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "bronze"."rightmove_data_brz" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "bronze"."rightmove_data_brz" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "bronze"."rightmove_data_brz" TO "service_role";
 
 
 
@@ -1292,27 +1293,27 @@ GRANT ALL ON SEQUENCE "bronze"."rightmove_data_brz_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."agents_df" TO "anon";
-GRANT ALL ON TABLE "silver"."agents_df" TO "authenticated";
-GRANT ALL ON TABLE "silver"."agents_df" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."agents_df" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."agents_df" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."agents_df" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."locations_df" TO "anon";
-GRANT ALL ON TABLE "silver"."locations_df" TO "authenticated";
-GRANT ALL ON TABLE "silver"."locations_df" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."locations_df" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."locations_df" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."locations_df" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."agents_locations" TO "anon";
-GRANT ALL ON TABLE "public"."agents_locations" TO "authenticated";
-GRANT ALL ON TABLE "public"."agents_locations" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."agents_locations" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."agents_locations" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."agents_locations" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."auth_group" TO "anon";
-GRANT ALL ON TABLE "public"."auth_group" TO "authenticated";
-GRANT ALL ON TABLE "public"."auth_group" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_group" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_group" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_group" TO "service_role";
 
 
 
@@ -1322,9 +1323,9 @@ GRANT ALL ON SEQUENCE "public"."auth_group_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."auth_group_permissions" TO "anon";
-GRANT ALL ON TABLE "public"."auth_group_permissions" TO "authenticated";
-GRANT ALL ON TABLE "public"."auth_group_permissions" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_group_permissions" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_group_permissions" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_group_permissions" TO "service_role";
 
 
 
@@ -1334,9 +1335,9 @@ GRANT ALL ON SEQUENCE "public"."auth_group_permissions_id_seq" TO "service_role"
 
 
 
-GRANT ALL ON TABLE "public"."auth_permission" TO "anon";
-GRANT ALL ON TABLE "public"."auth_permission" TO "authenticated";
-GRANT ALL ON TABLE "public"."auth_permission" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_permission" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_permission" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_permission" TO "service_role";
 
 
 
@@ -1346,15 +1347,15 @@ GRANT ALL ON SEQUENCE "public"."auth_permission_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."auth_user" TO "anon";
-GRANT ALL ON TABLE "public"."auth_user" TO "authenticated";
-GRANT ALL ON TABLE "public"."auth_user" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."auth_user_groups" TO "anon";
-GRANT ALL ON TABLE "public"."auth_user_groups" TO "authenticated";
-GRANT ALL ON TABLE "public"."auth_user_groups" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user_groups" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user_groups" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user_groups" TO "service_role";
 
 
 
@@ -1370,9 +1371,9 @@ GRANT ALL ON SEQUENCE "public"."auth_user_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."auth_user_user_permissions" TO "anon";
-GRANT ALL ON TABLE "public"."auth_user_user_permissions" TO "authenticated";
-GRANT ALL ON TABLE "public"."auth_user_user_permissions" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user_user_permissions" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user_user_permissions" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."auth_user_user_permissions" TO "service_role";
 
 
 
@@ -1382,9 +1383,9 @@ GRANT ALL ON SEQUENCE "public"."auth_user_user_permissions_id_seq" TO "service_r
 
 
 
-GRANT ALL ON TABLE "public"."backend_todo" TO "anon";
-GRANT ALL ON TABLE "public"."backend_todo" TO "authenticated";
-GRANT ALL ON TABLE "public"."backend_todo" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."backend_todo" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."backend_todo" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."backend_todo" TO "service_role";
 
 
 
@@ -1394,9 +1395,9 @@ GRANT ALL ON SEQUENCE "public"."backend_todo_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."django_admin_log" TO "anon";
-GRANT ALL ON TABLE "public"."django_admin_log" TO "authenticated";
-GRANT ALL ON TABLE "public"."django_admin_log" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_admin_log" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_admin_log" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_admin_log" TO "service_role";
 
 
 
@@ -1406,9 +1407,9 @@ GRANT ALL ON SEQUENCE "public"."django_admin_log_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."django_content_type" TO "anon";
-GRANT ALL ON TABLE "public"."django_content_type" TO "authenticated";
-GRANT ALL ON TABLE "public"."django_content_type" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_content_type" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_content_type" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_content_type" TO "service_role";
 
 
 
@@ -1418,9 +1419,9 @@ GRANT ALL ON SEQUENCE "public"."django_content_type_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."django_migrations" TO "anon";
-GRANT ALL ON TABLE "public"."django_migrations" TO "authenticated";
-GRANT ALL ON TABLE "public"."django_migrations" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_migrations" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_migrations" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_migrations" TO "service_role";
 
 
 
@@ -1430,21 +1431,21 @@ GRANT ALL ON SEQUENCE "public"."django_migrations_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."django_session" TO "anon";
-GRANT ALL ON TABLE "public"."django_session" TO "authenticated";
-GRANT ALL ON TABLE "public"."django_session" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_session" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_session" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."django_session" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."properties" TO "anon";
-GRANT ALL ON TABLE "public"."properties" TO "authenticated";
-GRANT ALL ON TABLE "public"."properties" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."properties" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."properties" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."properties" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."properties1" TO "anon";
-GRANT ALL ON TABLE "public"."properties1" TO "authenticated";
-GRANT ALL ON TABLE "public"."properties1" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."properties1" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."properties1" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."properties1" TO "service_role";
 
 
 
@@ -1454,9 +1455,9 @@ GRANT ALL ON SEQUENCE "public"."properties_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "public"."query_logs" TO "anon";
-GRANT ALL ON TABLE "public"."query_logs" TO "authenticated";
-GRANT ALL ON TABLE "public"."query_logs" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."query_logs" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."query_logs" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "public"."query_logs" TO "service_role";
 
 
 
@@ -1472,9 +1473,9 @@ GRANT ALL ON SEQUENCE "silver"."agents_df_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."agents_df_sil" TO "anon";
-GRANT ALL ON TABLE "silver"."agents_df_sil" TO "authenticated";
-GRANT ALL ON TABLE "silver"."agents_df_sil" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."agents_df_sil" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."agents_df_sil" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."agents_df_sil" TO "service_role";
 
 
 
@@ -1484,9 +1485,9 @@ GRANT ALL ON SEQUENCE "silver"."agents_df_sil_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."listings_df" TO "anon";
-GRANT ALL ON TABLE "silver"."listings_df" TO "authenticated";
-GRANT ALL ON TABLE "silver"."listings_df" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."listings_df" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."listings_df" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."listings_df" TO "service_role";
 
 
 
@@ -1496,9 +1497,9 @@ GRANT ALL ON SEQUENCE "silver"."listings_df_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."listings_df_sil" TO "anon";
-GRANT ALL ON TABLE "silver"."listings_df_sil" TO "authenticated";
-GRANT ALL ON TABLE "silver"."listings_df_sil" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."listings_df_sil" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."listings_df_sil" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."listings_df_sil" TO "service_role";
 
 
 
@@ -1514,9 +1515,9 @@ GRANT SELECT,USAGE ON SEQUENCE "silver"."locations_df_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."locations_df_sil" TO "anon";
-GRANT ALL ON TABLE "silver"."locations_df_sil" TO "authenticated";
-GRANT ALL ON TABLE "silver"."locations_df_sil" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."locations_df_sil" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."locations_df_sil" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."locations_df_sil" TO "service_role";
 
 
 
@@ -1538,9 +1539,9 @@ GRANT ALL ON SEQUENCE "silver"."processed_data_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."properties_df" TO "anon";
-GRANT ALL ON TABLE "silver"."properties_df" TO "authenticated";
-GRANT ALL ON TABLE "silver"."properties_df" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."properties_df" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."properties_df" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."properties_df" TO "service_role";
 
 
 
@@ -1550,9 +1551,9 @@ GRANT ALL ON SEQUENCE "silver"."properties_df_id_seq" TO "service_role";
 
 
 
-GRANT ALL ON TABLE "silver"."properties_df_sil" TO "anon";
-GRANT ALL ON TABLE "silver"."properties_df_sil" TO "authenticated";
-GRANT ALL ON TABLE "silver"."properties_df_sil" TO "service_role";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."properties_df_sil" TO "anon";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."properties_df_sil" TO "authenticated";
+GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLE "silver"."properties_df_sil" TO "service_role";
 
 
 
@@ -1562,48 +1563,48 @@ GRANT ALL ON SEQUENCE "silver"."properties_df_sil_id_seq" TO "service_role";
 
 
 
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON SEQUENCES  TO "anon";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON SEQUENCES  TO "authenticated";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON SEQUENCES  TO "service_role";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON SEQUENCES TO "anon";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON SEQUENCES TO "authenticated";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON SEQUENCES TO "service_role";
 
 
 
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON FUNCTIONS  TO "anon";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON FUNCTIONS  TO "authenticated";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON FUNCTIONS  TO "service_role";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON FUNCTIONS TO "anon";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON FUNCTIONS TO "authenticated";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON FUNCTIONS TO "service_role";
 
 
 
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON TABLES  TO "anon";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON TABLES  TO "authenticated";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT ALL ON TABLES  TO "service_role";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "anon";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "authenticated";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "bronze" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "service_role";
 
 
 
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES  TO "postgres";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES  TO "anon";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES  TO "authenticated";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES  TO "service_role";
-
-
-
-
-
-
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS  TO "postgres";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS  TO "anon";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS  TO "authenticated";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS  TO "service_role";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES TO "postgres";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES TO "anon";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES TO "authenticated";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON SEQUENCES TO "service_role";
 
 
 
 
 
 
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON TABLES  TO "postgres";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON TABLES  TO "anon";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON TABLES  TO "authenticated";
-ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON TABLES  TO "service_role";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS TO "postgres";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS TO "anon";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS TO "authenticated";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT ALL ON FUNCTIONS TO "service_role";
+
+
+
+
+
+
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "postgres";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "anon";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "authenticated";
+ALTER DEFAULT PRIVILEGES FOR ROLE "postgres" IN SCHEMA "public" GRANT SELECT,INSERT,REFERENCES,DELETE,TRIGGER,TRUNCATE,UPDATE ON TABLES TO "service_role";
 
 
 
