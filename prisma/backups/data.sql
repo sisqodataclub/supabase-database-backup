@@ -3592,8 +3592,16 @@ COPY "silver"."processed_data" ("id", "property_address", "agent_address", "agen
 -- Data for Name: buckets; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."buckets" ("id", "name", "owner", "created_at", "updated_at", "public", "avif_autodetection", "file_size_limit", "allowed_mime_types", "owner_id") FROM stdin;
-ffgg	ffgg	\N	2025-02-19 12:07:37.536074+00	2025-02-19 12:07:37.536074+00	f	f	\N	\N	\N
+COPY "storage"."buckets" ("id", "name", "owner", "created_at", "updated_at", "public", "avif_autodetection", "file_size_limit", "allowed_mime_types", "owner_id", "type") FROM stdin;
+ffgg	ffgg	\N	2025-02-19 12:07:37.536074+00	2025-02-19 12:07:37.536074+00	f	f	\N	\N	\N	STANDARD
+\.
+
+
+--
+-- Data for Name: buckets_analytics; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
+--
+
+COPY "storage"."buckets_analytics" ("id", "type", "format", "created_at", "updated_at") FROM stdin;
 \.
 
 
@@ -3601,8 +3609,16 @@ ffgg	ffgg	\N	2025-02-19 12:07:37.536074+00	2025-02-19 12:07:37.536074+00	f	f	\N	
 -- Data for Name: objects; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata") FROM stdin;
-9d76987e-76de-4da5-9938-87c2dc1ea034	ffgg	seed.sql	\N	2025-02-19 12:08:34.381691+00	2025-02-19 12:08:34.381691+00	2025-02-19 12:08:34.381691+00	{"eTag": "\\"60c2357ea50937cd0186bf9308cec3f0-1\\"", "size": 4282, "mimetype": "application/x-sql", "cacheControl": "max-age=3600", "lastModified": "2025-02-19T12:08:35.000Z", "contentLength": 4282, "httpStatusCode": 200}	a62bfb40-2c04-4d9d-b4f9-41f2a4429338	\N	\N
+COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata", "level") FROM stdin;
+9d76987e-76de-4da5-9938-87c2dc1ea034	ffgg	seed.sql	\N	2025-02-19 12:08:34.381691+00	2025-08-25 05:47:30.010429+00	2025-02-19 12:08:34.381691+00	{"eTag": "\\"60c2357ea50937cd0186bf9308cec3f0-1\\"", "size": 4282, "mimetype": "application/x-sql", "cacheControl": "max-age=3600", "lastModified": "2025-02-19T12:08:35.000Z", "contentLength": 4282, "httpStatusCode": 200}	a62bfb40-2c04-4d9d-b4f9-41f2a4429338	\N	\N	1
+\.
+
+
+--
+-- Data for Name: prefixes; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
+--
+
+COPY "storage"."prefixes" ("bucket_id", "name", "created_at", "updated_at") FROM stdin;
 \.
 
 
