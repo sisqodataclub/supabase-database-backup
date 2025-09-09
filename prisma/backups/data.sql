@@ -4,8 +4,10 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
+\restrict 721kzyc3Of0bZBqARXJcFnhlFkpNccDLIuOQMJ54HYsZOkI4Gn0FPoUt50c2F4I
+
 -- Dumped from database version 15.8
--- Dumped by pg_dump version 17.4
+-- Dumped by pg_dump version 17.6
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -3810,5 +3812,7 @@ SELECT pg_catalog.setval('"silver"."properties_df_sil_id_seq"', 1, false);
 --
 -- PostgreSQL database dump complete
 --
+
+\unrestrict 721kzyc3Of0bZBqARXJcFnhlFkpNccDLIuOQMJ54HYsZOkI4Gn0FPoUt50c2F4I
 
 RESET ALL;
