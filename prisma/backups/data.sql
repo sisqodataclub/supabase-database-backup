@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
-\restrict D3dTPWDVo5b9a3lk9LDcwGGlEOZXNYb6M7UzhQTCk8quqyiWAB9YJ4xv9CIDwR4
+\restrict dYl0HWHFHJRdvTeNrs4fT8MZeCbNfvE79UTXDakRPEyRm7fNXbcUcXifjXcTcxt
 
 -- Dumped from database version 15.8
 -- Dumped by pg_dump version 17.6
@@ -3813,6 +3813,6 @@ SELECT pg_catalog.setval('"silver"."properties_df_sil_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
-\unrestrict D3dTPWDVo5b9a3lk9LDcwGGlEOZXNYb6M7UzhQTCk8quqyiWAB9YJ4xv9CIDwR4
+\unrestrict dYl0HWHFHJRdvTeNrs4fT8MZeCbNfvE79UTXDakRPEyRm7fNXbcUcXifjXcTcxt
 
 RESET ALL;
