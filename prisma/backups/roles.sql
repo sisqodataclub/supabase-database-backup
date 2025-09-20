@@ -1,5 +1,5 @@
 
-\restrict 0tYHp3bQ1KAceItsOTnFEnNYW3igVlEtfQkdCcgGfLcdsI6TuWRhd8uahBPFgt8
+\restrict wUVMyo8LeMPFn6chsngQAXB4tmJFiceNxOB8HiRhTFJosewzQ8bPtngraMgeTuQ
 
 SET default_transaction_read_only = off;
 
@@ -13,6 +13,6 @@ ALTER ROLE "authenticated" SET "statement_timeout" TO '8s';
 ALTER ROLE "authenticator" SET "statement_timeout" TO '8s';
 ALTER ROLE "authenticator" SET "pgrst.db_schemas" TO 'public, bronze, silver';
 
-\unrestrict 0tYHp3bQ1KAceItsOTnFEnNYW3igVlEtfQkdCcgGfLcdsI6TuWRhd8uahBPFgt8
+\unrestrict wUVMyo8LeMPFn6chsngQAXB4tmJFiceNxOB8HiRhTFJosewzQ8bPtngraMgeTuQ
 
 RESET ALL;
