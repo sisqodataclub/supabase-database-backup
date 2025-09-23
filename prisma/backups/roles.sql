@@ -1,6 +1,4 @@
 
-\restrict M3PTStq6Jt3Kjdacc6vKCyIvCxbOCetEYHpuwIOaSvdQN801x7aiAUMDEnrVhEJ
-
 SET default_transaction_read_only = off;
 
 SET client_encoding = 'UTF8';
@@ -12,7 +10,5 @@ ALTER ROLE "authenticated" SET "statement_timeout" TO '8s';
 
 ALTER ROLE "authenticator" SET "statement_timeout" TO '8s';
 ALTER ROLE "authenticator" SET "pgrst.db_schemas" TO 'public, bronze, silver';
-
-\unrestrict M3PTStq6Jt3Kjdacc6vKCyIvCxbOCetEYHpuwIOaSvdQN801x7aiAUMDEnrVhEJ
 
 RESET ALL;
