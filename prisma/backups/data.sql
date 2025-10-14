@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict V17Q3y1VFLkGaaR5C5VjTQY51kb3Jnk4LbcLpT5L5iYzjYiXemXGD2FZ4dqV7gn
+-- \restrict JWQjlFS1dxoEltsoVp8lCwhfloOkQEpcTa09fR2gicy9ik9ANwWhJgw4g28PiYT
 
 -- Dumped from database version 15.8
 -- Dumped by pg_dump version 17.6
@@ -65,10 +65,18 @@ COPY "auth"."instances" ("id", "uuid", "raw_base_config", "created_at", "updated
 
 
 --
+-- Data for Name: oauth_clients; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
+--
+
+COPY "auth"."oauth_clients" ("id", "client_secret_hash", "registration_type", "redirect_uris", "grant_types", "client_name", "client_uri", "logo_uri", "created_at", "updated_at", "deleted_at", "client_type") FROM stdin;
+\.
+
+
+--
 -- Data for Name: sessions; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."sessions" ("id", "user_id", "created_at", "updated_at", "factor_id", "aal", "not_after", "refreshed_at", "user_agent", "ip", "tag") FROM stdin;
+COPY "auth"."sessions" ("id", "user_id", "created_at", "updated_at", "factor_id", "aal", "not_after", "refreshed_at", "user_agent", "ip", "tag", "oauth_client_id") FROM stdin;
 \.
 
 
@@ -97,10 +105,18 @@ COPY "auth"."mfa_challenges" ("id", "factor_id", "created_at", "verified_at", "i
 
 
 --
--- Data for Name: oauth_clients; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
+-- Data for Name: oauth_authorizations; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."oauth_clients" ("id", "client_id", "client_secret_hash", "registration_type", "redirect_uris", "grant_types", "client_name", "client_uri", "logo_uri", "created_at", "updated_at", "deleted_at") FROM stdin;
+COPY "auth"."oauth_authorizations" ("id", "authorization_id", "client_id", "user_id", "redirect_uri", "scope", "state", "resource", "code_challenge", "code_challenge_method", "response_type", "status", "authorization_code", "created_at", "expires_at", "approved_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: oauth_consents; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
+--
+
+COPY "auth"."oauth_consents" ("id", "user_id", "client_id", "scopes", "granted_at", "revoked_at") FROM stdin;
 \.
 
 
@@ -3813,6 +3829,6 @@ SELECT pg_catalog.setval('"silver"."properties_df_sil_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict V17Q3y1VFLkGaaR5C5VjTQY51kb3Jnk4LbcLpT5L5iYzjYiXemXGD2FZ4dqV7gn
+-- \unrestrict JWQjlFS1dxoEltsoVp8lCwhfloOkQEpcTa09fR2gicy9ik9ANwWhJgw4g28PiYT
 
 RESET ALL;
