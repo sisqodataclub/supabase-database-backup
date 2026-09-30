@@ -1027,13 +1027,13 @@ ALTER TABLE ONLY "public"."django_admin_log"
 
 
 
-ALTER TABLE ONLY "silver"."properties_df_sil"
-    ADD CONSTRAINT "fk_agents_df_sil_id" FOREIGN KEY ("agents_df_sil_id") REFERENCES "silver"."agents_df_sil"("id") ON DELETE CASCADE;
-
-
-
 ALTER TABLE ONLY "silver"."properties_df"
     ADD CONSTRAINT "fk_agents_df_sil_id" FOREIGN KEY ("agents_df_sil_id") REFERENCES "silver"."agents_df"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "silver"."properties_df_sil"
+    ADD CONSTRAINT "fk_agents_df_sil_id" FOREIGN KEY ("agents_df_sil_id") REFERENCES "silver"."agents_df_sil"("id") ON DELETE CASCADE;
 
 
 
@@ -1042,23 +1042,23 @@ ALTER TABLE ONLY "silver"."agents_df"
 
 
 
-ALTER TABLE ONLY "silver"."properties_df_sil"
-    ADD CONSTRAINT "fk_locations_df_sil_id" FOREIGN KEY ("locations_df_sil_id") REFERENCES "silver"."locations_df_sil"("id") ON DELETE CASCADE;
-
-
-
 ALTER TABLE ONLY "silver"."properties_df"
     ADD CONSTRAINT "fk_locations_df_sil_id" FOREIGN KEY ("locations_df_sil_id") REFERENCES "silver"."locations_df"("id") ON DELETE CASCADE;
 
 
 
-ALTER TABLE ONLY "silver"."listings_df_sil"
-    ADD CONSTRAINT "fk_properties_df_sil_id" FOREIGN KEY ("properties_df_sil_id") REFERENCES "silver"."properties_df_sil"("id") ON DELETE CASCADE;
+ALTER TABLE ONLY "silver"."properties_df_sil"
+    ADD CONSTRAINT "fk_locations_df_sil_id" FOREIGN KEY ("locations_df_sil_id") REFERENCES "silver"."locations_df_sil"("id") ON DELETE CASCADE;
 
 
 
 ALTER TABLE ONLY "silver"."listings_df"
     ADD CONSTRAINT "fk_properties_df_sil_id" FOREIGN KEY ("properties_df_sil_id") REFERENCES "silver"."properties_df"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "silver"."listings_df_sil"
+    ADD CONSTRAINT "fk_properties_df_sil_id" FOREIGN KEY ("properties_df_sil_id") REFERENCES "silver"."properties_df_sil"("id") ON DELETE CASCADE;
 
 
 
